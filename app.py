@@ -57,14 +57,15 @@ def choose():
     juts = get_available_juts()
     return render_template("choose.html", juts=juts)
 
+# app.py (excerpt)
 @app.route("/test")
 def test():
     selected = session.get("selected_juts", get_available_juts())
     questions = select_questions(selected)
-    # Ensure exactly 75 questions (or less if insufficient)
-    # If less, we still proceed; timer remains.
-    session["test_questions"] = questions  # store for submission
-    return render_template("test.html", questions=questions)
+    session["test_questions"] = questions
+    # Convert questions to JSON for JavaScript
+    questions_json = json.dumps(questions, default=str)  # handle any non-serializable
+    return render_template("test.html", questions=questions, questions_json=questions_json)
 
 @app.route("/submit", methods=["POST"])
 def submit():
