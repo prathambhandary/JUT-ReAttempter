@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-4">
+    <h2 class="text-center mb-4">
+        <i class="fas fa-list-check me-2"></i>Select JUT(s)
+    </h2>
+    <form method="POST" action="{{ url_for('choose') }}">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="text-muted">Choose one or more JUT numbers. Questions will be randomly picked from the selected tests.</p>
+                        <div class="row g-3">
+                            {% for jut in juts %}
+                            <div class="col-6 col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="juts" value="{{ jut }}" id="jut{{ loop.index }}">
+                                    <label class="form-check-label" for="jut{{ loop.index }}">
+                                        JUT {{ jut }}
+                                    </label>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button type="submit" class="btn btn-success btn-lg px-5">
+                                <i class="fas fa-rocket me-2"></i>Start Test
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

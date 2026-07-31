@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container text-center py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="display-3 fw-bold mb-4">
+                <i class="fas fa-rotate-left text-primary me-3"></i>JUT ReAttempter
+            </h1>
+            <p class="lead mb-4">
+                Practice JEE Mains Unit Tests (JUT) with actual exam pattern.
+                Select your tests, attempt 75 questions in 3 hours, and get instant feedback.
+            </p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="{{ url_for('choose') }}" class="btn btn-primary btn-lg px-5 py-3">
+                    <i class="fas fa-play me-2"></i>Start Practice
+                </a>
+            </div>
+            <div class="mt-5">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="fw-bold">20 MCQ + 5 Integer per subject</span>
+                <span class="mx-3">|</span>
+                <i class="fas fa-clock text-warning me-2"></i>
+                <span class="fw-bold">3‑hour timer</span>
+                <span class="mx-3">|</span>
+                <i class="fas fa-moon text-info me-2"></i>
+                <span class="fw-bold">Dark / Light mode</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

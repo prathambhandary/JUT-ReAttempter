@@ -1,0 +1,131 @@
+import requests
+from bs4 import BeautifulSoup
+import csv
+import time
+import sys
+import json
+
+LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
+RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
+
+ID = "8618184853"
+PASSWORD = "jee"
+exam_id = 9488 #9488, 9460
+jut_no = input("Enter JUT number: ")
+
+session = requests.Session()
+login_data = {"org": "1", "user": ID, "pass": PASSWORD}
+headers = {
+    "User-Agent": "Mozilla/5.0",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+
+resp = session.post(LOGIN_URL, data=login_data, headers=headers)
+
+def fetch_test(test_id):
+    resp = session.get(RESULT_URL_FMT.format(test_id), headers=headers)
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    # save html page full
+    with open(f"test_{test_id}.html", "w", encoding="utf-8") as f:
+        f.write(str(soup))
+
+fetch_test(exam_id)
+
+from bs4 import BeautifulSoup
+import json
+
+with open(f"test_{exam_id}.html",encoding="utf-8") as f:
+    soup=BeautifulSoup(f,"html.parser")
+
+question_bank=[]
+q_no = "N/A"
+
+for div in soup.select("div[class^=classans]"):
+    h3=div.find("h3")
+    if not h3:
+        continue
+    try:
+        q_no=int(h3.get_text(strip=True).replace("Question No:",""))
+        if q_no<=25:
+            subject="Physics"
+        elif q_no<=50:
+            subject="Chemistry"
+        elif q_no<=75:
+            subject="Mathematics"
+    except:
+        continue
+    h4=div.find("h4")
+    question_html=h4.decode_contents().strip() if h4 else ""
+    question_text=h4.get_text(" ",strip=True) if h4 else ""
+    options=[]
+    question_type="INTEGER"
+    option_table=div.select_one("table.table-borderless")
+    if option_table:
+        tds=option_table.find_all("td")
+        if len(tds)==4:
+            question_type="MCQ"
+            for td in tds:
+                options.append({
+                    "html":td.decode_contents().strip(),
+                    "text":td.get_text(" ",strip=True)
+                })
+    your_answer=None
+    correct_answer=None
+    for p in div.find_all("p"):
+        text=p.get_text(" ",strip=True)
+        if text.startswith("Your Option"):
+            your_answer=text.split(":",1)[1].strip()
+        elif text.startswith("Correct Option"):
+            correct_answer=text.split(":",1)[1].strip()
+        elif text.startswith("Your Answer"):
+            your_answer=text.split(":",1)[1].strip()
+        elif text.startswith("Correct Answer"):
+            correct_answer=text.split(":",1)[1].strip()
+    solution_html=""
+    solution_text=""
+    for p in div.find_all("p"):
+        text=p.get_text(" ",strip=True)
+        if "Detailed Answer" in text:
+            solution_html=p.decode_contents().strip()
+            solution_text=text
+            break
+    question_bank.append({
+        "exam": "JEE",
+        "exam_type": "JUT",
+        "exam_number": jut_no,
+        "exam_id": exam_id,
+        "question_number":q_no,
+        "subject": subject,
+        "question_type":question_type,
+        "question_html":question_html,
+        "question_text":question_text,
+        "options":options,
+        "correct_answer":correct_answer,
+        "your_answer":your_answer,
+        "solution_html":solution_html,
+        "solution_text":solution_text
+    })
+existing_data=[]
+
+try:
+    with open("question_bank.json","r",encoding="utf-8") as f:
+        existing_data=json.load(f)
+except (FileNotFoundError,json.JSONDecodeError):
+    pass
+
+existing_keys={
+    (q["exam_id"],q["question_number"])
+    for q in existing_data
+}
+
+for q in question_bank:
+    key=(q["exam_id"],q["question_number"])
+    if key not in existing_keys:
+        existing_data.append(q)
+        existing_keys.add(key)
+
+with open("question_bank.json","w",encoding="utf-8") as f:
+    json.dump(existing_data,f,ensure_ascii=False,indent=4)
+
+print(f"Database now contains {len(existing_data)} questions.")
