@@ -31,7 +31,7 @@ def fetch_test(test_id):
     with open(f"test_{test_id}.html", "w", encoding="utf-8") as f:
         f.write(str(soup))
 
-def main(sequence, exam_id, jut_no):
+def main(sequence, exam_id, jut_no, exam_type="JUT"):
 
     fetch_test(exam_id)
 
@@ -93,7 +93,7 @@ def main(sequence, exam_id, jut_no):
                 break
         question_bank.append({
             "exam": "JEE",
-            "exam_type": "JUT",
+            "exam_type": exam_type,
             "exam_number": jut_no,
             "exam_id": exam_id,
             "question_number":q_no,
@@ -135,12 +135,13 @@ def main(sequence, exam_id, jut_no):
 if __name__ == "__main__":
 
     # [9460, 9488, 9513, 9535, 9562, 9607, 9626, 9669, 9702, 9722]
+    # CT {9744: 'PCM', 10058: 'CMP'}
     # ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
 
-    exam_ids = [9460, 9488, 9513, 9535, 9562, 9607, 9626, 9669, 9702, 9722]
-    sequences = ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
+    exam_ids = []
+    sequences = []
 
-    now_start_number = 1
+    now_start_number = 11
 
     for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
         print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
@@ -149,3 +150,5 @@ if __name__ == "__main__":
         else:
             main(sequence, exam_id, str(i))
         time.sleep(1)
+
+    # main('CMP', 10058, '02', exam_type="JCT")
