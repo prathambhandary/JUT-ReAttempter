@@ -45,7 +45,7 @@ MARKS_MCQ_CORRECT = 4
 MARKS_MCQ_WRONG = -1
 MARKS_INT_CORRECT = 4
 MARKS_INT_WRONG = -1  # NTA does not penalise wrong numerical answers
-
+ 
 app = Flask(__name__)
 
 # ---------------------------------------------------------------------------
