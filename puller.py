@@ -135,14 +135,17 @@ def main(sequence, exam_id, jut_no):
 if __name__ == "__main__":
 
     # [9460, 9488, 9513, 9535, 9562, 9607, 9626, 9669, 9702, 9722]
-    # ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP]
+    # ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
 
-    exam_ids = [9722] # 9722(MCP)
-    sequences = ['MCP']
+    exam_ids = [9460, 9488, 9513, 9535, 9562, 9607, 9626, 9669, 9702, 9722]
+    sequences = ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
 
-    now_start_number = 10
+    now_start_number = 1
 
     for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
         print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
-        main(sequence, exam_id, f"{i}")
+        if i<10:
+            main(sequence, exam_id, f"0{i}")
+        else:
+            main(sequence, exam_id, str(i))
         time.sleep(1)
