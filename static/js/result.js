@@ -1,0 +1,206 @@
+(function () {
+  const SUBJECT_ORDER = ["Physics", "Chemistry", "Mathematics"];
+  const shell = document.getElementById("result-shell");
+  let SCORE = null;
+  let activeFilter = "all";
+
+  function fetchResult() {
+    fetch("/api/result/" + window.JUT_SESSION_ID)
+      .then(function (r) {
+        if (!r.ok) throw new Error("not found");
+        return r.json();
+      })
+      .then(function (data) {
+        SCORE = data;
+        render();
+      })
+      .catch(function () {
+        shell.innerHTML =
+          '<div style="text-align:center;padding:60px 0;">' +
+          '<p style="color:var(--red);font-weight:600;margin-bottom:10px;">We could not find a scorecard for this session.</p>' +
+          '<p style="color:var(--text-muted);margin-bottom:22px;">It may have expired, or the server restarted. Please start a new test.</p>' +
+          '<a class="btn btn-primary" href="/select">Start a new test</a>' +
+          "</div>";
+      });
+  }
+
+  function formatTime(seconds) {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    return (h > 0 ? h + "h " : "") + m + "m " + s + "s";
+  }
+
+  function render() {
+    const pct = SCORE.max_marks ? Math.max(0, Math.round((SCORE.total_marks / SCORE.max_marks) * 100)) : 0;
+    const circumference = 2 * Math.PI * 54;
+    const offset = circumference - (Math.max(0, pct) / 100) * circumference;
+
+    shell.innerHTML =
+      '<div class="result-hero">' +
+        '<div class="score-ring">' +
+          '<svg viewBox="0 0 120 120">' +
+            '<circle class="track" cx="60" cy="60" r="54" fill="none" stroke-width="10"/>' +
+            '<circle class="fill" cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke-dasharray="' + circumference + '" stroke-dashoffset="' + offset + '"/>' +
+          '</svg>' +
+          '<div class="ring-label"><b>' + pct + '%</b><span>Score</span></div>' +
+        '</div>' +
+        '<div class="result-hero-mid">' +
+          '<h1>' + escapeHtml(SCORE.candidate_name) + '&rsquo;s scorecard</h1>' +
+          '<p>' + SCORE.total_questions + ' questions attempted from a fresh JUT ReAttempt paper.</p>' +
+          '<div class="test-tags">' + SCORE.tests.map(function (t) { return '<span class="test-tag">JUT ' + t + '</span>'; }).join("") + '</div>' +
+        '</div>' +
+        '<div class="result-hero-stats">' +
+          '<div class="stat-line"><b>' + SCORE.total_marks + ' / ' + SCORE.max_marks + '</b><span>Total marks</span></div>' +
+          '<div class="stat-line"><b>' + formatTime(SCORE.time_taken_seconds) + '</b><span>Time taken</span></div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="summary-grid">' +
+        '<div class="summary-card correct"><b>' + SCORE.total_correct + '</b><span>Correct</span></div>' +
+        '<div class="summary-card wrong"><b>' + SCORE.total_wrong + '</b><span>Incorrect</span></div>' +
+        '<div class="summary-card unattempted"><b>' + SCORE.total_unattempted + '</b><span>Unattempted</span></div>' +
+        '<div class="summary-card"><b>' + (SCORE.total_questions ? Math.round((SCORE.total_correct / SCORE.total_questions) * 100) : 0) + '%</b><span>Accuracy</span></div>' +
+      '</div>' +
+
+      '<div class="subject-breakdown">' +
+        '<h2>Subject-wise performance</h2>' +
+        SUBJECT_ORDER.filter(function (s) { return SCORE.subject_stats[s]; }).map(subjectRow).join("") +
+      '</div>' +
+
+      '<div class="review-shell">' +
+        '<div class="review-head">' +
+          '<h2>Question review</h2>' +
+          '<div class="review-filters" id="review-filters">' +
+            '<button class="rfilter active" data-filter="all">All</button>' +
+            '<button class="rfilter" data-filter="correct">Correct</button>' +
+            '<button class="rfilter" data-filter="wrong">Incorrect</button>' +
+            '<button class="rfilter" data-filter="skipped">Unattempted</button>' +
+          '</div>' +
+        '</div>' +
+        '<div id="review-list"></div>' +
+      '</div>' +
+
+      '<div class="result-actions">' +
+        '<a class="btn btn-ghost" href="/select">New test range</a>' +
+        '<a class="btn btn-primary" href="/">Back to home</a>' +
+      '</div>';
+
+    wireFilters();
+    renderReviewList();
+    typeset(shell);
+  }
+
+  function subjectRow(subject) {
+    const s = SCORE.subject_stats[subject];
+    const maxMarks = s.total * 4;
+    const pct = maxMarks ? Math.max(0, Math.round((s.marks / maxMarks) * 100)) : 0;
+    return (
+      '<div class="subj-row">' +
+        '<span class="subj-name">' + subject + '</span>' +
+        '<div class="subj-bar-track"><div class="subj-bar-fill" style="width:' + pct + '%;"></div></div>' +
+        '<span class="subj-marks">' + s.marks + ' / ' + maxMarks + '</span>' +
+      '</div>'
+    );
+  }
+
+  function wireFilters() {
+    document.querySelectorAll(".rfilter").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        activeFilter = btn.getAttribute("data-filter");
+        document.querySelectorAll(".rfilter").forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        renderReviewList();
+      });
+    });
+  }
+
+  function matchesFilter(item) {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "correct") return item.is_correct === true;
+    if (activeFilter === "wrong") return item.is_correct === false;
+    if (activeFilter === "skipped") return item.your_answer === null;
+    return true;
+  }
+
+  function renderReviewList() {
+    const list = document.getElementById("review-list");
+    const filtered = SCORE.review.filter(matchesFilter);
+    if (!filtered.length) {
+      list.innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:30px 0;">No questions in this filter.</p>';
+      return;
+    }
+    list.innerHTML = filtered.map(reviewItemHtml).join("");
+
+    list.querySelectorAll(".solution-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const body = btn.nextElementSibling;
+        const nowOpen = !body.classList.contains("open");
+        body.classList.toggle("open", nowOpen);
+        btn.classList.toggle("open", nowOpen);
+        if (nowOpen) typeset(body);
+      });
+    });
+    typeset(list);
+  }
+
+  function reviewItemHtml(item, idx) {
+    let statusTag, marksTag;
+    if (item.your_answer === null) {
+      statusTag = '<span class="rtag skipped">Unattempted</span>';
+      marksTag = '<span class="rtag marks-zero">0 marks</span>';
+    } else if (item.is_correct) {
+      statusTag = '<span class="rtag correct">Correct</span>';
+      marksTag = '<span class="rtag marks-pos">+' + item.marks + ' marks</span>';
+    } else {
+      statusTag = '<span class="rtag wrong">Incorrect</span>';
+      marksTag = '<span class="rtag ' + (item.marks < 0 ? "marks-neg" : "marks-zero") + '">' + item.marks + ' marks</span>';
+    }
+
+    let optsHtml = "";
+    if (item.type !== "Numerical" && item.options && item.options.length) {
+      optsHtml = '<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">' +
+        item.options.map(function (o) {
+          const label = (o.text.match(/^\s*(\d+)\s*\)/) || [null, ""])[1];
+          let style = "";
+          if (label === item.correct_answer) style = "color:var(--green);font-weight:700;";
+          else if (label === item.your_answer) style = "color:var(--red);font-weight:700;";
+          return '<div style="' + style + '">' + (o.html || o.text) + "</div>";
+        }).join("") +
+        "</div>";
+    }
+
+    const answerRows =
+      '<div class="review-answers">' +
+      '<div class="review-answer-row"><span class="ra-label">Your answer</span><span class="ra-value">' + (item.your_answer === null ? "— not attempted —" : escapeHtml(item.your_answer)) + '</span></div>' +
+      '<div class="review-answer-row"><span class="ra-label">Correct answer</span><span class="ra-value" style="color:var(--green);font-weight:700;">' + escapeHtml(item.correct_answer) + '</span></div>' +
+      "</div>";
+
+    return (
+      '<div class="review-item">' +
+        '<div class="review-item-head">' +
+          '<div class="review-tags"><span class="rtag subj">' + item.subject + ' · ' + item.type + '</span>' + statusTag + '</div>' +
+          marksTag +
+        '</div>' +
+        '<div class="review-q-body">' + item.question_html + '</div>' +
+        optsHtml +
+        (item.type === "Numerical" ? answerRows : "") +
+        '<button class="solution-toggle"><span>View solution</span>' + (window.ICONS ? "" : "") + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>' +
+        '<div class="solution-body">' + (item.type !== "Numerical" ? answerRows : "") + (item.solution_html || "No solution available.") + '</div>' +
+      "</div>"
+    );
+  }
+
+  function escapeHtml(v) {
+    if (v === null || v === undefined) return "";
+    return String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function typeset(container) {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([container]).catch(function () {});
+    }
+  }
+
+  fetchResult();
+})();
