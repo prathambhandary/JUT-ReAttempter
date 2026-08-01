@@ -151,4 +151,4 @@ if __name__ == "__main__":
     #         main(sequence, exam_id, str(i))
     #     time.sleep(1)
 
-    main('PCM', 9744, '02', exam_type="CT")
+    main('CMP', 10058, '02', exam_type="CT")
