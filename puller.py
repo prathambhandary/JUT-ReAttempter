@@ -10,8 +10,12 @@ RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
 ID = "8618184853"
 PASSWORD = "jee"
-exam_id = 9488 #9488, 9460
-jut_no = input("Enter JUT number: ")
+exam_id = 9535
+# 9460, 9488, 9513(PMC), 9535(PMC), 9562, 9607, 9626(PMC), 9669(PMC), 9702(PMC), 9722(MCP)
+jut_no = ""
+sequence = 'PMC'
+
+sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
 
 session = requests.Session()
 login_data = {"org": "1", "user": ID, "pass": PASSWORD}
@@ -48,11 +52,11 @@ for div in soup.select("div[class^=classans]"):
     try:
         q_no=int(h3.get_text(strip=True).replace("Question No:",""))
         if q_no<=25:
-            subject="Physics"
+            subject=sub[sequence[0]]
         elif q_no<=50:
-            subject="Chemistry"
+            subject=sub[sequence[1]]
         elif q_no<=75:
-            subject="Mathematics"
+            subject=sub[sequence[2]]
     except:
         continue
     h4=div.find("h4")
