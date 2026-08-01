@@ -8,7 +8,7 @@ GET  /select                 -> choose-test page
 GET  /test                   -> CBT exam page
 GET  /result/<session_id>    -> result page (reads score from disk cache)
 
-GET  /api/tests              -> list of available JUT test numbers found in data/questions.json
+GET  /api/tests              -> list of available JUT test numbers found in data/question_bank.json
 POST /api/generate           -> { tests: ["01","02"], candidate_name, roll_number }
                                  -> builds a fresh 75-question paper (20 MCQ + 5 Numerical
                                     per subject), stores the answer key server-side, and
@@ -18,7 +18,7 @@ POST /api/submit             -> { session_id, answers: {qid: {value, status}} }
                                     NTA-style marking, stores + returns a full scorecard.
 GET  /api/result/<sid>       -> re-fetch a previously computed scorecard (survives refresh).
 
-Swap in your real question bank any time -- just replace data/questions.json,
+Swap in your real question bank any time -- just replace data/question_bank.json,
 keeping the same field names used in your original export
 (exam, exam_type, exam_number, exam_id, question_number, subject,
 question_type, question_html, question_text, options, correct_answer,
@@ -34,7 +34,7 @@ from pathlib import Path
 from flask import Flask, jsonify, render_template, request
 
 BASE_DIR = Path(__file__).parent
-DATA_FILE = BASE_DIR / "data" / "questions.json"
+DATA_FILE = BASE_DIR / "data" / "question_bank.json"
 
 SUBJECT_ORDER = ["Physics", "Chemistry", "Mathematics"]
 MCQ_PER_SUBJECT = 20
