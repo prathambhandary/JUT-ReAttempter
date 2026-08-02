@@ -134,14 +134,14 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
 
 if __name__ == "__main__":
 
-    # [9460, 9488, 9513, 9535, 9562, 9607, 9626, 9669, 9702, 9722]
+    # [9775, 9799, 9817, 9850, 9892, 9920, 9937, 9971, 10004, 10024, 10095, 10131, 10171, 10201, 10226]
     # CT {9744: 'PCM', 10058: 'CMP'}
-    # ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
+    # ['MCP', 'PMC', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CMP', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CPM', 'PMC']
 
-    exam_ids = [9775, 9799, 9817, 9850, 9892, 9920, 9937, 9971, 10004, 10024, 10095, 10131, 10171, 10201]
-    sequences = ['MCP', 'PMC', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CMP', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CPM']
+    exam_ids = []
+    sequences = []
 
-    now_start_number = 11
+    now_start_number = ...
 
     for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
         print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
