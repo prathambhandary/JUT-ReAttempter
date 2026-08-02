@@ -138,17 +138,17 @@ if __name__ == "__main__":
     # CT {9744: 'PCM', 10058: 'CMP'}
     # ['PCM', 'PCM', 'PMC', 'PMC', 'PCM', 'PCM', 'PMC', 'PMC', 'PMC', 'MCP']
 
-    # exam_ids = []
-    # sequences = []
+    exam_ids = [9775, 9799, 9817, 9850, 9892, 9920, 9937, 9971, 10004, 10024, 10095, 10131, 10171, 10201]
+    sequences = ['MCP', 'PMC', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CMP', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CPM']
 
-    # now_start_number = 11
+    now_start_number = 11
 
-    # for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
-    #     print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
-    #     if i<10:
-    #         main(sequence, exam_id, f"0{i}")
-    #     else:
-    #         main(sequence, exam_id, str(i))
-    #     time.sleep(1)
+    for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
+        print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
+        if i<10:
+            main(sequence, exam_id, f"0{i}")
+        else:
+            main(sequence, exam_id, str(i))
+        time.sleep(1)
 
-    main('CMP', 10058, '02', exam_type="CT")
+    # main('PCM', 9744, 'CT 01', exam_type="JUT")

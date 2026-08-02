@@ -140,6 +140,7 @@ def result_page(session_id):
 
 @app.route("/api/tests")
 def api_tests():
+    print(available_tests())
     return jsonify({"tests": available_tests()})
 
 
@@ -147,7 +148,9 @@ def api_tests():
 def api_generate():
     cleanup_sessions()
     payload = request.get_json(force=True, silent=True) or {}
+    print(f"Received generate request: {payload}")
     chosen = [str(t).strip() for t in payload.get("tests", []) if str(t).strip()]
+    print(f"Generating paper for tests: {chosen}")
     candidate_name = (payload.get("candidate_name") or "Candidate").strip()[:60]
     roll_number = (payload.get("roll_number") or "").strip()[:30]
 
