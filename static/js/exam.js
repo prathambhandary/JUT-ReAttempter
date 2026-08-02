@@ -449,13 +449,23 @@
     fetch("/api/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ session_id: SESSION.session_id, answers: answersPayload }),
+      body: JSON.stringify({ session_token: SESSION.session_token, answers: answersPayload }),
     })
-      .then(function (r) { return r.json(); })
-      .then(function () {
+      .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
+      .then(function (res) {
+        if (!res.ok) {
+          submitting = false;
+          loadingEl.style.display = "none";
+          alert(res.body.error || "Could not submit your test. Please try again.");
+          return;
+        }
+        // The full scorecard comes back directly in this response — cache it
+        // so the result page can render without any further server call.
+        // (Nothing is stored server-side; see app.py's module docstring.)
+        sessionStorage.setItem("jut-result", JSON.stringify(res.body));
         sessionStorage.removeItem("jut-progress");
         sessionStorage.removeItem("jut-session");
-        window.location.href = "/result/" + SESSION.session_id;
+        window.location.href = "/result/" + res.body.session_id;
       })
       .catch(function () {
         submitting = false;

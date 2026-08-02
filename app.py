@@ -1,58 +1,96 @@
 """
-JUT ReAttempter -- Flask backend.
+JUT ReAttempter -- Flask backend (stateless / serverless-safe).
 
 Endpoints
 ---------
 GET  /                       -> landing page
 GET  /select                 -> choose-test page
 GET  /test                   -> CBT exam page
-GET  /result/<session_id>    -> result page (reads score from disk cache)
+GET  /result/<session_id>    -> result page shell (data comes from the client, see below)
 
-GET  /api/tests              -> list of available JUT test numbers found in data/question_bank.json
-POST /api/generate           -> { tests: ["01","02"], candidate_name, roll_number }
-                                 -> builds a fresh 75-question paper (20 MCQ + 5 Numerical
-                                    per subject), stores the answer key server-side, and
-                                    returns only the question content to the client.
-POST /api/submit             -> { session_id, answers: {qid: {value, status}} }
-                                 -> validates against the server-side answer key, applies
-                                    NTA-style marking, stores + returns a full scorecard.
-GET  /api/result/<sid>       -> re-fetch a previously computed scorecard (survives refresh).
+GET  /api/tests               -> list of available JUT test numbers found in data/question_bank.json
+POST /api/generate            -> { tests: ["01","02"], candidate_name, roll_number }
+                                  -> builds a fresh 75-question paper (20 MCQ + 5 Numerical
+                                     per subject) and returns a *signed session_token*
+                                     containing the answer key, plus the question content
+                                     (no answers) for the client to render.
+POST /api/submit              -> { session_token, answers: {qid: {value, status}} }
+                                  -> verifies the token's signature + expiry, grades the
+                                     answers against the answer key *inside the token*,
+                                     and returns the full scorecard directly in the response.
 
-Swap in your real question bank any time -- just replace data/question_bank.json,
-keeping the same field names used in your original export
-(exam, exam_type, exam_number, exam_id, question_number, subject,
+Why no server-side session store
+---------------------------------
+This app is designed to run on serverless platforms (e.g. Vercel's free tier),
+where two requests from the same browser can be handled by two completely
+different, memory-isolated function instances -- there is no shared process
+memory to keep a SESSIONS/RESULTS dict in. Storing "answer key" state in a
+plain Python dict works when you run `python app.py` yourself (one long-lived
+process) but silently breaks the moment it's deployed serverless: /api/submit
+(or the result page) ends up asking an instance that never saw /api/generate.
+
+Instead, the answer key is signed (HMAC, via itsdangerous) and handed back to
+the browser as an opaque token at /api/generate. The browser sends that same
+token back at /api/submit. The server verifies the signature (so the client
+can't forge or tamper with it) and grades using the answer key embedded in
+the token -- no shared storage required anywhere. The full scorecard is
+likewise returned directly in the /api/submit response and cached by the
+browser (sessionStorage) for the result page, instead of asking the server
+to "remember" it under a session id.
+
+If you deploy this behind a *stateful* host (a single long-running server,
+or you add Redis/Postgres later), you can simplify back to a session-id
+lookup -- but the token approach works everywhere, including here, so it's
+the default.
+
+Swap in your real question bank any time -- just replace
+data/question_bank.json, keeping the same field names used in your original
+export (exam, exam_type, exam_number, exam_id, question_number, subject,
 question_type, question_html, question_text, options, correct_answer,
 solution_html, solution_text).
 """
 
 import json
+import os
 import random
 import time
 import uuid
 from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request
+from itsdangerous import BadData, SignatureExpired, URLSafeTimedSerializer
 
 BASE_DIR = Path(__file__).parent
 DATA_FILE = BASE_DIR / "data" / "question_bank.json"
+LEGACY_DATA_FILE = BASE_DIR / "data" / "questions.json"  # older filename, still supported
 
 SUBJECT_ORDER = ["Physics", "Chemistry", "Mathematics"]
 MCQ_PER_SUBJECT = 20
 INT_PER_SUBJECT = 5
 TEST_DURATION_SECONDS = 3 * 60 * 60  # strict 3 hour JEE Main style timer
+SUBMIT_GRACE_SECONDS = 10 * 60       # tolerate slow/late network submits by this much
 
 MARKS_MCQ_CORRECT = 4
 MARKS_MCQ_WRONG = -1
 MARKS_INT_CORRECT = 4
-MARKS_INT_WRONG = -1  # NTA does not penalise wrong numerical answers
- 
-app = Flask(__name__)
+MARKS_INT_WRONG = -1
+# ---------------------------------------------------------------------------
+# Secret key -- REQUIRED to be a fixed value in production (set the SECRET_KEY
+# env var on Vercel/wherever you deploy). If it changes between requests
+# (e.g. a random default regenerated per cold start) every token becomes
+# unverifiable and you're back to the exact same "results fail" symptom,
+# just for a different reason. The fallback below is fine for local dev only.
+# ---------------------------------------------------------------------------
+SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-insecure-key-change-me")
+if SECRET_KEY == "dev-only-insecure-key-change-me" and os.environ.get("VERCEL"):
+    # Loud but non-fatal: better a visible log line than a silent, confusing
+    # "results fail" bug reappearing for a different reason.
+    print("WARNING: SECRET_KEY env var is not set. Set it in your Vercel project "
+          "settings, or tokens issued by different cold starts may fail to verify.")
 
-# ---------------------------------------------------------------------------
-# In-memory stores (fine for a local/single-instance practice app).
-# ---------------------------------------------------------------------------
-SESSIONS = {}   # session_id -> { created_at, expires_at, questions: {qid: meta}, candidate }
-RESULTS = {}    # session_id -> scorecard dict
+app = Flask(__name__)
+app.config["SECRET_KEY"] = SECRET_KEY
+serializer = URLSafeTimedSerializer(SECRET_KEY, salt="jut-reattempter-session")
 
 
 def is_numeric_type(q):
@@ -66,7 +104,8 @@ def is_numeric_type(q):
 
 
 def load_bank():
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
+    path = DATA_FILE if DATA_FILE.exists() else LEGACY_DATA_FILE
+    with open(path, "r", encoding="utf-8") as f:
         raw = json.load(f)
     bank = []
     for q in raw:
@@ -103,13 +142,6 @@ def available_tests():
     return items
 
 
-def cleanup_sessions():
-    now = time.time()
-    expired = [sid for sid, s in SESSIONS.items() if now > s["expires_at"] + 3600]
-    for sid in expired:
-        SESSIONS.pop(sid, None)
-
-
 # ---------------------------------------------------------------------------
 # Page routes
 # ---------------------------------------------------------------------------
@@ -131,6 +163,8 @@ def test_page():
 
 @app.route("/result/<session_id>")
 def result_page(session_id):
+    # The page itself carries no data -- result.js pulls the scorecard the
+    # browser cached right after /api/submit. See the module docstring.
     return render_template("result.html", session_id=session_id)
 
 
@@ -140,17 +174,13 @@ def result_page(session_id):
 
 @app.route("/api/tests")
 def api_tests():
-    print(available_tests())
     return jsonify({"tests": available_tests()})
 
 
 @app.route("/api/generate", methods=["POST"])
 def api_generate():
-    cleanup_sessions()
     payload = request.get_json(force=True, silent=True) or {}
-    print(f"Received generate request: {payload}")
     chosen = [str(t).strip() for t in payload.get("tests", []) if str(t).strip()]
-    print(f"Generating paper for tests: {chosen}")
     candidate_name = (payload.get("candidate_name") or "Candidate").strip()[:60]
     roll_number = (payload.get("roll_number") or "").strip()[:30]
 
@@ -191,12 +221,11 @@ def api_generate():
     if not selected_questions:
         return jsonify({"error": "Could not assemble a paper from the selected tests."}), 400
 
-    # Build answer key (server-only) + public payload (no answers/solutions)
+    # Build the answer key (goes only into the signed token) + the public
+    # payload (question content only, no answers/solutions).
     answer_key = {}
     public_questions = []
     display_no = 1
-    # group by subject in fixed order so client can render section-wise, but keep
-    # MCQ-section-then-numerical-section ordering within each subject (NTA style)
     by_subject = {s: {"mcq": [], "int": []} for s in SUBJECT_ORDER}
     for q in selected_questions:
         by_subject[q["subject"]]["mcq" if not q["is_numeric"] else "int"].append(q)
@@ -224,18 +253,20 @@ def api_generate():
                 display_no += 1
 
     now = time.time()
-    SESSIONS[session_id] = {
+    token_payload = {
+        "session_id": session_id,
         "created_at": now,
-        "expires_at": now + TEST_DURATION_SECONDS,
         "duration": TEST_DURATION_SECONDS,
-        "questions": answer_key,
         "candidate_name": candidate_name,
         "roll_number": roll_number,
         "tests": chosen,
+        "answer_key": answer_key,
     }
+    session_token = serializer.dumps(token_payload)
 
     return jsonify({
         "session_id": session_id,
+        "session_token": session_token,
         "duration_seconds": TEST_DURATION_SECONDS,
         "server_time": now,
         "candidate_name": candidate_name,
@@ -249,24 +280,31 @@ def api_generate():
 @app.route("/api/submit", methods=["POST"])
 def api_submit():
     payload = request.get_json(force=True, silent=True) or {}
-    session_id = payload.get("session_id")
+    token = payload.get("session_token")
     answers = payload.get("answers", {}) or {}
 
-    session = SESSIONS.get(session_id)
-    if not session:
-        return jsonify({"error": "This test session has expired or was not found. Please start a new test."}), 404
+    if not token:
+        return jsonify({"error": "Missing session token. Please start a new test."}), 400
 
+    try:
+        data = serializer.loads(token, max_age=TEST_DURATION_SECONDS + SUBMIT_GRACE_SECONDS)
+    except SignatureExpired:
+        return jsonify({"error": "This test's time window has expired. Please start a new test."}), 410
+    except BadData:
+        return jsonify({"error": "This test session is invalid or corrupted. Please start a new test."}), 400
+
+    answer_key = data["answer_key"]
     subject_stats = {s: {"correct": 0, "wrong": 0, "unattempted": 0, "marks": 0, "total": 0} for s in SUBJECT_ORDER}
     review = []
 
-    for qid, meta in session["questions"].items():
+    for qid, meta in answer_key.items():
         subject = meta["subject"]
         subject_stats[subject]["total"] += 1
         ans_entry = answers.get(qid, {})
         status = ans_entry.get("status", "not_answered")
         value = str(ans_entry.get("value", "")).strip()
 
-        attempted = status in ("answered", "answered_marked") and value != ""
+        attempted = status in ("answered", "marked_answered") and value != ""
         correct_answer = meta["correct_answer"]
 
         is_correct = False
@@ -308,13 +346,13 @@ def api_submit():
     total_wrong = sum(s["wrong"] for s in subject_stats.values())
     total_unattempted = sum(s["unattempted"] for s in subject_stats.values())
 
-    time_taken = min(int(time.time() - session["created_at"]), session["duration"])
+    time_taken = min(int(time.time() - data["created_at"]), data["duration"])
 
     scorecard = {
-        "session_id": session_id,
-        "candidate_name": session["candidate_name"],
-        "roll_number": session["roll_number"],
-        "tests": session["tests"],
+        "session_id": data["session_id"],
+        "candidate_name": data["candidate_name"],
+        "roll_number": data["roll_number"],
+        "tests": data["tests"],
         "total_marks": total_marks,
         "max_marks": max_marks,
         "total_correct": total_correct,
@@ -326,15 +364,6 @@ def api_submit():
         "review": review,
         "submitted_at": time.time(),
     }
-    RESULTS[session_id] = scorecard
-    return jsonify(scorecard)
-
-
-@app.route("/api/result/<session_id>")
-def api_result(session_id):
-    scorecard = RESULTS.get(session_id)
-    if not scorecard:
-        return jsonify({"error": "No result found for this session."}), 404
     return jsonify(scorecard)
 
 

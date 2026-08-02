@@ -45,12 +45,6 @@
     });
   }
 
-  function selectedTestsAndExamTypes() {
-    return Array.from(grid.querySelectorAll("input[type=checkbox]:checked")).map(function (cb) {
-      const test = TESTS.find(t => t.exam_number === cb.value);
-      return { exam_number: cb.value, exam_type: test ? test.exam_type : null };
-    });
-  }
   function updateSummary() {
     const chosen = selectedTests();
     if (!chosen.length) {
@@ -92,7 +86,6 @@
     const name = nameInput.value.trim();
     const roll = rollInput.value.trim();
     const chosen = selectedTests();
-    const exam_type = selectedTestsAndExamTypes();
 
     if (!name) { showError("Please enter your name to continue."); nameInput.focus(); return; }
     if (!chosen.length) { showError("Select at least one JUT test to build your paper from."); return; }
@@ -103,7 +96,7 @@
     fetch("/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ candidate_name: name, roll_number: roll, tests: chosen, exam_type: exam_type }),
+      body: JSON.stringify({ candidate_name: name, roll_number: roll, tests: chosen }),
     })
       .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
       .then(function (res) {

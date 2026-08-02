@@ -5,23 +5,27 @@
   let activeFilter = "all";
 
   function fetchResult() {
-    fetch("/api/result/" + window.JUT_SESSION_ID)
-      .then(function (r) {
-        if (!r.ok) throw new Error("not found");
-        return r.json();
-      })
-      .then(function (data) {
-        SCORE = data;
-        render();
-      })
-      .catch(function () {
-        shell.innerHTML =
-          '<div style="text-align:center;padding:60px 0;">' +
-          '<p style="color:var(--red);font-weight:600;margin-bottom:10px;">We could not find a scorecard for this session.</p>' +
-          '<p style="color:var(--text-muted);margin-bottom:22px;">It may have expired, or the server restarted. Please start a new test.</p>' +
-          '<a class="btn btn-primary" href="/select">Start a new test</a>' +
-          "</div>";
-      });
+    // The scorecard was cached in sessionStorage right after /api/submit
+    // returned it — nothing is stored server-side, so there is no request
+    // to make here at all (see app.py's module docstring for why). This is
+    // what makes results work reliably on serverless hosts like Vercel,
+    // where a fresh GET request has no guarantee of hitting the same
+    // instance that handled the submit.
+    const raw = sessionStorage.getItem("jut-result");
+    const parsed = raw ? JSON.parse(raw) : null;
+
+    if (parsed && parsed.session_id === window.JUT_SESSION_ID) {
+      SCORE = parsed;
+      render();
+      return;
+    }
+
+    shell.innerHTML =
+      '<div style="text-align:center;padding:60px 0;">' +
+      '<p style="color:var(--red);font-weight:600;margin-bottom:10px;">This result isn&rsquo;t available in this browser session.</p>' +
+      '<p style="color:var(--text-muted);margin-bottom:22px;max-width:44ch;margin-left:auto;margin-right:auto;">Scorecards live only in your browser right after you submit — reopening this link in a new tab, a different browser, or after clearing site data won&rsquo;t have it. Please start a new test.</p>' +
+      '<a class="btn btn-primary" href="/select">Start a new test</a>' +
+      "</div>";
   }
 
   function formatTime(seconds) {
