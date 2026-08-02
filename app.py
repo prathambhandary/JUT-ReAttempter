@@ -57,7 +57,7 @@ import time
 import uuid
 from pathlib import Path
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, Response, url_for
 from itsdangerous import BadData, SignatureExpired, URLSafeTimedSerializer
 
 BASE_DIR = Path(__file__).parent
@@ -92,6 +92,27 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = SECRET_KEY
 serializer = URLSafeTimedSerializer(SECRET_KEY, salt="jut-reattempter-session")
 
+@app.route("/sitemap.xml")
+def sitemap():
+    pages = [
+        "index",
+        "select",
+        "test_page",
+    ]
+
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>']
+    xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+
+    for page in pages:
+        xml.append("  <url>")
+        xml.append(f"    <loc>{url_for(page, _external=True)}</loc>")
+        xml.append("    <changefreq>weekly</changefreq>")
+        xml.append("    <priority>0.8</priority>")
+        xml.append("  </url>")
+
+    xml.append("</urlset>")
+
+    return Response("\n".join(xml), mimetype="application/xml")
 
 def is_numeric_type(q):
     qt = (q.get("question_type") or "").strip().lower()
