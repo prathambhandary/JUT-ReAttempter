@@ -12,13 +12,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.png') }}">
 </head>
 <body>
 
 <header class="site-header">
   <a href="{{ url_for('index') }}" class="brand">
     <span class="brand-mark">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.5 7.5L22 10.5l-5.5 4.8L18 22l-6-4-6 4 1.5-6.7L2 10.5l6.5-1z"/></svg>
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JUT ReAttempter logo">
     </span>
     <span class="brand-name">JUT ReAttempter<span class="sub">JEE Main practice CBT</span></span>
   </a>
@@ -42,6 +44,9 @@
         Strict 3-hour CBT · NTA marking
       </span>
       <h1>Every JUT you've<br>already taken — <em>reborn</em> as a fresh mock.</h1>
+
+      <p class="hero-tagline" id="heroQuote"></p>
+
       <p class="lede">Pick any set of JUT test numbers you've attempted before. JUT ReAttempter shuffles a brand-new 75-question paper from that pool — 20 MCQs + 5 numericals per subject — and drops you into an interface built to feel exactly like exam day.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="{{ url_for('select') }}">
@@ -167,5 +172,32 @@
 </footer>
 
 <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+<script>
+  (function () {
+    var QUOTES = [
+      "From the Veterans, to the Vanguard.",
+      "From the Trailblazers, to the Aspirants.",
+      "From the Pioneers, to the Successors.",
+      "From the Torchbearers, to the Flamekeepers.",
+      "From the Legends, to the Legacy.",
+      "From the Forerunners, to the Aspirants.",
+      "From the Pathfinders, to the Next Wave.",
+      "From the Champions, to the Challengers.",
+      "From the Visionaries, to the Dreamers.",
+      "From the Architects, to the Innovators.",
+      "From the Masters, to the Apprentices.",
+      "From the Achievers, to the Ambitious.",
+      "From the Ones Who Conquered, to Those Who Dare.",
+      "From the Alumni, to the Torchbearers."
+    ];
+
+    var el = document.getElementById('heroQuote');
+    if (!el) return;
+
+    var pick = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+    el.textContent = "“" + pick + "”";
+  })();
+
+</script>
 </body>
 </html>

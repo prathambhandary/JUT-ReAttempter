@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/exam.css') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.png') }}">
 <script>
   window.MathJax = { mml: { skipTags: ["script","noscript","style","textarea"] }, chtml: { scale: 1 } };
 </script>
@@ -27,7 +29,7 @@
 <header class="exam-header">
   <div class="exam-candidate">
     <div class="avatar">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JUT ReAttempter logo">
     </div>
     <div class="meta">
       <div class="name" id="hdr-candidate-name">Candidate</div>
