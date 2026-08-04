@@ -110,7 +110,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
     existing_data=[]
 
     try:
-        with open("question_bank.json","r",encoding="utf-8") as f:
+        with open("data/question_bank.json","r",encoding="utf-8") as f:
             existing_data=json.load(f)
     except (FileNotFoundError,json.JSONDecodeError):
         pass
@@ -126,30 +126,51 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
             existing_data.append(q)
             existing_keys.add(key)
 
-    with open("question_bank.json","w",encoding="utf-8") as f:
+    with open("data/question_bank.json","w",encoding="utf-8") as f:
         json.dump(existing_data,f,ensure_ascii=False,indent=4)
 
     print(f"Database now contains {len(existing_data)} questions.")
 
 
 if __name__ == "__main__":
+    
+    try:
+        f = open("data/question_bank.json", "r", encoding="utf-8")
+        question_bank_data = json.load(f)
+        unique_exam_ids = set(q["exam_id"] for q in question_bank_data)
+    except Exception as e:
+        print(f"Error occurred while reading question bank data: {e}")
+        unique_exam_ids = set()
 
-    # [9775, 9799, 9817, 9850, 9892, 9920, 9937, 9971, 10004, 10024, 10095, 10131, 10171, 10201, 10226]
-    # ['MCP', 'PMC', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CMP', 'PCM', 'PCM', 'PCM', 'PCM', 'PCM', 'CPM', 'PMC']
+    with open("data/test_download_data.json", "r") as f:
 
-    # CT {9744: 'PCM', 10058: 'CMP'}
+        test_data = json.load(f)
 
-    exam_ids = []
-    sequences = []
+        for i in test_data:
+            exam_id = i["exam_id"]
+            sequence = i["sequence"]
 
-    now_start_number = ...
+            exam_type = i["exam_type"]
+            jut_number = i["jut_number"]
 
-    for exam_id, sequence, i in zip(exam_ids, sequences, range(now_start_number, len(exam_ids) + now_start_number)):
-        print(f"Fetching test {i} with exam ID {exam_id} and sequence {sequence}...")
-        if i<10:
-            main(sequence, exam_id, f"0{i}")
-        else:
-            main(sequence, exam_id, str(i))
-        time.sleep(1)
 
-    # main('PCM', 9744, 'CT 01', exam_type="JUT")
+            if exam_id in unique_exam_ids:
+                continue
+
+            print(f"Fetching test {jut_number} with exam ID {exam_id} and sequence {sequence}...")
+
+            if exam_type == "JUT":
+                if jut_number < 10:
+                    main(sequence, exam_id, f"0{jut_number}")
+                else:
+                    main(sequence, exam_id, str(jut_number))
+
+            if exam_type == "CT":
+                if jut_number<10:
+                    main(sequence, exam_id, f"CT 0{jut_number}")
+                else:
+                    main(sequence, exam_id, f"CT {jut_number}")
+            
+            time.sleep(1)
+
+      

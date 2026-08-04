@@ -1,0 +1,20 @@
+[
+    { "exam_id": 9744, "exam_type": "CT", "sequence": "PCM", "jut_number": 1 },
+    { "exam_id": 9775, "exam_type": "JUT", "sequence": "MCP", "jut_number": 11 },
+    { "exam_id": 9799, "exam_type": "JUT", "sequence": "PMC", "jut_number": 12 },
+    { "exam_id": 9817, "exam_type": "JUT", "sequence": "PCM", "jut_number": 13 },
+    { "exam_id": 9850, "exam_type": "JUT", "sequence": "PCM", "jut_number": 14 },
+    { "exam_id": 9892, "exam_type": "JUT", "sequence": "PCM", "jut_number": 15 },
+    { "exam_id": 9920, "exam_type": "JUT", "sequence": "PCM", "jut_number": 16 },
+    { "exam_id": 9937, "exam_type": "JUT", "sequence": "PCM", "jut_number": 17 },
+    { "exam_id": 9971, "exam_type": "JUT", "sequence": "CMP", "jut_number": 18 },
+    { "exam_id": 10004, "exam_type": "JUT", "sequence": "PCM", "jut_number": 19 },
+    { "exam_id": 10024, "exam_type": "JUT", "sequence": "PCM", "jut_number": 20 },
+    { "exam_id": 10058, "exam_type": "CT", "sequence": "CMP", "jut_number": 2 },
+    { "exam_id": 10095, "exam_type": "JUT", "sequence": "PCM", "jut_number": 21 },
+    { "exam_id": 10131, "exam_type": "JUT", "sequence": "PCM", "jut_number": 22 },
+    { "exam_id": 10171, "exam_type": "JUT", "sequence": "PCM", "jut_number": 23 },
+    { "exam_id": 10201, "exam_type": "JUT", "sequence": "CPM", "jut_number": 24 },
+    { "exam_id": 10226, "exam_type": "JUT", "sequence": "PMC", "jut_number": 25 }
+
+]
