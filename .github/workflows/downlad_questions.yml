@@ -17,7 +17,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python download_questions.py
+      - run: python download_test.py
 
       - name: Commit changes
         run: |
