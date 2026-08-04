@@ -118,5 +118,11 @@
         "exam_type": "JUT",
         "sequence": "PCM",
         "exam_number": 2
+    },
+    {
+        "exam_id": 9513,
+        "exam_type": "JUT",
+        "sequence": "PCM",
+        "exam_number": 3
     }
 ]
