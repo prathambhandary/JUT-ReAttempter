@@ -28,7 +28,7 @@ def fetch_test(test_id):
     soup = BeautifulSoup(resp.text, "html.parser")
 
     # save html page full
-    with open(f"test_{test_id}.html", "w", encoding="utf-8") as f:
+    with open(f"webpages/test_{test_id}.html", "w", encoding="utf-8") as f:
         f.write(str(soup))
 
 def main(sequence, exam_id, jut_no, exam_type="JUT"):
@@ -36,7 +36,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
     fetch_test(exam_id)
 
 
-    with open(f"test_{exam_id}.html",encoding="utf-8") as f:
+    with open(f"webpages/test_{exam_id}.html",encoding="utf-8") as f:
         soup=BeautifulSoup(f,"html.parser")
 
     question_bank=[]
