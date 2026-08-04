@@ -106,5 +106,11 @@
         "exam_type": "JUT",
         "sequence": "PMC",
         "exam_number": 26
+    },
+    {
+        "exam_id": 9460,
+        "exam_type": "JUT",
+        "sequence": "PCM",
+        "exam_number": 1
     }
 ]
