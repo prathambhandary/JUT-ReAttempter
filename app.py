@@ -201,7 +201,7 @@ def add_page():
             "exam_id": data["exam_id"],
             "exam_type": data["exam_type"],
             "sequence": data["sequence"],       
-            "exam_number": data["exam_number"]
+            "exam_number": data["jut_number"]
         })
 
         if result["success"]:

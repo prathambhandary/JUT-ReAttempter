@@ -44,12 +44,12 @@ def update_github_json(new_data):
     # 2. (exam_type, exam_number) must be unique
     if any(
         item["exam_type"] == new_data["exam_type"] and
-        item["jut_number"] == new_data["exam_number"]
+        item["jut_number"] == new_data["jut_number"]
         for item in existing
     ):
         return {
             "success": False,
-            "message": f"{new_data['exam_type']} {new_data['exam_number']} already exists."
+            "message": f"{new_data['exam_type']} {new_data['jut_number']} already exists."
         }
 
     # Append
@@ -57,7 +57,7 @@ def update_github_json(new_data):
         "exam_id": new_data["exam_id"],
         "exam_type": new_data["exam_type"],
         "sequence": new_data["sequence"],
-        "jut_number": new_data["exam_number"]
+        "jut_number": new_data["jut_number"]
     })
 
     # Encode
