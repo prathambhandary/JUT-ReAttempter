@@ -105,18 +105,6 @@
         "exam_id": 10236,
         "exam_type": "JUT",
         "sequence": "PMC",
-        "exam_number": 18
-    },
-    {
-        "exam_id": 10236,
-        "exam_type": "JUT",
-        "sequence": "PMC",
-        "exam_number": 18
-    },
-    {
-        "exam_id": 10236,
-        "exam_type": "JUT",
-        "sequence": "PMC",
         "exam_number": 26
     }
 ]
