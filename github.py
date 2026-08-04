@@ -30,6 +30,25 @@ def update_github_json(new_data):
         base64.b64decode(file_info["content"]).decode("utf-8")
     )
 
+    # Check if exam_id already exists
+    for item in existing:
+        if item["exam_id"] == new_data["exam_id"]:
+            return {
+                "success": False,
+                "message": f"Exam ID {new_data['exam_id']} already exists."
+            }
+
+    # Check if (exam_type, exam_number) already exists
+    for item in existing:
+        if (
+            item["exam_type"] == new_data["exam_type"] and
+            item["exam_number"] == new_data["exam_number"]
+        ):
+            return {
+                "success": False,
+                "message": f"{new_data['exam_type']} {new_data['exam_number']} already exists."
+            }
+
     # Append new object
     existing.append(new_data)
 
@@ -48,4 +67,8 @@ def update_github_json(new_data):
     r = requests.put(url, headers=headers, json=payload)
     r.raise_for_status()
 
-    print("Updated successfully!")
+    return {
+        "success": True,
+        "message": f"{new_data['exam_type']} {new_data['exam_number']} added successfully."
+    }
+

@@ -151,25 +151,25 @@ if __name__ == "__main__":
             sequence = i["sequence"]
 
             exam_type = i["exam_type"]
-            jut_number = i["jut_number"]
+            exam_number = i["exam_number"]
 
 
             if exam_id in unique_exam_ids:
                 continue
 
-            print(f"Fetching test {jut_number} with exam ID {exam_id} and sequence {sequence}...")
+            print(f"Fetching test {exam_number} with exam ID {exam_id} and sequence {sequence}...")
 
             if exam_type == "JUT":
-                if jut_number < 10:
-                    main(sequence, exam_id, f"0{jut_number}")
+                if exam_number < 10:
+                    main(sequence, exam_id, f"0{exam_number}")
                 else:
-                    main(sequence, exam_id, str(jut_number))
+                    main(sequence, exam_id, str(exam_number))
 
             if exam_type == "CT":
-                if jut_number<10:
-                    main(sequence, exam_id, f"CT 0{jut_number}")
+                if exam_number<10:
+                    main(sequence, exam_id, f"CT 0{exam_number}")
                 else:
-                    main(sequence, exam_id, f"CT {jut_number}")
+                    main(sequence, exam_id, f"CT {exam_number}")
             
             time.sleep(1)
 
