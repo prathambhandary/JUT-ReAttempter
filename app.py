@@ -59,6 +59,7 @@ from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request, Response, url_for
 from itsdangerous import BadData, SignatureExpired, URLSafeTimedSerializer
+from github import update_github_json
 
 BASE_DIR = Path(__file__).parent
 DATA_FILE = BASE_DIR / "data" / "question_bank.json"
@@ -193,12 +194,15 @@ def add_page():
     if request.method == 'POST':
         data = request.get_json()
 
-        exam_id = data["exam_id"]
-        exam_type = data["exam_type"]
-        sequence = data["sequence"]     
-        exam_number = data["exam_number"]
+        if data is None or not all(k in data for k in ("exam_id", "exam_type", "sequence", "exam_number")):
+            return jsonify({"error": "Invalid data. Required fields: exam_id, exam_type, sequence, exam_number."}), 400
 
-        
+        update_github_json({
+            "exam_id": data["exam_id"],
+            "exam_type": data["exam_type"],
+            "sequence": data["sequence"],
+            "exam_number": data["exam_number"]
+        })
 
     return render_template("add_test.html")
 
