@@ -191,25 +191,26 @@ def result_page(session_id):
 
 @app.route("/add_test", methods=['GET', 'POST'])
 def add_page(): 
-    if request.method == 'POST':
-        data = request.get_json()
+    return jsonify({"message": "This endpoint is currently disabled, fuck off :)"}), 403
+    # if request.method == 'POST':
+    #     data = request.get_json() 
 
-        if data is None or not all(k in data for k in ("exam_id", "exam_type", "sequence", "exam_number")):
-            return jsonify({"error": "Invalid data. Required fields: exam_id, exam_type, sequence, exam_number."}), 400
+    #     if data is None or not all(k in data for k in ("exam_id", "exam_type", "sequence", "exam_number")):
+    #         return jsonify({"error": "Invalid data. Required fields: exam_id, exam_type, sequence, exam_number."}), 400
 
-        resp = update_github_json({
-            "exam_id": data["exam_id"],
-            "exam_type": data["exam_type"],
-            "sequence": data["sequence"],       
-            "exam_number": data["exam_number"]
-        })
+    #     resp = update_github_json({
+    #         "exam_id": data["exam_id"],
+    #         "exam_type": data["exam_type"],
+    #         "sequence": data["sequence"],       
+    #         "exam_number": data["exam_number"]
+    #     })
 
-        if resp["success"]:
-            return jsonify({"success": True, "message": resp["message"]}), 200
+    #     if resp["success"]:
+    #         return jsonify({"success": True, "message": resp["message"]}), 200
 
-        return jsonify({"success": False, "message": resp["message"]}), 400
+    #     return jsonify({"success": False, "message": resp["message"]}), 400
 
-    return render_template("add_test.html")
+    # return render_template("add_test.html")
 
 
 # ---------------------------------------------------------------------------
