@@ -188,8 +188,18 @@ def result_page(session_id):
     # browser cached right after /api/submit. See the module docstring.
     return render_template("result.html", session_id=session_id)
 
-@app.route("/add_test")
-def add_page():
+@app.route("/add_test", methods=['GET', 'POST'])
+def add_page(): 
+    if request.method == 'POST':
+        data = request.get_json()
+
+        exam_id = data["exam_id"]
+        exam_type = data["exam_type"]
+        sequence = data["sequence"]     
+        exam_number = data["exam_number"]
+
+        
+
     return render_template("add_test.html")
 
 

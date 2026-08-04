@@ -130,11 +130,72 @@
       <a class="btn btn-ghost" href="{{ url_for('index') }}">Back</a>   
       <button class="btn btn-primary" id="start-btn" type="button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
-        Generate &amp; start test
+        Add Download Request
       </button>
     </div>
   </div>
 </main>
+
+<script>
+document.getElementById("start-btn").addEventListener("click", async () => {
+    const errorBox = document.getElementById("form-error");
+    errorBox.textContent = "";
+
+    const testId = document.getElementById("test_id").value.trim();
+    const examType = document.getElementById("exam_type").value;
+    const examNumber = document.getElementById("exam_number").value;
+
+    const first = document.querySelector('input[name="first_subject"]:checked');
+    const second = document.querySelector('input[name="second_subject"]:checked');
+    const third = document.querySelector('input[name="third_subject"]:checked');
+
+    if (!testId || !examType || !examNumber || !first || !second || !third) {
+        errorBox.textContent = "Please fill in all fields.";
+        return;
+    }
+
+    const subjects = [first.value, second.value, third.value];
+
+    if (new Set(subjects).size !== 3) {
+        errorBox.textContent = "Each subject must be selected exactly once.";
+        return;
+    }
+
+    const map = {
+        Physics: "P",
+        Chemistry: "C",
+        Mathematics: "M"
+    };
+
+    const sequence = subjects.map(s => map[s]).join("");
+
+    try {
+        const response = await fetch("/add_test", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                exam_id: parseInt(testId),
+                exam_type: examType,
+                sequence: sequence,
+                exam_number: parseInt(examNumber)
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert(data.message || "Download request added successfully.");
+        } else {
+            errorBox.textContent = data.error || "Failed to submit request.";
+        }
+    } catch (err) {
+        console.error(err);
+        errorBox.textContent = "Unable to connect to the server.";
+    }
+});
+</script>
 
 <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
 </body>
