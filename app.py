@@ -197,17 +197,12 @@ def add_page():
         if data is None or not all(k in data for k in ("exam_id", "exam_type", "sequence", "exam_number")):
             return jsonify({"error": "Invalid data. Required fields: exam_id, exam_type, sequence, exam_number."}), 400
 
-        result = update_github_json({
+        update_github_json({
             "exam_id": data["exam_id"],
             "exam_type": data["exam_type"],
             "sequence": data["sequence"],       
-            "exam_number": data["jut_number"]
+            "exam_number": data["exam_number"]
         })
-
-        if result["success"]:
-            return jsonify({"message": result["message"]}), 200
-
-        return jsonify({"error": result["message"]}), 400
 
     return render_template("add_test.html")
 

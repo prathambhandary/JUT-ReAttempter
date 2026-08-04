@@ -30,37 +30,10 @@ def update_github_json(new_data):
         base64.b64decode(file_info["content"]).decode("utf-8")
     )
 
-    # -----------------------------
-    # Validation
-    # -----------------------------
+    # Append new object
+    existing.append(new_data)
 
-    # 1. exam_id must be unique
-    if any(item["exam_id"] == new_data["exam_id"] for item in existing):
-        return {
-            "success": False,
-            "message": f"Exam ID {new_data['exam_id']} already exists."
-        }
-
-    # 2. (exam_type, exam_number) must be unique
-    if any(
-        item["exam_type"] == new_data["exam_type"] and
-        item["jut_number"] == new_data["jut_number"]
-        for item in existing
-    ):
-        return {
-            "success": False,
-            "message": f"{new_data['exam_type']} {new_data['jut_number']} already exists."
-        }
-
-    # Append
-    existing.append({
-        "exam_id": new_data["exam_id"],
-        "exam_type": new_data["exam_type"],
-        "sequence": new_data["sequence"],
-        "jut_number": new_data["jut_number"]
-    })
-
-    # Encode
+    # Encode updated JSON
     content = base64.b64encode(
         json.dumps(existing, indent=4).encode("utf-8")
     ).decode("utf-8")
@@ -75,7 +48,4 @@ def update_github_json(new_data):
     r = requests.put(url, headers=headers, json=payload)
     r.raise_for_status()
 
-    return {
-        "success": True,
-        "message": f"{new_data['exam_type']} {new_data['exam_number']} added successfully."
-    }
+    print("Updated successfully!")
