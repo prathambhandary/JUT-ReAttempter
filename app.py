@@ -191,7 +191,7 @@ def result_page(session_id):
 
 @app.route("/add_test", methods=['GET', 'POST'])
 def add_page(): 
-    return jsonify({"message": "This endpoint is currently disabled, fuck off :)"}), 403
+    return jsonify({"message": "This endpoint is currently disabled, fuck off :)        "}), 403
     # if request.method == 'POST':
     #     data = request.get_json() 
 
