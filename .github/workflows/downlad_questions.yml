@@ -29,4 +29,5 @@ jobs:
 
           git add data/question_bank.json
           git diff --staged --quiet || git commit -m "Update question bank"
+          git pull
           git push
