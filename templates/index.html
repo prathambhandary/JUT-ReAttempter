@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>JUT ReAttempter — Reattempt every JEE Under Test, the NTA way</title>
-<meta name="description" content="Rebuild any JUT (JEE Under Test) into a fresh, randomized, full-length CBT mock — 75 questions, strict 3-hour timer, real NTA marking.">
+
+<!-- Primary SEO -->
+<title>JUT ReAttempter | Reattempt Jnanasudha JUT Tests Online – Free JEE Main Mock CBT</title>
+<meta name="description" content="JUT ReAttempter lets Jnanasudha Institutions students reattempt any past JUT (Jnanasudha Under Test) as a fresh, randomized 75-question JEE Main mock — strict 3-hour NTA-style CBT timer, real marking scheme, instant scorecard. Built by Jnanasudha alumni for current students.">
+<meta name="keywords" content="JUT ReAttempter, Jnanasudha JUT, Jnanasudha Institutions, JUT test series, JEE Main mock test, JEE Main CBT practice, NTA mock test online, Jnanasudha alumni project, JUT reattempt online, JEE physics chemistry maths mock, free JEE mock test, JUT test number, Jnanasudha JEE test series">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Jnanasudha Institutions Alumni">
+<meta name="theme-color" content="#0b5fff">
+<link rel="canonical" href="https://jutreattempter.firewave.in/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JUT ReAttempter">
+<meta property="og:title" content="JUT ReAttempter — Reattempt Every Jnanasudha JUT as a Fresh JEE Main Mock">
+<meta property="og:description" content="Pick any past JUT numbers, get a brand-new randomized 75-question CBT mock with a strict 3-hour NTA timer and real marking. Built by Jnanasudha alumni for current students.">
+<meta property="og:url" content="https://jutreattempter.firewave.in/">
+<meta property="og:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JUT ReAttempter — Reattempt Every Jnanasudha JUT, the NTA Way">
+<meta name="twitter:description" content="A free tool by Jnanasudha alumni: reattempt any past JUT test series as a fresh, randomized JEE Main mock CBT with real NTA marking.">
+<meta name="twitter:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}">
+
 <script>
   (function(){ var t = localStorage.getItem('jut-theme') || 'light'; document.documentElement.setAttribute('data-theme', t); })();
 </script>
@@ -14,13 +37,78 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
 <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.png') }}">
+
+<!-- Structured data: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JUT ReAttempter",
+  "alternateName": "Jnanasudha JUT ReAttempter",
+  "url": "https://jutreattempter.firewave.in/",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Any",
+  "description": "A free web tool built by Jnanasudha Institutions alumni that lets current students reattempt any past JUT (Jnanasudha Under Test) as a fresh, randomized 75-question JEE Main mock CBT with a strict 3-hour timer, real NTA marking scheme, and server-verified scorecards.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Jnanasudha Institutions Alumni"
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "JEE Main exam preparation"
+  }
+}
+</script>
+
+<!-- Structured data: FAQPage (helps FAQ-style rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is JUT ReAttempter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JUT ReAttempter is a free tool built by Jnanasudha Institutions alumni that lets current students reattempt their JUT (Jnanasudha Under Test) daily test series as a brand-new, randomized JEE Main-style CBT mock, since the college did not offer an official reattempt option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is JUT ReAttempter affiliated with NTA or Jnanasudha Institutions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. JUT ReAttempter is an independent practice tool created by alumni of Jnanasudha Institutions for current students, and is not affiliated with the National Testing Agency (NTA) or officially run by the college."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does JUT ReAttempter generate a new test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Students pick any combination of past JUT test numbers. The tool then randomly shuffles a fresh 75-question paper from that pool — 20 MCQs and 5 numericals each for Physics, Chemistry, and Maths — so no two attempts are ever the same paper."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="site-header">
   <a href="{{ url_for('index') }}" class="brand">
     <span class="brand-mark">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JUT ReAttempter logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="JUT ReAttempter logo — Jnanasudha Institutions alumni JEE Main mock test tool">
     </span>
     <span class="brand-name">JUT ReAttempter<span class="sub">JEE Main practice CBT</span></span>
   </a>
@@ -166,8 +254,16 @@
   </table>
 </section>
 
+<section class="section" id="about">
+  <div class="section-head">
+    <span class="kicker">Why this exists</span>
+    <h2>Built by Jnanasudha alumni, for Jnanasudha students</h2>
+    <p>JUT ReAttempter is an independent, unofficial project created by alumni of Jnanasudha Institutions. The college's daily JUT test series doesn't offer a way to reattempt an older test once the day has passed — so this tool rebuilds any past JUT into a fresh, randomized CBT mock whenever a student wants extra revision. It isn't affiliated with Jnanasudha Institutions or the NTA; it's simply a practice tool made by former students who wanted this option for the juniors coming up behind them.</p>
+  </div>
+</section>
+
 <footer class="site-footer">
-  <span>JUT ReAttempter — a practice tool, not affiliated with the National Testing Agency.</span>
+  <span>JUT ReAttempter — an independent practice tool built by Jnanasudha Institutions alumni. Not affiliated with Jnanasudha Institutions or the National Testing Agency.</span>
   <span>Built for focused, repeatable JEE Main revision.</span>
 </footer>
 
