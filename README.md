@@ -4,7 +4,7 @@
 
 An independent, unofficial practice platform built by **Jnanasudha Institutions alumni** for current students.
 
-JUT ReAttempter transforms any combination of previous **Jnanasudha Under Tests (JUTs)** into a fresh, randomized **JEE Main-style Computer Based Test (CBT)**. Instead of being limited to a single attempt on the official portal, students can revise the same concepts through unlimited randomized papers generated exclusively from the JUTs they choose.
+JUT ReAttempter transforms any combination of previous **Jnanasudha Unit Tests (JUTs)** into a fresh, randomized **JEE Main-style Computer Based Test (CBT)**. Instead of being limited to a single attempt on the official portal, students can revise the same concepts through unlimited randomized papers generated exclusively from the JUTs they choose.
 
 ---
 
