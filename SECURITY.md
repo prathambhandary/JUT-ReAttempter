@@ -91,3 +91,4 @@ When contributing, please prioritize:
 ---
 
 Thank you for helping make JUT ReAttempter safer for everyone.
+For security-related inquiries, contact **security@firewave.in**.
