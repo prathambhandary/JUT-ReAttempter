@@ -161,4 +161,4 @@ When contributing, please keep the project:
 
 Thank you for helping improve JUT ReAttempter.
 
-**From the Alumni, to the Aspirants.**
+**From the Alumni, to the Aspirants.** 
