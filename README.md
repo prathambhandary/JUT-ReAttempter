@@ -195,6 +195,16 @@ Every feature—from randomized papers to the familiar CBT interface—exists to
 
 ---
 
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+
+The source code is free to use, modify, and distribute under the terms of the AGPL. If you modify and deploy this project as a public web service, you must also make your modified source code available under the same license.
+
+See the [LICENSE](LICENSE) file for the complete license text.
+
+---
+
 # Disclaimer
 
 JUT ReAttempter is an **independent, unofficial educational project** created by alumni of **Jnanasudha Institutions**.
