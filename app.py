@@ -133,6 +133,7 @@ def load_bank():
     for q in raw:
         qid = f"{q.get('exam_id')}-{q.get('question_number')}"
         bank.append({
+            "exam": q.get("exam"),
             "qid": qid,
             "exam_type": q.get("exam_type", "JUT"),
             "exam_number": str(q.get("exam_number", "")).strip(),
@@ -153,10 +154,11 @@ QUESTION_BANK = load_bank()
 def available_tests():
     seen = {}
     for q in QUESTION_BANK:
-        key = (q["exam_type"], q["exam_number"])
-        if key not in seen:
-            seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
-        seen[key]["count"] += 1
+        if q["exam"] == "JEE":
+            key = (q["exam_type"], q["exam_number"])
+            if key not in seen:
+                seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
+            seen[key]["count"] += 1
     items = sorted(seen.values(), key=lambda x: (x["exam_type"], x["exam_number"]))
     for item in items:
         item["code"] = f"{item['exam_type']}{item['exam_number']}"
