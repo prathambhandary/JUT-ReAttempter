@@ -4,7 +4,7 @@
         "exam_type": "JUT",
         "exam_number": "11",
         "exam_id": 9775,
-        "question_number": 1,
+        "question_number": 1, 
         "subject": "Mathematics",
         "question_type": "MCQ",
         "question_html": "Range of function <math>\n<mi>f</mi>\n<mo>(</mo>\n<mi>x</mi>\n<mo>)</mo>\n<mo>=</mo>\n<msub>\n<mrow>\n<mi mathvariant=\"normal\">l</mi>\n<mi mathvariant=\"normal\">o</mi>\n<mi mathvariant=\"normal\">g</mi>\n</mrow>\n<mrow>\n<mn>2</mn>\n</mrow>\n</msub>\n<mo>⁡</mo>\n<mo>(</mo>\n<mfrac>\n<mrow>\n<mi>π</mi>\n<mo>+</mo>\n<mn>2</mn>\n<msup>\n<mrow>\n<mi mathvariant=\"normal\">s</mi>\n<mi mathvariant=\"normal\">i</mi>\n<mi mathvariant=\"normal\">n</mi>\n</mrow>\n<mrow>\n<mo>-</mo>\n<mn>1</mn>\n</mrow>\n</msup>\n<mo>⁡</mo>\n<mo>(</mo>\n<mfrac>\n<mrow>\n<mn>3</mn>\n<mo>-</mo>\n<mi>x</mi>\n</mrow>\n<mrow>\n<mn>7</mn>\n</mrow>\n</mfrac>\n<mo>)</mo>\n</mrow>\n<mrow>\n<mi>π</mi>\n</mrow>\n</mfrac>\n<mo>)</mo>\n</math> is",
