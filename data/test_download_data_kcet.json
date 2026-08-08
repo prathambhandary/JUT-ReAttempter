@@ -1,0 +1,6 @@
+[
+    { "exam_id": 9461, "exam_type": "JUT", "subject": "Physics", "exam_number": 1 },
+    { "exam_id": 9462, "exam_type": "JUT", "subject": "Chemistry", "exam_number": 1 },
+    { "exam_id": 9463, "exam_type": "JUT", "subject": "Maths", "exam_number": 1 },
+    { "exam_id": 9489, "exam_type": "JUT", "subject": "Physics", "exam_number": 2 }
+]
