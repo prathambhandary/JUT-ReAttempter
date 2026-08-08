@@ -1,0 +1,159 @@
+/* KCET subject-selection cards ------------------------------------------ */
+
+.kcet-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.kcet-subject-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 20px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  background: var(--card-bg, rgba(255,255,255,0.03));
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  font-family: inherit;
+}
+
+.kcet-subject-card:hover:not(.disabled) {
+  transform: translateY(-2px);
+  border-color: var(--accent, #6c8cff);
+  background: var(--card-bg-hover, rgba(255,255,255,0.06));
+}
+
+.kcet-subject-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.kcet-subject-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--accent-soft, rgba(108,140,255,0.12));
+  color: var(--accent, #6c8cff);
+}
+.kcet-subject-icon svg { width: 22px; height: 22px; }
+
+.kcet-subject-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.kcet-subject-count {
+  font-size: 0.82rem;
+  color: var(--text-muted, #9aa0ab);
+}
+
+.kcet-subject-cta {
+  margin-top: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent, #6c8cff);
+}
+
+.kcet-subject-card.disabled .kcet-subject-cta {
+  color: var(--text-faint, #6b7280);
+}
+
+.kcet-rules-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-muted, #c8ccd4);
+}
+
+.kcet-rules-list li strong { color: inherit; }
+
+/* Self-contained modal (used on the KCET select page which does not load
+   exam.css). If exam.css is also present on a page, these rules simply
+   coexist with the same selectors defined there. */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.modal-overlay.open { display: flex; }
+
+.modal-box {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-elevated, #14161b);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: 16px;
+  overflow: hidden;
+}
+.modal-box.wide { max-width: 720px; }
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+}
+.modal-head h3 { margin: 0; font-family: "Poppins", sans-serif; font-size: 1.05rem; }
+
+.modal-body { padding: 18px 20px; max-height: 60vh; overflow-y: auto; }
+.modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border, rgba(255,255,255,0.08));
+}
+
+.confirm-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+.confirm-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--card-bg, rgba(255,255,255,0.03));
+}
+.confirm-stat b { font-size: 1.2rem; }
+.confirm-stat span { font-size: 0.78rem; color: var(--text-muted, #9aa0ab); }
+
+@media (max-width: 560px) {
+  .kcet-subject-grid { grid-template-columns: 1fr; }
+}
+
+/* Previous / Next row on the KCET exam page ----------------------------- */
+.q-nav-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 16px;
+}
+.q-nav-row .btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
