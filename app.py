@@ -1,23 +1,32 @@
 """
 JUT ReAttempter -- Flask backend (stateless / serverless-safe).
 
-Endpoints
----------
-GET  /                       -> landing page
-GET  /select                 -> choose-test page
-GET  /test                   -> CBT exam page
-GET  /result/<session_id>    -> result page shell (data comes from the client, see below)
+Two independent exam modes are served from this one app:
 
-GET  /api/tests               -> list of available JUT test numbers found in data/question_bank.json
-POST /api/generate            -> { tests: ["01","02"], candidate_name, roll_number }
-                                  -> builds a fresh 75-question paper (20 MCQ + 5 Numerical
-                                     per subject) and returns a *signed session_token*
-                                     containing the answer key, plus the question content
-                                     (no answers) for the client to render.
-POST /api/submit              -> { session_token, answers: {qid: {value, status}} }
-                                  -> verifies the token's signature + expiry, grades the
-                                     answers against the answer key *inside the token*,
-                                     and returns the full scorecard directly in the response.
+  JEE mode  (existing, unchanged behaviour)
+  ----------------------------------------
+  GET  /select                  -> choose which JUT test numbers to pool from
+  GET  /test                    -> CBT exam page (75 Q: 20 MCQ + 5 Numerical x3 subjects)
+  GET  /result/<session_id>     -> result page shell
+  POST /api/generate            -> builds a 75-question paper from selected tests
+  POST /api/submit              -> grades a JEE session token
+
+  KCET mode  (new)
+  -----------------
+  GET  /select_kcet             -> choose ONE subject (Physics/Chemistry/Mathematics)
+  GET  /test_kcet                -> CBT exam page, single subject, 60 Q, 60 min, no negative marking
+  GET  /result_kcet/<session_id> -> result page shell
+  POST /api/generate_kcet       -> builds a 60-question single-subject paper
+  POST /api/submit_kcet         -> grades a KCET session token
+
+Shared
+------
+GET  /api/tests        -> JEE test numbers found in the question bank (exam == "JEE")
+GET  /api/tests_kcet   -> KCET test numbers found in the question bank (exam == "KCET")
+                          (kept for admin/back-compat use; the KCET UI itself picks a
+                          SUBJECT, not a test number -- see /api/subjects_kcet below)
+GET  /api/subjects_kcet -> KCET subjects with how many questions are available for each,
+                           used to render the subject-selection cards on /select_kcet
 
 Why no server-side session store
 ---------------------------------
@@ -30,24 +39,24 @@ process) but silently breaks the moment it's deployed serverless: /api/submit
 (or the result page) ends up asking an instance that never saw /api/generate.
 
 Instead, the answer key is signed (HMAC, via itsdangerous) and handed back to
-the browser as an opaque token at /api/generate. The browser sends that same
-token back at /api/submit. The server verifies the signature (so the client
-can't forge or tamper with it) and grades using the answer key embedded in
-the token -- no shared storage required anywhere. The full scorecard is
-likewise returned directly in the /api/submit response and cached by the
-browser (sessionStorage) for the result page, instead of asking the server
-to "remember" it under a session id.
+the browser as an opaque token at /api/generate (or /api/generate_kcet). The
+browser sends that same token back at submit time. The server verifies the
+signature (so the client can't forge or tamper with it) and grades using the
+answer key embedded in the token -- no shared storage required anywhere. The
+full scorecard is likewise returned directly in the submit response and
+cached by the browser (sessionStorage) for the result page, instead of asking
+the server to "remember" it under a session id.
 
-If you deploy this behind a *stateful* host (a single long-running server,
-or you add Redis/Postgres later), you can simplify back to a session-id
-lookup -- but the token approach works everywhere, including here, so it's
-the default.
+Both modes share one signed-token scheme; a "mode" field inside the token
+payload ("jee" or "kcet") tells /api/submit* which token it's allowed to
+accept, so a JEE token can't be replayed at /api/submit_kcet and vice versa.
 
 Swap in your real question bank any time -- just replace
 data/question_bank.json, keeping the same field names used in your original
 export (exam, exam_type, exam_number, exam_id, question_number, subject,
 question_type, question_html, question_text, options, correct_answer,
-solution_html, solution_text).
+solution_html, solution_text). The KCET rows use the exact same shape, just
+with "exam": "KCET" -- load_bank() below is already exam-agnostic.
 """
 
 import json
@@ -65,6 +74,9 @@ BASE_DIR = Path(__file__).parent
 DATA_FILE = BASE_DIR / "data" / "question_bank.json"
 LEGACY_DATA_FILE = BASE_DIR / "data" / "questions.json"  # older filename, still supported
 
+# ---------------------------------------------------------------------------
+# JEE mode config (unchanged)
+# ---------------------------------------------------------------------------
 SUBJECT_ORDER = ["Physics", "Chemistry", "Mathematics"]
 MCQ_PER_SUBJECT = 20
 INT_PER_SUBJECT = 5
@@ -75,6 +87,17 @@ MARKS_MCQ_CORRECT = 4
 MARKS_MCQ_WRONG = -1
 MARKS_INT_CORRECT = 4
 MARKS_INT_WRONG = -1
+
+# ---------------------------------------------------------------------------
+# KCET mode config (new)
+# ---------------------------------------------------------------------------
+KCET_SUBJECTS = ["Physics", "Chemistry", "Mathematics"]
+KCET_QUESTIONS_PER_TEST = 60
+KCET_DURATION_SECONDS = 60 * 60      # strict 60 minute timer, single subject
+KCET_SUBMIT_GRACE_SECONDS = 5 * 60   # tolerate slow/late network submits by this much
+KCET_MARKS_CORRECT = 1
+KCET_MARKS_WRONG = 0                 # no negative marking
+
 # ---------------------------------------------------------------------------
 # Secret key -- REQUIRED to be a fixed value in production (set the SECRET_KEY
 # env var on Vercel/wherever you deploy). If it changes between requests
@@ -93,12 +116,15 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = SECRET_KEY
 serializer = URLSafeTimedSerializer(SECRET_KEY, salt="jut-reattempter-session")
 
+
 @app.route("/sitemap.xml")
 def sitemap():
     pages = [
         "index",
         "select",
         "test_page",
+        "select_kcet",
+        "test_page_kcet",
     ]
 
     xml = ['<?xml version="1.0" encoding="UTF-8"?>']
@@ -114,6 +140,7 @@ def sitemap():
     xml.append("</urlset>")
 
     return Response("\n".join(xml), mimetype="application/xml")
+
 
 def is_numeric_type(q):
     qt = (q.get("question_type") or "").strip().lower()
@@ -166,8 +193,26 @@ def available_tests(exam):
     return items
 
 
+def available_subjects(exam, subjects):
+    """Question counts per subject for a given exam -- powers the KCET
+    subject-selection cards (no test-number picking in that flow)."""
+    pool = [q for q in QUESTION_BANK if q["exam"] == exam]
+    items = []
+    for subject in subjects:
+        count = sum(1 for q in pool if q["subject"] == subject)
+        items.append({"subject": subject, "count": count})
+    return items
+
+
+def _numeric_match(value, correct_answer):
+    try:
+        return abs(float(value) - float(correct_answer)) < 1e-6
+    except (TypeError, ValueError):
+        return value == correct_answer
+
+
 # ---------------------------------------------------------------------------
-# Page routes
+# Page routes -- JEE
 # ---------------------------------------------------------------------------
 
 @app.route("/")
@@ -179,9 +224,6 @@ def index():
 def select():
     return render_template("select.html")
 
-@app.route("/select_kcet")
-def select_kcet():
-    return render_template("select_kcet.html")
 
 @app.route("/test")
 def test_page():
@@ -192,11 +234,12 @@ def test_page():
 def result_page(session_id):
     return render_template("result.html", session_id=session_id)
 
+
 @app.route("/add_test", methods=['GET', 'POST'])
-def add_page(): 
+def add_page():
     return jsonify({"message": "This endpoint is currently disabled, fuck off :)  "}), 403
     # if request.method == 'POST':
-    #     data = request.get_json() 
+    #     data = request.get_json()
 
     #     if data is None or not all(k in data for k in ("exam_id", "exam_type", "sequence", "exam_number")):
     #         return jsonify({"error": "Invalid data. Required fields: exam_id, exam_type, sequence, exam_number."}), 400
@@ -204,7 +247,7 @@ def add_page():
     #     resp = update_github_json({
     #         "exam_id": data["exam_id"],
     #         "exam_type": data["exam_type"],
-    #         "sequence": data["sequence"],       
+    #         "sequence": data["sequence"],
     #         "exam_number": data["exam_number"]
     #     })
 
@@ -217,16 +260,48 @@ def add_page():
 
 
 # ---------------------------------------------------------------------------
-# API routes
+# Page routes -- KCET
+# ---------------------------------------------------------------------------
+
+@app.route("/select_kcet")
+def select_kcet():
+    return render_template("select_kcet.html")
+
+
+@app.route("/test_kcet")
+def test_page_kcet():
+    return render_template("test_kcet.html")
+
+
+@app.route("/result_kcet/<session_id>")
+def result_page_kcet(session_id):
+    return render_template("result_kcet.html", session_id=session_id)
+
+
+# ---------------------------------------------------------------------------
+# API routes -- shared / listing
 # ---------------------------------------------------------------------------
 
 @app.route("/api/tests")
 def api_tests():
     return jsonify({"tests": available_tests(exam="JEE")})
 
+
 @app.route("/api/tests_kcet")
 def api_tests_kcet():
+    # Kept for back-compat / admin tooling. The KCET UI itself does not use
+    # this -- it selects a SUBJECT via /api/subjects_kcet instead.
     return jsonify({"tests": available_tests(exam="KCET")})
+
+
+@app.route("/api/subjects_kcet")
+def api_subjects_kcet():
+    return jsonify({"subjects": available_subjects(exam="KCET", subjects=KCET_SUBJECTS)})
+
+
+# ---------------------------------------------------------------------------
+# API routes -- JEE generate / submit (unchanged)
+# ---------------------------------------------------------------------------
 
 @app.route("/api/generate", methods=["POST"])
 def api_generate():
@@ -238,7 +313,7 @@ def api_generate():
     if not chosen:
         return jsonify({"error": "Select at least one JUT test to generate a paper."}), 400
 
-    pool = [q for q in QUESTION_BANK if q["exam_number"] in chosen]
+    pool = [q for q in QUESTION_BANK if q["exam"] == "JEE" and q["exam_number"] in chosen]
     if not pool:
         return jsonify({"error": "No questions found for the selected tests."}), 400
 
@@ -305,6 +380,7 @@ def api_generate():
 
     now = time.time()
     token_payload = {
+        "mode": "jee",
         "session_id": session_id,
         "created_at": now,
         "duration": TEST_DURATION_SECONDS,
@@ -343,6 +419,10 @@ def api_submit():
         return jsonify({"error": "This test's time window has expired. Please start a new test."}), 410
     except BadData:
         return jsonify({"error": "This test session is invalid or corrupted. Please start a new test."}), 400
+
+    if data.get("mode") not in (None, "jee"):
+        # None kept for tokens issued before "mode" existed.
+        return jsonify({"error": "This session token is not a JEE session. Please start a new test."}), 400
 
     answer_key = data["answer_key"]
     subject_stats = {s: {"correct": 0, "wrong": 0, "unattempted": 0, "marks": 0, "total": 0} for s in SUBJECT_ORDER}
@@ -418,11 +498,174 @@ def api_submit():
     return jsonify(scorecard)
 
 
-def _numeric_match(value, correct_answer):
+# ---------------------------------------------------------------------------
+# API routes -- KCET generate / submit (new)
+#
+# Business rules (per spec):
+#   - one subject only per session (Physics / Chemistry / Mathematics)
+#   - exactly 60 questions, drawn at random from that subject's whole pool
+#     (all KCET tests pooled together -- there is no test-number picker here)
+#   - 60 minute fixed timer
+#   - +1 correct / 0 wrong / 0 unattempted, no negative marking
+#   - the signed token records "subject" and "mode": "kcet" so a KCET token
+#     can never be replayed against the JEE endpoints or vice versa, and so
+#     switching subjects requires generating a brand new session
+# ---------------------------------------------------------------------------
+
+@app.route("/api/generate_kcet", methods=["POST"])
+def api_generate_kcet():
+    payload = request.get_json(force=True, silent=True) or {}
+    subject = (payload.get("subject") or "").strip()
+    candidate_name = (payload.get("candidate_name") or "Candidate").strip()[:60]
+    roll_number = (payload.get("roll_number") or "").strip()[:30]
+
+    if subject not in KCET_SUBJECTS:
+        return jsonify({"error": "Select a valid subject (Physics, Chemistry or Mathematics) to start a mock test."}), 400
+
+    pool = [q for q in QUESTION_BANK if q["exam"] == "KCET" and q["subject"] == subject]
+    if not pool:
+        return jsonify({"error": f"No {subject} questions found in the KCET question bank."}), 400
+
+    random.shuffle(pool)
+    selected_questions = pool[:KCET_QUESTIONS_PER_TEST]
+
+    warnings = []
+    if len(selected_questions) < KCET_QUESTIONS_PER_TEST:
+        warnings.append(
+            f"Only {len(selected_questions)}/{KCET_QUESTIONS_PER_TEST} {subject} questions are available right "
+            "now, so this paper will be shorter than the usual 60."
+        )
+
+    session_id = uuid.uuid4().hex
+    answer_key = {}
+    public_questions = []
+
+    for i, q in enumerate(selected_questions, start=1):
+        answer_key[q["qid"]] = {
+            "correct_answer": q["correct_answer"],
+            "is_numeric": q["is_numeric"],
+            "subject": q["subject"],
+            "solution_html": q["solution_html"],
+            "question_html": q["question_html"],
+            "options": q["options"],
+        }
+        public_questions.append({
+            "qid": q["qid"],
+            "display_number": i,
+            "subject": q["subject"],
+            "type": "Numerical" if q["is_numeric"] else "MCQ",
+            "question_html": q["question_html"],
+            "options": q["options"],
+        })
+
+    now = time.time()
+    token_payload = {
+        "mode": "kcet",
+        "session_id": session_id,
+        "created_at": now,
+        "duration": KCET_DURATION_SECONDS,
+        "candidate_name": candidate_name,
+        "roll_number": roll_number,
+        "subject": subject,
+        "answer_key": answer_key,
+    }
+    session_token = serializer.dumps(token_payload)
+
+    return jsonify({
+        "session_id": session_id,
+        "session_token": session_token,
+        "duration_seconds": KCET_DURATION_SECONDS,
+        "server_time": now,
+        "candidate_name": candidate_name,
+        "roll_number": roll_number,
+        "subject": subject,
+        "questions": public_questions,
+        "warnings": warnings,
+    })
+
+
+@app.route("/api/submit_kcet", methods=["POST"])
+def api_submit_kcet():
+    payload = request.get_json(force=True, silent=True) or {}
+    token = payload.get("session_token")
+    answers = payload.get("answers", {}) or {}
+
+    if not token:
+        return jsonify({"error": "Missing session token. Please start a new test."}), 400
+
     try:
-        return abs(float(value) - float(correct_answer)) < 1e-6
-    except (TypeError, ValueError):
-        return value == correct_answer
+        data = serializer.loads(token, max_age=KCET_DURATION_SECONDS + KCET_SUBMIT_GRACE_SECONDS)
+    except SignatureExpired:
+        return jsonify({"error": "This test's time window has expired. Please start a new test."}), 410
+    except BadData:
+        return jsonify({"error": "This test session is invalid or corrupted. Please start a new test."}), 400
+
+    if data.get("mode") != "kcet":
+        return jsonify({"error": "This session token is not a KCET session. Please start a new test."}), 400
+
+    answer_key = data["answer_key"]
+    review = []
+    correct = wrong = unattempted = 0
+
+    for qid, meta in answer_key.items():
+        ans_entry = answers.get(qid, {})
+        status = ans_entry.get("status", "not_answered")
+        value = str(ans_entry.get("value", "")).strip()
+
+        attempted = status in ("answered", "marked_answered") and value != ""
+        correct_answer = meta["correct_answer"]
+
+        is_correct = False
+        if attempted:
+            if meta["is_numeric"]:
+                is_correct = _numeric_match(value, correct_answer)
+            else:
+                is_correct = value == correct_answer
+
+        if not attempted:
+            unattempted += 1
+            marks = 0
+        elif is_correct:
+            correct += 1
+            marks = KCET_MARKS_CORRECT
+        else:
+            wrong += 1
+            marks = KCET_MARKS_WRONG
+
+        review.append({
+            "qid": qid,
+            "subject": meta["subject"],
+            "type": "Numerical" if meta["is_numeric"] else "MCQ",
+            "question_html": meta["question_html"],
+            "options": meta["options"],
+            "correct_answer": correct_answer,
+            "your_answer": value if attempted else None,
+            "status": status,
+            "is_correct": is_correct if attempted else None,
+            "marks": marks,
+            "solution_html": meta["solution_html"],
+        })
+
+    total_marks = correct * KCET_MARKS_CORRECT + wrong * KCET_MARKS_WRONG
+    max_marks = len(answer_key) * KCET_MARKS_CORRECT
+    time_taken = min(int(time.time() - data["created_at"]), data["duration"])
+
+    scorecard = {
+        "session_id": data["session_id"],
+        "candidate_name": data["candidate_name"],
+        "roll_number": data["roll_number"],
+        "subject": data["subject"],
+        "total_marks": total_marks,
+        "max_marks": max_marks,
+        "total_correct": correct,
+        "total_wrong": wrong,
+        "total_unattempted": unattempted,
+        "total_questions": correct + wrong + unattempted,
+        "time_taken_seconds": time_taken,
+        "review": review,
+        "submitted_at": time.time(),
+    }
+    return jsonify(scorecard)
 
 
 if __name__ == "__main__":
