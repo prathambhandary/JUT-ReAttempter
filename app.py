@@ -151,10 +151,10 @@ def load_bank():
 QUESTION_BANK = load_bank()
 
 
-def available_tests():
+def available_tests(exam):
     seen = {}
     for q in QUESTION_BANK:
-        if q["exam"] == "JEE":
+        if q["exam"] == exam:
             key = (q["exam_type"], q["exam_number"])
             if key not in seen:
                 seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
@@ -179,6 +179,9 @@ def index():
 def select():
     return render_template("select.html")
 
+@app.route("/select_kcet")
+def select_kcet():
+    return render_template("select_kcet.html")
 
 @app.route("/test")
 def test_page():
@@ -187,8 +190,6 @@ def test_page():
 
 @app.route("/result/<session_id>")
 def result_page(session_id):
-    # The page itself carries no data -- result.js pulls the scorecard the
-    # browser cached right after /api/submit. See the module docstring.
     return render_template("result.html", session_id=session_id)
 
 @app.route("/add_test", methods=['GET', 'POST'])
@@ -221,8 +222,11 @@ def add_page():
 
 @app.route("/api/tests")
 def api_tests():
-    return jsonify({"tests": available_tests()})
+    return jsonify({"tests": available_tests(exam="JEE")})
 
+@app.route("/api/tests_kcet")
+def api_tests_kcet():
+    return jsonify({"tests": available_tests(exam="KCET")})
 
 @app.route("/api/generate", methods=["POST"])
 def api_generate():
