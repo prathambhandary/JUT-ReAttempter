@@ -532,7 +532,7 @@ function boot() {
         sessionStorage.setItem("jut-result", JSON.stringify(res.body));
         sessionStorage.removeItem("jut-progress");
         sessionStorage.removeItem("jut-session");
-        window.location.href = "/result/" + res.body.session_id;
+        window.location.href = "/result_kcet/" + res.body.session_id;
       })
       .catch(function () {
         submitting = false;

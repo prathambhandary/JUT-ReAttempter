@@ -4,26 +4,44 @@
   let activeFilter = "all";
 
   function fetchResult() {
-    // The scorecard was cached in sessionStorage right after /api/submit_kcet
-    // returned it -- nothing is stored server-side (see app.py). This is
-    // what makes results work reliably on serverless hosts, where a fresh
-    // GET request has no guarantee of hitting the same instance that
-    // handled the submit.
-    const raw = sessionStorage.getItem("kcet-result");
-    const parsed = raw ? JSON.parse(raw) : null;
+      const raw = sessionStorage.getItem("jut-result");
+      let parsed = null;
 
-    if (parsed && parsed.session_id === window.KCET_SESSION_ID) {
-      SCORE = parsed;
-      render();
-      return;
-    }
+      try {
+          parsed = raw ? JSON.parse(raw) : null;
+      } catch (e) {
+          console.error("Invalid kcet-result in sessionStorage:", e);
+      }
 
-    shell.innerHTML =
-      '<div style="text-align:center;padding:60px 0;">' +
-      '<p style="color:var(--red);font-weight:600;margin-bottom:10px;">This result isn&rsquo;t available in this browser session.</p>' +
-      '<p style="color:var(--text-muted);margin-bottom:22px;max-width:44ch;margin-left:auto;margin-right:auto;">Scorecards live only in your browser right after you submit — reopening this link in a new tab, a different browser, or after clearing site data won&rsquo;t have it. Please start a new test.</p>' +
-      '<a class="btn btn-primary" href="/select_kcet">Start a new test</a>' +
-      "</div>";
+      // DEBUG
+
+      fetch("/debug/receive", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          raw: raw,
+          // session_id: parsed.session_id,
+          kcet_id: window.KCET_SESSION_ID,
+          // bool_test: parsed.session_id === window.KCET_SESSION_ID  
+        })
+      })
+      
+
+      if (parsed && parsed.session_id === window.KCET_SESSION_ID) {
+
+          SCORE = parsed;
+          render();
+          return;
+      }
+
+      shell.innerHTML =
+          '<div style="text-align:center;padding:60px 0;">' +
+          '<p style="color:var(--red);font-weight:600;margin-bottom:10px;">This result isn&rsquo;t available in this browser session.</p>' +
+          '<p style="color:var(--text-muted);margin-bottom:22px;max-width:44ch;margin-left:auto;margin-right:auto;">Scorecards live only in your browser right after you submit — reopening this link in a new tab, a different browser, or after clearing site data won&rsquo;t have it. Please start a new test.</p>' +
+          '<a class="btn btn-primary" href="/select_kcet">Start a new test</a>' +
+          "</div>";
   }
 
   function formatTime(seconds) {
@@ -108,7 +126,8 @@
 
   function renderReviewList() {
     const list = document.getElementById("review-list");
-    const filtered = SCORE.review.filter(matchesFilter);
+    const review = Array.isArray(SCORE.review) ? SCORE.review : [];
+    const filtered = review.filter(matchesFilter);
     if (!filtered.length) {
       list.innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:30px 0;">No questions in this filter.</p>';
       return;

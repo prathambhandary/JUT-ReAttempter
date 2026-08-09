@@ -275,6 +275,9 @@ def test_page_kcet():
 
 @app.route("/result_kcet/<session_id>")
 def result_page_kcet(session_id):
+    print("=========================")
+    print(session_id)
+    print("=========================")
     return render_template("result_kcet.html", session_id=session_id)
 
 
