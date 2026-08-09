@@ -2,6 +2,8 @@ name: Auto Scrape Questions from Jnanasudha.com (JEE & KCET)
 
 on:
   push:
+    paths-ignore:
+      - "data/question_bank.json"
   workflow_dispatch:
 
 jobs:
