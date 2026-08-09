@@ -12,8 +12,11 @@ load_dotenv()
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
-ID = os.getenv("JEE_USERNAME")
-PASSWORD = os.getenv("JEE_PASSWORD")
+# ID = os.getenv("JEE_USERNAME")
+# PASSWORD = os.getenv("JEE_PASSWORD")
+
+ID = "8618184853"
+PASSWORD = "jee"
 
 print(ID, PASSWORD)
 
