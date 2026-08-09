@@ -1,8 +1,5 @@
 name: Auto Scrape Questions from Jnanasudha.com (JEE & KCET)
 
-permissions:
-  contents: write
-
 on:
   push:
   workflow_dispatch:
@@ -15,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PUSHKITTY_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
@@ -28,7 +27,7 @@ jobs:
       - name: Commit JEE changes
         run: |
           git config user.name "pushkitty"
-          git config user.email "pushkitty@firewave.in"
+          git config user.email "PUSHKITTY_EMAIL"
 
           git add data/question_bank.json
 
@@ -39,7 +38,6 @@ jobs:
             git push
           fi
 
-
   kcet:
     name: Scrape KCET Questions
     runs-on: ubuntu-latest
@@ -48,6 +46,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PUSHKITTY_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
@@ -61,7 +61,7 @@ jobs:
       - name: Commit KCET changes
         run: |
           git config user.name "pushkitty"
-          git config user.email "pushkitty@firewave.in"
+          git config user.email "PUSHKITTY_EMAIL"
 
           git add data/question_bank.json
 
