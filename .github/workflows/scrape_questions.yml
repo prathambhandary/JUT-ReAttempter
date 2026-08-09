@@ -1,0 +1,72 @@
+name: Auto Scrape Questions from Jnanasudha.com (JEE & KCET)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  jee:
+    name: Scrape JEE Questions
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Download JEE questions
+        run: python download_test_jee.py
+
+      - name: Commit JEE changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/question_bank.json
+
+          if git diff --staged --quiet; then
+            echo "No JEE changes."
+          else
+            git commit -m "Updated JEE question bank"
+            git push
+          fi
+
+
+  kcet:
+    name: Scrape KCET Questions
+    runs-on: ubuntu-latest
+
+    needs: jee
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Download KCET questions
+        run: python download_test_kcet.py
+
+      - name: Commit KCET changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/question_bank.json
+
+          if git diff --staged --quiet; then
+            echo "No KCET changes."
+          else
+            git commit -m "Updated KCET question bank"
+            git push
+          fi
