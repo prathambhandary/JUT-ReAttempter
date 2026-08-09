@@ -9,8 +9,8 @@ import os
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
-ID = "9448104004"
-PASSWORD = "9448104004"
+ID = os.getenv("KCET_USERNAME")
+PASSWORD = os.get_env("KCET_PASSWORD")
 
 
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
