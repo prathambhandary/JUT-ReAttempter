@@ -1,0 +1,4208 @@
+25-MJS KCET-01select count(*) counts from student_feedback_params where quiz_id ='10228' and batch_name ='25-MJS KCET-01' and status='Enable' <!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>JNANASUDHA</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- favicon
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/img/faviconnew.gif" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://jnanasudha.com/assets/charts/Chart.min.js"></script>
+<script src="https://jnanasudha.com/assets/charts/samples/utils.js"></script>
+<!-- Google Fonts
+		============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- owl.carousel CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.carousel.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.theme.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.transitions.css" rel="stylesheet"/>
+<!-- meanmenu CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/meanmenu/meanmenu.min.css" rel="stylesheet"/>
+<!-- animate CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/animate.css" rel="stylesheet"/>
+<!-- normalize CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/normalize.css" rel="stylesheet"/>
+<!-- mCustomScrollbar CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<!-- jvectormap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+<!-- notika icon CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/notika-custom-icon.css" rel="stylesheet"/>
+<!-- wave CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/wave/waves.min.css" rel="stylesheet"/>
+<!-- main CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/main.css" rel="stylesheet"/>
+<!-- style CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/style.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/dashboard.css" rel="stylesheet" type="text/css"/>
+<!-- responsive CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- modernizr JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript">
+function removeCSSFallback()
+{
+  var ua = navigator.userAgent;
+  var isGecko = ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1 && ua.indexOf('Trident') === -1;
+  var isWebKit = ua.indexOf('AppleWebKit') > -1 && ua.indexOf('Chrome') === -1;
+  if (isGecko || isWebKit) {
+  //  document.head.removeChild(document.querySelector("style"));
+  } else {
+   /* <link rel="stylesheet" href="https://jnanasudha.com/assets/css/mathml.css">
+		<link rel="stylesheet" href="http://fred-wang.github.io/mathml.css/mathml.css">*/
+		  var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = 'https://jnanasudha.com/assets/mathml.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+  }
+}
+
+window.addEventListener("DOMContentLoaded", removeCSSFallback, false);
+
+</script>
+<script type="text/javascript">
+document.onkeydown = function(ev) {	
+var key;
+ev = ev || event;
+key = ev.keyCode;
+if (key == 116) {
+return false;  // disable F5 key
+}
+}
+</script>
+<script>
+    //paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('#content', true);
+  setVisible('#loading', false);
+});
+ </script>
+<style>
+
+.btn-group-justified>.btn-group .btn {
+    width: 99%;
+}
+.button-clicked {
+  /*background-color: #00dcff;*/
+}
+input[type=button] {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 249, 249, 0.5);
+  background-image: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<script type="text/javascript">
+  function fun2(a) {
+		  // var b = 'idans'+a;
+		  // alert (b);
+		  // $('html, body').animate({ scrollTop: $("#"+b).offset().top }, 'slow');
+            // return false;
+		  // $("[class^='classans']" ).show();
+		  // $("."+b ).show();
+			var b = 'classans' + a;
+            //  alert (b);
+
+            $("[class^='classans']").hide();
+
+            $("." + b).show();
+    }
+	
+	
+	</script>
+<script>
+// $(document).ready(function(){
+    // $('.btn').click(function() {
+       // var target;
+       // $("div").each(function(i, element) {
+         // target = $(element).offset().top;
+         // if (target - 10 > $(document).scrollTop()) {
+           // return false; // break
+         // }
+       // });
+       // $("html, body").animate({
+         // scrollTop: target
+    // }, 700);
+    // });
+// });
+</script>
+</head>
+<body>
+<div id="loading"></div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139705418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139705418-1');
+</script>
+<!--Header Top Area -->
+<div class="header-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="header">
+<a class="logo" href="#">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height:70px;width:90%;float: left;"/>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+<div>
+<span class="name pull-left">
+<p>JNANASUDHA ENTRANCE ACADEMY LLP<br/>
+<span style="font-size: 25px;color: #0977ce;">JNANASUDHA ONLINE TEST SERIES</span></p>
+</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+<span class="mail" style="float:right">
+<ul class="nav navbar-nav pull-right exam-paper" style="margin-top:3px">
+<li class="user-profile">
+<table>
+<tr>
+<td class="profile hidden-xs hidden-sm" style="border: 2px solid #666;margin: 2px 0;">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/uploads/9448104004.jpg" style="height:60px; width:60px;"/>
+</td>
+<td>
+<table>
+<tr>
+<td style="padding: 3px 3px;">Welcome</td>
+<td> : <span style="color: #f7931e; font-weight: bold">AYUSH SHETTY </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</span>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-sm" style="padding-top:65px; background: #0c2273cf;color: white;">
+<!--<p style="text-align:center;line-height:14px;"> <span style="font-size: 12px;"><b>JNANASUDHA ENTRANCE ACADEMY LLP</b></span></p>-->
+<span style="font-size:16px">Welcome: <font style="color: #f7931e; font-weight: bold">AYUSH SHETTY </font></span>
+<span><span style="float:right;padding-bottom: 2px;margin-top: -6px;"><a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout" style="padding:8px 20px;font-size: 15px;">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+		   </a>
+</span></span>
+</div>
+</div>
+</div></div>
+<!-- End Header Top Area -->
+<style>
+   .navbar-default {
+   padding-right: 8px;
+   }
+   .navbar .navbar-toggle {
+   /*border: none;*/
+   }
+   .navbar-header .navbar-toggle .icon-bar {
+   background: #444;
+   }
+   .navbar-header .navbar-toggle .icon-bar:hover {
+   background: #444;
+   }
+   .side-collapse-container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+  /*  ::-webkit-scrollbar {
+   width: 12px;
+   } */
+   ::-webkit-scrollbar-track {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   }
+   ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: #ddd;
+   -webkit-box-shadow: inset 0 0 6px #ddd;
+   }
+   ::-webkit-scrollbar-thumb:window-inactive {
+   background: #ddd;
+   }
+   @media screen and (max-width: 768px) {
+   .side-collapse {
+   top: 58px;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   position: fixed;
+   overflow: auto;
+   transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+   }
+   .side-collapse.in {
+   width: 0;
+   }
+   .navbar-nav li.dropdown {
+   padding-right: 0;
+   }
+   .navbar-nav li
+   {
+   text-align:left;
+   border-bottom:2px solid #ddd;
+   font-size:18px;
+   }
+   .navbar-default {
+   padding-right: 0;
+   }
+   .navbar .navbar-default {
+   border-right: 1px solid #ddd;
+   }
+   }
+  /* Icon 1 */
+
+ .animated-icon2{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #0385e4f2;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 8px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 16px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+</style>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<nav class="navbar navbar-fixed-top navbar-default">
+<div class="navbar-header" style="background: #fff;">
+<button aria-controls="side-collapse" aria-expanded="false" class="navbar-toggle second-button" data-target=".side-collapse" data-toggle="collapse-side" type="button"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div><span class="sr-only">
+</span></button>
+<div class="header">
+<a class="logo" href="#" style="float:left">
+<img alt="" class="hidden-mobile" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height: 57px;"/>
+</a>
+</div>
+<span style="color: #0977ce;text-align:center;float:left;margin-top: 6px;"><b>JNANASUDHA<br/> ONLINE TEST SERIES</b></span>
+</div>
+<div class="navbar-default side-collapse in">
+<nav class="navbar-collapse" role="navigation">
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button" style="padding:10px 30px;font-size: 20px;">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information" style="padding:10px 30px;font-size: 20px;">Account</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/user_payments" role="button" style="padding:10px 30px;font-size: 20px;">Receipts</a>
+</form>
+<ul class="nav navbar-nav">
+<li><a href="https://jnanasudha.com/quiz/quiz_userscreen"><i class="notika-icon notika-house"></i> HOME</a>
+</li><!--
+												<li><a data-toggle="collapse" data-target="#demoevent" href="https://jnanasudha.com/quiz/quiz_inform">JUT 1-JUT 75</a>
+						</li>
+												<li><a data-toggle="collapse" data-target="#democrou" href="#">PART TEST</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#demolibra" href="#">FULL LENGTH</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#democrou" href="https://jnanasudha.com/quiz/quiz2019neet">2019 NEET</a>
+						</li>-->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+</ul>
+</nav>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+<!--<li><a data-toggle="tab" href="#PART TEST"><i class="notika-icon notika-edit"></i> PART TEST</a>
+				</li>
+				<li><a data-toggle="tab" href="#FULL LENGTH"><i class="notika-icon notika-bar-chart"></i> FULL LENGTH</a>
+				</li>
+				 <li><a href="https://jnanasudha.com/quiz/quiz2019neet"><i class="notika-icon notika-form"></i> 2019 NEET</a>
+				</li> -->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/general_feedback" role="button">Feedback</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information">Account</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/user_payments">Receipts</a>
+<a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="notika-email-post-area" id="content" style="margin-bottom:50px">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-8">
+<div class="heading"><span>75 JUT – Which conquer each point of NCERT</span></div>
+<div>
+<div class="btn-group-justified" style="margin-top: 10px;">
+<div class="btn-group">
+<button class="btn btn-primary" id="sp1">Result</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp2">Solution</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp3">Physics Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp4">Chemistry Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp5">Biology Analysis</button>
+</div>
+</div></div>
+<!--<div class="hidden-lg" style="margin-top:5px;">
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary"  id="sp1">Result</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary btn-group" id="sp2">Solution</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Physics Analysis</button>
+					</div>
+                    <div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Chemistry Analysis</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Biology Analysis</button>
+					</div>
+				</div>-->
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="recent-items-ch notika-shadow sm-res-mg-t-30">
+<div style="float:right">
+<div>
+<img src="https://jnanasudha.com/images/imagesmall.jpg" style="/* margin: 0px 100px; */height:80px;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="table-responsive text-nowrap" id="t1" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10228 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 36 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<table class="table table-striped" style="text-align: center;">
+<tr style="border: 1px solid #3a3030;">
+<td style="background: #0b1c75e0;border-bottom: 1px solid #e0d0d0;"></td>
+<td style="background: #1d83ce91;color: white;">25-CHEM KCET JUT-25</td>
+<td style="background: #1d83ce91;color: white;">TOTAL </td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Total Questions</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Attempted</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Correct Answer</td>
+<td>36</td>
+<td>36</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Wrong Answer</td>
+<td>24</td>
+<td>24</td>
+</tr>
+<tr style="border-bottom: 1px solid #3c3636;">
+<td style="background: #0b1c75e0;color: white;">Marks </td>
+<td>36.00</td>
+<td>36.00</td>
+</tr>
+</table>
+</div>
+<div class="row exam-paper" id="t2" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10228 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 36.00 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-lg-8 col-md-8 col-sm-12" id="quest">
+<div>
+<div class="classans1" id="idans1">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:1</h3>
+<hr/>
+<h4> The conductivities at infinite dilution of NH<sub>4</sub>Cl, NaOH and NaCl are 130, 218, 120 ohm<sup>–1</sup>cm<sup>2 </sup>eq<sup>–1</sup>. If equivalentconductance of N/100 solution of NH<sub>4</sub>OH is 10 ohm<sup>–1</sup>cm<sup>2 </sup>eq<sup>–1</sup><sup> </sup>, its degree of dissociation is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.005</td>
+<td>  2 ) 0.043</td>
+</tr>
+<tr>
+<td>  3 ) 0.01</td>
+<td>  4 ) 0.02</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/>130 + 218= 120 + x<br/>x = 228 (<math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mi>∞</mi> </mrow> </msubsup> </math> for NH<sub>4</sub>OH)<br/>α = <math> <mfrac> <mrow> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mi>C</mi> </mrow> </msubsup> </mrow> <mrow> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mi>∞</mi> </mrow> </msubsup> </mrow> </mfrac> </math> = <math> <mfrac> <mrow> <mn>10</mn> </mrow> <mrow> <mn>228</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.043</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('2')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans2" id="idans2">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:2</h3>
+<hr/>
+<h4> The equivalent conductance of NaCl at concentration C and at infinite dilution are λ<sub>C</sub> and λ<sub>∞</sub> respectively. The correct relationship between λ<sub>C</sub> and λ<sub>∞</sub> is given as: (where the constant B is positive)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) λ<sub>C</sub> = λ<sub>∞</sub> + (B)C      </td>
+<td>  2 ) λ<sub>C</sub> = λ<sub>∞</sub> − (B)C      </td>
+</tr>
+<tr>
+<td>  3 ) λ<sub>C</sub> = λ<sub>∞</sub> − (B)√C     </td>
+<td>  4 ) λ<sub>C</sub> = λ<sub>∞</sub> + (B)√C  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The Debye, Huckel and Onsager equation gives the variation of molar conductivity (Λ<sub>m</sub>) with concentration (C) as, Λ<sub>m</sub> = Λ<sub>m</sub> ⁰ - A√C<br/>Where, Λ<sub>m</sub> ⁰ is the molar conductivity at infinite dilution,<br/>A is a constant.  The equivalent conductance is directly proportional to molar conductivity.<br/>Hence, the term Λ<sub>m</sub> &amp; Λ<sub>m</sub>⁰ in the above equation can be replaced with equivalent conductance (λ<sub>C</sub>) at concentration C and at infinite dilution (λ<sub>∞</sub>) to obtain the expression,<br/>⇒ λ<sub>C</sub> = λ<sub>∞</sub>- B√C       Where, B is a positive constant.  <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('3')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans3" id="idans3">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:3</h3>
+<hr/>
+<h4> At 18⁰C, the conductance of H⁺ &amp; CH₃COO⁻ at infinite dilution are 315 &amp; 35 mho cm²eq⁻¹ respectively. The equivalent conductivity of CH₃COOH at infinite dilution is: ____ mho cm²eq⁻¹. </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  350         </td>
+<td>  2 )  280         </td>
+</tr>
+<tr>
+<td>  3 )  300       </td>
+<td>  4 )  315 </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m</sub>⁰ <sub>(CH3COOH)</sub> = Λ<sub>m</sub>⁰ <sub>(CH3COO</sub><sub>-</sub><sub>)</sub> + Λ<sub>m</sub>⁰ <sub>(H</sub><sub>+</sub><sub>)</sub><br/>= 35 + 315 = 350  </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('4')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans4" id="idans4">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:4</h3>
+<hr/>
+<h4> The variation of equivalent conductance of strong electrolyte with concentration is correctly shown in whichfigure?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAI0AAACABAMAAADE7vdIAAAAHlBMVEX///95eHfn5+eBgH+srKuamZlcXFvHx8dDQkIaFhRgOW4AAAABaklEQVR4nO3Yv0vDQBjG8fNMuFVxULdr0WtHi0gcowbSMRbPdLS1qGMJ0uruj9nFkv9Wk9omCIG274OIvt+5fHiuhfSIEH88CXJqQ4zzeIVxdicQRqVvEGctTSFfUDNNNxBOo+1hfjDjQxh22GGHHXbYYYcddtj5tU6IcWQP46hjDXGcUQRxGm4f4iRqgHBkR/Y0wknEGOFMY4cddv6ps28X70JXOzubi7dV7ay/Ys7VJbxSKjnu7epM2aHMKTnuE4EpOV2/+lNLOLQ5hUObM3eIc+YOcc7Moc6ZOW0f4jjPRObLeYggjiLPmToj8pzckddkJnfMAcRBzMkcg3hDb/zs1opwTB/AfDo3GuKcQ+YI86IhTvO9tcSfaNH2N8c9XC0PcgoOlgqCIAQ45sjaGOCcAIwsq8anCMc7qyOOJeOBqAMcFRMur0WJ6lBvDnmtvegySehOzQ6dUNMdhXlqC3GHYcQ9yOG4H+gDTtJrK3waYh8AAAAASUVORK5CYII="/></td>
+<td>  2 ) <img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAIsAAAB8BAMAAACroF5tAAAAHlBMVEX////R0NBjYmLb29rw8PC4t7Z9fXyYl5ZTUlEbFhOtteRrAAABtklEQVR4nO3XMU/CQBQH8JJedysSnTuUsqFAdLzagqsVCroRDLIKpnW2BO3qYtJv61WUWEpr2/diQO8/QQM/7r28O3KCwLNr0SkKc72HwtSGGEopeMVgzoM3DOYmCC4RmKuagsEI+3UMhTOc4QxnOMMZznCGM/+EaaIwZIzCiB7FYKTw9gJn2p17DEaW5ggMeRBfEBixSxy6ReO3zYyJw5xMuhhMe+ZXuxTMCKTlauq0GBRtse76qtMEMwzqa974AMwIgjEY5W/SprkhrVne2hLGL6zNyVFb4hSz2rTsTUrZDGQw8qpWttpS95RRmfnPFoUyHyOpKBlq+3mHG6zbkzKYWdampk9StvMmrC11kjIfW0bqJOU4/dgksSZRKMNqqyQdJTnPYnLc1xZwhkW3UJiN+RUm85/OLhXFGc7sAnNkybHYYT5flxvRLJ/GfvvMU9aj+Szxx98/MVxnxPhiVquIrC6yapxO8GAEdINYhdimaVI44+h2wr9+LmbqHt6CFbaahQG4F31FfJwb8C43JPvJLHKTiYS4Fz1V7oFX03HrpxP4Ni55FGUA7wp/00x8U5zh+Vt5B4hSarzXSwNgAAAAAElFTkSuQmCC"/></td>
+</tr>
+<tr>
+<td>  3 ) <img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAJgAAACHBAMAAAAYbI1cAAAAHlBMVEX////Qz85XVlXw8O+bm5m7urre3dx1dHQ5ODcVEBAeLJBSAAACF0lEQVR4nO3ay07CQBQG4GkG6xYIRLciCEtNa9niBWVJQC7LErxsDYqtS4kE30B5W0ElUXs5/8BZGJl/yZSPHjqd0zYVYt1yxGgZE0Zs8y3Jh21Pb/mwx+kTm2VMp6/7XFgi91J0uTDp5C22PRMyz0ZpTGMa05jGNKYxjf0dzHD5MHlc58PSz9SVHI4lRuR1OYzJ2h29DYqlC8APglhi4rJh0j9BtsIwpEgUs0cuG2YCRToo1h3T25zvY1gZOZJ+EsKMEnAkzUYFwro7tCWMy10Es8nze55DpwBg5oBaeD6SFR6ANR4QS1ZFrU5i9jNiCdkW2SSFGTmoyAUZj9X2FCwCK0+U7rljMaOkUiSBqRUZj5Wh6YphqkXGYjVoumLYTXyRUgXbIKarCiZ9uufCWBo7JyEsgbUjCEPaEYx1oZ6LYTbSjkDM9CtLWaEY1I5AzFZbxGIxU2mlJjCsHWGYnV/+6ehvDOy5GLZCkQFMeaWOwdR6LoGpr9TRGLFSK2F0kTL+x75j3dWK/IllVn2Y/z/u0TWmMY0tviasWQKfFnup0GRbs4QPzTIfbDUDmJ+LiOcNooY+UwpekkTsWOr6KxHjoXumsya5Ck7x5dPpM2KnzkWby5LDraN7LswcelaWyZKHw7HD9adZdnXs9Hksc2ifFa0ez0sOspNpNqpcR3PTax5UXSbMGLl8L3KIUz4q/MGFjo5OIO+pCWar628iIgAAAABJRU5ErkJggg=="/></td>
+<td>  4 ) <img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAJcAAACBBAMAAAA/PjXMAAAAHlBMVEX////w7++DgYB0cnCQjo7T0tGysbBdW1pJR0YVEQ60NKnPAAACeUlEQVR4nO3ZTVPaQBgH8H0cNuckKL1i1MGjIg4cAw3U3oQa4BhGSb0qlXD1ZUx676F827ISBDXgsPt3hrE8H+A3+/7sPsvYOj5jkA7ENA+ItW+B2Pc/OIv//osbtNRwaMOw9nCIG7TG/l0VhjHTRkmExNga+1xYGo0REmucorDsaLcjsZ9I7BvqfExvM7YDxOgIifVA1hOWR2IFFGauLCa6+QuI8QcYll1ZzEaOmY2cTSRmrjRmATH2FXWewTFYDhAYLDsJrOUBMdh9Q2AbWSCWOlR39Amm3ShbZHRijAMw3p9gfWWMafcxhsjCW2KxPt1pAVvA/WLHWNtTxrqpqxgTqlrwDn+MMfWFlinza32MqS800smIMQ5KduMXSg5zoo0xwHROsY0rICbmFYaBLtzxE/HSA2LpAyCGOIWmL2FI7pxgbRuIaYjFMcGoBOjnc/WgBch3zxjizj2ta5x4QMxUz55TjIrKN6uZ8k1LuWkzGA9UmzZbWFJu2izGSx4OY6biWntZP7vcBmI8VJqDV5W9Hw8q+/0VRifHOIzx/T0cxrRIvnL+thq6Ka8llFYbkWxPk+q0ZwNJLbHomxn0pdZbcgU5UwplBm5OOZrOB4U6Chs1LhcWOktuh/mFcmoWo16t/sYzZDDBVYKgt+t364YgyTDc5sXO3fzmvlPCH3nFKAqDvGVZuTAYREF+wcy8/x9AW03fd3Ydp+L4XXfhKK7uTwUWuz+SjIR0oVmyUQZ2aR0fHeS67vJH2pxoOI5TQ2EXxihQmE+Lj4hlgqpnvsq940XwaoF1YVjtBvZXqWu++iMjDr6nuY+LEtEyQZXm6bkPW7Pr+D/jHxFygOKXyVGfAAAAAElFTkSuQmCC"/></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: According to onsager equation<br/><math> <msub> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> </msub> <mo>=</mo> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> <mo>-</mo> <mi>b</mi> <msqrt> <mi>c</mi> </msqrt> </math><br/>i.e., on increasing concentration, the equivalent conductance decreases due to the increased interionic attractions.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('5')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans5" id="idans5">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:5</h3>
+<hr/>
+<h4> Limiting molar conductivity of NaBr is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Λ<sub>m</sub>⁰ NaBr = Λ<sub>m</sub>⁰ NaCl + Λ<sub>m</sub>⁰ KBr</td>
+<td>  2 ) Λ<sub>m</sub>⁰ NaBr = Λ<sub>m</sub>⁰ NaCl + Λ<sub>m</sub>⁰ KBr - Λ<sub>m</sub>⁰ KCl</td>
+</tr>
+<tr>
+<td>  3 ) Λ<sub>m</sub>⁰ NaBr = Λ<sub>m</sub>⁰ NaOH - Λ<sub>m</sub>⁰ NaCl</td>
+<td>  4 ) Λ<sub>m</sub>⁰ NaBr = Λ<sub>m</sub>⁰ NaCl - Λ<sub>m</sub>⁰ NaBr  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For NaBr: Λ<sub>m</sub>⁰ NaBr = λ⁰ Na<sup>+</sup> + λ⁰ Br<sup>−</sup><sup> </sup>- (1) We cannot get this directly<br/>For NaCl: Λ<sub>m</sub>⁰ NaCl = λ⁰ Na<sup>+</sup> + λ⁰ Cl<sup>−</sup><sup> </sup>- (2)<br/>For KBr: Λ<sub>m</sub>⁰ KBr = λ⁰ K<sup>+</sup> + λ⁰ Br<sup>−</sup><sup> </sup>- (3)<br/>For KCl: Λ<sub>m</sub>⁰ KCl = λ⁰ K<sup>+</sup> + λ⁰ Cl<sup>−</sup><sup> </sup>-(4)<br/>Now add equation (2) + (3) - (4) we get option b<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('6')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans6" id="idans6">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:6</h3>
+<hr/>
+<h4> The specific conductance of saturated solution of CaF<sub>2</sub>is 3.86 × 10<sup>–5</sup> mho cm<sup>–1</sup> and that of water used for solution is 0.15 × 10<sup>–5</sup>. The specific conductance of CaF<sub>2</sub>alone is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 3.71 × 10<sup>–5</sup></td>
+<td>  2 ) 4.01 × 10<sup>–5</sup></td>
+</tr>
+<tr>
+<td>  3 ) 3.7 × 10<sup>–4</sup></td>
+<td>  4 ) 3.86 × 10<sup>–4</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: (κ) of CaF<sub>2</sub> solution = 3.86 ×10<sup>–5</sup><br/>(κ) of H<sub>2</sub>O = 0.15 × 10<sup>–5</sup><br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/>x + 0.15 × 10<sup>-5</sup> = 3.86 × 10<sup>-5</sup><br/>x = 3.71 × 10<sup>-5</sup><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('7')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans7" id="idans7">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:7</h3>
+<hr/>
+<h4> The equivalent conductivity of 0.1 M weak acid is 100 times less than that at infinite dilution. The degree of dissociation is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 100</td>
+<td>  2 ) 10</td>
+</tr>
+<tr>
+<td>  3 ) 0.01</td>
+<td>  4 ) 0.001</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given <math> <mi mathvariant="normal">Λ</mi> <mi mathvariant="normal">c</mi> <mo>=</mo> <mfrac> <mrow> <msub> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi mathvariant="normal">∞</mi> </mrow> </msub> </mrow> <mrow> <mn>100</mn> </mrow> </mfrac> <mi> </mi> </math>=&gt; α = <math> <mi mathvariant="normal">Λ</mi> <mi mathvariant="normal">c</mi> <mo>=</mo> <mfrac> <mrow> <msub> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi mathvariant="normal">C</mi> </mrow> </msub> </mrow> <mrow> <msub> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi mathvariant="normal">∞</mi> </mrow> </msub> </mrow> </mfrac> <mi> </mi> </math>= 1 / 100 = 0.01<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('8')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans8" id="idans8">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:8</h3>
+<hr/>
+<h4> If x is specific resistance (in S⁻¹ cm) of electrolyte solution and y is the molarity of solution then Λ<sub>m</sub>​ (in S cm² mol⁻¹) is given by</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1000yx​      </td>
+<td>  2 ) 10000xy​</td>
+</tr>
+<tr>
+<td>  3 ) <math> <mfrac> <mrow> <mi>x</mi> <mi>y</mi> </mrow> <mrow> <mn>1000</mn> </mrow> </mfrac> </math>      </td>
+<td>  4 ) <math> <mfrac> <mrow> <mn>1000</mn> </mrow> <mrow> <mi>x</mi> <mi>y</mi> </mrow> </mfrac> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> <mi> </mi> </math>= <math> <mfrac> <mrow> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>x</mi> </mrow> </mfrac> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>y</mi> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>1000</mn> </mrow> <mrow> <mi>x</mi> <mi>y</mi> </mrow> </mfrac> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('9')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans9" id="idans9">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:9</h3>
+<hr/>
+<h4> Which of the following is not correct?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Molar conductance of a solution increases with dilution</td>
+<td>  2 ) Equivalent conductance increases with dilution</td>
+</tr>
+<tr>
+<td>  3 ) As the dilution increases specific conductance increases</td>
+<td>  4 ) An infinite dilution each ion (cation or anion) plays a definite role towards electrical conductance</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Specific conductance not increases with dilution because on dilution number of ions decreases per unit volume so, specific conductance decreases.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('10')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans10" id="idans10">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:10</h3>
+<hr/>
+<h4> Match the physical quantities in Column I with their correct units in Column II.<br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAaMAAAB4BAMAAACtNYCfAAAAHlBMVEX////x8fFhYWG3t7fe3t5ISEiEhIQHBwcpKSmbm5vYM345AAAQxElEQVR4nO2cy1vqOtfAExp57Kxc5MgM8VKc1csWnAVUwJmoFZ0hKujw49Yy21vF4oy9vaD/7beSFjYooBTY5z3nuB6FEpqs/JrrSrJA6Ev+EfKc+9MyQY2UEZG7ySnoLdnKxJK+yHCkvT9dLfDkNIoZ9vrnkSao0ZmZsII+8oU0jAxCwtuSeeF1ST0je13e3l98LP00Rq2LPhqJyxX1ulx0UNIDkDzH6tIGTzmpNXpGvtT000GJD5CeGvFTLfjKVQnGTc9oMUO7f9L0hUFJ90ci8o0UK3MkZx8kQSsOSnuQ9ET6Vl4R0gF+KfdJualTYlQGJt0faUenCKscSeyDRIzbgYkPkJ4P0UhBjQjw635IkTJC6cEPsj9Snj2LVQlBcwEklwuqN3FJLoQhyIVcZh7GijSlKfD4AohEGRIoizKloM+FzHeQcFnCdpGIwSJ6JF/tRAKky3JMCyS1K+P0pSAlteV6Y/xIYagXiKyQkKoAkltbSFcEo5K/8dVP+fuoSILGs4vljJwBpFk9qqUE7TpdWNQaglYzSuNHypstd6Y4U2SlpO2FCyivh/QgPN28fsy/HQVJNJEETWmWAGnKRNoLlz1aRtB+NKvjR5JNpOatsyzJRaztJSqoWRC1AChrFtysWo4DyQlIRUCaNpEC4QK8wF+zMjEk+dap0TZSFZQzpKpjZCSzLSFIiKf6DmkCpdRkbQnhNCApk0BCMisH/LuU6MSRZthYgaWJlRJKsmf2QADplrelrTZSZkJIgnGIkA/0OcrQPWAjle+FNMK4RNL326unKL+Qbvi0U6dW1279WqpZhhf4y1eg3vu1yljneJHy+tay5K5GijhdlWTdKLjkCijPV+CdlyHJaz89RoHaQ0KeRfUMhll1Hu3UD/DlwfHJTv0kVPtVh/ej4xoke1GvjXeO90tdhinL074iQPqx65fa2jHoOziG9+uLOszsYsf1k6d6zeYcb7LyZS8NI38X0gTXHiykm7U/LJuT07jKkfB18A/L4uQ0hsxS+hdWvK/uYXT5LyIJV73jrXyY9KeR8EPXx1XK38Sxzh46ZeMy8yZEOIeXSOnDpLuRfmebZPfP1ztvjBW64uUV/uawO2/lGn3H1oRKWFxe6/4er4hvk+Y08Y8VdiHh63b4y/z2S1ds4brjWjGXU5gpgJy2Zq5cIw5XzciRx/j1uzveZt7NkIQhkUSNWsFihY2/XRo6dE5lOr5IUmRDTI1JM4N4H6Hs2zuEwJsAhx0kdzpjBSd+wMtjVx46kMIdy3pYtl9KLSRSk9Du2zt89E2ALaTVZCtCngVLKK6eo/jC0wKb8N/FVOniAImL84JRW3mKhq7p06FvwakdXdaUnftRkHAaNLCLuHpKnrZU5enGbNf415raWL2DnKk/AcmpNoZEwsuOKrJ08HIgR1t1GqnkypL7IFYhaSlWRNltIxo+96SVcBHFTiMlLG8nK5Jz2G6iCwks6J+mvt2Cx8jl73N1KigEyiS9dFnNGYp4Ey9IjhLeloQfQyEJKcFcowEk3qE5UigccBRRiL5QoYBkSSzCU1qliQb0eGIRxUENhJICcvZeYf4sEpHLLAF3Cl0hWXFWoWpf5pYhpNkQK1IykMxAMK94sQodBsmRsVBaSIkAmi5BPx2iqgRtiSE5viPelpoKNIBXxJGQTGMfKhqIhASZmfwJxgVabuDqOccKrqkIVZQMNBX2bBnS7utQSElVNebMYJk/9XAAOYoMKVpGFtK0hQTjUn5lzkJKBJ6HJHqLhPxssaSFVGx3QBaSrKBEyvHxKPsOKbu9nbSiNQPw4kqkYCw1kVqlNAU3SCZSYrlhITmLAxcDPkTCMMtpZnitwD2R8g34zgYSOYSPBYQpXM+wfuJxpoSm9njFkxWGRJ1FuEFUwg0JqoIDGh5DQhKpB2wjEahweMEcGGaKyCdZFa8LKbyHwooNJPchXwLncxySPke7K0Id+oXZEkorkZu4roTnfxWixlKQhk8UKCXoMBBAy1e0NT0aGilRRBG2HHm8QthOlqDnlnGasu4hY96Wh+4BhVPOCg5KM8MjyTWKItq9OW3zqftnCH2rzUNn9Mu4EerL+9Rd3jyRYtoCcld8bONxHvJSppEbvg1lB8ln6BmWebyZVdmcFEX0n27j4FJ/NcxxzmHcv+hnxh0Mi6fosvy5B9eBxPaSva6ouTWFvHzvGV6iXghEXgk+uhB/gdaEIYh9iHr5VlZvQ+BDJMyiW9r4G3Yh4uIKzW1o64ML4W0zf0Mi2RZMhu4d/tdNwB112IH2DyDhmjqCGJqNSOVRNA6UY3Myd7g9gkRdw8fZGknjQIlnJlwN+sj/eFuyI/8lJDxy0p9BInTAl92Dhde8FUc/0ttPI7kcpOxT0oG08Zq7ssZnD5/CC8/cMMMvgf7xPWpXFhLmrcLgUz4tjZ6r57Wr53MzZOPMy2Ie0wGxPiUdSKtaLlszE/Sw0zwtWxM3A/3je+q/s4AV5DefCXkcXLQtJLmwdqmbSM6j3CIrcHurM53SgYQNhPMpM7jJdnibltk+GxiQQOh3Froqk5lwXzHvnb1FrbWBiIJfWFIR2jfOJ6WzLaUl1JrtfoNZNg5Zq17W4ave0oHELd6WJAfPKNrGhdNCCoHZxZIaKxIGpFkL6TlNkZiFooqfcSQ/WBBbW6weCjkFEWhkeN3/CMboVWjrisYfEN54xPmK4lE2n+nuA14n6aON14b42m+m2UZqlVJ+DkynjbNxI1EiW2vcr9B+3KtFJB6FFgCJ7F8eCuksNHqcvaigbzmVxioXukSCWX0rndkpoNjS8Uqzst4MRMo0VoxViHwU0Rti4dNISWY6jB9JPW5l4XW6hFYdzEATC4DkLAlVkj+HYnHe4mtyhxIpfyGab0ylcJ0mGmDxLkrJzPR3HA5AZyc2/BWwS0kdkVQ/ve+QSLrAuhbcHNqaHIi0vZu2llOewY6cByTohNI0GRADkEmubDaDXE5oAUWBmZ5gXYdoGJBIEWFp+jvrxI8ltwRcfBWpfx/xDgn5DbZIJKiHY0WSUNJS8Izr3pSjiMsS2MrQlsSLqonE7OqpWxh4GFIDDHQTSWRt0EQKZ16RiTSbmqGfR0I+LTMqTS8k0VqbfEb55wYg6RJqAhIJrlmlFA5A1kstJLmNVGwjzd6eWUhidbWv3ndIMN8Ifx83EuvEndYu0jM0VwkqXlpBeah4U98Fq5SSP5AQryKBVbxII5+xkIQyDLQmklhuWEi4fvAxUqsTX+OPZMxI2JBQpIieWTnlkKPCHmA4ha+he/jrNl6hHMlZ2M4RnTpSvC0liyS9kljYLUfT5/HG9K3yVwCSUTjSOUXNvr1D11DrY90sjLORzLiRVrWlbL0B3QGMRvq5cEjy+k+xlp0jctWnL+ubBnvmRNYXUOQoS7/pD+l7wVgyTp36VV3Z0a4lh74u3yN0IaFvupIsUNaXDESyJkR//R9cP+Vy+7a2dQYhwbQ1t47QJiQcfz3HlFzBiApDLXl9lV7pmvh6xm4VYPRkQ+3G88PVK9p93JLwa3Qd4VcF4QcCQWgbknpWBOjxY/QDJHPaKrDil/y5kbvvd0jjlwEr5f9ME1B4HTDE/DORHPqAmjTxAzcTORYV0gd8OfljUf++w2tfJ73GIP/M7mGg/N1IeDzDeqd8jOTpP0EcLF1IZG3FXBn0QCvrwJjpP1ezK+ZW6tra9traOvz1uGPHrlNe17mHYHApx0li2vVxx0Py8ZvQh+uNQwjX6E+XH2R9/lI76XEH7u3g+LF0IoUX2ue58g2Bu6l0ybxNHb3E2qstsZl46wBJt4wDiaccM1NvNpAceJsL2+6ZPaTTXuqNRMaA5GBZFtpI+QBCWytgm21LhCLPurRTWcFrKwhTD4VvoPqTXk3gk9Jp1baRPDCjj5IVtEXJmjIOpETHJjwgpcHSDl5TX1CNRlIkuzgXKS+496+lb/chyEXw+CfOhuweA+2NRIKh0/jdU3k3fSsEM+NACnf0a80G8xJ+ouFAhH4DJHFPnBNLYLQ3G8nKWl2KNGZ/OOfEau9EbSLtZByleHk9v7zJlgvGjlSr/0T4yJssJRoCnUqJRfQI/5dgnDtKKEQXEaHJxy3d9oDVC+lSwlEw8fnCGbTquk2TsB/SuQFWqq6qt47CCoxLJD2PAAlvphv8AA57jGFVVceKdIz4Nk4igBkSsevS34GU7GpLkVtEeL16Kkgw1DqNU3YAb/mFI0U5ErXLg/ogSZ1ItqUDycn2udo9nlimuMyOn+B8BkqJxorQlkJS2CylOkXRRKZ19yhIHZ24rCDveJFIGuraJl9O4ePSHJIX/KeraDowtSdmSFUsemqu5ilHas55z2cq0ecRkWYtJLbHBsV+6z0TqrwtjUDUNXvYuX7Y/MlWI5HHOJBm9McdjR3vulhpVp2V1UNBP5eP5PtwZcs4d2s1RTA0++vX5kPMV7Yj5fVV7ZEvUDq0OnS02/kbv/ZzTEhoI3iO+NJkLBikJDiPswsoHlwgwSDJLlH8i/rmfefZ4AZ88wtmR/ElOhqSPxh8CAbns8FlgZ9CWp1HvyBkKRa0P+D9d+2lCciXL+Aw8uULODb5WiEaRr6QxiZDaNwaMumPkeIK7nsgw758HkmsD6m9A+mprqrzrehtX0AiZ/zmtHJDXd4dG5t5Tvy4ljuuNcA0CvBAcXH5ve1PFu0j+bX1Lbk1a/vtC9hs4BpL1He3Hq+9Sb3DD00YzmAzd4fDVRf7LQzBOi52ub7Rw05+so/Ed9SteX6HL2CkgRgJzjfgujt10jFt7fIP/Fh+20tFSNtcTiP3CC2/v/XCPhI794Asb8AOX8CwWUrMw+Ktd6a7w7es0z/wE9JGAsvC+ilFfjCxR18wKlLTdExr+wI2WkhutiSGEbk4kkgufk3xRVCRy3M+FSbrc5dzglEbqua1kZj3l9uMio3TlkvgOcntXkefDvDFwchI5spXyxfwJF5tIVlmfOTxJeXXc3LGsRDJuIvR0FYdN6vZCg6fD6X5t/9SOND2QgmXTZfAk90C03GU1aXtKHoajugdUrJoIvHn5s6gutRCMn/iax+aGa7T2b2ZjNhwlLij1vQttLaEzYqHZottLxTBPO3l2IOQYwqtjDkRCekh7cF+pcSRkvtBTekqJbCjcVmqoZmUoxJlzo3rHkOa/g532G1LSCyQuVaomGY9HjtwCSlC6uxAjHA1IlLYbEumL2DybG29VUrmEVERkOq0Js2kcP6OKRWX0yMi4fpuph3sY/7XkTbS8K5ePZBkM3nLF5B9sJD4+hH2V5gyjkTkOUcJq1QeEQk1F6kZhhW+SoQSewi7xoLExiVRp52+gEXko9a4RAwI93vrEr5DqjSztys5S46SWGRt6TuqAbnN7gEl2cNiZ8TZGcs85a3LT9VWxRsFCTJN8oeo0xdQ2z9CzQzh68SReyqcoeacMwWfZ29nTh3QnjbLm8bjXz+gMoZPbHTiCdYZOdnLJcTGBcr3twQ9d0LqEgwb+eGK/h3Si6aqJxLq8gXUTgXjLqazWQK5YL9OJahLdEc/SJdXa/tUqK/kD17O0uVf2qF7uJ/3Mud4BvuRVOG0hXR1ofKloYjeAB2h8kafnzr9NJLXtc38/zp9AbEL4WiUuPiWpvk7sV7KHAajXpc3yvwCsYS5tyBFww2IZuuNtte9LZdAc+8U1Jo6onb2Uv8B9tKw8u9Fup2YG1sf2ZqcxhhHwhPzNfw7xE7P/yV/g/w/P7QwVUC2F6AAAAAASUVORK5CYII="/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  A-III, B-I, C-II, D-IV</td>
+<td>  2 ) A-IV, B-I, C-II, D-III</td>
+</tr>
+<tr>
+<td>  3 ) A-IV, B-II, C-I, D-III</td>
+<td>  4 ) A-I, B-IV, C-II, D-III</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAMMAAABxBAMAAACaUwrnAAAAHlBMVEX///8AAABgquz88qlZAgSeTxej7P4LAU0JT6Dmn1WRJmZUAAAEO0lEQVR4nO2ZvYvbMBjG1RMatFVe7FFwPWjXQ9dkdaDNrQ40ySgIHbpei+koOCjcVh/tJX9uX0l2/BHnw7JVKPVjbBzb8c969fVIQmjUqFFDaCU7/yVhKmHcnq9hf27cDhoXSHcEniGi7KmI4PBSf6GiwRCIXXEOJ5jX7greTJYTgqoKgtYRRNWfTlInhE5EwhhTBoHQr5DbCxA3arOJsK/zzxHRgXRBfEj354C4RfSBlleQMIw1nokUNs1W3RHzmFcQ7yH8uIJAGWS3viC43jq/3iBmJKgE6ifaSp2KPFBXpiLQvgiUqX0qoEDtqnkMkd/K/qlANJT2fI2ohMNWlojU1MeVvO2BgNqdMVu9BEspZH/8o7x7JSB+pkTFD7AFra/oqmpx8qSyInoT4d4Ro0Z5FTQfBPqPYh9WUEGmaHcPjSO0gsU+nDJFArzAS9P4ztCi2AdEEAVvu7vhBvEROr18HxBBn5Rp5r0i0jIVfgJF1UriJV6YErWGbC52R2HVgrh7gA5winRvJaCwFvsxiYPOiqTHflyqhtd9EbLyy+TisvoFUXfCgdetOTiTpiri2cHPH3jd2+qPg1QsM77/Fmb81HEVDzS9bt3QgzcLZQVBlUNmNL0uvYbikCYK7ChhqpkKwptDCIRYu16XTzS8rh4F4flmvtEV6F4jSCWHJxLf73GXBqrN6+KZ2VK03czq/4JsKzPjUrV5XYuAa5MmAmImFMpSyjpkSZvXzVMxO0Boa0YCyndTaOcuR7R43RywkmtcRyShxDF7YuGiVpLPqM3rivBN+IZxKFGiGALX0qKrUgeEg6jCW+kXAWWQtGU3tDb70ccQakkF/Q6VdjhCG4Ls0KcBEaQlItPJlxs1HKJNU/HW94DjmaQT6RexJHx3/qk+ohHCMffLGPWfy8GuJKxsYc/M1FiT2b3JN13hRYjcZDoh6gakMY1aKjeZAyCOJkWbzLqRvBiB51K7RDA5CafQ34cyiXB8ExnrADeMPysnVB0Qse4mYJg1hUECNwcMDlIEghMl+KJiWIyxIN2HCuBKwY7GLAK/Bm9WJlDWHEEzrm+Uz2ZuE3fGImpbB3EQ3Bz052pE7veKQF05rSwYBPg6Ew2iZ5P1wQQqT0XF11mT6YYAjwHOEQwn5AUcrt/lCJJiDjf2iNRx4J3osqTARAl2HQcQIgLF6VtkXKQpUfu6n5vMUaNG/cNya+06aeqdgDybca3n84/01ZHu2TmLKItofQ4LP7a/y2F51WqlJ4vIU2XUWE4eDYPQEz5EWh9yRq4I8ByosDon5bTUbWStoA1UvnabvzKfaOy11F0gCAsOpywL9VvqLhBN7/IKvr8477lIbKTzokC0BKrnUreRHjOccGBDpEJH+JTJ67fUbUUZO+WGh13q/qs6WoSH02/vCPzoHUE23hFZl+lzJ+G0y/S5k0TgMCwdNQqhP+F2Bz+80ie+AAAAAElFTkSuQmCC
+"/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('11')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans11" id="idans11">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:11</h3>
+<hr/>
+<h4> The resistance of 0.5 N solution of an electrolyte in a conductivity cell was found to be 45 ohms. The equivalent conductance of the same solution is: If the electrodes in the cell are 2.2 cm apart and have an area of 3.8 cm².</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 25.73      </td>
+<td>  2 ) 30.75      </td>
+</tr>
+<tr>
+<td>  3 ) 35.75      </td>
+<td>  4 ) 15.75  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: κ = <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> </math> × cell constant = <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>45</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>2.2</mn> </mrow> <mrow> <mn>3.8</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.0128</mn> </math> Scm<sup>-1</sup><br/>Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>N</mi> <mi>o</mi> <mi>r</mi> <mi>m</mi> <mi>a</mi> <mi>l</mi> <mi>i</mi> <mi>t</mi> <mi>y</mi> </mrow> </mfrac> </math> = <math> <mfrac> <mrow> <mn>0.0128</mn> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mn>0.5</mn> </mrow> </mfrac> </math> = 25.73 Ω<sup>-1</sup>cm<sup>2</sup>eq<sup>-1</sup><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('12')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans12" id="idans12">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:12</h3>
+<hr/>
+<h4> What will be the molar conductance ‘Λ’, if resistivity is ‘x’ for 0.1 N H<sub>2</sub>SO<sub>4</sub> solution?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mi mathvariant="normal">Λ</mi> <mo>=</mo> <mfrac> <mrow> <mi>x</mi> <mi> </mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mn>0.1</mn> </mrow> </mfrac> </math></td>
+<td>  2 ) <math> <mi mathvariant="normal">Λ</mi> <mo>=</mo> <mfrac> <mrow> <mn>2</mn> <mi> </mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>x</mi> <mi> </mi> <mo>×</mo> <mn>0.1</mn> </mrow> </mfrac> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi mathvariant="normal">Λ</mi> <mo>=</mo> <mfrac> <mrow> <mi>x</mi> <mi> </mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mn>0.5</mn> </mrow> </mfrac> </math></td>
+<td>  4 ) <math> <mi mathvariant="normal">Λ</mi> <mo>=</mo> <mfrac> <mrow> <mn>0.5</mn> </mrow> <mrow> <mn>1000</mn> <mi> </mi> <mi>x</mi> <mi> </mi> </mrow> </mfrac> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m</sub><sub> </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> <mi> </mi> </math>= <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>ρ</mi> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>1000</mn> <mo>×</mo> <mn>2</mn> </mrow> <mrow> <mi>x</mi> <mo>×</mo> <mn>0.1</mn> </mrow> </mfrac> </math><br/>[⸪ For H<sub>2</sub>SO<sub>4</sub><br/>N = M × n-factor<br/>M = <math> <mfrac> <mrow> <mn>0.1</mn> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> </math>]<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('13')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans13" id="idans13">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:13</h3>
+<hr/>
+<h4><b>Assertion (A): </b>The unknown resistance R2 of the conductivity cell in a Wheatstone bridge can be determined using the relation <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAEcAAAApBAMAAACVYCkGAAAAHlBMVEX///8AAAD43JnKfy1dEgCn6f8xh9EIPIQoA05mtv9J/7ZTAAAA90lEQVR4nOWTMQ7CMAxFTdwLeKEwIgXo2qGClQXBFnGCSL1AF47QveLEJCQtrZo4XZj4Hb4aPdmOow/wZ5KUq7EHhQ02Yw9D2kOagWQnu7FHZnpOPKiTaAEK5Rx1GLqaTxjIOpzDEG5UqU2lj4vaQUi0me+jcEcHrJW/TdbGoLIvIDuxnvUkfyS3EIVmMktrfW2i2I4lGSbL+98VTeWhl9lHlelEu7O5gdB8u86+NsYf00HipgBZBimHXQ4VC3lU79NQSXpBqanYEAzduRAMEBeCoR0Xgu9MTAh62RBgCrQhKB53lnFhEOnZQVwWQEebu5QW3fAXegOv9y3cG+Pi/AAAAABJRU5ErkJggg==
+"/> when the bridge is balanced. <br/>
+<b>Reason (R): </b>In a balanced Wheatstone bridge, the ratio of resistances in opposite arms is equal: <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAEMAAAAtBAMAAAAHGstqAAAAHlBMVEX///8AAAPNgyz656JnGAI2g8wCOH94wfy27v9TDFnQG51iAAAA2UlEQVR4nOWSMQ7CMAxFTZwDkKF0zgASe4rUkaHqGvUEHRkjcQEkLsBGj0tCEbVdpIJgAX62lx9/t/oAfyrcmh0nziwOnKziYVKtajlZjixeWLDGWgQFF8QuMtnJ5VRbBlAdXQ7PoKlNe+1hTy1VPOWxGoDNVQZILMoE6xnpF5IACgnGb7z0WOM5cCaTY3pfVHh0My3Ta34Hsxv5dNBbstOhT1he0TfW21JbqndMG0CqN3Z0dKo3rInlWm/YkLGp3tiIGoKTNSxUwzfEkxaPrPx9468Cl8OP6gLS5SlKOfucxAAAAABJRU5ErkJggg==
+"/>
+<br/>
+Choose the correct option:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both A and R are true, and R is the correct explanation of A.</td>
+<td>  2 ) Both A and R are true, but R is not the correct explanation of A.</td>
+</tr>
+<tr>
+<td>  3 ) A is true, but R is false.</td>
+<td>  4 ) A is false, but R is true.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:The balance condition of a Wheatstone bridge is : <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAEMAAAAtBAMAAAAHGstqAAAAHlBMVEX///8AAAPNgyz656JnGAI2g8wCOH94wfy27v9TDFnQG51iAAAA2UlEQVR4nOWSMQ7CMAxFTZwDkKF0zgASe4rUkaHqGvUEHRkjcQEkLsBGj0tCEbVdpIJgAX62lx9/t/oAfyrcmh0nziwOnKziYVKtajlZjixeWLDGWgQFF8QuMtnJ5VRbBlAdXQ7PoKlNe+1hTy1VPOWxGoDNVQZILMoE6xnpF5IACgnGb7z0WOM5cCaTY3pfVHh0My3Ta34Hsxv5dNBbstOhT1he0TfW21JbqndMG0CqN3Z0dKo3rInlWm/YkLGp3tiIGoKTNSxUwzfEkxaPrPx9468Cl8OP6gLS5SlKOfucxAAAAABJRU5ErkJggg==
+"/> Rearranging gives <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAEcAAAApBAMAAACVYCkGAAAAHlBMVEX///8AAAD43JnKfy1dEgCn6f8xh9EIPIQoA05mtv9J/7ZTAAAA90lEQVR4nOWTMQ7CMAxFTdwLeKEwIgXo2qGClQXBFnGCSL1AF47QveLEJCQtrZo4XZj4Hb4aPdmOow/wZ5KUq7EHhQ02Yw9D2kOagWQnu7FHZnpOPKiTaAEK5Rx1GLqaTxjIOpzDEG5UqU2lj4vaQUi0me+jcEcHrJW/TdbGoLIvIDuxnvUkfyS3EIVmMktrfW2i2I4lGSbL+98VTeWhl9lHlelEu7O5gdB8u86+NsYf00HipgBZBimHXQ4VC3lU79NQSXpBqanYEAzduRAMEBeCoR0Xgu9MTAh62RBgCrQhKB53lnFhEOnZQVwWQEebu5QW3fAXegOv9y3cG+Pi/AAAAABJRU5ErkJggg==
+"/>
+<br/>
+The assertion states the same relation (just labels may be swapped), so A follows directly from R. </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('14')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans14" id="idans14">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:14</h3>
+<hr/>
+<h4> As the dilution of an electrolyte increases</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Specific conductance decreases</td>
+<td>  2 ) Molar conductance decreases</td>
+</tr>
+<tr>
+<td>  3 ) Resistance first increases then decreases</td>
+<td>  4 ) No change takes place in conductance</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Dilution increases → specific conductance (κ) decreases because [number of ions per unit decreases volume]<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('15')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans15" id="idans15">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:15</h3>
+<hr/>
+<h4> The specific conductivity of N/10 KCl solution at 20⁰C is 0.0212 ohm⁻¹ cm⁻¹ and the resistance of cell containing this solution at 20⁰C is 55 ohm. The cell constant is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1.166 cm⁻¹      </td>
+<td>  2 ) 2.173 cm⁻¹      </td>
+</tr>
+<tr>
+<td>  3 ) 3.324 cm⁻¹      </td>
+<td>  4 ) 4.616 cm⁻¹  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: κ = <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> </math> × cell constant<br/>∴ Cell constant (l/A) = κ × R = 0.0212 × 55 = 1.166 cm⁻¹  <br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('16')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans16" id="idans16">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:16</h3>
+<hr/>
+<h4> Molar ionic conductivities of a bivalent electrolyte are 57 and 73. The molar conductivity of the solution will be</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 130 S cm² mol⁻¹      </td>
+<td>  2 ) 65 S cm² mol⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 260 S cm² mol⁻¹      </td>
+<td>  4 ) 187 S cm² mol⁻¹  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m</sub> = λ°<sub>(cation) </sub>+ λ°<sub>(anion) </sub>= 57 + 73 = 130 S cm² mol⁻¹<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('17')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans17" id="idans17">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:17</h3>
+<hr/>
+<h4> Equivalent conductance of a weak electrolyte increases on dilution because of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Increase in number of ions per unit volume</td>
+<td>  2 ) Increase in molecular attraction</td>
+</tr>
+<tr>
+<td>  3 ) Increase in degree of association</td>
+<td>  4 ) Increase in degree of ionisation of the substance</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Equivalent conductance eq (Λ<sub>eq</sub>) of a weak electrolyte increases on dilution because increase in degree of<br/>ionization of substance = ions increases = movement of ions increases = Λ<sub>eq</sub> increases.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('18')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans18" id="idans18">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:18</h3>
+<hr/>
+<h4> Assertion (A): For weak electrolytes, molar conductivity increases more rapidly with dilution than for strong electrolytes.<br/>Reason (R): Weak electrolytes are almost completely dissociated at all concentrations.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both A and R are true, and R is the correct explanation of A</td>
+<td>  2 ) Both A and R are true, but R is not the correct explanation of A</td>
+</tr>
+<tr>
+<td>  3 ) A is true, R is false</td>
+<td>  4 ) A is false, R is true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Weak electrolytes are partially dissociated at higher concentrations.<br/>On dilution, their degree of dissociation increases significantly, leading to a sharp rise in molar conductivity.<br/>The reason given is wrong because weak electrolytes are not completely dissociated at all concentrations.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('19')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans19" id="idans19">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:19</h3>
+<hr/>
+<h4> The conduction of electricity through the electrolyte solution is due to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Movement of molecules of electrolyte</td>
+<td>  2 ) Movement of ions of electrolyte</td>
+</tr>
+<tr>
+<td>  3 ) Movement of separate atoms</td>
+<td>  4 ) Movement of particle of the solvent</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Electrolytes get disassociated into ions on passing electricity so, ions start to move and produces conductance.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('20')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans20" id="idans20">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:20</h3>
+<hr/>
+<h4> What is the cell constant of a cell of KCl containing N/50 solution if the conductivity and resistance of cell is 0.002765 S cm⁻¹ and 400 ohm respectively?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 6.91 cm⁻¹      </td>
+<td>  2 ) 1.106 cm⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 14.46 cm⁻¹     </td>
+<td>  4 ) 2.212 cm⁻¹</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: κ = 0.002765 S cm⁻¹, R=400 ohm<br/>G*= κ × R= 0.002765 × 400= 1.106 cm<sup>-1</sup><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('21')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans21" id="idans21">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:21</h3>
+<hr/>
+<h4> The molar conductivity of strong electrolyte</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Increase on dilution</td>
+<td>  2 ) Does not change on dilution</td>
+</tr>
+<tr>
+<td>  3 ) Decrease on dilution</td>
+<td>  4 ) Depends on density of electrolyte itself</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Molar conductivity of strong electrolyte increases on dilution slightly due to decrease in interionic attraction.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('22')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans22" id="idans22">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:22</h3>
+<hr/>
+<h4> The specific conductivity of an electrolyte is 0.0024 ohm<sup>–1</sup> cm<sup>–1</sup>. If its equivalent conductance is found to be 120 ohm<sup>–1</sup> cm<sup>2</sup>, the normality(N) of this solution is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.01</td>
+<td>  2 ) 0.1</td>
+</tr>
+<tr>
+<td>  3 ) 0.02</td>
+<td>  4 ) 0.04</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>N</mi> </mrow> </mfrac> <mi> </mi> </math><br/>N<sub> </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <msub> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>e</mi> <mi>q</mi> </mrow> </msub> </mrow> </mfrac> <mi> </mi> </math>= <math> <mfrac> <mrow> <mn>0.0024</mn> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mn>120</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.02</mn> <mi> </mi> <mi>N</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('23')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans23" id="idans23">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:23</h3>
+<hr/>
+<h4> According to the Debye-Hückel-Onsager equation, a plot of molar conductivity (Λ<sub>m</sub>) versus √C for a strong electrolyte like KCl yields a straight line. The intercept on the Λ<sub>m</sub> axis gives:  </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  The value of the constant B</td>
+<td>  2 ) Molar conductivity at infinite dilution (Λ°<sub>m</sub>)</td>
+</tr>
+<tr>
+<td>  3 ) Degree of ionization (α)</td>
+<td>  4 ) Ionic mobility of Cl⁻ ions</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The Debye-Hückel-Onsager equation is: Λ<sub>m</sub> = <math>
+<msubsup>
+<mrow>
+<mi mathvariant="normal">Λ</mi>
+</mrow>
+<mrow>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msubsup>
+</math> - A√C 
+<br/>Comparing this to the equation of a straight line (y = mx + c):<br/>- y = Λ<sub>m</sub><br/>- x = √C<br/>- Intercept (c) = <math>
+<msubsup>
+<mrow>
+<mi mathvariant="normal">Λ</mi>
+</mrow>
+<mrow>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msubsup>
+</math> (Molar conductivity at infinite dilution)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('24')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans24" id="idans24">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:24</h3>
+<hr/>
+<h4> Which of the following solution will have highest specific conductance?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.01 M CH<sub>3</sub>COOH</td>
+<td>  2 ) 0.01 M NH<sub>4</sub>OH</td>
+</tr>
+<tr>
+<td>  3 ) 0.01 M NaCl</td>
+<td>  4 ) 0.01 M K<sub>2</sub>SO<sub>4</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: If concentration is same then conductance α number of ions, K<sub>2</sub>SO<sub>4</sub> have total (3) ions which is maximum<br/>among four so, it has highest conductance.<br/>K<sub>2</sub>SO<sub>4</sub> → 2K<sup>+</sup> + SO<sub>4</sub><sup>–2</sup><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('25')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans25" id="idans25">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:25</h3>
+<hr/>
+<h4> Equal volumes of a 1M KCl solution and a 0.01 M KCl solution are mixed together. For the resulting mixture, which of the following statements regarding its electrical properties is correct when compared to the initial 1M solution?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both the specific conductance (κ) and the molar conductance (Λ<sub>m</sub>) decrease.</td>
+<td>  2 ) Both the specific conductance (κ) and the molar conductance (Λ<sub>m</sub>) increase.</td>
+</tr>
+<tr>
+<td>  3 ) The specific conductance (κ)decreases, while the molar conductance (Λ<sub>m</sub>) increases.</td>
+<td>  4 ) The specific conductance (κ) increases, while the molar conductance (Λ<sub>m</sub>) decreases.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Mixing equal volumes of 1M and 0.01M solutions creates a mixture with an intermediate concentration of roughly 0.50 M. Compared to the initial concentrated 1.0 M solution, this represents a net dilution. On dilution The specific conductance (κ)decreases, while the molar conductance (Λ<sub>m</sub>) increases.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('26')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans26" id="idans26">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:26</h3>
+<hr/>
+<h4> A 0.1 M solution of monobasic acid at specific resistance of r ohms-cm, its molar conductivity is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 10/r</td>
+<td>  2 ) 10r</td>
+</tr>
+<tr>
+<td>  3 ) 10<sup>4</sup>/r</td>
+<td>  4 ) 10<sup>4</sup>r</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Concentration = 0.1 M<br/>Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> <mi> </mi> </math>= <math> <mi mathvariant="normal">κ</mi> <mo>=</mo> <mi mathvariant="normal"> </mi> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>ρ</mi> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>r</mi> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>r</mi> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>1000</mn> </mrow> <mrow> <mn>0.1</mn> </mrow> </mfrac> </math> = <math> <mfrac> <mrow> <msup> <mrow> <mn>10</mn> </mrow> <mrow> <mn>4</mn> </mrow> </msup> </mrow> <mrow> <mi>r</mi> </mrow> </mfrac> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('27')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans27" id="idans27">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:27</h3>
+<hr/>
+<h4> The resistance of a 0.1 M solution of an electrolyte is 100 Ω. If the specific conductance of this solution is 1.29 S m⁻¹, what will be the resistance of a 0.2 M solution of the same electrolyte in the same conductivity cell? (Assume specific conductance of the 0.2 M solution is 2.58 S m⁻¹)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  50 Ω  </td>
+<td>  2 ) 200 Ω  </td>
+</tr>
+<tr>
+<td>  3 ) 25 Ω  </td>
+<td>  4 ) 100 Ω</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The cell constant (G*) remains unchanged for the same cell.
+<br/> G* = κ<sub>1</sub> × R<sub>1</sub> = 1.29 S m⁻¹ × 100 Ω = 129 m⁻¹<br/>For the second solution: R<sub>2</sub> = G* / κ<sub>2</sub> = 129 / 2.58 = 50 Ω<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('28')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans28" id="idans28">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:28</h3>
+<hr/>
+<h4> Assertion (A): According to Kohlrausch’s Law, at infinite dilution, the molar conductivity of an electrolyte is equal to the sum of the contributions of its individual ions.<br/>Reason (R): At infinite dilution, each ion migrates independently of the other.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both A and R are true, and R is the correct explanation of A</td>
+<td>  2 ) Both A and R are true, but R is not the correct explanation of A</td>
+</tr>
+<tr>
+<td>  3 ) A is true, but R is false</td>
+<td>  4 ) A is false, but R is true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Assertion is the statement of Kohlrausch’s law. In reason at infinite dilution, ions are far apart and do not interact, so each ion moves independently under an electric field. This independence is the reason why the total molar conductivity is simply the sum of the individual ionic contributions. Hence, both statements are true and R explains A.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('29')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans29" id="idans29">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:29</h3>
+<hr/>
+<h4> The resistance of a N/10 KCl aqueous solution is 245Ω. If the electrodes in the cell are 4 cm apart and area having 7 cm<sup>2</sup> each, the molar conductance of the solution will be</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 233</td>
+<td>  2 ) 2.33</td>
+</tr>
+<tr>
+<td>  3 ) 23.32</td>
+<td>  4 ) 0.233</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m</sub><sub> </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> </math>               κ = <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> </math> × <math> <mfrac> <mrow> <mi>l</mi> </mrow> <mrow> <mi>a</mi> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>245</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>4</mn> </mrow> <mrow> <mn>7</mn> </mrow> </mfrac> </math><br/>Λ<sub>m</sub><sub> </sub>= <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>245</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>4</mn> </mrow> <mrow> <mn>7</mn> </mrow> </mfrac> <mo>×</mo> <mn>1000</mn> <mo>×</mo> <mn>10</mn> <mo>=</mo> <mn>23.32</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('30')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans30" id="idans30">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:30</h3>
+<hr/>
+<h4> Molten sodium chloride conducts electricity due tothe presence of:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) free electrons</td>
+<td>  2 ) free ions</td>
+</tr>
+<tr>
+<td>  3 ) free molecules</td>
+<td>  4 ) free atoms of Na and Cl</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In a molten state, high thermal energy breaks the lattice holding NaCl together, allowing Na⁺ and Cl⁻ to act as free mobile ionic charge carriers.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('31')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans31" id="idans31">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:31</h3>
+<hr/>
+<h4> The correct order of equivalent conductance at infinite dilution of LiCl, NaCl and KCl is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  LiCl &gt; NaCl &gt; KCl      </td>
+<td>  2 ) KCl &gt; NaCl &gt; LiCl</td>
+</tr>
+<tr>
+<td>  3 ) NaCl &gt; KCl &gt; LiCl      </td>
+<td>  4 ) LiCl &gt; KCl &gt; NaCl</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Ionic mobilities depends upon size of ions. 
+<br/>
+The ionic size in case of hydrated cation is K⁺<sub>(aq.) </sub>&lt; Na⁺<sub>(aq.) </sub>&lt; Li⁺<sub>(aq.) </sub>Smaller is ion more is hydration and larger is size of hydrated ion.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('32')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans32" id="idans32">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:32</h3>
+<hr/>
+<h4> The increase in molar conductivity of HCl with dilution is due to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) increase in the self ionisation of water</td>
+<td>  2 ) hydrolysis of HCl</td>
+</tr>
+<tr>
+<td>  3 ) decrease in the self ionisation of water</td>
+<td>  4 ) decrease in the interionic forces.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: HCl being strong electrolyte it is already completely ionized in solution. On dilution ions move further apart which reduces the interionic attractions. This allows the ions to move more freely, resulting in a slight increase in molar conductivity.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('33')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans33" id="idans33">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:33</h3>
+<hr/>
+<h4> Electrolytes when dissolved in water dissociate into ions because</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) they are unstable</td>
+<td>  2 ) the water dissolves them</td>
+</tr>
+<tr>
+<td>  3 ) the forces of repulsion increase</td>
+<td>  4 ) the forces of electrostatic attraction are broken down by water.  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Water possesses a remarkably high dielectric constant (approx 80), which weakens and cuts down the electrostatic attractions stabilizing ionic crystal lattices, allowing ion hydration.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('34')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans34" id="idans34">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:34</h3>
+<hr/>
+<h4> Which solution will show highest resistance during the passage of current?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1 N NaCl</td>
+<td>  2 ) 0.1 N NaCl      </td>
+</tr>
+<tr>
+<td>  3 ) 2 N NaCl      </td>
+<td>  4 ) 0.05 N NaCl  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: As the concentration of the electrolyte decreases, the number of ions per unit volume decreases. Since resistance is inversely proportional to the number of ions available, lower the concentration higher is the resistance.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('35')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans35" id="idans35">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:35</h3>
+<hr/>
+<h4> Among the following the number of weak electrolytes is
+<br/>
+CCl₃COOH, HF, HClO₃, C₆H₅COONa, HCN, Ca(OH)₂, H₂SO₃, H₃PO₄</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  3      </td>
+<td>  2 ) 4      </td>
+</tr>
+<tr>
+<td>  3 ) 5      </td>
+<td>  4 ) 6  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Weak electrolytes in this selection are: HF, HCN, H₂SO₃, and H₃PO₄. *(Note: CCl₃COOH is a strong organic acid due to electron-withdrawing Cl groups, C₆H₅COONa is a fully soluble salt, HClO₃ is a strong mineral acid, and Ca(OH)₂ is considered a strong base).*<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('36')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans36" id="idans36">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:36</h3>
+<hr/>
+<h4> When a strong electrolyte solution is diluted, which of the following behaviors is observed regarding its conductivity (κ) and molar conductivity (Λ<sub>m</sub>)?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both κ and Λ<sub>m</sub> increase.</td>
+<td>  2 ) Both κ and Λ<sub>m</sub> decrease.</td>
+</tr>
+<tr>
+<td>  3 ) κ increases but Λ<sub>m</sub> decreases.  </td>
+<td>  4 ) κ decreases but Λ<sub>m </sub>increases.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: With dilution, the total number of ions per unit volume decreases, so the conductivity (κ) decreases. However, the total volume containing one mole of electrolyte increases and interionic attractions drop, which causes the molar conductivity (Λ<sub>m</sub>) to increase.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('37')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans37" id="idans37">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:37</h3>
+<hr/>
+<h4> The resistance of 0.01 N solution of an electrolyte was found to be 210 ohm at 298 K, its conductance is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4.76 × 10⁻³ mho      </td>
+<td>  2 ) 4.76 mho      </td>
+</tr>
+<tr>
+<td>  3 ) 210 mho      </td>
+<td>  4 ) None of these  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>G</mi> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>210</mn> </mrow> </mfrac> <mo>=</mo> <mi> </mi> </math>4.76 × 10⁻³ mho      <br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('38')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans38" id="idans38">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:38</h3>
+<hr/>
+<h4> Equivalent conductance of NaCl, HCl and CH<sub>3</sub>COONa at infinite dilution are 126.45, 425.16 and 91 ohm<sup>–1</sup> cm<sup>2</sup>respectively. The equivalent conductance of CH<sub>3</sub>COOH at infinite dilution would be</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 101.38 ohm<sup>–1</sup> cm<sup>2</sup></td>
+<td>  2 ) 253.62 ohm<sup>–1</sup> cm<sup>2</sup></td>
+</tr>
+<tr>
+<td>  3 ) 389.71 ohm<sup>–1</sup> cm<sup>2</sup></td>
+<td>  4 ) 678.9 ohm<sup>–1</sup> cm<sup>2</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ°<sub>(CH₃COOH)</sub> = Λ°<sub>(HCl) </sub>+ Λ°<sub>(CH₃COONa)</sub> - Λ°<sub>(NaCl)</sub> = 425.16 + 91 - 126.45 = 389.71 ohm⁻¹ cm²<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('39')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans39" id="idans39">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:39</h3>
+<hr/>
+<h4> Which one of the following relationship is not correct?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Conductivity (κ) = Observed conductance (G) × Cell constant</td>
+<td>  2 ) Molar conductance (Λ) = <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>N</mi> </mrow> </mfrac> </math></td>
+</tr>
+<tr>
+<td>  3 ) Degree of dissociation (α)=<math> <mfrac> <mrow> <mi mathvariant="normal">Λ</mi> <mi mathvariant="normal">c</mi> </mrow> <mrow> <mi mathvariant="normal">Λ</mi> <mi mathvariant="normal">∞</mi> </mrow> </mfrac> </math> ​ ​​</td>
+<td>  4 ) <math> <msubsup> <mrow> <mi>E</mi> </mrow> <mrow> <mi>c</mi> <mi>e</mi> <mi>l</mi> <mi>l</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math>= <math> <mfrac> <mrow> <mn>0.0592</mn> </mrow> <mrow> <mi>n</mi> </mrow> </mfrac> </math>​log K<sub>c</sub> at 298 K  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Molar conductance relies on Molarity (M), whereas the equation paired with Normality (N) defines Equivalent conductance.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('40')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans40" id="idans40">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:40</h3>
+<hr/>
+<h4> In an experiment, the specific conductivity (κ) of a 0.1 M solution of a weak monobasic acid is found to be 'x' S cm⁻¹. If the solution is diluted to 0.01 M, its specific conductivity becomes 'y' S cm⁻¹. Which of the following inequalities correctly describes the relationship between x and y?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) x = 10y  </td>
+<td>  2 ) x &gt; 10y</td>
+</tr>
+<tr>
+<td>  3 ) y &lt; x &lt; 10y</td>
+<td>  4 ) x &lt; y</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: When a weak electrolyte solution is diluted by a factor of 10 (from 0.1 M to 0.01 M), two opposing factors influence specific conductivity (κ):<br/>1. The volume increases 10-fold, which would ideally make the ion density and κ decrease exactly 10 times (making x = 10y).<br/>2. According to dilution law, dilution increases the degree of dissociation (α), meaning *more* total ions are generated than before.<br/>Because new ions are created, the specific conductivity does not drop by a full factor of 10. Therefore, the new conductivity 'y' is greater than x/10 (meaning 10y &gt; x). At the same time, because it is diluted, the absolute ion concentration per cm³ is still less than the concentrated version, so x &gt; y.<br/>Combining these gives: y &lt; x &lt; 10y.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('41')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans41" id="idans41">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:41</h3>
+<hr/>
+<h4> The resistance of 1 N solution of acetic acid is 250 ohm, when measured in a cell of cell constant 1.15 cm⁻¹. The equivalent conductance (in ohm⁻¹ cm² equiv⁻¹) of 1 N acetic acid is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4.6      </td>
+<td>  2 ) 9.2      </td>
+</tr>
+<tr>
+<td>  3 ) 18.4     </td>
+<td>  4 ) 0.023  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: κ = <math> <mfrac> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">e</mi> <mi mathvariant="normal">l</mi> <mi mathvariant="normal">l</mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">o</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">s</mi> <mi mathvariant="normal">t</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">t</mi> <mi mathvariant="normal"> </mi> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> </math> = 1.15 / 250 = 0.0046 S cm⁻¹<br/>Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>N</mi> </mrow> </mfrac> </math><br/>= (0.0046 × 1000) / 1 = 4.6 ohm⁻¹ cm² equiv⁻¹<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('42')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans42" id="idans42">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:42</h3>
+<hr/>
+<h4> Resistance of 0.2 M solution of an electrolyte is 50 Ω. The specific conductance of the solution is 1.4 S m⁻¹. The resistance of 0.5 M solution of the same electrolyte is 280 Ω. The molar conductivity of 0.5 M solution of the electrolyte in S m² mol⁻¹ is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 5 × 10⁻⁴      </td>
+<td>  2 ) 5 × 10⁻³      </td>
+</tr>
+<tr>
+<td>  3 ) 5 × 10³      </td>
+<td>  4 ) 5 × 10²  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For given 0.2 M solution,<br/>Resistance (R) = 50 Ω,<br/>Specific conductivity (κ) = 1.4 S m⁻¹,<br/>Cell constant (G*) = κ × R<br/>= 1.4 × 50  = 70 m⁻¹.  <br/>Now use this for the second solution and find its specific conductance. R<sub>2</sub>= 280 Ω<br/><math> <msub> <mrow> <mi mathvariant="normal">κ</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>=</mo> <mfrac> <mrow> <mi mathvariant="normal">G</mi> <mi mathvariant="normal">*</mi> </mrow> <mrow> <msub> <mrow> <mi mathvariant="normal">R</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>70</mn> </mrow> <mrow> <mn>280</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.25</mn> <mi> </mi> </math>S m⁻¹<br/>Molar conductivity is given by<br/>c= 0.5 M= 0.5<math> <mo>×</mo> <mn>1000</mn> <mo>=</mo> <mn>500</mn> <mi> </mi> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mi> </mi> </math>m<sup>-3</sup><br/><math> <msub> <mrow> <mi>Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> </msub> <mo>=</mo> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> </mrow> <mrow> <mi>c</mi> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>0.25</mn> </mrow> <mrow> <mn>500</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.0005</mn> </math> S m² mol⁻¹<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('43')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans43" id="idans43">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:43</h3>
+<hr/>
+<h4> The equivalent conductivity of 1 M H<sub>2</sub>SO<sub>4</sub> solution would be if specific conductance is 26 × 10<sup>–2</sup> S cm<sup>–1</sup></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1.3 × 10<sup>2</sup> S cm<sup>2</sup> eq<sup>–1</sup></td>
+<td>  2 ) 1.6 × 10<sup>2</sup> S cm<sup>–1</sup></td>
+</tr>
+<tr>
+<td>  3 ) 13 S cm<sup>2</sup> mol<sup>–1</sup></td>
+<td>  4 ) 1.3 × 10<sup>3</sup> S cm<sup>2</sup> mol<sup>–1</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>N</mi> </mrow> </mfrac> </math><br/>Step 1: Find normality of H₂SO₄<br/>H₂SO₄ → 2H⁺ + SO₄²⁻ → Basicity = 2<br/>Normality = Molarity × Basicity = 1 M × 2 = 2 N<br/>Step 2: Put values<br/>κ=26×10<sup>−2</sup> S cm⁻¹ = 0.26 S cm⁻¹<br/>Λ<sub>eq </sub>= <math> <mfrac> <mrow> <mn>0.26</mn> <mo>×</mo> <mn>1000</mn> <mi mathvariant="normal"> </mi> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <mi> </mi> </math>= 130 S cm² eq⁻¹=1.3×10<sup>2</sup> S cm² eq⁻¹<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('44')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans44" id="idans44">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:44</h3>
+<hr/>
+<h4> The specific conductance of a solution is 0.2 ohm⁻¹ cm⁻¹ and conductance is 0.04 ohm⁻¹. The cell constant would be:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1 cm⁻¹      </td>
+<td>  2 ) 0 cm⁻¹      </td>
+</tr>
+<tr>
+<td>  3 ) 5 cm⁻¹      </td>
+<td>  4 ) 0.2 cm⁻¹  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Cell constant<math> <mo>=</mo> <mfrac> <mrow> <mi mathvariant="normal">S</mi> <mi mathvariant="normal">p</mi> <mi mathvariant="normal">e</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">i</mi> <mi mathvariant="normal">f</mi> <mi mathvariant="normal">i</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">o</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">d</mi> <mi mathvariant="normal">u</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">t</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">e</mi> <mi mathvariant="normal"> </mi> <mo>(</mo> <mi mathvariant="normal">κ</mi> <mo>)</mo> </mrow> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">o</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">d</mi> <mi mathvariant="normal">u</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">t</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">n</mi> <mi mathvariant="normal">c</mi> <mi mathvariant="normal">e</mi> <mi mathvariant="normal"> </mi> <mo>(</mo> <mi mathvariant="normal">G</mi> <mo>)</mo> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>0.2</mn> </mrow> <mrow> <mn>0.04</mn> </mrow> </mfrac> <mo>=</mo> </math>5 cm⁻¹  <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('45')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans45" id="idans45">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:45</h3>
+<hr/>
+<h4> Amongst the 1 M solution given below best conductor of electricity is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) CH₃COOH      </td>
+<td>  2 ) H₂SO₄      </td>
+</tr>
+<tr>
+<td>  3 ) H₃PO₄      </td>
+<td>  4 ) Boric acid  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: H₂SO₄ is a strong electrolyte. It dissociates completely in water and produces high concentrations of H<sup>+</sup> and SO<sub>4</sub><sup>2-</sup>.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('46')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans46" id="idans46">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:46</h3>
+<hr/>
+<h4> The specific conductance of 0.1 M NaCl solution is 1.06×10<sup>−2</sup> ohm⁻¹ cm⁻¹. Its molar conductance in ohm⁻¹ cm² mol⁻¹ is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1.06×10<sup>2</sup>      </td>
+<td>  2 ) 1.06×10<sup>3</sup></td>
+</tr>
+<tr>
+<td>  3 ) 1.06×10<sup>4</sup>      </td>
+<td>  4 ) 53×10<sup>4</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Λ<sub>m</sub><sub> </sub>= <math> <mfrac> <mrow> <mi mathvariant="normal">κ</mi> <mo>×</mo> <mn>1000</mn> </mrow> <mrow> <mi>M</mi> </mrow> </mfrac> </math><br/>= <math> <mfrac> <mrow> <mo>(</mo> <mn>1.06</mn> <mi mathvariant="normal"> </mi> <mo>×</mo> <mi mathvariant="normal"> </mi> <mn>10</mn> <mo>⁻</mo> <mo>²</mo> <mi mathvariant="normal"> </mi> <mo>×</mo> <mi mathvariant="normal"> </mi> <mn>1000</mn> <mo>)</mo> </mrow> <mrow> <mn>0.1</mn> <mi mathvariant="normal"> </mi> </mrow> </mfrac> </math>  = 10.6 / 0.1 = 106 = 1.06 × 10²<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('47')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans47" id="idans47">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:47</h3>
+<hr/>
+<h4> Pure water does not conduct electricity because it</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) has low boiling point</td>
+<td>  2 ) is almost unionised</td>
+</tr>
+<tr>
+<td>  3 ) is neutral</td>
+<td>  4 ) is readily decomposed.  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Water is a highly weak electrolyte; its self-ionization value is exceptionally low (K<sub>w</sub> = 10<sup>-14</sup>), leaving insufficient free concentrations of H<sup>+</sup> and OH<sup>-</sup> ions to transport current.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('48')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans48" id="idans48">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:48</h3>
+<hr/>
+<h4> On increasing the temperature of an electrolytic solution, its conductance generally:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Decreases</td>
+<td>  2 ) Increases</td>
+</tr>
+<tr>
+<td>  3 ) Remains exactly the same  </td>
+<td>  4 ) First increases then drops sharply</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Increasing the temperature increases the kinetic energy of the ions and decreases the viscosity of the solvent. This allows the ions to migrate much faster toward electrodes, which increases overall conductance.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('49')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans49" id="idans49">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:49</h3>
+<hr/>
+<h4> Which of the following is not a strong electrolyte</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) NaCl</td>
+<td>  2 ) KNO<sub>3</sub></td>
+</tr>
+<tr>
+<td>  3 ) NH<sub>4</sub>OH</td>
+<td>  4 ) FeSO<sub>4</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: NaCl, KNO<sub>3</sub>, FeSO<sub>4</sub> → SASB salts<br/>NH<sub>4</sub>OH → Weak base<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('50')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans50" id="idans50">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:50</h3>
+<hr/>
+<h4> For strong electrolytes the values of molar conductivities at infinite dilution are given below<br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/>The molar conductance at infinite dilution for Ba(OH)<sub>2</sub> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 523 × 10<sup>–4</sup> Sm<sup>2</sup> mol<sup>–1</sup></td>
+<td>  2 ) 52.3 × 10<sup>–4</sup> Sm<sup>2</sup> mol<sup>–1</sup></td>
+</tr>
+<tr>
+<td>  3 ) 5.23 × 10<sup>–4</sup> Sm<sup>2</sup> mol<sup>–1</sup></td>
+<td>  4 ) 6.23 × 10<sup>–4</sup> Sm<sup>2</sup> mol<sup>–1</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/>280×10<sup>-4</sup><sup> </sup>+ (2 × 248×10<sup>-4</sup>) = x + (2 × 126. 5 × 10<sup>-4</sup>)<br/>x = 523 × 10<sup>-4</sup><sup> </sup>Sm<sup>2</sup> mol<sup>–1</sup><br/> <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mi>∞</mi> </mrow> </msubsup> </math> for Ba(OH)<sub>2</sub><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('51')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans51" id="idans51">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:51</h3>
+<hr/>
+<h4> A conductivity cell has been calibrated with a 0.01 M 1:1 electrolyte solution (specific conductance, κ = 1.25 × 10⁻³ S cm⁻¹) in the cell and the measured resistance was 800 ohms at 25⁰C. The constant will be:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 10.2 cm⁻¹      </td>
+<td>  2 ) 0.102 cm⁻¹      </td>
+</tr>
+<tr>
+<td>  3 ) 1.0 cm⁻¹      </td>
+<td>  4 ) 0.5 cm⁻¹  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Cell constant (l/A) = κ × R = 1.25 × 10⁻³ × 800 = 1.00 cm⁻¹  <br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('52')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans52" id="idans52">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:52</h3>
+<hr/>
+<h4>Consider the following statements regarding Kohlrausch law:<br/>
+I. The limiting molar conductivity of an electrolyte is the sum of contributions of individual ions. <br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAXMAAAAcBAMAAABhQUKaAAAAHlBMVEX////86qMPAABXp+6l6//kn08UT54eCFSZTBJmBQL0mf3VAAADP0lEQVR4nO1WsY7bMAwVBwEaWw/JabUBZ1WWzrrhgM5J4XRUgeYLTkvXKHX2uLjvLSnbieRIyRW4pYCJBLblR74niqLM2GyzzTbbbI8NSvOhuEdW1B/GIp4773OMRvnP9+Ey4Dt2lIouTzrpnWFpejQva/xdRpfa+ZchUlY4PKFM4UJwoVJCb0bBChriJoz8kAXswKWYHCM2bOFx9G5T8dLizFYan7iNfCOcpZ+3AJyUDmU8yg0Yrxrl8lJtVnpTBVRpFgSynZ5KhxqDbPGGUiEMvGl20jtN0V0kIcJV/kKWBIdGRKAvj4UBy8mXHFomfyLp1TvH0rLxNpAudloq12cBB58UExbvSU20ZhFu2TLRq0mDp9KD9fhtoSMVlFbowPWA0TvDAt2lwALpDSbN72lakN3LyEPRd9dcTXD4sMAoqy8R+KCo3Bg71EyUVVHhFsBbJILzSou+cfA9VgFtM6oRbrcjsb7L0oMn0sGOW4QmvilHxVLHmyfGbaVqcHExGSFYqgX7RhPBxEGFKe3AFoqI8O/gjbyXz+MeMVTC1RBw+bUssXHkWAgMU+lChWAnja+rYcE0Zg/N3OCOwjqqUReBpSoIKstyb73wjph66UjsZ+kgkC7WNJ2WXbKUYxEp6Q0LwNDhqkA3uoZZj3EWqqPXE4Glok7gW4cZpMtykM6tD4AvAulS4XR8iCF4hqXf6lPpx8sWwijcS/G73bG41mOcYa1BFp+RK1j6LU5APmQd7CXrfesXGqpBuiUfqfoaHqhyLPR6Wuv4etyvVB6GZnvSuO3cNmoaE5xiG4Ms33+oEIy1Dn+o6cC6QoWOV3yUvtYn3fpk9uvUJ7GluDTbgeoOy9hhhtO09V3/YOW+xishazhjLDxk2ElFrXqC80vIVy91CIZzVfjz54DHzKrCaOf1+Vd9xjQLAiI1x06zen7b7NHJoQwj677fuLssvumIa4O92udXub45PNntQAaXBI/JTRgs1x0mNSzH0DvHErXqi6NZgLk9VG6+YTK4JPiOdNaAWeS/YTIskMyYUFu+fs+XYxKXBhdlan17c1xtP+W/HNMsjWYJW+ojf80S/TvugeGXo97lJ/ZBLLPN9l/bX/3W/Wnh3t8qAAAAAElFTkSuQmCC
+"/> <br/>
+III. The law is applicable only to strong electrolytes at infinite dilution.<br/> 
+IV. It can be used to determine <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAABwAAAAaBAMAAABWeiG6AAAAHlBMVEX////446A3AA2o7f/fnE1Yqu4nW6kLGm2iVxN+KU3OIveyAAAAc0lEQVR4nGNgoBwIqaFwJwsFIPEYizkQXJYCxgSWBITGAsZiFoTslGJGVYRilpRiBieEyZKGysiWtDIic1kSULicBoyqSFw3BmQui7oBh7phm1OJugHCkUKBapIGSDoYE8SQLWMJcBVAKJ7MaeCO7EXKAQBKRBAewHeOoAAAAABJRU5ErkJggg==
+"/> of weak electrolytes. 
+<br/>
+Which are correct?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) I, II and III only</td>
+<td>  2 ) I, II and IV only</td>
+</tr>
+<tr>
+<td>  3 ) I and II only</td>
+<td>  4 ) I, II, III and IV</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:I, II. Directly from law and given data. <br/>
+III. Incorrect → Law holds for all electrolytes at infinite dilution.<br/>
+IV. Correct → We can find <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAABwAAAAaBAMAAABWeiG6AAAAHlBMVEX////446A3AA2o7f/fnE1Yqu4nW6kLGm2iVxN+KU3OIveyAAAAc0lEQVR4nGNgoBwIqaFwJwsFIPEYizkQXJYCxgSWBITGAsZiFoTslGJGVYRilpRiBieEyZKGysiWtDIic1kSULicBoyqSFw3BmQui7oBh7phm1OJugHCkUKBapIGSDoYE8SQLWMJcBVAKJ7MaeCO7EXKAQBKRBAewHeOoAAAAABJRU5ErkJggg==
+"/> of weak electrolytes like CH3COOH using this law.
+
+ </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('53')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans53" id="idans53">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:53</h3>
+<hr/>
+<h4> Which of the following solutions of KCl has the lowestvalue of equivalent conductance?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1 M</td>
+<td>  2 ) 0.1 M</td>
+</tr>
+<tr>
+<td>  3 ) 0.01 M</td>
+<td>  4 ) 0.001 M</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Equivalent conductance (Λ<sub>eq</sub>) increases with dilution. Hence, it shows the lowest value at the highest concentration (1 M).<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('54')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans54" id="idans54">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:54</h3>
+<hr/>
+<h4> The increase in the value of molar conductivity of acetic acid with dilution is due to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) decrease in interionic forces</td>
+<td>  2 ) increase in degree of ionisation</td>
+</tr>
+<tr>
+<td>  3 ) increase in self ionisation of water</td>
+<td>  4 ) none of these.  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Acetic acid is weak electrolyte. Hence as the dilution increases the degree of dissociation increases. This produces more ions in the solution leading to sharp increase in the molar conductivity.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('55')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans55" id="idans55">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:55</h3>
+<hr/>
+<h4> The specific conductivity of a saturated solution of a sparingly soluble salt AB is 2.0 × 10⁻⁶ S cm⁻¹. 
+<br/>
+If its limiting molar conductivity is 200 S cm² mol⁻¹, the solubility of the salt in mol L⁻¹ is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  1 × 10⁻⁴</td>
+<td>  2 ) 1 × 10⁻⁵</td>
+</tr>
+<tr>
+<td>  3 ) 2 × 10⁻³</td>
+<td>  4 ) 1 × 10⁻⁶</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a sparingly soluble salt, Molarity = Solubility (S) Formula: <math>
+<msubsup>
+<mrow>
+<mi mathvariant="normal">Λ</mi>
+</mrow>
+<mrow>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msubsup>
+</math> = <math>
+<mfrac>
+<mrow>
+<mi mathvariant="normal">κ</mi>
+<mi mathvariant="normal"> </mi>
+<mo>×</mo>
+<mi mathvariant="normal"> </mi>
+<mn>1000</mn>
+</mrow>
+<mrow>
+<mi mathvariant="normal">S</mi>
+<mi mathvariant="normal">o</mi>
+<mi mathvariant="normal">l</mi>
+<mi mathvariant="normal">u</mi>
+<mi mathvariant="normal">b</mi>
+<mi mathvariant="normal">i</mi>
+<mi mathvariant="normal">l</mi>
+<mi mathvariant="normal">i</mi>
+<mi mathvariant="normal">t</mi>
+<mi mathvariant="normal">y</mi>
+</mrow>
+</mfrac>
+</math><br/>Solubility = <math>
+<mfrac>
+<mrow>
+<mi mathvariant="normal">κ</mi>
+<mi mathvariant="normal"> </mi>
+<mo>×</mo>
+<mi mathvariant="normal"> </mi>
+<mn>1000</mn>
+</mrow>
+<mrow>
+<msubsup>
+<mrow>
+<mi mathvariant="normal">Λ</mi>
+</mrow>
+<mrow>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msubsup>
+</mrow>
+</mfrac>
+</math>= (2.0 × 10⁻⁶ × 1000) / 200 = 1 × 10⁻⁵ mol L⁻¹<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('56')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans56" id="idans56">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:56</h3>
+<hr/>
+<h4> A cell constant is generally found by measuring the conductivity of aqueous solution of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) BaCl₂        </td>
+<td>  2 ) KCl</td>
+</tr>
+<tr>
+<td>  3 ) NaCl        </td>
+<td>  4 ) MgCl₂  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: KCl solutions are universally chosen reference standards because their conductivities are highly stable and accurately documented across varying standard temperatures.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('57')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans57" id="idans57">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:57</h3>
+<hr/>
+<h4> The limiting molar conductivities (<math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math>) for HCl, NaCl, and CH<sub>3</sub>COONa are 426, 126, and 91 S cm² mol⁻¹ respectively. If the molar conductivity of a 0.01 M acetic acid solution is 19.5 S cm² mol⁻¹, its degree of dissociation (α) is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  0.5%</td>
+<td>  2 ) 5.0%</td>
+</tr>
+<tr>
+<td>  3 ) 1.0%</td>
+<td>  4 ) 0.05%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: According to Kohlrausch's law: <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math> (CH<sub>3</sub>COOH) = <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math> (HCl) + <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math> (CH<sub>3</sub>COONa) - <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math> (NaCl) = 426 + 91 - 126 = 391 S cm² mol⁻¹<br/>Degree of dissociation (α) = <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> </msubsup> </math> / <math> <msubsup> <mrow> <mi mathvariant="normal">Λ</mi> </mrow> <mrow> <mi>m</mi> </mrow> <mrow> <mn>0</mn> </mrow> </msubsup> </math>= 19.5 / 391 = 0.05 Percentage dissociation = 0.05 × 100 = 5.0%<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('58')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans58" id="idans58">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:58</h3>
+<hr/>
+<h4>Consider the following statements regarding electrolytic conductance:<br/>
+I. The conductivity of pure water is due to self-ionization of water producing H+ and OH− ions.<br/>
+II. Conductivity of an electrolytic solution decreases with increase in temperature.<br/>
+III. Larger size of solvated ions leads to lower conductivity of the solution.<br/>
+IV. Metallic conductors show change in composition during passage of electricity, but ionic conductors do not. 
+<br/>
+Which of the above statements are correct?  </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) I and III only</td>
+<td>  2 ) I, II and III only</td>
+</tr>
+<tr>
+<td>  3 ) I and IV only</td>
+<td>  4 ) I, III and IV only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:I. Correct → Pure water has [H<sup>+</sup>]=[OH−]=10<sup>−7</sup> M, conductivity = 3.5×10<sup>−5</sup>Sm<sup>−1</sup>
+<br/>
+II. Incorrect → For electrolytes, conductivity increases with temperature due to increased ion mobility and decreased viscosity.
+<br/>
+III. Correct → Larger solvated ions move slower → lower conductance.
+<br/>
+IV. Incorrect → Reverse is true. In metallic conductors composition remains unchanged. 
+<br/>
+In ionic conductors, prolonged DC causes electrochemical reactions and change in composition. </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('59')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans59" id="idans59">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:59</h3>
+<hr/>
+<h4> The resistance of 0.01 N solution of an electrolyte was found to be 210 ohm at 298 K, using a conductivity cell of cell constant 0.66 cm⁻¹. The specific conductance of solution is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 3.14 × 10⁻³ mho cm⁻¹      </td>
+<td>  2 ) 3.14 × 10⁻³ mho⁻¹ cm</td>
+</tr>
+<tr>
+<td>  3 ) 3.14 mho cm⁻¹             </td>
+<td>  4 ) 3.14 mho⁻¹ cm⁻¹  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: κ = <math> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mi>R</mi> </mrow> </mfrac> </math> × cell constant = <math> <mfrac> <mrow> <mn>0.66</mn> </mrow> <mrow> <mn>210</mn> </mrow> </mfrac> <mo>=</mo> <mn>3.14</mn> </math> × 10<sup>-3</sup> mho cm<sup>-1</sup><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('60')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans60" id="idans60">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:60</h3>
+<hr/>
+<h4> Molar conductivity of weak electrolytes increases with dilution because of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) increase in the degree of ionization of the substance</td>
+<td>  2 ) increase in the number of ions per unit volume</td>
+</tr>
+<tr>
+<td>  3 ) increase in the molecular attractions</td>
+<td>  4 ) increase in the degree of association  </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Molar conductivity is the conductance of all the ions produced from 1 mole of the electrolyte. With dilution, the degree of ionization increases resulting in increase in the total number of ions and thus increase in the molar conductivity.  <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('61')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="hidden-lg hidden-md">
+<div class="clearfix"></div></div>
+<div class="col-md-4" id="pallette">
+<div class="panel panel-default mb0">
+<div class="panel panel-default">
+<div class="panel-body" style="height:310px;overflow-y:scroll;">
+<table style="background-color:#eef7e4;">
+<tbody><tr>
+<td style="padding: 15px;/* width: 50px; */">
+<input id="btn1" name="btn1" onclick="fun2('1')" style="background-color:green" type="button" value="1"/>
+<input id="btn2" name="btn2" onclick="fun2('2')" style="background-color:green" type="button" value="2"/>
+<input id="btn3" name="btn3" onclick="fun2('3')" style="background-color:green" type="button" value="3"/>
+<input id="btn4" name="btn4" onclick="fun2('4')" style="background-color:green" type="button" value="4"/>
+<input id="btn5" name="btn5" onclick="fun2('5')" style="background-color:green" type="button" value="5"/>
+<input id="btn6" name="btn6" onclick="fun2('6')" style="background-color:green" type="button" value="6"/>
+<input id="btn7" name="btn7" onclick="fun2('7')" style="background-color:green" type="button" value="7"/>
+<input id="btn8" name="btn8" onclick="fun2('8')" style="background-color:green" type="button" value="8"/>
+<input id="btn9" name="btn9" onclick="fun2('9')" style="background-color:green" type="button" value="9"/>
+<input id="btn10" name="btn10" onclick="fun2('10')" style="background-color:green" type="button" value="10"/>
+<input id="btn11" name="btn11" onclick="fun2('11')" style="background-color:red" type="button" value="11"/>
+<input id="btn12" name="btn12" onclick="fun2('12')" style="background-color:green" type="button" value="12"/>
+<input id="btn13" name="btn13" onclick="fun2('13')" style="background-color:red" type="button" value="13"/>
+<input id="btn14" name="btn14" onclick="fun2('14')" style="background-color:red" type="button" value="14"/>
+<input id="btn15" name="btn15" onclick="fun2('15')" style="background-color:green" type="button" value="15"/>
+<input id="btn16" name="btn16" onclick="fun2('16')" style="background-color:red" type="button" value="16"/>
+<input id="btn17" name="btn17" onclick="fun2('17')" style="background-color:red" type="button" value="17"/>
+<input id="btn18" name="btn18" onclick="fun2('18')" style="background-color:red" type="button" value="18"/>
+<input id="btn19" name="btn19" onclick="fun2('19')" style="background-color:green" type="button" value="19"/>
+<input id="btn20" name="btn20" onclick="fun2('20')" style="background-color:red" type="button" value="20"/>
+<input id="btn21" name="btn21" onclick="fun2('21')" style="background-color:green" type="button" value="21"/>
+<input id="btn22" name="btn22" onclick="fun2('22')" style="background-color:green" type="button" value="22"/>
+<input id="btn23" name="btn23" onclick="fun2('23')" style="background-color:green" type="button" value="23"/>
+<input id="btn24" name="btn24" onclick="fun2('24')" style="background-color:green" type="button" value="24"/>
+<input id="btn25" name="btn25" onclick="fun2('25')" style="background-color:red" type="button" value="25"/>
+<input id="btn26" name="btn26" onclick="fun2('26')" style="background-color:green" type="button" value="26"/>
+<input id="btn27" name="btn27" onclick="fun2('27')" style="background-color:green" type="button" value="27"/>
+<input id="btn28" name="btn28" onclick="fun2('28')" style="background-color:green" type="button" value="28"/>
+<input id="btn29" name="btn29" onclick="fun2('29')" style="background-color:green" type="button" value="29"/>
+<input id="btn30" name="btn30" onclick="fun2('30')" style="background-color:green" type="button" value="30"/>
+<input id="btn31" name="btn31" onclick="fun2('31')" style="background-color:green" type="button" value="31"/>
+<input id="btn32" name="btn32" onclick="fun2('32')" style="background-color:red" type="button" value="32"/>
+<input id="btn33" name="btn33" onclick="fun2('33')" style="background-color:green" type="button" value="33"/>
+<input id="btn34" name="btn34" onclick="fun2('34')" style="background-color:red" type="button" value="34"/>
+<input id="btn35" name="btn35" onclick="fun2('35')" style="background-color:red" type="button" value="35"/>
+<input id="btn36" name="btn36" onclick="fun2('36')" style="background-color:red" type="button" value="36"/>
+<input id="btn37" name="btn37" onclick="fun2('37')" style="background-color:green" type="button" value="37"/>
+<input id="btn38" name="btn38" onclick="fun2('38')" style="background-color:green" type="button" value="38"/>
+<input id="btn39" name="btn39" onclick="fun2('39')" style="background-color:red" type="button" value="39"/>
+<input id="btn40" name="btn40" onclick="fun2('40')" style="background-color:red" type="button" value="40"/>
+<input id="btn41" name="btn41" onclick="fun2('41')" style="background-color:red" type="button" value="41"/>
+<input id="btn42" name="btn42" onclick="fun2('42')" style="background-color:green" type="button" value="42"/>
+<input id="btn43" name="btn43" onclick="fun2('43')" style="background-color:green" type="button" value="43"/>
+<input id="btn44" name="btn44" onclick="fun2('44')" style="background-color:green" type="button" value="44"/>
+<input id="btn45" name="btn45" onclick="fun2('45')" style="background-color:red" type="button" value="45"/>
+<input id="btn46" name="btn46" onclick="fun2('46')" style="background-color:red" type="button" value="46"/>
+<input id="btn47" name="btn47" onclick="fun2('47')" style="background-color:green" type="button" value="47"/>
+<input id="btn48" name="btn48" onclick="fun2('48')" style="background-color:green" type="button" value="48"/>
+<input id="btn49" name="btn49" onclick="fun2('49')" style="background-color:red" type="button" value="49"/>
+<input id="btn50" name="btn50" onclick="fun2('50')" style="background-color:green" type="button" value="50"/>
+<input id="btn51" name="btn51" onclick="fun2('51')" style="background-color:red" type="button" value="51"/>
+<input id="btn52" name="btn52" onclick="fun2('52')" style="background-color:red" type="button" value="52"/>
+<input id="btn53" name="btn53" onclick="fun2('53')" style="background-color:green" type="button" value="53"/>
+<input id="btn54" name="btn54" onclick="fun2('54')" style="background-color:green" type="button" value="54"/>
+<input id="btn55" name="btn55" onclick="fun2('55')" style="background-color:red" type="button" value="55"/>
+<input id="btn56" name="btn56" onclick="fun2('56')" style="background-color:red" type="button" value="56"/>
+<input id="btn57" name="btn57" onclick="fun2('57')" style="background-color:red" type="button" value="57"/>
+<input id="btn58" name="btn58" onclick="fun2('58')" style="background-color:red" type="button" value="58"/>
+<input id="btn59" name="btn59" onclick="fun2('59')" style="background-color:green" type="button" value="59"/>
+<input id="btn60" name="btn60" onclick="fun2('60')" style="background-color:green" type="button" value="60"/>
+</td> </tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="table-responsive text-nowrap" id="t3" style="display:none">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10228 </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 36.00  </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Your 25-CHEM KCET JUT-25 Score:36.00   </h4>
+</div>
+<table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+<tr style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+<td><b>Questions Attempted</b></td>
+<td>60</td>
+</tr>
+<tr>
+<td><b>Correct Answers</b></td>
+<td>36</td>
+</tr>
+<tr style="background:#a0d3d691;">
+<td><b>Wrong Answers</b></td>
+<td>24</td>
+</tr>
+</table>
+<div class="col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<div id="canvas-holder" style="width:80%;float:right">
+<canvas id="physicschart"></canvas>
+</div>
+</div>
+</div>
+<!--	<div class="table-responsive text-nowrap" id="t4" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10228 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 36  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Chemistry Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="chemistrychart"></canvas>
+	</div>
+
+	
+			  
+			</div></div>
+			
+			<div class="table-responsive text-nowrap" id="t5" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10228 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 36  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Biology Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+
+	
+			   <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="biochart"></canvas>
+	</div>
+
+	
+			  </div>
+			</div>-->
+</div>
+</div>
+</div>
+<!-- End Email Statistic area-->
+<!-- Start Footer area-->
+<div class="footer-copyright-area hidden-xs" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+</div>
+<div class="site-footer__top" style="padding-bottom:10px">
+<div class="container">
+<div class="col-md-12 col-sm-12">
+<nav class="site-footer__navigation" role="navigation" style="padding-bottom:20px">
+<div class="menu-home-footer-container">
+<img src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="border: none;height:100px;float:left"/>
+<ul class="menu" id="footer-navigation" style="text-align: center;">
+<li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" style="margin: 5px" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" style="margin: 5px" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" style="margin: 5px" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" style="margin: 5px" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" style="margin: 5px" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" style="margin: 5px" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" style="margin: 5px" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" style="margin: 5px" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" style="margin: 5px" target="_blank">JIIPMER</a></li>
+</ul>
+<div><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px">
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;font-size:16px;margin: 5px;">jnanasudhaonline@gmail.com</a></font>|<font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;font-size:16px;margin: 5px">info@jnanasudha.com</a></font></li></ul></div>
+</div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px;"><a href="https://jnanasudha.com/quiz/termsandconditions" style="margin:5px" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a>|<a href="#" style="margin:5px" title="Disclaimer">DISCLAIMER</a></li>|<li><a data-toggle="modal" href="#costumModal20" style="margin: 5px">Contact Us</a></li></ul></div>
+<div aria-hidden="true" aria-labelledby="costumModalLabel" class="modal" data-easein="slideDownBigIn" id="costumModal20" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+									×
+								</button>
+<h4 class="modal-title">
+									Contact Us
+								</h4>
+</div>
+<div class="modal-body">
+<p style="color:#757575">
+									PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .</p>
+<br/><p style="color:blue">Ph: (08258) 295555, 295999
+                      Mob:+91 8762295555,+91 8762595555
+								</p>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<br/>
+<div class="site-footer__bottom">
+<div>
+<p style="font-size:15px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .site-footer__bottom -->
+</div><!-- .container -->
+</div></div></footer><!-- .site-footer -->
+</div>
+</div>
+<!-- Footer Links -->
+</div>
+
+<div class="footer-copyright-area hidden-lg hidden-sm hidden-md" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="site-footer__quicklinks">
+<div class="container">
+<div class="quick-links">
+<div class="grid-container">
+<input id="quick-links_toggle-checkbox" type="checkbox" value="1"/>
+<div class="quick-links__title">
+<label class="quick-links__toggle" for="quick-links_toggle-checkbox">
+<i class="quick-links__toggle-icon"></i>
+<span class="quick-links__toggle-text">Contact Us</span>
+</label>
+</div>
+<div class="quick-links__content">
+<ul class="quick-links__list">
+<li class="quick-links__list-title"><font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;">info@jnanasudha.com</a></font><br/>
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;">jnanasudhaonline@gmail.com</a></font></li>
+<li style="font-size:16px;">PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .
+                      <br/>Ph: <a href="tel:08258295555" style="color: #009eff;">(08258) 295555</a>,<a href="tel:08258295999" style="color: #009eff;"> 295999</a>
+                      Mob:<a href="tel:+918762295555" style="color: #009eff;">+91 8762295555</a>,<a href="tel:+918762595555" style="color: #009eff;">+91 8762595555</a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="site-footer__top">
+<div class="container">
+<nav class="site-footer__navigation" role="navigation">
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" target="_blank">JIIPMER</a></li>
+</ul></div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li style="font-size:17px"><a href="https://jnanasudha.com/quiz/termsandconditions" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a> | <a href="#" title="Disclaimer">DISCLAIMER</a></li></ul></div>
+</nav><!-- .site-footer__navigation -->
+</div><!-- .container -->
+</div><!-- .site-footer__top -->
+<div class="site-footer__bottom">
+<div class="container">
+<br/>
+<div class="site-footer__copy">
+<p style="font-size:13px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .container -->
+</div><!-- .site-footer__bottom -->
+<!-- .site-footer__quicklinks -->
+</footer><!-- .site-footer -->
+</div>
+</div>
+</div>
+<style>a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  color:black;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+   color:black;
+}
+.modal-title {
+  font-size: 20px;
+   color:black;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  font-size: 15px;
+   color:black;
+}
+
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+
+</style>
+<!-- End Footer area-->
+<script>
+                                $(document).ready(function () {
+                                $('[data-toggle=collapse-side]').click(function (e) {
+                                $('.side-collapse').toggleClass('in');
+                                });
+                                });
+                                $(document).ready(function () {
+                                $('.second-button').on('click', function () {
+                                $('.animated-icon2').toggleClass('open');
+                                });
+                                });
+                                </script>
+<script type="text/javascript">
+
+                        $(window).on('load resize scroll', function() {
+    var f = $('#footer');
+    f.css({position:'static'});
+    if (f.offset().top + f.height() < $(window).height()) {
+        f.css({position:'absolute', bottom:'0', width:'100%'});
+    }
+});
+                    </script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+		
+		var configphysics = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						36,
+						24,
+						-15					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var configbiology = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						90					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		
+		var configchemistry = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						45					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+
+		window.onload = function() {
+			var ctx1 = document.getElementById('biochart').getContext('2d');
+			window.myPie = new Chart(ctx1, configbiology);
+			var ctx2 = document.getElementById('chemistrychart').getContext('2d');
+			window.myPie = new Chart(ctx2, configchemistry);
+			var ctx3 = document.getElementById('physicschart').getContext('2d');
+			window.myPie = new Chart(ctx3, configphysics);
+		};
+
+		
+	</script>
+<script type="text/javascript">
+function close_window(){
+    window.opener.location ='https://jnanasudha.com/quiz/quiz_userscreen';
+    window.close();
+}
+</script>
+<script>
+ document.getElementById('t1').style.display = "block";
+ document.getElementById('sp1').addEventListener("click",function(){
+    showTable('t1');
+});
+
+document.getElementById('sp2').addEventListener("click",function(){   
+    showTable('t2');
+});document.getElementById('sp3').addEventListener("click",function(){   
+    showTable('t3');
+});
+document.getElementById('sp4').addEventListener("click",function(){   
+    showTable('t4');
+});document.getElementById('sp5').addEventListener("click",function(){   
+    showTable('t5');
+});
+function showTable(table){
+    var tables =['t1','t2','t3'];    
+    for(var i=0;i<3;i++){
+        document.getElementById(tables[i]).style.display = "none";    
+    }
+    document.getElementById(table).style.display = "block";
+    
+}
+</script>
+<script>
+$("#sp1").click(function() {
+  $("#sp1").addClass('button-clicked');
+});
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+    var highestBox = 0;
+        $('.btn-group-justified .btn').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.btn-group-justified .btn').height(highestBox);
+fun2(1);
+});
+</script>
+
+<!-- bootstrap JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/bootstrap.min.js"></script>
+<!-- wow JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wow.min.js"></script>
+<!-- price-slider JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/jquery.counterup.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/waypoints.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/sparkline-active.js"></script>
+<!-- sparkline JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.resize.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/curvedLines.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/flot-active.js"></script>
+<!-- knob JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.knob.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.appear.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/knob-active.js"></script>
+<!--  wave JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/waves.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/wave-active.js"></script>
+<!--  todo JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/todo/jquery.todo.js"></script>
+<!-- plugins JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/plugins.js"></script>
+<!--  Chat JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/moment.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/jquery.chat.js"></script>
+<!-- main JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/main.js"></script>
+</body>
+</html>

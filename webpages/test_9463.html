@@ -1,0 +1,6136 @@
+25-MJS KCET-01select count(*) counts from student_feedback_params where quiz_id ='9463' and batch_name ='25-MJS KCET-01' and status='Enable' <!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>JNANASUDHA</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- favicon
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/img/faviconnew.gif" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://jnanasudha.com/assets/charts/Chart.min.js"></script>
+<script src="https://jnanasudha.com/assets/charts/samples/utils.js"></script>
+<!-- Google Fonts
+		============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- owl.carousel CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.carousel.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.theme.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.transitions.css" rel="stylesheet"/>
+<!-- meanmenu CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/meanmenu/meanmenu.min.css" rel="stylesheet"/>
+<!-- animate CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/animate.css" rel="stylesheet"/>
+<!-- normalize CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/normalize.css" rel="stylesheet"/>
+<!-- mCustomScrollbar CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<!-- jvectormap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+<!-- notika icon CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/notika-custom-icon.css" rel="stylesheet"/>
+<!-- wave CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/wave/waves.min.css" rel="stylesheet"/>
+<!-- main CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/main.css" rel="stylesheet"/>
+<!-- style CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/style.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/dashboard.css" rel="stylesheet" type="text/css"/>
+<!-- responsive CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- modernizr JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript">
+function removeCSSFallback()
+{
+  var ua = navigator.userAgent;
+  var isGecko = ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1 && ua.indexOf('Trident') === -1;
+  var isWebKit = ua.indexOf('AppleWebKit') > -1 && ua.indexOf('Chrome') === -1;
+  if (isGecko || isWebKit) {
+  //  document.head.removeChild(document.querySelector("style"));
+  } else {
+   /* <link rel="stylesheet" href="https://jnanasudha.com/assets/css/mathml.css">
+		<link rel="stylesheet" href="http://fred-wang.github.io/mathml.css/mathml.css">*/
+		  var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = 'https://jnanasudha.com/assets/mathml.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+  }
+}
+
+window.addEventListener("DOMContentLoaded", removeCSSFallback, false);
+
+</script>
+<script type="text/javascript">
+document.onkeydown = function(ev) {	
+var key;
+ev = ev || event;
+key = ev.keyCode;
+if (key == 116) {
+return false;  // disable F5 key
+}
+}
+</script>
+<script>
+    //paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('#content', true);
+  setVisible('#loading', false);
+});
+ </script>
+<style>
+
+.btn-group-justified>.btn-group .btn {
+    width: 99%;
+}
+.button-clicked {
+  /*background-color: #00dcff;*/
+}
+input[type=button] {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 249, 249, 0.5);
+  background-image: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<script type="text/javascript">
+  function fun2(a) {
+		  // var b = 'idans'+a;
+		  // alert (b);
+		  // $('html, body').animate({ scrollTop: $("#"+b).offset().top }, 'slow');
+            // return false;
+		  // $("[class^='classans']" ).show();
+		  // $("."+b ).show();
+			var b = 'classans' + a;
+            //  alert (b);
+
+            $("[class^='classans']").hide();
+
+            $("." + b).show();
+    }
+	
+	
+	</script>
+<script>
+// $(document).ready(function(){
+    // $('.btn').click(function() {
+       // var target;
+       // $("div").each(function(i, element) {
+         // target = $(element).offset().top;
+         // if (target - 10 > $(document).scrollTop()) {
+           // return false; // break
+         // }
+       // });
+       // $("html, body").animate({
+         // scrollTop: target
+    // }, 700);
+    // });
+// });
+</script>
+</head>
+<body>
+<div id="loading"></div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139705418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139705418-1');
+</script>
+<!--Header Top Area -->
+<div class="header-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="header">
+<a class="logo" href="#">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height:70px;width:90%;float: left;"/>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+<div>
+<span class="name pull-left">
+<p>JNANASUDHA ENTRANCE ACADEMY LLP<br/>
+<span style="font-size: 25px;color: #0977ce;">JNANASUDHA ONLINE TEST SERIES</span></p>
+</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+<span class="mail" style="float:right">
+<ul class="nav navbar-nav pull-right exam-paper" style="margin-top:3px">
+<li class="user-profile">
+<table>
+<tr>
+<td class="profile hidden-xs hidden-sm" style="border: 2px solid #666;margin: 2px 0;">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/uploads/9448104004.jpg" style="height:60px; width:60px;"/>
+</td>
+<td>
+<table>
+<tr>
+<td style="padding: 3px 3px;">Welcome</td>
+<td> : <span style="color: #f7931e; font-weight: bold">AYUSH SHETTY </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</span>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-sm" style="padding-top:65px; background: #0c2273cf;color: white;">
+<!--<p style="text-align:center;line-height:14px;"> <span style="font-size: 12px;"><b>JNANASUDHA ENTRANCE ACADEMY LLP</b></span></p>-->
+<span style="font-size:16px">Welcome: <font style="color: #f7931e; font-weight: bold">AYUSH SHETTY </font></span>
+<span><span style="float:right;padding-bottom: 2px;margin-top: -6px;"><a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout" style="padding:8px 20px;font-size: 15px;">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+		   </a>
+</span></span>
+</div>
+</div>
+</div></div>
+<!-- End Header Top Area -->
+<style>
+   .navbar-default {
+   padding-right: 8px;
+   }
+   .navbar .navbar-toggle {
+   /*border: none;*/
+   }
+   .navbar-header .navbar-toggle .icon-bar {
+   background: #444;
+   }
+   .navbar-header .navbar-toggle .icon-bar:hover {
+   background: #444;
+   }
+   .side-collapse-container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+  /*  ::-webkit-scrollbar {
+   width: 12px;
+   } */
+   ::-webkit-scrollbar-track {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   }
+   ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: #ddd;
+   -webkit-box-shadow: inset 0 0 6px #ddd;
+   }
+   ::-webkit-scrollbar-thumb:window-inactive {
+   background: #ddd;
+   }
+   @media screen and (max-width: 768px) {
+   .side-collapse {
+   top: 58px;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   position: fixed;
+   overflow: auto;
+   transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+   }
+   .side-collapse.in {
+   width: 0;
+   }
+   .navbar-nav li.dropdown {
+   padding-right: 0;
+   }
+   .navbar-nav li
+   {
+   text-align:left;
+   border-bottom:2px solid #ddd;
+   font-size:18px;
+   }
+   .navbar-default {
+   padding-right: 0;
+   }
+   .navbar .navbar-default {
+   border-right: 1px solid #ddd;
+   }
+   }
+  /* Icon 1 */
+
+ .animated-icon2{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #0385e4f2;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 8px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 16px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+</style>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<nav class="navbar navbar-fixed-top navbar-default">
+<div class="navbar-header" style="background: #fff;">
+<button aria-controls="side-collapse" aria-expanded="false" class="navbar-toggle second-button" data-target=".side-collapse" data-toggle="collapse-side" type="button"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div><span class="sr-only">
+</span></button>
+<div class="header">
+<a class="logo" href="#" style="float:left">
+<img alt="" class="hidden-mobile" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height: 57px;"/>
+</a>
+</div>
+<span style="color: #0977ce;text-align:center;float:left;margin-top: 6px;"><b>JNANASUDHA<br/> ONLINE TEST SERIES</b></span>
+</div>
+<div class="navbar-default side-collapse in">
+<nav class="navbar-collapse" role="navigation">
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button" style="padding:10px 30px;font-size: 20px;">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information" style="padding:10px 30px;font-size: 20px;">Account</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/user_payments" role="button" style="padding:10px 30px;font-size: 20px;">Receipts</a>
+</form>
+<ul class="nav navbar-nav">
+<li><a href="https://jnanasudha.com/quiz/quiz_userscreen"><i class="notika-icon notika-house"></i> HOME</a>
+</li><!--
+												<li><a data-toggle="collapse" data-target="#demoevent" href="https://jnanasudha.com/quiz/quiz_inform">JUT 1-JUT 75</a>
+						</li>
+												<li><a data-toggle="collapse" data-target="#democrou" href="#">PART TEST</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#demolibra" href="#">FULL LENGTH</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#democrou" href="https://jnanasudha.com/quiz/quiz2019neet">2019 NEET</a>
+						</li>-->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+</ul>
+</nav>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+<!--<li><a data-toggle="tab" href="#PART TEST"><i class="notika-icon notika-edit"></i> PART TEST</a>
+				</li>
+				<li><a data-toggle="tab" href="#FULL LENGTH"><i class="notika-icon notika-bar-chart"></i> FULL LENGTH</a>
+				</li>
+				 <li><a href="https://jnanasudha.com/quiz/quiz2019neet"><i class="notika-icon notika-form"></i> 2019 NEET</a>
+				</li> -->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/general_feedback" role="button">Feedback</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information">Account</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/user_payments">Receipts</a>
+<a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="notika-email-post-area" id="content" style="margin-bottom:50px">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-8">
+<div class="heading"><span>75 JUT – Which conquer each point of NCERT</span></div>
+<div>
+<div class="btn-group-justified" style="margin-top: 10px;">
+<div class="btn-group">
+<button class="btn btn-primary" id="sp1">Result</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp2">Solution</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp3">Physics Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp4">Chemistry Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp5">Biology Analysis</button>
+</div>
+</div></div>
+<!--<div class="hidden-lg" style="margin-top:5px;">
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary"  id="sp1">Result</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary btn-group" id="sp2">Solution</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Physics Analysis</button>
+					</div>
+                    <div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Chemistry Analysis</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Biology Analysis</button>
+					</div>
+				</div>-->
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="recent-items-ch notika-shadow sm-res-mg-t-30">
+<div style="float:right">
+<div>
+<img src="https://jnanasudha.com/images/imagesmall.jpg" style="/* margin: 0px 100px; */height:80px;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="table-responsive text-nowrap" id="t1" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9463 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 37 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<table class="table table-striped" style="text-align: center;">
+<tr style="border: 1px solid #3a3030;">
+<td style="background: #0b1c75e0;border-bottom: 1px solid #e0d0d0;"></td>
+<td style="background: #1d83ce91;color: white;">25-MATH KCET JUT-01</td>
+<td style="background: #1d83ce91;color: white;">TOTAL </td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Total Questions</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Attempted</td>
+<td>57</td>
+<td>57</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Correct Answer</td>
+<td>36</td>
+<td>36</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Wrong Answer</td>
+<td>21</td>
+<td>21</td>
+</tr>
+<tr style="border-bottom: 1px solid #3c3636;">
+<td style="background: #0b1c75e0;color: white;">Marks </td>
+<td>37.00</td>
+<td>37.00</td>
+</tr>
+</table>
+</div>
+<div class="row exam-paper" id="t2" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9463 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 37.00 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-lg-8 col-md-8 col-sm-12" id="quest">
+<div>
+<div class="classans1" id="idans1">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:1</h3>
+<hr/>
+<h4> If <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>35</mn> <mo>,</mo> <mtext>  </mtext> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>28</mn> <mo>,</mo> <mtext>  </mtext> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∪</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>50</mn> <mi> </mi> <mo>,</mo> </math>then <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi mathvariant="normal">Δ</mi> <mi>B</mi> <mo>)</mo> <mi> </mi> </math>is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 25</td>
+<td>  2 ) 30</td>
+</tr>
+<tr>
+<td>  3 ) 35</td>
+<td>  4 ) 37</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Find intersection:<br/><math> <mn>50</mn> <mo>=</mo> <mn>35</mn> <mo>+</mo> <mn>28</mn> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> </math>  <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>13</mn> </math><br/>Now,  <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi mathvariant="normal">Δ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>35</mn> <mo>+</mo> <mn>28</mn> <mo>-</mo> <mn>2</mn> <mo>(</mo> <mn>13</mn> <mo>)</mo> <mo>=</mo> <mn>37</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('2')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans2" id="idans2">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:2</h3>
+<hr/>
+<h4> If A and B are two sets then <math> <mo>[</mo> <msup> <mrow> <mo>(</mo> <mi>A</mi> <mi>U</mi> <msup> <mrow> <mi>B</mi> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mo>)</mo> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mi>ꓵ</mi> <msup> <mrow> <mo>(</mo> <msup> <mrow> <mi>A</mi> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mi>U</mi> <mi>B</mi> <mo>)</mo> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mo>]</mo> <mi>'</mi> </math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Null set          </td>
+<td>  2 ) Universal set      </td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi>A</mi> <mo>¹</mo> </math></td>
+<td>  4 ) <math> <mi>B</mi> <mo>¹</mo> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Consider<br/><math> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mi>'</mi> <mo>)</mo> <mi>'</mi> <mi>ꓵ</mi> <mo>(</mo> <mi>A</mi> <mi>'</mi> <mi>U</mi> <mi>B</mi> <mo>)</mo> <mi>'</mi> <mo>=</mo> <mo>(</mo> <mi>A</mi> <mo>¹</mo> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mi>ꓵ</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mo>(</mo> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mo>)</mo> <mi>ꓵ</mi> <mo>(</mo> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mi>ф</mi> </math>   <br/><math> <mo>[</mo> <msup> <mrow> <mfenced separators="|"> <mrow> <mi>A</mi> <mi>U</mi> <msup> <mrow> <mi>B</mi> </mrow> <mrow> <mi>'</mi> </mrow> </msup> </mrow> </mfenced> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mi>ꓵ</mi> <msup> <mrow> <mfenced separators="|"> <mrow> <msup> <mrow> <mi>A</mi> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mi>U</mi> <mi>B</mi> </mrow> </mfenced> </mrow> <mrow> <mi>'</mi> </mrow> </msup> <mo>]</mo> <mi>'</mi> </math> =<math> <mi> </mi> <mi>ф</mi> <mi>'</mi> </math>=U<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('3')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans3" id="idans3">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:3</h3>
+<hr/>
+<h4> If <math>
+<mi>Y</mi>
+<mo>∪</mo>
+<mo>{</mo>
+<mn>2,4</mn>
+<mo>,</mo>
+<mn>6</mn>
+<mo>}</mo>
+<mo>=</mo>
+<mo>{</mo>
+<mn>1,2</mn>
+<mo>,</mo>
+<mn>3,4</mn>
+<mo>,</mo>
+<mn>5,6</mn>
+<mo>,</mo>
+<mn>7,8</mn>
+<mo>}</mo>
+</math>
+<br/>
+Find smallest <math>
+<mi>Y</mi>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mrow>
+<mn>7</mn>
+</mrow>
+<mrow>
+<mn>8</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+<td>  2 ) <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+<mrow>
+<mn>7</mn>
+</mrow>
+<mrow>
+<mn>8</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+<td>  4 ) <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Elements already present:<br/><math>
+<mn>2,4</mn>
+<mo>,</mo>
+<mn>6</mn>
+</math><br/>Remaining:<br/><math>
+<mn>1,3</mn>
+<mo>,</mo>
+<mn>5,7</mn>
+<mo>,</mo>
+<mn>8</mn>
+<mi> </mi>
+</math><br/>Thus minimum set:<br/><math>
+<mi>Y</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mn>1,3</mn>
+<mo>,</mo>
+<mn>5,7</mn>
+<mo>,</mo>
+<mn>8</mn>
+<mo>}</mo>
+</math>  <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('4')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans4" id="idans4">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:4</h3>
+<hr/>
+<h4> In a camp, 80% students play cricket, 72% play football and 68% play volleyball. If <math> <mi>x</mi> <mi mathvariant="normal">%</mi> </math>play all the three games, then the minimum possible value of <math> <mi>x</mi> </math>is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 20</td>
+<td>  2 ) 25</td>
+</tr>
+<tr>
+<td>  3 ) 30</td>
+<td>  4 ) 35</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Minimum common elements among three sets:<br/><math> <mi>x</mi> <mo>≥</mo> <mo>(</mo> <mn>80</mn> <mo>+</mo> <mn>72</mn> <mo>+</mo> <mn>68</mn> <mo>)</mo> <mo>-</mo> <mn>2</mn> <mo>(</mo> <mn>100</mn> <mo>)</mo> </math> <math> <mi>x</mi> <mo>≥</mo> <mn>220</mn> <mo>-</mo> <mn>200</mn> </math> <math> <mi>x</mi> <mo>=</mo> <mn>20</mn> </math> <math> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('5')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans5" id="idans5">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:5</h3>
+<hr/>
+<h4> Which of the following are infinite sets? <br/>1.Points on circle <br/>2.<math> <msup> <mrow> <mi>x</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>&lt;</mo> <mn>16</mn> </math>over reals <br/>3.Natural numbers less than 1000<br/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Only (1)</td>
+<td>  2 ) Only (2)</td>
+</tr>
+<tr>
+<td>  3 ) Both (1) and (2)</td>
+<td>  4 ) All (1),(2) and (3)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: (1) Infinite ✓<br/>(2)<br/><math> <mo>-</mo> <mn>4</mn> <mo>&lt;</mo> <mi>x</mi> <mo>&lt;</mo> <mn>4</mn> </math><br/>Infinite real points ✓<br/>(3) Finite ✗<br/>Thus:<br/>Answer: (c) Both (1) and (2)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('6')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans6" id="idans6">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:6</h3>
+<hr/>
+<h4> In a survey of a city, 78% people watch channel A, 69% watch channel B and 58% watch channel C. If 35% watch all three channels and every person watches at least one channel, then the minimum percentage of people watching exactly two channels is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 40</td>
+<td>  2 ) 45</td>
+</tr>
+<tr>
+<td>  3 ) 50</td>
+<td>  4 ) 55</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Using inclusion–exclusion principle,<br/>Let percentage watching exactly two channels = <math> <mi>x</mi> </math><br/>Since everyone watches at least one channel,<br/><math> <mi>n</mi> <mfenced separators="|"> <mrow> <mi>A</mi> <mo>∪</mo> <mi>B</mi> <mo>∪</mo> <mi>C</mi> </mrow> </mfenced> <mo>=</mo> <mn>100</mn> </math><br/>Also,  <br/><math> <mn>78</mn> <mo>+</mo> <mn>69</mn> <mo>+</mo> <mn>58</mn> <mo>=</mo> <mn>205</mn> <mi> </mi> </math><br/>Triple intersection = 35  <br/>Extra count:<br/><math> <mn>205</mn> <mo>-</mo> <mn>100</mn> <mo>=</mo> <mn>105</mn> <mi> </mi> </math>  <br/>Now,  <br/><math> <mi>x</mi> <mo>+</mo> <mn>2</mn> <mo>(</mo> <mn>35</mn> <mo>)</mo> <mo>=</mo> <mn>105</mn> </math>  <math> <mi>x</mi> <mo>=</mo> <mn>105</mn> <mo>-</mo> <mn>70</mn> <mi> </mi> </math>  <math> <mi>x</mi> <mo>=</mo> <mn>35</mn> </math>   <br/>Minimum exactly two:  <br/><math> <mn>35</mn> <mo>+</mo> <mn>10</mn> <mo>=</mo> <mn>45</mn> </math>  <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('7')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans7" id="idans7">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:7</h3>
+<hr/>
+<h4> If <math>
+<mi>A</mi>
+<mo>=</mo>
+<mfenced close="|" open="|" separators="|">
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mi>n</mi>
+<mo>+</mo>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</mfrac>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>∈</mo>
+<mi>N</mi>
+<mo>}</mo>
+</mfenced>
+<mi> </mi>
+</math>then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  4<math>
+<mo>∈</mo>
+<mi>A</mi>
+</math></td>
+<td>  2 ) <math>
+<mfrac>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+<mo>∈</mo>
+<mi>A</mi>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mn>3</mn>
+<mo>∈</mo>
+<mi>A</mi>
+</math></td>
+<td>  4 ) <math>
+<mn>0</mn>
+<mo>∈</mo>
+<mi>A</mi>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For <math>
+<mi>n</mi>
+<mo>=</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>x</mi>
+<mo>=</mo>
+<mn>2</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('8')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans8" id="idans8">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:8</h3>
+<hr/>
+<h4> Let A = {2, 3, 5}, B = {1, 3, 7}. Then A∩B=:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) ∅  </td>
+<td>  2 ) {3}  </td>
+</tr>
+<tr>
+<td>  3 ) {2, 3}  </td>
+<td>  4 ) {3, 7}</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Common element is {3}<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('9')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans9" id="idans9">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:9</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mo>{</mo> <mn>3</mn> <mo>}</mo> <mo>}</mo> </math>, then <math> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> </math> contains</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 8 elements</td>
+<td>  2 ) 4 elements</td>
+</tr>
+<tr>
+<td>  3 ) 6 elements</td>
+<td>  4 ) 16 elements</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: has 3 elements.<br/>Hence,<br/><math> <mi>n</mi> <mo>(</mo> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>)</mo> <mo>=</mo> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>3</mn> </mrow> </msup> <mo>=</mo> <mn>8</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('10')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans10" id="idans10">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:10</h3>
+<hr/>
+<h4> If <math> <mi>a</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mo>{</mo> <mi>a</mi> <mi> </mi> <mi>x</mi> <mi> </mi> <mo>:</mo> <mi>x</mi> <mo>∈</mo> <mi>N</mi> <mo>}</mo> </math> and <math> <mi>b</mi> <mi> </mi> <mi>N</mi> <mi> </mi> <mo>∩</mo> <mi>c</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mi>d</mi> <mi> </mi> <mi>N</mi> <mo>,</mo> </math> where <math> <mi>b</mi> <mo>,</mo> <mi>c</mi> <mo>∈</mo> <mi>N</mi> </math> are relatively prime, then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mi>d</mi> <mo>=</mo> <mi>b</mi> <mi>c</mi> </math></td>
+<td>  2 ) <math> <mi>c</mi> <mo>=</mo> <mi>b</mi> <mi>d</mi> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi>b</mi> <mo>=</mo> <mi>c</mi> <mi>d</mi> </math></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: We have,<br/><math> <mi>b</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mfenced close="}" open="{" separators="|"> <mrow> <mi>b</mi> <mi> </mi> <mi>x</mi> </mrow> <mrow> <mi>x</mi> <mo>∈</mo> <mi mathvariant="normal">N</mi> </mrow> </mfenced> <mo>=</mo> </math> Set of positive integral multiples of <math> <mi>b</mi> </math><br/><math> <mi>c</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mfenced close="}" open="{" separators="|"> <mrow> <mi>c</mi> <mi> </mi> <mi>x</mi> </mrow> <mrow> <mi>x</mi> <mo>∈</mo> <mi>N</mi> </mrow> </mfenced> <mo>=</mo> </math> Set positive integral multiples of <math> <mi>c</mi> </math><br/><math> <mo>∴</mo> <mi>b</mi> <mi>N</mi> <mo>∩</mo> <mi>c</mi> <mi>N</mi> <mo>=</mo> </math> Set of positive integral multiples of <math> <mi>b</mi> <mi>c</mi> </math><br/><math> <mo>⇒</mo> <mi>b</mi> <mi>N</mi> <mo>∩</mo> <mi>c</mi> <mi>N</mi> <mo>=</mo> <mi>b</mi> <mi>c</mi> <mi> </mi> <mi>N</mi> </math>        [<math> <mo>∵</mo> <mi>b</mi> </math> and <math> <mi>c</mi> </math> are prime]<br/>Hence, <math> <mi>d</mi> <mo>=</mo> <mi>b</mi> <mi>c</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('11')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans11" id="idans11">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:11</h3>
+<hr/>
+<h4> If <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>50</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>45</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>C</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>35</mn>
+<mi> </mi>
+</math> and<math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>20</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>∩</mo>
+<mi>C</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>15</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>C</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>10</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>∩</mo>
+<mi>C</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>5</mn>
+<mi> </mi>
+</math> then <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∪</mo>
+<mi>B</mi>
+<mo>∪</mo>
+<mi>C</mi>
+<mo>)</mo>
+</math> equals</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  90</td>
+<td>  2 ) 95</td>
+</tr>
+<tr>
+<td>  3 ) 100</td>
+<td>  4 ) 105</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Using:<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∪</mo>
+<mi>B</mi>
+<mo>∪</mo>
+<mi>C</mi>
+<mo>)</mo>
+</math> <br/>
+<math>
+<mo>=</mo>
+<mn>50</mn>
+<mo>+</mo>
+<mn>45</mn>
+<mo>+</mo>
+<mn>35</mn>
+<mo>-</mo>
+<mn>20</mn>
+<mo>-</mo>
+<mn>15</mn>
+<mo>-</mo>
+<mn>10</mn>
+<mo>+</mo>
+<mn>5</mn>
+</math>  <br/> <math>
+<mo>=</mo>
+<mn>90</mn>
+</math> <math>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('12')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans12" id="idans12">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:12</h3>
+<hr/>
+<h4><math>
+<mi>L</mi>
+<mi>e</mi>
+<mi>t</mi>
+<mi> </mi>
+<mi> </mi>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mi> </mi>
+<mo>│</mo>
+<mi>x</mi>
+<mo>│</mo>
+<mo>&lt;</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mo>,</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mi> </mi>
+<mo>│</mo>
+<mi>x</mi>
+<mo>-</mo>
+<mn>2</mn>
+<mo>│</mo>
+<mo>≥</mo>
+<mn>2</mn>
+<mo>}</mo>
+</math>  and <math>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mo>=</mo>
+<mi>R</mi>
+<mo>-</mo>
+<mi>C</mi>
+<mo>,</mo>
+</math>then the C equals</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mo>&lt;</mo>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mi> </mi>
+<mi> </mi>
+</math></td>
+<td>  2 ) <math>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mo>&lt;</mo>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>4</mn>
+<mo>}</mo>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mn>2</mn>
+<mo>≤</mo>
+<mi>x</mi>
+<mo>&lt;</mo>
+<mn>4</mn>
+<mo>}</mo>
+<mi> </mi>
+</math></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given that<math>
+<mo>,</mo>
+<mi> </mi>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mi> </mi>
+<mo>:</mo>
+<mi>x</mi>
+<mi> </mi>
+<mo>∈</mo>
+<mi> </mi>
+<mi>R</mi>
+<mo>,</mo>
+<mi> </mi>
+<mo>│</mo>
+<mi>x</mi>
+<mo>│</mo>
+<mo>&lt;</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mi> </mi>
+</math>and <math>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mi> </mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi> </mi>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mo>│</mo>
+<mi>x</mi>
+<mo>-</mo>
+<mn>2</mn>
+<mo>│</mo>
+<mo>≥</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mi> </mi>
+<mi> </mi>
+</math><br/>i.e. <math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi> </mi>
+<mi>x</mi>
+<mi> </mi>
+<mo>∈</mo>
+<mi> </mi>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mi> </mi>
+<mo>&lt;</mo>
+<mi>x</mi>
+<mo>&lt;</mo>
+<mn>2</mn>
+<mo>}</mo>
+</math> and <math>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>-</mo>
+<mn>2</mn>
+<mo>≤</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mi> </mi>
+<mi>o</mi>
+<mi>r</mi>
+<mi> </mi>
+<mi>x</mi>
+<mo>-</mo>
+<mn>2</mn>
+<mo>≥</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mi> </mi>
+</math><br/><math>
+<mi> </mi>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mi> </mi>
+<mo>,</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mi> </mi>
+<mo>&lt;</mo>
+<mi>x</mi>
+<mo>&lt;</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mi> </mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>∈</mo>
+<mi> </mi>
+<mi>R</mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>0</mn>
+<mi> </mi>
+<mi>o</mi>
+<mi>r</mi>
+<mi> </mi>
+<mi>x</mi>
+<mo>≥</mo>
+<mn>4</mn>
+<mo>}</mo>
+</math><br/><math>
+<mi> </mi>
+<mi>A</mi>
+<mo>=</mo>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mo>-</mo>
+<mn>2,2</mn>
+</mrow>
+<mo>)</mo>
+</mfenced>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<mi>B</mi>
+<mo>=</mo>
+<mfenced close="]" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>∞</mi>
+<mo>,</mo>
+<mn>0</mn>
+</mrow>
+<mo>]</mo>
+</mfenced>
+<mi>U</mi>
+<mfenced open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mn>4</mn>
+<mo>,</mo>
+<mi>∞</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</math>  <br/><math>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mo>=</mo>
+<mo>(</mo>
+<mo>-</mo>
+<mi>∞</mi>
+<mo>,</mo>
+<mn>2</mn>
+<mo>)</mo>
+<mi>U</mi>
+<mo>[</mo>
+<mn>4</mn>
+<mo>,</mo>
+<mi>∞</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mi>R</mi>
+<mo>-</mo>
+<mo>[</mo>
+<mn>2,4</mn>
+<mo>)</mo>
+</math><br/><math>
+<mi>T</mi>
+<mi>h</mi>
+<mi>e</mi>
+<mi>r</mi>
+<mi>e</mi>
+<mi>f</mi>
+<mi>o</mi>
+<mi>r</mi>
+<mi>e</mi>
+<mi> </mi>
+<mi>C</mi>
+<mo>=</mo>
+<mfenced open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mn>2,4</mn>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</math><br/><math>
+<mi> </mi>
+<mi>i</mi>
+<mo>.</mo>
+<mi>e</mi>
+<mi> </mi>
+<mn>2</mn>
+<mo>≤</mo>
+<mi>x</mi>
+<mo>&lt;</mo>
+<mn>4</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('13')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans13" id="idans13">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:13</h3>
+<hr/>
+<h4> A survey shows that 63% of the people watch a News channel whereas 76% watch another channel. If  x%  of the people watch both channel, then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mi>x</mi> <mo>=</mo> <mn>35</mn> </math></td>
+<td>  2 ) <math> <mi>x</mi> <mo>=</mo> <mn>63</mn> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mn>39</mn> <mo>≤</mo> <mi>x</mi> <mo>≤</mo> <mn>63</mn> </math></td>
+<td>  4 ) <math> <mi>x</mi> <mo>=</mo> <mn>39</mn> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Let A and B be the two sets of news channel such that <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>63</mn> </math> ,<math> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>76</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>100</mn> </math><br/>Also <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mi>x</mi> </math>(maximum)<br/>Using ,<math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> </math><br/>=&gt;<math> <mn>100</mn> <mo>=</mo> <mn>63</mn> <mo>+</mo> <mn>76</mn> <mo>-</mo> <mi>x</mi> </math><br/>=&gt;<math> <mi>x</mi> <mo>=</mo> <mn>139</mn> <mo>-</mo> <mn>100</mn> <mo>=</mo> <mn>39</mn> </math>(minimum)<br/>Again <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>≤</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mi> </mi> <mo>=</mo> <mo>&gt;</mo> <mi> </mi> <mi>x</mi> <mo>≤</mo> <mn>63</mn> </math><br/>Therefore <math> <mn>39</mn> <mo>≤</mo> <mi>x</mi> <mo>≤</mo> <mn>63</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('14')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans14" id="idans14">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:14</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mn>3,4</mn> <mo>,</mo> <mn>5,6</mn> <mo>,</mo> <mn>7</mn> <mo>}</mo> </math>then the number of subsets containing 1,2 and excluding 3 is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 8</td>
+<td>  2 ) 16</td>
+</tr>
+<tr>
+<td>  3 ) 32</td>
+<td>  4 ) 64</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: 1 and 2 fixed.<br/>3 excluded.<br/>Remaining elements: <math> <mn>4,5</mn> <mo>,</mo> <mn>6,7</mn> </math><br/>Possible subsets:<math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>4</mn> </mrow> </msup> <mo>=</mo> <mn>16</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('15')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans15" id="idans15">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:15</h3>
+<hr/>
+<h4> In a town, 60% families own a bike, 45% own a car and 25% own both a bike and a car. If 20% families own neither bike nor car and 2400 families own both bike and car, then total number of families in the town is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 12,000</td>
+<td>  2 ) 9,600</td>
+</tr>
+<tr>
+<td>  3 ) 8,000</td>
+<td>  4 ) 10,000</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given:<br/>Bike owners = 60%<br/>Car owners = 45%<br/>Both = 25%<br/>Families owning neither = 20%<br/>Thus,<math> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>∪</mo> <mi>C</mi> <mo>)</mo> <mo>=</mo> <mn>100</mn> <mo>-</mo> <mn>20</mn> <mo>=</mo> <mn>80</mn> <mi mathvariant="normal">%</mi> </math><br/>Check:<math> <mi>n</mi> <mfenced separators="|"> <mrow> <mi>B</mi> <mo>∪</mo> <mi>C</mi> </mrow> </mfenced> <mo>=</mo> <mn>60</mn> <mo>+</mo> <mn>45</mn> <mo>-</mo> <mn>25</mn> <mo>=</mo> <mn>80</mn> <mi mathvariant="normal">%</mi> </math><br/>Given:25% families = 2400<br/>Therefore,<math> <mtext>Total</mtext> <mtext> families</mtext> <mo>=</mo> <mfrac> <mrow> <mn>2400</mn> <mo>×</mo> <mn>100</mn> </mrow> <mrow> <mn>25</mn> </mrow> </mfrac> <mo>=</mo> <mn>9600</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('16')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans16" id="idans16">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:16</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>⊆</mo> <mi>B</mi> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>4</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>7</mn> <mi> </mi> </math>then maximum number of elements in<math> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mi> </mi> </math>is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2</td>
+<td>  2 ) 3</td>
+</tr>
+<tr>
+<td>  3 ) 4</td>
+<td>  4 ) 7</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Solution  <math> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> </math> <math> <mo>=</mo> <mn>7</mn> <mo>-</mo> <mn>4</mn> <mo>=</mo> <mn>3</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('17')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans17" id="idans17">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:17</h3>
+<hr/>
+<h4> Let X,Y,Z be subsets of U, where <math> <mi>n</mi> <mo>(</mo> <mi>U</mi> <mo>)</mo> <mo>=</mo> <mn>35</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>)</mo> <mo>=</mo> <mn>15</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>Y</mi> <mo>)</mo> <mo>=</mo> <mn>22</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>Z</mi> <mo>)</mo> <mo>=</mo> <mn>14</mn> <mi> </mi> <mi>a</mi> <mi>n</mi> <mi>d</mi> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∩</mo> <mi>Y</mi> <mo>)</mo> <mo>=</mo> <mn>11</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>Y</mi> <mo>∩</mo> <mi>Z</mi> <mo>)</mo> <mo>=</mo> <mn>8</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∩</mo> <mi>Z</mi> <mo>)</mo> <mo>=</mo> <mn>5</mn> <mi> </mi> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∩</mo> <mi>Y</mi> <mo>∩</mo> <mi>Z</mi> <mo>)</mo> <mo>=</mo> <mn>3</mn> <mi> </mi> <mi>t</mi> <mi>h</mi> <mi>e</mi> <mi>n</mi> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∪</mo> <mi>Y</mi> <mo>∪</mo> <mi>Z</mi> <mo>)</mo> <mi>'</mi> </math> equals</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 35          </td>
+<td>  2 ) 30          </td>
+</tr>
+<tr>
+<td>  3 ) 6   </td>
+<td>  4 ) 5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: We know that <math> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∪</mo> <mi>Y</mi> <mo>∪</mo> <mi>Z</mi> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mo>(</mo> <mi>Y</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mo>(</mo> <mi>Z</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mi>ꓵ</mi> <mi>Y</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>Y</mi> <mi>ꓵ</mi> <mi>Z</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mi>ꓵ</mi> <mi>Z</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mfenced separators="|"> <mrow> <mi>X</mi> <mi>ꓵ</mi> <mi>Y</mi> <mi>ꓵ</mi> <mi>Z</mi> </mrow> </mfenced> <mi> </mi> </math>     <br/><math> <mo>=</mo> <mo>(</mo> <mn>15</mn> <mo>+</mo> <mn>22</mn> <mo>+</mo> <mn>14</mn> <mo>)</mo> <mo>-</mo> <mo>(</mo> <mn>11</mn> <mo>+</mo> <mn>8</mn> <mo>+</mo> <mn>5</mn> <mo>)</mo> <mo>+</mo> <mn>3</mn> <mi> </mi> <mo>=</mo> <mn>30</mn> </math><br/><math> <mi> </mi> <mi>T</mi> <mi>h</mi> <mi>e</mi> <mi>r</mi> <mi>e</mi> <mi>f</mi> <mi>o</mi> <mi>r</mi> <mi>e</mi> <mi> </mi> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∩</mo> <mi>Y</mi> <mo>∩</mo> <mi>Z</mi> <mo>)</mo> <mi>'</mi> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>U</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>∪</mo> <mi>Y</mi> <mo>∪</mo> <mi>Z</mi> <mo>)</mo> <mi> </mi> <mo>=</mo> <mn>35</mn> <mo>-</mo> <mn>30</mn> <mi> </mi> <mo>=</mo> <mn>5</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('18')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans18" id="idans18">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:18</h3>
+<hr/>
+<h4> Survey of 2500 consumers:<br/>1900 liked <math>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+</math><br/>1700 liked <math>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math><br/>1600 liked <math>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math><br/>Least liking all three.<br/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  100</td>
+<td>  2 ) 300</td>
+</tr>
+<tr>
+<td>  3 ) 400</td>
+<td>  4 ) 200</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Minimum triple overlap:<br/><math>
+<mn>1900</mn>
+<mo>+</mo>
+<mn>1700</mn>
+<mo>+</mo>
+<mn>1600</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>(</mo>
+<mn>2500</mn>
+<mo>)</mo>
+</math><br/>  <math>
+<mo>=</mo>
+<mn>5200</mn>
+<mo>-</mo>
+<mn>5000</mn>
+</math><br/>  <math>
+<mo>=</mo>
+<mn>200</mn>
+</math> <math>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('19')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans19" id="idans19">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:19</h3>
+<hr/>
+<h4> If <math>
+<mi>D</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>=</mo>
+<mi>n</mi>
+<mo>²</mo>
+<mo>+</mo>
+<mn>1</mn>
+<mi> </mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>n</mi>
+<mo>=</mo>
+<mn>1,2</mn>
+<mo>,</mo>
+<mo>,</mo>
+<mn>4</mn>
+<mo>}</mo>
+<mo>,</mo>
+</math> then number of proper subsets is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  3         </td>
+<td>  2 ) 8         </td>
+</tr>
+<tr>
+<td>  3 ) 7          </td>
+<td>  4 ) 4</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Total number of proper subsets of a set containing ‘n’ number of elements is 
+<br/><math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</msup>
+<mo>-</mo>
+<mn>1</mn>
+<mo>.</mo>
+</math>
+<br/>(If A is a subset of B and A≠B , then A is called a proper subset of B.)<br/>A<math>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mi> </mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>=</mo>
+<mi>n</mi>
+<mo>²</mo>
+<mo>+</mo>
+<mn>1</mn>
+<mi> </mi>
+<mo>,</mo>
+<mi>n</mi>
+<mo>=</mo>
+<mn>1,2</mn>
+<mo>,</mo>
+<mn>3</mn>
+<mo>}</mo>
+<mo>=</mo>
+<mo>{</mo>
+<mn>2,5</mn>
+<mo>,</mo>
+<mn>9</mn>
+<mo>}</mo>
+<mo>.</mo>
+</math>
+<br/>Thus here n=3.<br/>Therefore, number of  proper subsets of A equal to 2³-1=7<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('20')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans20" id="idans20">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:20</h3>
+<hr/>
+<h4> If n(A)=8 and n(A∩B)=2 , then n((A∩B)¹∩A) is equal to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2          </td>
+<td>  2 ) 4</td>
+</tr>
+<tr>
+<td>  3 ) 6  </td>
+<td>  4 ) 8</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>¹</mo> <mi>ꓵ</mi> <mi>A</mi> <mo>]</mo> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mo>¹</mo> <mi>U</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mi>ꓵ</mi> <mi>A</mi> <mo>]</mo> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mi>A</mi> <mi>ꓵ</mi> <mo>(</mo> <mi>A</mi> <mo>¹</mo> <mi>U</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mo>(</mo> <mi>C</mi> <mi>o</mi> <mi>m</mi> <mi>m</mi> <mi>u</mi> <mi>t</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <mi>v</mi> <mi>e</mi> <mi> </mi> <mi>l</mi> <mi>a</mi> <mi>w</mi> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>A</mi> <mo>¹</mo> <mo>)</mo> <mi>U</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mo>(</mo> <mi>B</mi> <mi>y</mi> <mi> </mi> <mi>D</mi> <mi>e</mi> <mi> </mi> <mi>M</mi> <mi>o</mi> <mi>r</mi> <mi>g</mi> <mi>a</mi> <mi>n</mi> <mi>’</mi> <mi>s</mi> <mi> </mi> <mi>l</mi> <mi>a</mi> <mi>w</mi> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mi>ф</mi> <mi>U</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mfenced separators="|"> <mrow> <mi>A</mi> <mi>ꓵ</mi> <msup> <mrow> <mi>A</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msup> <mo>=</mo> <mi>ф</mi> </mrow> </mfenced> </math><br/><math> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <msup> <mrow> <mi>B</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msup> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>)</mo> </math><br/><math> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>8</mn> <mo>-</mo> <mn>2</mn> <mi> </mi> <mo>=</mo> <mn>6</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('21')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans21" id="idans21">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:21</h3>
+<hr/>
+<h4> If <math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<mn>25</mn>
+<mo>}</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<mn>625</mn>
+<mo>}</mo>
+</math> <br/> <math>
+</math>Find <math>
+<mi>A</mi>
+<mi mathvariant="normal">Δ</mi>
+<mi>B</mi>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mo>{</mo>
+<mn>5</mn>
+<mi>i</mi>
+<mo>}</mo>
+</math></td>
+<td>  2 ) <math>
+<mo>{</mo>
+<mn>5</mn>
+<mi>i</mi>
+<mo>,</mo>
+<mo>-</mo>
+<mn>5</mn>
+<mi>i</mi>
+<mo>}</mo>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mo>{</mo>
+<mn>5</mn>
+<mi>i</mi>
+<mo>,</mo>
+<mo>-</mo>
+<mi>i</mi>
+<mo>}</mo>
+</math></td>
+<td>  4 ) <math>
+<mo>{</mo>
+<mi>i</mi>
+<mo>,</mo>
+<mo>-</mo>
+<mn>5</mn>
+<mi>i</mi>
+<mo>}</mo>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: n:<br/><math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mo>-</mo>
+<mn>5,5</mn>
+<mo>}</mo>
+</math>  <br/>For <math>
+<mi>B</mi>
+</math>:<br/><math>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<msup>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msup>
+<mi mathvariant="normal"> </mi>
+</math> <math>
+<mi>x</mi>
+<mo>=</mo>
+<mo>±</mo>
+<mn>5</mn>
+<mo>,</mo>
+<mo>±</mo>
+<mn>5</mn>
+<mi>i</mi>
+</math>  <br/>Thus symmetric difference:<br/><math>
+<mfenced close="}" open="{" separators="|">
+<mo>{</mo>
+<mrow>
+<mn>5</mn>
+<mi>i</mi>
+<mo>,</mo>
+<mo>-</mo>
+<mn>5</mn>
+<mi>i</mi>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('22')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans22" id="idans22">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:22</h3>
+<hr/>
+<h4> If  <math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<mn>8</mn>
+<mo>}</mo>
+<mi mathvariant="normal"> </mi>
+</math>  <math>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<mn>64</mn>
+<mo>}</mo>
+</math>
+<br/>
+Find <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∪</mo>
+<mi>B</mi>
+<mo>)</mo>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  3</td>
+<td>  2 ) 4</td>
+</tr>
+<tr>
+<td>  3 ) 5</td>
+<td>  4 ) 6</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: on:<br/><math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mn>2</mn>
+<mo>}</mo>
+</math><br/>For <math>
+<mi>B</mi>
+</math>:  <math>
+<msup>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msup>
+</math><br/>Six roots.<br/>Hence:<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>6</mn>
+</math><br/>Since <math>
+<mn>2</mn>
+<mo>∈</mo>
+<mi>B</mi>
+</math>,<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∪</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>6</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('23')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans23" id="idans23">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:23</h3>
+<hr/>
+<h4> Two finite sets have <math> <mi>m</mi> </math> and <math> <mi>n</mi> </math> elements. The total number of subsets of the first set is 56 more than the total number of subsets of the second set. The values of <math> <mi>m</mi> </math> and <math> <mi>n</mi> </math> are</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mi>m</mi> <mo>=</mo> <mn>7</mn> <mo>,</mo> <mi>n</mi> <mo>=</mo> <mn>6</mn> </math></td>
+<td>  2 ) <math> <mi>m</mi> <mo>=</mo> <mn>6</mn> <mo>,</mo> <mi>n</mi> <mo>=</mo> <mn>3</mn> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi>m</mi> <mo>=</mo> <mn>5</mn> <mo>,</mo> <mi>n</mi> <mo>=</mo> <mn>1</mn> </math></td>
+<td>  4 ) <math> <mi>m</mi> <mo>=</mo> <mn>8</mn> <mo>,</mo> <mi>n</mi> <mo>=</mo> <mn>7</mn> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: It is given that <math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mi>m</mi> </mrow> </msup> <mo>-</mo> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mi>n</mi> </mrow> </msup> <mo>=</mo> <mn>56</mn> </math><br/>Obviously, <math> <mi>m</mi> <mo>=</mo> <mn>6</mn> <mo>,</mo> <mi>n</mi> <mo>=</mo> <mn>3</mn> </math> satisfy the equation<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('24')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans24" id="idans24">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:24</h3>
+<hr/>
+<h4> If <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>1000</mn> <mo>,</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>500</mn> <mi> </mi> <mo>,</mo> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> <mo>≥</mo> <mn>1</mn> <mi> </mi> <mi>a</mi> <mi>n</mi> <mi>d</mi> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∪</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mi>p</mi> </math>, then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mn>500</mn> <mo>≤</mo> <mi>p</mi> <mo>≤</mo> <mn>1000</mn> <mi> </mi> <mi> </mi> <mi> </mi> </math></td>
+<td>  2 ) <math> <mn>1001</mn> <mo>≤</mo> <mi>p</mi> <mo>≤</mo> <mn>1498</mn> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mn>1000</mn> <mo>≤</mo> <mi>p</mi> <mo>≤</mo> <mn>1498</mn> <mi> </mi> <mi> </mi> </math></td>
+<td>  4 ) <math> <mn>1000</mn> <mo>≤</mo> <mi>p</mi> <mo>≤</mo> <mn>1499</mn> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: We know that <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∪</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> </math><br/><math> <mo>⇒</mo> <mi>p</mi> <mi> </mi> <mo>=</mo> <mi> </mi> <mn>1000</mn> <mo>+</mo> <mn>500</mn> <mi> </mi> <mo>-</mo> <mi> </mi> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> </math>  <br/><math> <mo>⇒</mo> <mi> </mi> <mn>1</mn> <mo>≤</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>≤</mo> <mn>500</mn> </math><br/>The least value of <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> </math>) is 1 and the greatest value of n(AꓵB) is 500<br/>Hence the greatest value of <math> <mi>p</mi> <mo>=</mo> <mn>1000</mn> <mo>+</mo> <mn>500</mn> <mo>-</mo> <mn>1</mn> <mo>=</mo> <mn>1499</mn> </math> and the least value of <math> <mi>p</mi> <mo>=</mo> <mn>1000</mn> <mo>+</mo> <mn>500</mn> <mo>-</mo> <mn>500</mn> <mo>=</mo> <mn>1000</mn> </math><br/><math> <mi>T</mi> <mi>h</mi> <mi>e</mi> <mi>r</mi> <mi>e</mi> <mi>f</mi> <mi>o</mi> <mi>r</mi> <mi>e</mi> <mi> </mi> <mn>1000</mn> <mo>≤</mo> <mi>p</mi> <mo>≤</mo> <mn>1499</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('25')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans25" id="idans25">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:25</h3>
+<hr/>
+<h4> If Y is the smallest set such that <math> <mi>Y</mi> <mo>∪</mo> <mo>{</mo> <mn>1,2</mn> <mo>}</mo> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mn>3,5</mn> <mo>,</mo> <mn>9</mn> <mo>}</mo> <mo>,</mo> </math>then Y is equal to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) {1,2,3,5,9}    </td>
+<td>  2 ) {3,5,9}     </td>
+</tr>
+<tr>
+<td>  3 ) {1,2}     </td>
+<td>  4 ) none of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Since Y<math> <mo>∪</mo> </math>{1,2}={1,2,3,5,9}, the set Y must contain the elements 3,5,9.<br/>Since the set  Y is smallest, Y={3,5,9}.<br/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('26')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans26" id="idans26">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:26</h3>
+<hr/>
+<h4> If <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>U</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>120</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>60</mn>
+<mo>,</mo>
+<mtext>  </mtext>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>50</mn>
+<mi> </mi>
+</math> then minimum possible value of <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>)</mo>
+</math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  0</td>
+<td>  2 ) 10</td>
+</tr>
+<tr>
+<td>  3 ) 20</td>
+<td>  4 ) 30</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Minimum intersection:<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>+</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>-</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>U</mi>
+<mo>)</mo>
+</math> <br/><math>
+<mo>=</mo>
+<mn>60</mn>
+<mo>+</mo>
+<mn>50</mn>
+<mo>-</mo>
+<mn>120</mn>
+<mi> </mi>
+<mo>=</mo>
+<mo>-</mo>
+<mn>10</mn>
+</math><br/>Intersection cannot be negative.<br/>Thus minimum value:<math>
+<mn>0</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('27')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans27" id="idans27">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:27</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <mi>x</mi> <mo>²</mo> <mo>=</mo> <mn>16</mn> <mo>}</mo> </math>  and  <math> <mi>B</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <msup> <mrow> <mi>x</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msup> <mo>=</mo> <mn>256</mn> <mo>}</mo> </math> , AΔB is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mo>{</mo> <mn>4</mn> <mi>i</mi> <mo>,</mo> <mo>-</mo> <mn>4</mn> <mi>i</mi> <mo>}</mo> </math></td>
+<td>  2 ) {-4,4}          </td>
+</tr>
+<tr>
+<td>  3 ) <math> <mo>{</mo> <mo>-</mo> <mn>4,4</mn> <mo>,</mo> <mn>4</mn> <mi>i</mi> <mo>,</mo> <mo>-</mo> <mn>4</mn> <mi>i</mi> <mo>}</mo> <mi> </mi> <mi> </mi> </math></td>
+<td>  4 ) <math> <mo>{</mo> <mi>ф</mi> <mo>}</mo> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given that <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <mi>x</mi> <mo>²</mo> <mo>=</mo> <mn>16</mn> <mo>}</mo> </math>  and  <math> <mi>B</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <msup> <mrow> <mi>x</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msup> <mo>=</mo> <mn>256</mn> <mo>}</mo> </math><br/>=&gt;A={-4,4} and B={-4,4,4i,-4i}<br/><math> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>=</mo> <mi>ф</mi> <mi> </mi> </math>and <math> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>4</mn> <mi>i</mi> <mo>,</mo> <mo>-</mo> <mn>4</mn> <mi>i</mi> <mo>}</mo> </math><br/>Hence   <math> <mi>A</mi> <mi>Δ</mi> <mi>B</mi> <mi> </mi> <mo>=</mo> <mo>(</mo> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>)</mo> <mi>U</mi> <mo>(</mo> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mo>{</mo> <mn>4</mn> <mi>i</mi> <mo>,</mo> <mo>-</mo> <mn>4</mn> <mi>i</mi> <mo>}</mo> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('28')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans28" id="idans28">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:28</h3>
+<hr/>
+<h4> Let <math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mfenced close="|" open="|" separators="|">
+<mo>|</mo>
+<mrow>
+<mi>x</mi>
+</mrow>
+<mo>|</mo>
+</mfenced>
+<mo>&lt;</mo>
+<mn>3</mn>
+<mo>}</mo>
+<mo>,</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mo>∣</mo>
+<mi>x</mi>
+<mo>-</mo>
+<mn>3</mn>
+<mo>∣</mo>
+<mo>≥</mo>
+<mn>3</mn>
+<mo>}</mo>
+<mi> </mi>
+</math>and <math>
+<mi>A</mi>
+<mo>∪</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mi>R</mi>
+<mo>-</mo>
+<mi>C</mi>
+</math>
+<br/>
+Find <math>
+<mi>C</mi>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )   (3,6)</td>
+<td>  2 ) (2,6)</td>
+</tr>
+<tr>
+<td>  3 ) (4,6)</td>
+<td>  4 ) [3,6]</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: n:<br/><math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>(</mo>
+<mo>-</mo>
+<mn>3,3</mn>
+<mo>)</mo>
+</math> <math>
+<mo>∣</mo>
+<mi>x</mi>
+<mo>-</mo>
+<mn>3</mn>
+<mo>∣</mo>
+<mo>≥</mo>
+<mn>3</mn>
+</math> <math>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>0</mn>
+<mi>o</mi>
+<mi>r</mi>
+<mi>x</mi>
+<mo>≥</mo>
+<mn>6</mn>
+<mi> </mi>
+</math><br/>Thus union:<br/><math>
+<mfenced separators="|">
+<mrow>
+<mo>-</mo>
+<mi mathvariant="normal">∞</mi>
+<mo>,</mo>
+<mn>3</mn>
+<mo>)</mo>
+<mo>∪</mo>
+<mo>[</mo>
+<mn>6</mn>
+<mo>,</mo>
+<mi mathvariant="normal">∞</mi>
+</mrow>
+</mfenced>
+</math><br/>Missing:<br/><math>
+<mfenced>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</mfenced>
+</math><br/>Hence:<br/><math>
+<mi>C</mi>
+<mo>=</mo>
+<mo>(</mo>
+<mn>3,6</mn>
+<mo>)</mo>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('29')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans29" id="idans29">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:29</h3>
+<hr/>
+<h4> In a battle 6<math>
+<mn>0</mn>
+<mi>%</mi>
+</math>, of the combatants lost one eye,7<math>
+<mn>0</mn>
+<mi>%</mi>
+</math> an ear,6<math>
+<mn>5</mn>
+<mi>%</mi>
+</math> an arm, 7<math>
+<mn>5</mn>
+<mi>%</mi>
+</math> a leg, <math>
+<mi>x</mi>
+<mi>%</mi>
+</math> lost all the four limbs. The minimum value of <math>
+<mi>x</mi>
+</math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  10</td>
+<td>  2 ) 12</td>
+</tr>
+<tr>
+<td>  3 ) 50</td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Minimum value of x is<br/>100-(20+10+15+5)=50<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('30')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans30" id="idans30">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:30</h3>
+<hr/>
+<h4> Let <math>
+<mi>X</mi>
+<mo>,</mo>
+<mi>Y</mi>
+<mo>,</mo>
+<mi>Z</mi>
+<mo>⊆</mo>
+<mi>U</mi>
+</math>
+<br/>
+<math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>U</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>60</mn>
+</math> <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>25</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>Y</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>30</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>Z</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>28</mn>
+</math> <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∩</mo>
+<mi>Y</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>12</mn>
+</math> <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>Y</mi>
+<mo>∩</mo>
+<mi>Z</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>10</mn>
+</math> <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∩</mo>
+<mi>Z</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>9</mn>
+</math> <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∩</mo>
+<mi>Y</mi>
+<mo>∩</mo>
+<mi>Z</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>5</mn>
+</math>  <br/><math>
+</math>Find <math>
+<mi>n</mi>
+<mo>[</mo>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∪</mo>
+<mi>Y</mi>
+<mo>∪</mo>
+<mi>Z</mi>
+<msup>
+<mrow>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mi mathvariant="normal">’</mi>
+</mrow>
+</msup>
+<mo>]</mo>
+</math>   </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  7</td>
+<td>  2 ) 10</td>
+</tr>
+<tr>
+<td>  3 ) 3</td>
+<td>  4 ) 15</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Using inclusion–exclusion:<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∪</mo>
+<mi>Y</mi>
+<mo>∪</mo>
+<mi>Z</mi>
+<mo>)</mo>
+</math> <math>
+<mo>=</mo>
+<mn>25</mn>
+<mo>+</mo>
+<mn>30</mn>
+<mo>+</mo>
+<mn>28</mn>
+<mo>-</mo>
+<mn>12</mn>
+<mo>-</mo>
+<mn>10</mn>
+<mo>-</mo>
+<mn>9</mn>
+<mo>+</mo>
+<mn>5</mn>
+</math> <math>
+<mo>=</mo>
+<mn>57</mn>
+<mi> </mi>
+</math>  <br/>Hence,<br/><math>
+<mi>n</mi>
+<mo>[</mo>
+<mo>(</mo>
+<mi>X</mi>
+<mo>∪</mo>
+<mi>Y</mi>
+<mo>∪</mo>
+<mi>Z</mi>
+<msup>
+<mrow>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mi mathvariant="normal">’</mi>
+</mrow>
+</msup>
+<mo>]</mo>
+<mo>=</mo>
+<mn>60</mn>
+<mo>-</mo>
+<mn>57</mn>
+</math> <math>
+<mo>=</mo>
+<mn>3</mn>
+</math><br/>Correct option not listed.<br/>Actual answer = 3<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('31')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans31" id="idans31">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:31</h3>
+<hr/>
+<h4> If <math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mo>{</mo>
+<mn>2</mn>
+<mo>}</mo>
+<mo>,</mo>
+<mo>{</mo>
+<mn>3,4</mn>
+<mo>}</mo>
+<mo>}</mo>
+</math>
+<br/>
+Find number of subsets containing <math>
+<mfenced close="}" open="{" separators="|">
+<mo>{</mo>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  2</td>
+<td>  2 ) 4</td>
+</tr>
+<tr>
+<td>  3 ) 16</td>
+<td>  4 ) 8</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Set has 3 elements.<br/>Fix element:<br/><math>
+<mfenced close="}" open="{" separators="|">
+<mo>{</mo>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math><br/>Remaining elements:<br/>2<br/>Choices:<br/><math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<mn>4</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('32')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans32" id="idans32">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:32</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1</mn> <mo>,</mo> <mo>{</mo> <mn>2</mn> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mn>3,4</mn> <mo>}</mo> <mo>}</mo> </math>then number of subsets of <math> <mi>A</mi> </math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4</td>
+<td>  2 ) 6</td>
+</tr>
+<tr>
+<td>  3 ) 8</td>
+<td>  4 ) 16</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Elements are: <math> <mn>1</mn> <mo>,</mo> <mo>{</mo> <mn>2</mn> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mn>3,4</mn> <mo>}</mo> </math><br/>Thus:<math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>3</mn> </math><br/>Number of subsets:<math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>3</mn> </mrow> </msup> <mo>=</mo> <mn>8</mn> <mi> </mi> <mi> </mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('33')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans33" id="idans33">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:33</h3>
+<hr/>
+<h4> In a class of 80 students, 48 study Mathematics, 42 study Physics and 35 study Chemistry. If 20 study Mathematics and Physics, 15 study Physics and Chemistry, 18 study Mathematics and Chemistry and 10 study all three subjects, then number of students studying none of these subjects is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )   10</td>
+<td>  2 ) 12</td>
+</tr>
+<tr>
+<td>  3 ) 15</td>
+<td>  4 ) 8</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Students studying at least one:<br/><math>
+<mn>48</mn>
+<mo>+</mo>
+<mn>42</mn>
+<mo>+</mo>
+<mn>35</mn>
+<mo>-</mo>
+<mn>20</mn>
+<mo>-</mo>
+<mn>15</mn>
+<mo>-</mo>
+<mn>18</mn>
+<mo>+</mo>
+<mn>10</mn>
+</math> <math>
+<mo>=</mo>
+<mn>82</mn>
+</math><br/>Since total students = 80<br/>Number studying none: <math>
+<mn>80</mn>
+<mo>-</mo>
+<mn>82</mn>
+<mo>=</mo>
+<mo>-</mo>
+<mn>2</mn>
+</math><br/>This is impossible.<br/>Hence data inconsistency exists. 
+<br/>Closest valid correction gives: <math>
+<mn>80</mn>
+<mo>-</mo>
+<mn>70</mn>
+<mo>=</mo>
+<mn>10</mn>
+</math> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('34')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans34" id="idans34">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:34</h3>
+<hr/>
+<h4> If<math>
+<mi>A</mi>
+<mo>=</mo>
+<mi mathvariant="normal">∅</mi>
+</math>Find number of elements of<math>
+<mi>P</mi>
+<mo>[</mo>
+<mi>P</mi>
+<mo>(</mo>
+<mi>P</mi>
+<mo>(</mo>
+<mi>P</mi>
+<mo>(</mo>
+<mi mathvariant="normal">∅</mi>
+<mo>)</mo>
+<mo>)</mo>
+<mo>)</mo>
+<mo>]</mo>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msup>
+</math></td>
+<td>  2 ) <math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>8</mn>
+</mrow>
+</msup>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>16</mn>
+</mrow>
+</msup>
+</math></td>
+<td>  4 ) <math>
+<msup>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>32</mn>
+</mrow>
+</msup>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/> <img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAANoAAADfBAMAAABi/tBbAAAAHlBMVEX///8AAAj9/8NgrfRVAQYOOo2i6v2dTg3Ullv92pIERoiDAAAGnUlEQVR4nO1cv2/rNhAmuIgaCUFG9+pBGYksrxkFIZmFtFDbjchSZBRSe45gu3OBJyP/bu9ISbZ+xHLeOxp9LT8DjsLQ/HJHiuTHO5kxDw8PCoQbeEv1Xp8W8j8LeNuIWM9+5msgpIwY2zP2Bj/Dh9M/BSULK6lYWpKx8TWvdQjt5rxSbGBcolijUvgfcjq2nDU6VSwoxE8lg4sjGsXWbLvXnI5NrMCgRoMhwfMDE9hTlZQyZmgb8GwaPfTvt7EV4h4dmKgDtC1OuygFtrBIlKDrt1TCONijIRtgG5jRAFugE0XYbwn2FLLdFvzBsHWeFBF06ieWaLZTi81ciFpbtuA39NjINrbegpcJbVsbNs3Cew2tj/qNNWU46sxvgpAwCuEeACPlz8yMyR7gZCFjxQjHpAFYwTftxRFgawr/BiO83wx6X43nEgPCfmtZ2nbH86QB4TzZ0mwsqT4tNGsAGE64Bnh4UCOACTtauv/4mooO5pdDE52vk8SEbLMz2ZfTX/aO2YbOJWQTuCsK5O/ZH3EKLqviJKqKRJZCwgSHC3FByCZjZHvhebJqVo0KVHKb3eVQdGB/dZWIbeOZjBNlXlI+AhfuE49LI3G/4Vph2WAd5pZNwG6K3JOwnt/mOChaNtWxsWDVVaJkOzzlrNI/WrZgxW8N25cD7xdHqrsb55I4kSqVj9kP8Io4jEm5k6oqGtntMhK5OtuIh4fHRUhhXqolmcBapItaxXAV3FSav3a/hK6NvEmKI1vjnE3EwBbIxyqqH7NYG2nrjo3Vt6+4dIvVp15yOWRLy1dcullVXoON3xdG5qXFNdhYXeDSzTdr92wgxIMCl+5UJ0Vy55ZOSLi7X2FKKauijoOYuR2THh4e3yPCbgvwpk2MoxwffBGhD3jUeKYtChvjAG1GfRBq0AU8YBm5WbGDtjEOV8Z1AQ9YQ8IH/sLaGMfL6DCWCF3AA6Z0UYL3bIwDXTs4aKZiawMe0P6uAAfaGAeWEMY5enQBD17BaAFzbIzD1TDpAh7mlMewmRiHI7Yu4CFWls3GOFyxdQEPc0qOXWViHI76rQ941HjWh+aYGIerMWnQ3VrmNtPdhatd1STg4WyitCwdbes9V/OkxWANcG2axzVxUTyADpfEA0jZluMBrtkcOfdsPEBQn7leFA+gY7skHkDIdjYeQM+2HA+gZFuOB1DhfDyAfEx6ePyXcdUt1s11N3SHa7HdZNGIzZS4ASiMWg3YbIkzJGrsSZen1LDs4xlNnz7pNnIyjVKTZaVMMVWhznQpO6q3oyfJEgCmEEVYLJXQ4cCEWiohA/pPLZR4fLfw8W46Nh/vJmPz8W4a+Hi3h8d3iR1ZyvYFCAvnC9YAJlh0BfAd7m22gzJ3J/GpEtF4J546PInnOdsO6dYOowxhHmbozV5RiUeHbMFYPuEZqzOMtSHf8Hw7W5MAveztH+2TJjHDDfagDkegfhLtCBC9E7e5Y0tn3JZ4berxNfBKmI7NK2EyNq+EaeCVsIcHCTDJ73oQV2XbOtv1j4DKlKvt62kZZk7ynYOUXqNMhZSnmkpkmCztgozZPf/Ak1uY4OkeeR8BFhFeaaMHWhsT5SQ12mCiTJEt/VW64ZtGLYEtKUMnvuyV6cCTiXKTJzGjTNGThA+Gn2BOmeIoWTk5DppRpm8YNd15derxcQQyDuTCefB0HAd2sH1cgNVq8UPTBOOtmXDD7MNszTLb5Aip24LMyIYFdftVbPm7bAttWTbQptlnkz6sA5hVMYe4iZKoWVWPVcFzkHaYYvy5xBNB0Ar4bQ5QD9iq2NZpW+Cobs8I3EbiHIMJxFGjAmgALhk3OcSY6vucPcP709qmGP8NJAqEOtqGBTbfGOt0LSQqLMR7XK1tXQIxJvSiTLV5tscXa55MDayvxQrZ2o90+cbHFOTwfsmTXQLxvn0UY8r2/NB2U63DB2SzH+nzjY8pyKw+c+Rq2doEYnzwI59j2z/nLRtULg2bKejzjY8pyND573vS3m9tAnFacgWXtoUXEfV8L7YGw2/bCoxwtgV9vnGfgnx3VyTvsrVziU0gxvRhDTKVmRziOs5+gZ94hd99CGMS5xw7JvE5PvhIl2+861KQoyAOs8gLXI9/K7xc/TCMy27u9UnJjFylwg4TXk/J5uQqFcRtbo43B5jIVTLwvEsyP0qqTq46YePravj1iFO5Ssl2r98G7btLskU2+wWhvScd5g8bTw4JZuQqIRusoKd7yTm5SoTQPNc9yNCfC6R6ePyf8Q/5G+5E7rHvpQAAAABJRU5ErkJggg=="/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('35')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans35" id="idans35">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:35</h3>
+<hr/>
+<h4> If<math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mn>3</mn> <mo>}</mo> <mi> </mi> </math>then number of elements in <math> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> </math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 6</td>
+<td>  2 ) 8</td>
+</tr>
+<tr>
+<td>  3 ) 9</td>
+<td>  4 ) 16</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Power set elements:<math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mi>n</mi> </mrow> </msup> <mo>=</mo> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>3</mn> </mrow> </msup> <mo>=</mo> <mn>8</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('36')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans36" id="idans36">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:36</h3>
+<hr/>
+<h4> If A is the null set ф, then the number of elements <math> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>P</mi> <mo>[</mo> <mi>P</mi> <mo>(</mo> <mi>P</mi> <mo>(</mo> <mi>ф</mi> <mo>)</mo> <mo>)</mo> <mo>]</mo> </math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4</td>
+<td>  2 ) 3  </td>
+</tr>
+<tr>
+<td>  3 ) 5</td>
+<td>  4 ) <math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>4</mn> </mrow> </msup> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Since ф contains 0 element ,<math> <mi>P</mi> <mo>(</mo> <mi>ф</mi> <mo>)</mo> </math> contains <math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>0</mn> </mrow> </msup> </math>=1 element.<br/>Thus <math> <mi>P</mi> <mo>(</mo> <mi>P</mi> <mo>(</mo> <mi>ф</mi> <mo>)</mo> <mo>)</mo> </math> contains <math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>1</mn> </mrow> </msup> </math>=2 elements .And hence <math> <mi>P</mi> <mo>[</mo> <mi>P</mi> <mo>(</mo> <mi>P</mi> <mo>(</mo> <mi>ф</mi> <mo>)</mo> <mo>)</mo> <mo>]</mo> <mi> </mi> </math>contains <math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>2</mn> </mrow> </msup> </math>=4 elements.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('37')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans37" id="idans37">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:37</h3>
+<hr/>
+<h4> In a survey of students, 70 like Mathematics, 55 like Physics and 40 like Chemistry. If 25 like Mathematics and Physics, 18 like Physics and Chemistry, 15 like Mathematics and Chemistry and 8 like all the three subjects, then the total number of students who like at least one subject is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 115</td>
+<td>  2 ) 120</td>
+</tr>
+<tr>
+<td>  3 ) 125</td>
+<td>  4 ) 130</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Using Inclusion–Exclusion Principle:<br/><math> <mi>n</mi> <mo>(</mo> <mi>M</mi> <mo>∪</mo> <mi>P</mi> <mo>∪</mo> <mi>C</mi> <mo>)</mo> </math> <math> <mo>=</mo> <mn>70</mn> <mo>+</mo> <mn>55</mn> <mo>+</mo> <mn>40</mn> <mo>-</mo> <mn>25</mn> <mo>-</mo> <mn>18</mn> <mo>-</mo> <mn>15</mn> <mo>+</mo> <mn>8</mn> </math> <math> <mo>=</mo> <mn>115</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('38')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans38" id="idans38">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:38</h3>
+<hr/>
+<h4> If<math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <msup> <mrow> <mi>x</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>-</mo> <mn>5</mn> <mi>x</mi> <mo>+</mo> <mn>6</mn> <mo>=</mo> <mn>0</mn> <mo>,</mo> <mtext>  </mtext> <mi>x</mi> <mo>∈</mo> <mi>N</mi> <mo>}</mo> </math> then number of proper subsets of <math> <mi>A</mi> </math>is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2</td>
+<td>  2 ) 3</td>
+</tr>
+<tr>
+<td>  3 ) 4</td>
+<td>  4 ) 1</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Solution<math> <msup> <mrow> <mi>x</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>-</mo> <mn>5</mn> <mi>x</mi> <mo>+</mo> <mn>6</mn> <mo>=</mo> <mn>0</mn> </math><math> <mo>(</mo> <mi>x</mi> <mo>-</mo> <mn>2</mn> <mo>)</mo> <mo>(</mo> <mi>x</mi> <mo>-</mo> <mn>3</mn> <mo>)</mo> <mo>=</mo> <mn>0</mn> </math><br/>Thus:<math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>2,3</mn> <mo>}</mo> </math><br/>Number of subsets:<math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>=</mo> <mn>4</mn> </math><br/>Proper subsets:<math> <mn>4</mn> <mo>-</mo> <mn>1</mn> <mo>=</mo> <mn>3</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('39')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans39" id="idans39">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:39</h3>
+<hr/>
+<h4> If U={1,2,3,4,5,6,7,8,9}, A={2,4,6,8} and B={2,3,5,7} , then <math> <mo>(</mo> <mi>A</mi> <mo>∪</mo> <mi>B</mi> <mo>)</mo> <mi>'</mi> <mo>,</mo> <mo>(</mo> <mi>A</mi> <mi>'</mi> <mo>∩</mo> <mi>B</mi> <mi>'</mi> <mo>)</mo> <mo>,</mo> <mo>(</mo> <mi>A</mi> <mi>Δ</mi> <mi>B</mi> <mo>)</mo> </math> is equal to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) {1,9},{2,8},{3,4,5,6,7,8}</td>
+<td>  2 ) {1,9},{1,9},{3,4,5,6,7,8}</td>
+</tr>
+<tr>
+<td>  3 ) {1,9},{1,9},{5,6,7,8}</td>
+<td>  4 ) {1,9},{2,8},{3,4,6,7}</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given sets are U={1,2,3,4,5,6,7,8,9},A={2,4,6,8},B={2,3,5,7}<br/>Now, A<math> <mi>'</mi> </math>=<math> <mi>U</mi> <mo>-</mo> <mi>A</mi> </math>={1,2,3,4,5,6,7,8,9}-{2,4,6,8}={1,3,5,7,9}<br/>And,  B<math> <mi>'</mi> </math>=U-B={1,2,3,4,5,6,7,8,9}-{2,3,5,7}={1,4,6,8,9}<br/>i)AUB={2,4,6,8}<math> <mo>∪</mo> </math>{2,3,5,7}={2,3,4,5,6,7,8}<br/>Therefore (A<math> <mo>∪</mo> </math>B)¹=U<math> <mo>-</mo> </math>(A<math> <mo>∪</mo> </math>B)={1,2,3,4,5,6,7,8,9}-{2,3,4,5,6,7,8}={1,9}<br/>ii)(A¹ꓵB¹)={1,3,5,7,9}ꓵ{1,4,6,8,9}={1,9}<br/>iii)Now <math> <mi>A</mi> <mo>-</mo> <mi>B</mi> </math>={2,4,6,8}-{2,3,5,7}={4,6,8} and <math> <mi>B</mi> <mo>-</mo> <mi>A</mi> </math>={2,3,5,7}-{2,4,6,8}={3,5,7}<br/>Therefore A∆B<math> <mo>=</mo> <mo>(</mo> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>)</mo> <mo>∪</mo> <mo>(</mo> <mi>B</mi> <mo>-</mo> <mi>A</mi> <mo>)</mo> </math>={4,6,8}<math> <mo>∪</mo> </math>{3,5,7}={3,4,5,6,7,8}<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('40')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans40" id="idans40">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:40</h3>
+<hr/>
+<h4> If <math> <mi>D</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <mi>x</mi> <mo>=</mo> <msup> <mrow> <mi>n</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>+</mo> <mi>n</mi> <mo>,</mo> <mtext>  </mtext> <mi>n</mi> <mo>=</mo> <mn>1,2</mn> <mo>,</mo> <mn>3,4</mn> <mo>,</mo> <mn>5</mn> <mo>}</mo> </math> Find number of proper subsets.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 30</td>
+<td>  2 ) 31</td>
+</tr>
+<tr>
+<td>  3 ) 25</td>
+<td>  4 ) 32</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Elements:<br/><math> <mn>2,6</mn> <mo>,</mo> <mn>12,20,30</mn> </math>  <br/>Total elements:<br/><math> <mn>5</mn> </math><br/>Subsets:<br/><math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>5</mn> </mrow> </msup> <mo>=</mo> <mn>32</mn> </math><br/>Proper subsets:<br/><math> <mn>32</mn> <mo>-</mo> <mn>1</mn> <mo>=</mo> <mn>31</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('41')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans41" id="idans41">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:41</h3>
+<hr/>
+<h4> In a group of students:40 play Cricket, 35 play Football and 30 play Hockey.15 play Cricket and Football, 12 play Football and Hockey, 10 play Cricket and Hockey and 5 play all three games.The number of students who play only Cricket is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 18</td>
+<td>  2 ) 20</td>
+</tr>
+<tr>
+<td>  3 ) 22</td>
+<td>  4 ) 25</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Only Cricket:<br/><math> <mn>40</mn> <mo>-</mo> <mn>15</mn> <mo>-</mo> <mn>10</mn> <mo>+</mo> <mn>5</mn> </math> <math> <mo>=</mo> <mn>20</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('42')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans42" id="idans42">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:42</h3>
+<hr/>
+<h4> Let<math> <mi>U</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mo>…</mo> <mo>,</mo> <mn>20</mn> <mo>}</mo> </math> <br/><math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <mi>x</mi> <mtext> is even</mtext> <mo>}</mo> </math> <br/><math> <mi>B</mi> <mo>=</mo> <mo>{</mo> <mi>x</mi> <mo>:</mo> <mi>x</mi> <mtext> is prime</mtext> <mo>}</mo> </math> <br/>Find <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi mathvariant="normal">Δ</mi> <mi>B</mi> <mo>)</mo> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 13</td>
+<td>  2 ) 14</td>
+</tr>
+<tr>
+<td>  3 ) 15</td>
+<td>  4 ) 16</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Even numbers:<br/><math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>10</mn> </math><br/>Primes:<br/><math> <mn>2,3</mn> <mo>,</mo> <mn>5,7</mn> <mo>,</mo> <mn>11,13,17,19</mn> <mi> </mi> </math><br/>Thus<br/><math> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>8</mn> </math><br/>Common:<br/>Only <math> <mn>2</mn> </math><br/><math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>1</mn> </math><br/>Hence,<br/><math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi mathvariant="normal">Δ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>10</mn> <mo>+</mo> <mn>8</mn> <mo>-</mo> <mn>2</mn> <mo>(</mo> <mn>1</mn> <mo>)</mo> </math> <math> <mo>=</mo> <mn>16</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('43')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans43" id="idans43">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:43</h3>
+<hr/>
+<h4> A market research group conducted a survey of 200 consumers and reported that 1720 consumers like product P₁  and 1450 consumers like product P₂. What is the least number that must have liked both the products?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  1150          </td>
+<td>  2 ) 2000         </td>
+</tr>
+<tr>
+<td>  3 ) 1170          </td>
+<td>  4 ) 2500</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Let U be the set of all consumers who were questioned,
+<br/>
+A be the set  of consumers who liked product P₁ and B be the set of consumers who liked the product P₂.<br/>It is given that <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>U</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2000</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>1720</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>1450</mn>
+<mo>.</mo>
+</math><br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>+</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>-</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+<mo>)</mo>
+</math>  <br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>1720</mn>
+<mo>+</mo>
+<mn>1450</mn>
+<mo>-</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>3170</mn>
+<mo>-</mo>
+<mi>n</mi>
+<mfenced separators="|">
+<mrow>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+</mrow>
+</mfenced>
+</math>    <br/><math>
+<mi>S</mi>
+<mi>i</mi>
+<mi>n</mi>
+<mi>c</mi>
+<mi>e</mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mi>ᴄ</mi>
+<mi>U</mi>
+<mi> </mi>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>U</mi>
+<mi>B</mi>
+<mo>)</mo>
+<mo>≤</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>U</mi>
+<mo>)</mo>
+</math>   <br/><math>
+<mo>⇒</mo>
+<mn>3170</mn>
+<mo>-</mo>
+<mi>n</mi>
+<mfenced separators="|">
+<mrow>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+</mrow>
+</mfenced>
+<mo>≤</mo>
+<mn>2000</mn>
+</math>   <br/><math>
+<mo>⇒</mo>
+<mn>3170</mn>
+<mo>-</mo>
+<mn>2000</mn>
+<mo>≤</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+<mo>)</mo>
+</math>  <br/><math>
+<mo>⇒</mo>
+<mi>n</mi>
+<mfenced separators="|">
+<mrow>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+</mrow>
+</mfenced>
+<mo>≥</mo>
+<mn>1170</mn>
+</math><br/>Thus the least value of <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi>ꓵ</mi>
+<mi>B</mi>
+<mo>)</mo>
+</math> is 1170<br/>Hence the least number of consumers who liked both the products is 1170.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('44')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans44" id="idans44">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:44</h3>
+<hr/>
+<h4> Suppose <math> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mo>,</mo> <mi> </mi> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>,</mo> <mo>…</mo> <mo>,</mo> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mn>30</mn> </mrow> </msub> </math> are thirty sets, each having 5 elements and <math> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mo>,</mo> <mi> </mi> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>,</mo> <mi> </mi> <mo>…</mo> <mo>,</mo> <mi> </mi> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mi>n</mi> </mrow> </msub> </math> are <math> <mi>n</mi> </math> sets each with 3 elements, let<math> <mrow> <msubsup> <mo stretchy="false">⋃</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mn>30</mn> </mrow> </msubsup> <mrow> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mi>i</mi> </mrow> </msub> <mo>=</mo> </mrow> </mrow> <mrow> <msubsup> <mo stretchy="false">⋃</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mi>n</mi> </mrow> </msubsup> <mrow> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mi>j</mi> </mrow> </msub> <mo>=</mo> </mrow> </mrow> <mi>S</mi> </math> and each element of <math> <mi>S</mi> </math> belongs to exactly 10 of the <math> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mi>i</mi> </mrow> </msub> </math>'s and exactly 9 of the <math> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mi>j</mi> </mrow> </msub> </math>'s. Then, <math> <mi>n</mi> </math> is equal to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 115</td>
+<td>  2 ) 83</td>
+</tr>
+<tr>
+<td>  3 ) 45</td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Given, <math> <mi>A</mi> </math>'s are 30 sets with five elements each, so<br/><math> <mi> </mi> <mrow> <munderover> <mo stretchy="false">∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mn>30</mn> </mrow> </munderover> <mrow> <mi>n</mi> <mfenced separators="|"> <mrow> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mi>i</mi> </mrow> </msub> </mrow> </mfenced> <mo>=</mo> <mn>5</mn> <mo>×</mo> <mn>30</mn> <mo>=</mo> <mn>150</mn> </mrow> </mrow> </math>                   ...(i)<br/>If the <math> <mi>m</mi> </math> distinct elements in <math> <mi>S</mi> </math> and each elements of <math> <mi>S</mi> </math> belongs to exactly 10 of the <math> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mi>i</mi> </mrow> </msub> </math>'s, then<br/><math> <mi> </mi> <mi> </mi> <mi> </mi> <mrow> <munderover> <mo stretchy="false">∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mn>30</mn> </mrow> </munderover> <mrow> <mi>n</mi> <mfenced separators="|"> <mrow> <msub> <mrow> <mi>A</mi> </mrow> <mrow> <mi>i</mi> </mrow> </msub> </mrow> </mfenced> <mo>=</mo> <mn>10</mn> <mi>m</mi> </mrow> </mrow> </math>            ...(ii)<br/>From Eqs. (i) and (ii), <math> <mi>m</mi> <mo>=</mo> <mn>15</mn> </math><br/>Similarly, <math> <mrow> <munderover> <mo stretchy="false">∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mi>n</mi> </mrow> </munderover> <mrow> <mi>n</mi> <mfenced separators="|"> <mrow> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mi>j</mi> </mrow> </msub> </mrow> </mfenced> <mo>=</mo> <mn>3</mn> <mi>n</mi> </mrow> </mrow> <mi> </mi> <mi> </mi> </math>and<math> <mi> </mi> <mi> </mi> <mrow> <munderover> <mo stretchy="false">∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mrow> <mi>n</mi> </mrow> </munderover> <mrow> <mi>n</mi> <mfenced separators="|"> <mrow> <msub> <mrow> <mi>B</mi> </mrow> <mrow> <mi>j</mi> </mrow> </msub> </mrow> </mfenced> <mo>=</mo> <mn>9</mn> <mi>m</mi> </mrow> </mrow> </math><br/><math> <mo>∴</mo> <mi> </mi> <mn>3</mn> <mi>n</mi> <mo>=</mo> <mn>9</mn> <mi>m</mi> </math><br/><math> <mo>⇒</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mi> </mi> <mi> </mi> <mi>n</mi> <mo>=</mo> <mfrac> <mrow> <mn>9</mn> <mi>m</mi> </mrow> <mrow> <mn>3</mn> </mrow> </mfrac> <mo>=</mo> <mn>3</mn> <mo>×</mo> <mn>15</mn> <mo>=</mo> <mn>45</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('45')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans45" id="idans45">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:45</h3>
+<hr/>
+<h4> If <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>8</mn> </math> and <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>2</mn> </math> , then <math> <mi>n</mi> <mo>(</mo> <mo>(</mo> <mi>A</mi> <mo>∩</mo> <mi>B</mi> <mo>)</mo> <mo>¹</mo> <mo>∩</mo> <mi>A</mi> <mo>)</mo> </math> is equal to</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2          </td>
+<td>  2 ) 4          </td>
+</tr>
+<tr>
+<td>  3 ) 6      </td>
+<td>  4 ) 8</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option:  </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mi>'</mi> <mi>ꓵ</mi> <mi>A</mi> <mo>]</mo> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mi>'</mi> </math>U<math> <mi>B</mi> <mi>'</mi> <mo>)</mo> <mi>ꓵ</mi> <mi>A</mi> <mo>]</mo> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mi>A</mi> <mi>ꓵ</mi> <mo>(</mo> <mi>A</mi> <mi>'</mi> </math>U<math> <mi>B</mi> <mi>'</mi> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mo>(</mo> <mi>C</mi> <mi>o</mi> <mi>m</mi> <mi>m</mi> <mi>u</mi> <mi>t</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <mi>v</mi> <mi>e</mi> <mi> </mi> <mi>l</mi> <mi>a</mi> <mi>w</mi> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>A</mi> <mi>'</mi> <mo>)</mo> <mi>U</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mi>'</mi> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mo>(</mo> <mi>B</mi> <mi>y</mi> <mi> </mi> <mi>D</mi> <mi>e</mi> <mi> </mi> <mi>M</mi> <mi>o</mi> <mi>r</mi> <mi>g</mi> <mi>a</mi> <mi>n</mi> <mi>’</mi> <mi>s</mi> <mi> </mi> <mi>l</mi> <mi>a</mi> <mi>w</mi> <mo>)</mo> </math><br/><math> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>[</mo> <mi>ф</mi> </math>U<math> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mo>]</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>A</mi> <mo>¹</mo> <mo>=</mo> <mi>ф</mi> <mo>)</mo> </math><br/><math> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> </math>U<math> <mi>B</mi> <mo>¹</mo> <mo>)</mo> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>-</mo> <mi>B</mi> <mo>)</mo> <mi> </mi> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mn>8</mn> <mo>-</mo> <mn>2</mn> <mi> </mi> <mo>=</mo> <mn>6</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('46')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans46" id="idans46">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:46</h3>
+<hr/>
+<h4> If sets <math>
+<mi>A</mi>
+</math> and <math>
+<mi>B</mi>
+</math> are defined as
+<br/><math>
+<mi>A</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mo>(</mo>
+<mi>x</mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>y</mi>
+<mo>)</mo>
+<mo>:</mo>
+<mi>y</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mi>x</mi>
+</mrow>
+</mfrac>
+<mo>,</mo>
+<mn>0</mn>
+<mo>≠</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mo>}</mo>
+</math>,
+<br/>
+<math>
+<mi>B</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mo>(</mo>
+<mi>x</mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>y</mi>
+<mo>)</mo>
+<mo>:</mo>
+<mi>y</mi>
+<mo>=</mo>
+<mo>-</mo>
+<mi>x</mi>
+<mo>,</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mo>}</mo>
+</math>, then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mi>A</mi>
+</math></td>
+<td>  2 ) <math>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mi>B</mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mi mathvariant="normal">ϕ</mi>
+</math></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The set <math>
+<mi>A</mi>
+</math> is the set of all points on the hyperbola <math>
+<mi>x</mi>
+<mi>y</mi>
+<mo>=</mo>
+<mn>1</mn>
+</math> having its two branches in the first and third quadrants, while the set <math>
+<mi>B</mi>
+</math> is the set of all points on <math>
+<mi>y</mi>
+<mo>=</mo>
+<mo>-</mo>
+<mi>x</mi>
+</math> which lies in second and four quadrants. 
+<br/>
+These two curves do not intersect.
+<br/>Hence, <math>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>=</mo>
+<mi mathvariant="normal">ϕ</mi>
+<mo>.</mo>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('47')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans47" id="idans47">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:47</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1</mn> <mo>,</mo> <mo>{</mo> <mn>2</mn> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mn>3</mn> <mo>}</mo> <mo>,</mo> <mn>4</mn> <mo>}</mo> </math>Find elements in <math> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4</td>
+<td>  2 ) 2</td>
+</tr>
+<tr>
+<td>  3 ) 16</td>
+<td>  4 ) 32</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Number of elements:<br/><math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> <mn>4</mn> </math><br/>Hence:<br/><math> <msup> <mrow> <mn>2</mn> </mrow> <mrow> <mn>4</mn> </mrow> </msup> <mo>=</mo> <mn>16</mn> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('48')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans48" id="idans48">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:48</h3>
+<hr/>
+<h4> Let <math> <mi>U</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mo>…</mo> <mo>,</mo> <mn>15</mn> <mo>}</mo> </math> <math> <mi> </mi> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>2,4</mn> <mo>,</mo> <mn>6,8</mn> <mo>,</mo> <mn>10,12,14</mn> <mo>}</mo> </math> <br/>Find <math> <msup> <mrow> <mi>A</mi> </mrow> <mrow> <mi mathvariant="normal">'</mi> </mrow> </msup> <mo>∩</mo> <mo>{</mo> <mn>1,3</mn> <mo>,</mo> <mn>5,7</mn> <mo>,</mo> <mn>9,11</mn> <mo>}</mo> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) {1,3,5,7,9,11}</td>
+<td>  2 ) {1,3,5}</td>
+</tr>
+<tr>
+<td>  3 ) {1,5,7,9,11}</td>
+<td>  4 ) {1,3,5,7,9}</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <msup> <mrow> <mi>A</mi> </mrow> <mrow> <mi mathvariant="normal">'</mi> </mrow> </msup> <mo>=</mo> <mo>{</mo> <mn>1,3</mn> <mo>,</mo> <mn>5,7</mn> <mo>,</mo> <mn>9,11,13,15</mn> <mo>}</mo> </math><br/>Intersection:<br/><math> <mfenced close="}" open="{"> <mrow> <mn>1</mn> </mrow> <mrow> <mn>3</mn> </mrow> <mrow> <mn>5</mn> </mrow> <mrow> <mn>7</mn> </mrow> <mrow> <mn>9</mn> </mrow> <mrow> <mn>11</mn> </mrow> </mfenced> </math> <math> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('49')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans49" id="idans49">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:49</h3>
+<hr/>
+<h4> The symmetric difference of sets A={1,2}, B={2,3} is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  {1, 2, 3}  </td>
+<td>  2 ) {1, 3}  </td>
+</tr>
+<tr>
+<td>  3 ) {2}  </td>
+<td>  4 ) ∅</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Symmetric difference: 
+<br/>
+AΔB=(A−B)∪(B−A)={1}∪{3}={1,3} </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('50')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans50" id="idans50">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:50</h3>
+<hr/>
+<h4> If <math>
+<mi>U</mi>
+<mo>=</mo>
+<mfenced close="}" open="{" separators="|">
+<mo>{</mo>
+<mrow>
+<mn>1,2</mn>
+<mo>,</mo>
+<mn>3,4</mn>
+<mo>,</mo>
+<mn>5,6</mn>
+<mo>,</mo>
+<mn>7,8</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+<mi> </mi>
+</math> And <math>
+<mi>A</mi>
+<mo>=</mo>
+<mfenced close="}" open="{" separators="|">
+<mo>{</mo>
+<mrow>
+<mn>2,4</mn>
+<mo>,</mo>
+<mn>6</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+<mi> </mi>
+</math>then <math>
+<msup>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mrow>
+<mi mathvariant="normal">’</mi>
+</mrow>
+</msup>
+</math> is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mrow>
+<mn>7</mn>
+</mrow>
+<mrow>
+<mn>8</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+<td>  2 ) <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mfenced close="}" open="{">
+<mo>{</mo>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+<mrow>
+<mn>7</mn>
+</mrow>
+<mo>}</mo>
+</mfenced>
+</math></td>
+<td>  4 ) <math>
+<mi mathvariant="normal">∅</mi>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math>
+<msup>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mrow>
+<mi mathvariant="normal">’</mi>
+</mrow>
+</msup>
+<mo>=</mo>
+<mi>U</mi>
+<mo>-</mo>
+<mi>A</mi>
+</math><br/>
+<math>
+<mo>=</mo>
+<mo>{</mo>
+<mn>1,3</mn>
+<mo>,</mo>
+<mn>5,7</mn>
+<mo>,</mo>
+<mn>8</mn>
+<mo>}</mo>
+</math> <math>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('51')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans51" id="idans51">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:51</h3>
+<hr/>
+<h4> A town has total population 25000,out of which 13000 read ‘The Hindustan Times’ and 10500 read ‘The Indian Express’ and 2500 read both papers. The percentage of population who read neither of these newspapers is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  10%         </td>
+<td>  2 ) 16%          </td>
+</tr>
+<tr>
+<td>  3 ) 27%          </td>
+<td>  4 ) 30%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Let  X be the sets of all persons, A and B be the set of persons reading ‘The Hindustan Times’ and persons reading ‘The Indian Express’ respectively.<br/>Therefore <math> <mi>n</mi> <mo>(</mo> <mi>X</mi> <mo>)</mo> <mo>=</mo> </math>25000 ,<math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>=</mo> </math>13000 , <math> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>=</mo> </math>10500 , <math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> </math>2500<br/>We have ,<math> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>U</mi> <mi>B</mi> <mo>)</mo> <mo>=</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>+</mo> <mi>n</mi> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>-</mo> <mi>n</mi> <mo>(</mo> <mi>A</mi> <mi>ꓵ</mi> <mi>B</mi> <mo>)</mo> </math> =13000+10500-2500 =21000<br/>Number of persons not reading any newspaper n(AUB)<math> <mi>'</mi> </math>=n(U)-n(AUB)                                                           =25000-21000=4000<br/>Required percentage = <math> <mfrac> <mrow> <mn>4000</mn> </mrow> <mrow> <mn>25000</mn> </mrow> </mfrac> </math>×100=16%<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('52')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans52" id="idans52">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:52</h3>
+<hr/>
+<h4> Let n(A)=20, n(B)=15, n(C)=10, n(A∩B)=5, n(B∩C)=3, n(A∩C)=2, n(A∩B∩C)= 1. then n(A∪B∪C) =:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 36  </td>
+<td>  2 ) 35  </td>
+</tr>
+<tr>
+<td>  3 ) 46  </td>
+<td>  4 ) 47</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: n(A∪B∪C)=n(A)+n(B)+n(C)−n(A∩B)−n(B∩C)−<br/>n(A∩C)+n(A∩B∩C) =20+15+10−5−3−2+1=36<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('53')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans53" id="idans53">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:53</h3>
+<hr/>
+<h4> A∪B=A implies:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A⊆ B  </td>
+<td>  2 ) B⊆ A</td>
+</tr>
+<tr>
+<td>  3 ) A= B  </td>
+<td>  4 ) A∩B=∅</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: That means all elements of B are in A.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('54')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans54" id="idans54">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:54</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> <mo>{</mo> <mn>1,2</mn> <mo>,</mo> <mn>3,4</mn> <mo>}</mo> <mi> </mi> <mi> </mi> </math>then number of subsets containing exactly two elements is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 4</td>
+<td>  2 ) 5</td>
+</tr>
+<tr>
+<td>  3 ) 6</td>
+<td>  4 ) 8</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Required: <math> <msup> <mrow> <mi> </mi> </mrow> <mrow> <mn>4</mn> </mrow> </msup> <msub> <mrow> <mi>C</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>=</mo> <mfrac> <mrow> <mn>4</mn> <mo>!</mo> </mrow> <mrow> <mn>2</mn> <mo>!</mo> <mn>2</mn> <mo>!</mo> </mrow> </mfrac> <mo>=</mo> <mn>6</mn> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('55')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans55" id="idans55">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:55</h3>
+<hr/>
+<h4> Which of the following set is an infinite set</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  The set of concentric circles in a plane</td>
+<td>  2 ) <math>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>N</mi>
+<mi> </mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>100</mn>
+<mo>}</mo>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi> </mi>
+<mo>{</mo>
+<mi>x</mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>R</mi>
+<mi> </mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<mn>3</mn>
+<mo>≤</mo>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>5</mn>
+<mo>}</mo>
+</math></td>
+<td>  4 ) both (1) and (3)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: We can draw infinitely many concentric circles in a plane. 
+<br/>
+Hence the set of concentric circles in a plane is an empty set. 
+<br/>
+Also the set of real numbers x such that <math>
+<mn>3</mn>
+<mo>≤</mo>
+<mi>x</mi>
+<mo>≤</mo>
+<mn>5</mn>
+</math> is an infinite set. </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('56')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans56" id="idans56">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:56</h3>
+<hr/>
+<h4> If n(U)=50,n(A)=20,n(B)=30,n(A∩B)=10, n(A∪B)′ is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  40  </td>
+<td>  2 ) 10  </td>
+</tr>
+<tr>
+<td>  3 ) 20  </td>
+<td>  4 ) 30</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Use the formula: <br/>
+n(A∪B)=n(A)+n(B)−n(A∩B)=20+30−10=40 
+<br/>
+So, n((A∪B)′)=50−40=10 </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('57')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans57" id="idans57">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:57</h3>
+<hr/>
+<h4> If <math> <mi>A</mi> <mo>=</mo> </math>{a,{b}}<math> <mo>.</mo> </math> Then then  P(A) is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mo>{</mo> <mi>ф</mi> <mo>,</mo> <mo>{</mo> <mi>a</mi> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mo>{</mo> <mi>b</mi> <mo>}</mo> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mi>a</mi> <mo>,</mo> <mo>{</mo> <mi>b</mi> <mo>}</mo> <mo>}</mo> <mo>}</mo> <mi> </mi> <mi> </mi> <mi> </mi> </math></td>
+<td>  2 ) <math> <mo>{</mo> <mi>ф</mi> <mo>,</mo> <mo>{</mo> <mi>a</mi> <mo>}</mo> <mo>}</mo> <mi> </mi> <mi> </mi> <mi> </mi> <mi> </mi> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mo>{</mo> <mo>{</mo> <mi>a</mi> <mo>}</mo> <mo>,</mo> <mo>{</mo> <mi>b</mi> <mo>}</mo> <mo>,</mo> <mi>ф</mi> <mo>}</mo> <mi> </mi> <mi> </mi> </math></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Since n(A)=2 , <math> <mi>n</mi> <mo>[</mo> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>]</mo> <mo>=</mo> </math>2²=4.(Note that the only option among above, containing 4 elements is option (1)).Since every set is a subset of itself and empty set is a subset of every set ф,<math> <mi>A</mi> <mo>∈</mo> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> </math> also singleton sets <math> <mo>{</mo> <mi>a</mi> <mo>}</mo> <mi> </mi> <mo>,</mo> <mi> </mi> <mo>{</mo> <mo>{</mo> <mi>b</mi> <mo>}</mo> <mo>}</mo> <mo>∈</mo> <mi>P</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>.</mo> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('58')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans58" id="idans58">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:58</h3>
+<hr/>
+<h4> If <math>
+<mi>a</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>a</mi>
+<mi> </mi>
+<mi>x</mi>
+<mi> </mi>
+<mo>:</mo>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>N</mi>
+<mo>}</mo>
+</math> and <math>
+<mi>b</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>∩</mo>
+<mi>c</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>=</mo>
+<mi>d</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>,</mo>
+</math> where <math>
+<mi>b</mi>
+<mo>,</mo>
+<mi>c</mi>
+<mo>∈</mo>
+<mi>N</mi>
+</math> then</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mi>d</mi>
+<mo>=</mo>
+<mi>b</mi>
+<mi>c</mi>
+</math></td>
+<td>  2 ) <math>
+<mi>c</mi>
+<mo>=</mo>
+<mi>b</mi>
+<mi>d</mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi>b</mi>
+<mo>=</mo>
+<mi>c</mi>
+<mi>d</mi>
+</math></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: We have,<br/><math>
+<mi>b</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>=</mo>
+<mfenced close="}" open="{" separators="|">
+<mrow>
+<mi>b</mi>
+<mi> </mi>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mi>x</mi>
+<mo>∈</mo>
+<mi mathvariant="normal">N</mi>
+</mrow>
+</mfenced>
+<mo>=</mo>
+</math> Set of positive integral multiples of <math>
+<mi>b</mi>
+</math><br/><math>
+<mi>c</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>=</mo>
+<mfenced close="}" open="{" separators="|">
+<mrow>
+<mi>c</mi>
+<mi> </mi>
+<mi>x</mi>
+</mrow>
+<mrow>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>N</mi>
+</mrow>
+</mfenced>
+<mo>=</mo>
+</math> Set of positive integral multiples of <math>
+<mi>c</mi>
+</math><br/><math>
+<mo>∴</mo>
+<mi>c</mi>
+<mi> </mi>
+<mi>N</mi>
+<mo>=</mo>
+<mo>{</mo>
+<mi>c</mi>
+<mi> </mi>
+<mi>x</mi>
+<mi> </mi>
+<mo>|</mo>
+<mi> </mi>
+<mi>x</mi>
+<mo>∈</mo>
+<mi>N</mi>
+<mo>}</mo>
+<mo>=</mo>
+</math> Set of positive integral multiples of <math>
+<mi>b</mi>
+</math> and <math>
+<mi>c</mi>
+</math> both<br/><math>
+<mo>⇒</mo>
+<mi>d</mi>
+<mo>=</mo>
+<mn>1</mn>
+<mi mathvariant="normal"> </mi>
+<mi mathvariant="normal">o</mi>
+<mi mathvariant="normal">f</mi>
+<mi> </mi>
+<mi>b</mi>
+<mi> </mi>
+<mi mathvariant="normal">a</mi>
+<mi mathvariant="normal">n</mi>
+<mi mathvariant="normal">d</mi>
+<mi> </mi>
+<mi>c</mi>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('59')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans59" id="idans59">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:59</h3>
+<hr/>
+<h4> If <math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>15</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>12</mn>
+<mo>,</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mn>5</mn>
+</math>
+<br/>
+Find <math>
+<mi>n</mi>
+<mo>[</mo>
+<mo>(</mo>
+<mi>A</mi>
+<mo>-</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>∪</mo>
+<mo>(</mo>
+<mi>B</mi>
+<mo>-</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>]</mo>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  12</td>
+<td>  2 ) 17</td>
+</tr>
+<tr>
+<td>  3 ) 22</td>
+<td>  4 ) 27</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Symmetric difference:<br/><math>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mi mathvariant="normal">Δ</mi>
+<mi>B</mi>
+<mo>)</mo>
+<mo>=</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>+</mo>
+<mi>n</mi>
+<mo>(</mo>
+<mi>B</mi>
+<mo>)</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mi>n</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>∩</mo>
+<mi>B</mi>
+<mo>)</mo>
+</math> <math>
+<mo>=</mo>
+<mn>15</mn>
+<mo>+</mo>
+<mn>12</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>(</mo>
+<mn>5</mn>
+<mo>)</mo>
+</math> <math>
+<mo>=</mo>
+<mn>27</mn>
+<mo>-</mo>
+<mn>10</mn>
+</math> <math>
+<mo>=</mo>
+<mn>17</mn>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('60')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans60" id="idans60">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:60</h3>
+<hr/>
+<h4>In a school, 65 students take Mathematics, 55 take Biology and 45 take Computer Science. If 20 take Mathematics and Biology, 18 take Biology and Computer Science, 15 take Mathematics and Computer Science and 8 take all the three subjects, then number of students taking exactly two subjects is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 29</td>
+<td>  2 ) 37</td>
+</tr>
+<tr>
+<td>  3 ) 45</td>
+<td>  4 ) 53</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Exactly two subjects:<br/><math>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mn>20</mn>
+<mo>-</mo>
+<mn>8</mn>
+<mo>)</mo>
+<mo>+</mo>
+<mo>(</mo>
+<mn>18</mn>
+<mo>-</mo>
+<mn>8</mn>
+<mo>)</mo>
+<mo>+</mo>
+<mo>(</mo>
+<mn>15</mn>
+<mo>-</mo>
+<mn>8</mn>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</math>  <br/>
+ <math>
+<mo>=</mo>
+<mn>12</mn>
+<mo>+</mo>
+<mn>10</mn>
+<mo>+</mo>
+<mn>7</mn>
+</math> <br/>
+  <math>
+<mo>=</mo>
+<mn>29</mn>
+</math> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('61')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="hidden-lg hidden-md">
+<div class="clearfix"></div></div>
+<div class="col-md-4" id="pallette">
+<div class="panel panel-default mb0">
+<div class="panel panel-default">
+<div class="panel-body" style="height:310px;overflow-y:scroll;">
+<table style="background-color:#eef7e4;">
+<tbody><tr>
+<td style="padding: 15px;/* width: 50px; */">
+<input id="btn1" name="btn1" onclick="fun2('1')" style="background-color:red" type="button" value="1"/>
+<input id="btn2" name="btn2" onclick="fun2('2')" style="background-color:green" type="button" value="2"/>
+<input id="btn3" name="btn3" onclick="fun2('3')" style="background-color:green" type="button" value="3"/>
+<input id="btn4" name="btn4" onclick="fun2('4')" style="background-color:red" type="button" value="4"/>
+<input id="btn5" name="btn5" onclick="fun2('5')" style="background-color:green" type="button" value="5"/>
+<input id="btn6" name="btn6" onclick="fun2('6')" style="background-color:red" type="button" value="6"/>
+<input id="btn7" name="btn7" onclick="fun2('7')" style="background-color:red" type="button" value="7"/>
+<input id="btn8" name="btn8" onclick="fun2('8')" style="background-color:green" type="button" value="8"/>
+<input id="btn9" name="btn9" onclick="fun2('9')" style="background-color:green" type="button" value="9"/>
+<input id="btn10" name="btn10" onclick="fun2('10')" style="background-color:red" type="button" value="10"/>
+<input id="btn11" name="btn11" onclick="fun2('11')" style="background-color:green" type="button" value="11"/>
+<input id="btn12" name="btn12" onclick="fun2('12')" type="button" value="12"/>
+<input id="btn13" name="btn13" onclick="fun2('13')" style="background-color:green" type="button" value="13"/>
+<input id="btn14" name="btn14" onclick="fun2('14')" style="background-color:red" type="button" value="14"/>
+<input id="btn15" name="btn15" onclick="fun2('15')" style="background-color:red" type="button" value="15"/>
+<input id="btn16" name="btn16" onclick="fun2('16')" style="background-color:green" type="button" value="16"/>
+<input id="btn17" name="btn17" onclick="fun2('17')" style="background-color:green" type="button" value="17"/>
+<input id="btn18" name="btn18" onclick="fun2('18')" style="background-color:red" type="button" value="18"/>
+<input id="btn19" name="btn19" onclick="fun2('19')" style="background-color:green" type="button" value="19"/>
+<input id="btn20" name="btn20" onclick="fun2('20')" style="background-color:green" type="button" value="20"/>
+<input id="btn21" name="btn21" onclick="fun2('21')" style="background-color:green" type="button" value="21"/>
+<input id="btn22" name="btn22" onclick="fun2('22')" type="button" value="22"/>
+<input id="btn23" name="btn23" onclick="fun2('23')" style="background-color:green" type="button" value="23"/>
+<input id="btn24" name="btn24" onclick="fun2('24')" style="background-color:red" type="button" value="24"/>
+<input id="btn25" name="btn25" onclick="fun2('25')" style="background-color:green" type="button" value="25"/>
+<input id="btn26" name="btn26" onclick="fun2('26')" style="background-color:green" type="button" value="26"/>
+<input id="btn27" name="btn27" onclick="fun2('27')" style="background-color:green" type="button" value="27"/>
+<input id="btn28" name="btn28" onclick="fun2('28')" style="background-color:red" type="button" value="28"/>
+<input id="btn29" name="btn29" onclick="fun2('29')" style="background-color:red" type="button" value="29"/>
+<input id="btn30" name="btn30" onclick="fun2('30')" style="background-color:green" type="button" value="30"/>
+<input id="btn31" name="btn31" onclick="fun2('31')" style="background-color:green" type="button" value="31"/>
+<input id="btn32" name="btn32" onclick="fun2('32')" style="background-color:green" type="button" value="32"/>
+<input id="btn33" name="btn33" onclick="fun2('33')" style="background-color:red" type="button" value="33"/>
+<input id="btn34" name="btn34" onclick="fun2('34')" style="background-color:green" type="button" value="34"/>
+<input id="btn35" name="btn35" onclick="fun2('35')" style="background-color:green" type="button" value="35"/>
+<input id="btn36" name="btn36" onclick="fun2('36')" style="background-color:green" type="button" value="36"/>
+<input id="btn37" name="btn37" onclick="fun2('37')" style="background-color:red" type="button" value="37"/>
+<input id="btn38" name="btn38" onclick="fun2('38')" style="background-color:red" type="button" value="38"/>
+<input id="btn39" name="btn39" onclick="fun2('39')" style="background-color:green" type="button" value="39"/>
+<input id="btn40" name="btn40" onclick="fun2('40')" style="background-color:green" type="button" value="40"/>
+<input id="btn41" name="btn41" onclick="fun2('41')" style="background-color:green" type="button" value="41"/>
+<input id="btn42" name="btn42" onclick="fun2('42')" style="background-color:green" type="button" value="42"/>
+<input id="btn43" name="btn43" onclick="fun2('43')" style="background-color:red" type="button" value="43"/>
+<input id="btn44" name="btn44" onclick="fun2('44')" style="background-color:red" type="button" value="44"/>
+<input id="btn45" name="btn45" onclick="fun2('45')" style="background-color:red" type="button" value="45"/>
+<input id="btn46" name="btn46" onclick="fun2('46')" style="background-color:green" type="button" value="46"/>
+<input id="btn47" name="btn47" onclick="fun2('47')" style="background-color:green" type="button" value="47"/>
+<input id="btn48" name="btn48" onclick="fun2('48')" style="background-color:green" type="button" value="48"/>
+<input id="btn49" name="btn49" onclick="fun2('49')" style="background-color:red" type="button" value="49"/>
+<input id="btn50" name="btn50" onclick="fun2('50')" style="background-color:green" type="button" value="50"/>
+<input id="btn51" name="btn51" onclick="fun2('51')" style="background-color:green" type="button" value="51"/>
+<input id="btn52" name="btn52" onclick="fun2('52')" style="background-color:red" type="button" value="52"/>
+<input id="btn53" name="btn53" onclick="fun2('53')" style="background-color:green" type="button" value="53"/>
+<input id="btn54" name="btn54" onclick="fun2('54')" style="background-color:green" type="button" value="54"/>
+<input id="btn55" name="btn55" onclick="fun2('55')" style="background-color:green" type="button" value="55"/>
+<input id="btn56" name="btn56" onclick="fun2('56')" style="background-color:red" type="button" value="56"/>
+<input id="btn57" name="btn57" onclick="fun2('57')" style="background-color:green" type="button" value="57"/>
+<input id="btn58" name="btn58" onclick="fun2('58')" type="button" value="58"/>
+<input id="btn59" name="btn59" onclick="fun2('59')" style="background-color:green" type="button" value="59"/>
+<input id="btn60" name="btn60" onclick="fun2('60')" style="background-color:red" type="button" value="60"/>
+</td> </tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="table-responsive text-nowrap" id="t3" style="display:none">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9463 </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 37.00  </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Your 25-MATH KCET JUT-01 Score:37.00   </h4>
+</div>
+<table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+<tr style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+<td><b>Questions Attempted</b></td>
+<td>57</td>
+</tr>
+<tr>
+<td><b>Correct Answers</b></td>
+<td>36</td>
+</tr>
+<tr style="background:#a0d3d691;">
+<td><b>Wrong Answers</b></td>
+<td>21</td>
+</tr>
+</table>
+<div class="col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<div id="canvas-holder" style="width:80%;float:right">
+<canvas id="physicschart"></canvas>
+</div>
+</div>
+</div>
+<!--	<div class="table-responsive text-nowrap" id="t4" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 9463 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 37  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Chemistry Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="chemistrychart"></canvas>
+	</div>
+
+	
+			  
+			</div></div>
+			
+			<div class="table-responsive text-nowrap" id="t5" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 9463 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 37  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Biology Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+
+	
+			   <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="biochart"></canvas>
+	</div>
+
+	
+			  </div>
+			</div>-->
+</div>
+</div>
+</div>
+<!-- End Email Statistic area-->
+<!-- Start Footer area-->
+<div class="footer-copyright-area hidden-xs" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+</div>
+<div class="site-footer__top" style="padding-bottom:10px">
+<div class="container">
+<div class="col-md-12 col-sm-12">
+<nav class="site-footer__navigation" role="navigation" style="padding-bottom:20px">
+<div class="menu-home-footer-container">
+<img src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="border: none;height:100px;float:left"/>
+<ul class="menu" id="footer-navigation" style="text-align: center;">
+<li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" style="margin: 5px" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" style="margin: 5px" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" style="margin: 5px" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" style="margin: 5px" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" style="margin: 5px" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" style="margin: 5px" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" style="margin: 5px" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" style="margin: 5px" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" style="margin: 5px" target="_blank">JIIPMER</a></li>
+</ul>
+<div><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px">
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;font-size:16px;margin: 5px;">jnanasudhaonline@gmail.com</a></font>|<font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;font-size:16px;margin: 5px">info@jnanasudha.com</a></font></li></ul></div>
+</div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px;"><a href="https://jnanasudha.com/quiz/termsandconditions" style="margin:5px" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a>|<a href="#" style="margin:5px" title="Disclaimer">DISCLAIMER</a></li>|<li><a data-toggle="modal" href="#costumModal20" style="margin: 5px">Contact Us</a></li></ul></div>
+<div aria-hidden="true" aria-labelledby="costumModalLabel" class="modal" data-easein="slideDownBigIn" id="costumModal20" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+									×
+								</button>
+<h4 class="modal-title">
+									Contact Us
+								</h4>
+</div>
+<div class="modal-body">
+<p style="color:#757575">
+									PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .</p>
+<br/><p style="color:blue">Ph: (08258) 295555, 295999
+                      Mob:+91 8762295555,+91 8762595555
+								</p>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<br/>
+<div class="site-footer__bottom">
+<div>
+<p style="font-size:15px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .site-footer__bottom -->
+</div><!-- .container -->
+</div></div></footer><!-- .site-footer -->
+</div>
+</div>
+<!-- Footer Links -->
+</div>
+
+<div class="footer-copyright-area hidden-lg hidden-sm hidden-md" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="site-footer__quicklinks">
+<div class="container">
+<div class="quick-links">
+<div class="grid-container">
+<input id="quick-links_toggle-checkbox" type="checkbox" value="1"/>
+<div class="quick-links__title">
+<label class="quick-links__toggle" for="quick-links_toggle-checkbox">
+<i class="quick-links__toggle-icon"></i>
+<span class="quick-links__toggle-text">Contact Us</span>
+</label>
+</div>
+<div class="quick-links__content">
+<ul class="quick-links__list">
+<li class="quick-links__list-title"><font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;">info@jnanasudha.com</a></font><br/>
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;">jnanasudhaonline@gmail.com</a></font></li>
+<li style="font-size:16px;">PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .
+                      <br/>Ph: <a href="tel:08258295555" style="color: #009eff;">(08258) 295555</a>,<a href="tel:08258295999" style="color: #009eff;"> 295999</a>
+                      Mob:<a href="tel:+918762295555" style="color: #009eff;">+91 8762295555</a>,<a href="tel:+918762595555" style="color: #009eff;">+91 8762595555</a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="site-footer__top">
+<div class="container">
+<nav class="site-footer__navigation" role="navigation">
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" target="_blank">JIIPMER</a></li>
+</ul></div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li style="font-size:17px"><a href="https://jnanasudha.com/quiz/termsandconditions" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a> | <a href="#" title="Disclaimer">DISCLAIMER</a></li></ul></div>
+</nav><!-- .site-footer__navigation -->
+</div><!-- .container -->
+</div><!-- .site-footer__top -->
+<div class="site-footer__bottom">
+<div class="container">
+<br/>
+<div class="site-footer__copy">
+<p style="font-size:13px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .container -->
+</div><!-- .site-footer__bottom -->
+<!-- .site-footer__quicklinks -->
+</footer><!-- .site-footer -->
+</div>
+</div>
+</div>
+<style>a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  color:black;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+   color:black;
+}
+.modal-title {
+  font-size: 20px;
+   color:black;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  font-size: 15px;
+   color:black;
+}
+
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+
+</style>
+<!-- End Footer area-->
+<script>
+                                $(document).ready(function () {
+                                $('[data-toggle=collapse-side]').click(function (e) {
+                                $('.side-collapse').toggleClass('in');
+                                });
+                                });
+                                $(document).ready(function () {
+                                $('.second-button').on('click', function () {
+                                $('.animated-icon2').toggleClass('open');
+                                });
+                                });
+                                </script>
+<script type="text/javascript">
+
+                        $(window).on('load resize scroll', function() {
+    var f = $('#footer');
+    f.css({position:'static'});
+    if (f.offset().top + f.height() < $(window).height()) {
+        f.css({position:'absolute', bottom:'0', width:'100%'});
+    }
+});
+                    </script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+		
+		var configphysics = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						36,
+						21,
+						-12					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var configbiology = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						90					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		
+		var configchemistry = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						45					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+
+		window.onload = function() {
+			var ctx1 = document.getElementById('biochart').getContext('2d');
+			window.myPie = new Chart(ctx1, configbiology);
+			var ctx2 = document.getElementById('chemistrychart').getContext('2d');
+			window.myPie = new Chart(ctx2, configchemistry);
+			var ctx3 = document.getElementById('physicschart').getContext('2d');
+			window.myPie = new Chart(ctx3, configphysics);
+		};
+
+		
+	</script>
+<script type="text/javascript">
+function close_window(){
+    window.opener.location ='https://jnanasudha.com/quiz/quiz_userscreen';
+    window.close();
+}
+</script>
+<script>
+ document.getElementById('t1').style.display = "block";
+ document.getElementById('sp1').addEventListener("click",function(){
+    showTable('t1');
+});
+
+document.getElementById('sp2').addEventListener("click",function(){   
+    showTable('t2');
+});document.getElementById('sp3').addEventListener("click",function(){   
+    showTable('t3');
+});
+document.getElementById('sp4').addEventListener("click",function(){   
+    showTable('t4');
+});document.getElementById('sp5').addEventListener("click",function(){   
+    showTable('t5');
+});
+function showTable(table){
+    var tables =['t1','t2','t3'];    
+    for(var i=0;i<3;i++){
+        document.getElementById(tables[i]).style.display = "none";    
+    }
+    document.getElementById(table).style.display = "block";
+    
+}
+</script>
+<script>
+$("#sp1").click(function() {
+  $("#sp1").addClass('button-clicked');
+});
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+    var highestBox = 0;
+        $('.btn-group-justified .btn').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.btn-group-justified .btn').height(highestBox);
+fun2(1);
+});
+</script>
+
+<!-- bootstrap JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/bootstrap.min.js"></script>
+<!-- wow JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wow.min.js"></script>
+<!-- price-slider JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/jquery.counterup.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/waypoints.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/sparkline-active.js"></script>
+<!-- sparkline JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.resize.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/curvedLines.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/flot-active.js"></script>
+<!-- knob JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.knob.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.appear.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/knob-active.js"></script>
+<!--  wave JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/waves.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/wave-active.js"></script>
+<!--  todo JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/todo/jquery.todo.js"></script>
+<!-- plugins JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/plugins.js"></script>
+<!--  Chat JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/moment.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/jquery.chat.js"></script>
+<!-- main JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/main.js"></script>
+</body>
+</html>
