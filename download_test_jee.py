@@ -15,6 +15,8 @@ RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 ID = os.getenv("JEE_USERNAME")
 PASSWORD = os.getenv("JEE_PASSWORD")
 
+print(ID, PASSWORD)
+
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
 
 session = requests.Session()
