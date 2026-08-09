@@ -8,8 +8,8 @@ import json
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
-ID = "8618184853"
-PASSWORD = "jee"
+ID = os.getenv("JEE_USERNAME")
+PASSWORD = os.getenv("JEE_PASSWORD")
 
 
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
