@@ -36,7 +36,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No JEE changes."
           else
-            git add .
             git commit -m "Updated JEE question bank"
             git pull
             git push
@@ -72,7 +71,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No KCET changes."
           else
-            git add .
             git commit -m "Updated KCET question bank"
             git pull
             git push
