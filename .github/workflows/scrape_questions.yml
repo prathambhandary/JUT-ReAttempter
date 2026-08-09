@@ -32,6 +32,7 @@ jobs:
           git config user.email "pushkitty@firewave.in"
 
           git add data/question_bank.json
+          git add .
 
           if git diff --staged --quiet; then
             echo "No JEE changes."
@@ -67,6 +68,7 @@ jobs:
           git config user.email "pushkitty@firewave.in"
 
           git add data/question_bank.json
+          git add .
 
           if git diff --staged --quiet; then
             echo "No KCET changes."
