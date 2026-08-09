@@ -29,32 +29,63 @@
   // Bootstrap
   // -------------------------------------------------------------------
 
-  function boot() {
-    const raw = sessionStorage.getItem("jut-session");
+function boot() {
+    const raw = sessionStorage.getItem("kcet-session");
+
     if (!raw) {
-      window.location.href = "/select";
-      return;
-    }
-    SESSION = JSON.parse(raw);
-    if (!SESSION.questions || !SESSION.questions.length) {
-      window.location.href = "/select";
-      return;
+        window.location.href = "/select";
+        return;
     }
 
-    document.getElementById("hdr-candidate-name").textContent = SESSION.candidate_name || "Candidate";
-    document.getElementById("hdr-roll-number").textContent = SESSION.roll_number || "Practice attempt";
-    document.getElementById("palette-candidate-name").textContent = SESSION.candidate_name || "Candidate";
-    document.getElementById("palette-roll-number").textContent = SESSION.roll_number || "Practice attempt";
+    try {
+        SESSION = JSON.parse(raw);
+    } catch (e) {
+        console.error("[KCET] Invalid session:", e);
+        window.location.href = "/select";
+        return;
+    }
+
+    if (!SESSION.questions || !SESSION.questions.length) {
+        window.location.href = "/select";
+        return;
+    }
+
+    const hdrCandidate = document.getElementById("hdr-candidate-name");
+    const paletteCandidate = document.getElementById("palette-candidate-name");
+
+    if (hdrCandidate) {
+        hdrCandidate.textContent = SESSION.candidate_name || "Candidate";
+    }
+
+    if (paletteCandidate) {
+        paletteCandidate.textContent = SESSION.candidate_name || "Candidate";
+    }
+
+    const hdrSubject = document.getElementById("hdr-subject-name");
+    const paletteSubject = document.getElementById("palette-subject-name");
+
+    const subject = SESSION.subject || SESSION.questions[0].subject;
+
+    if (hdrSubject) {
+        hdrSubject.textContent = subject;
+    }
+
+    if (paletteSubject) {
+        paletteSubject.textContent = subject;
+    }
 
     initProgress();
-    renderSubjectTabs();
-    setActiveSubject(SESSION.questions.find(function (q) { return q.qid === PROGRESS.currentQid; }).subject);
+
+    activeSubject = subject;
+
     renderQuestion(PROGRESS.currentQid);
     startTimer();
     wireStaticControls();
 
     loadingEl.style.display = "none";
-  }
+
+    console.log("[KCET] Exam loaded:", SESSION.questions.length, "questions");
+}
 
   function initProgress() {
     const stored = sessionStorage.getItem("jut-progress");
@@ -156,28 +187,41 @@
   }
 
   function renderPalette() {
-    const qs = questionsFor(activeSubject);
-    const sectionA = qs.filter(function (q) { return q.section === "A"; });
-    const sectionB = qs.filter(function (q) { return q.section === "B"; });
+      const qs = SESSION.questions;
 
-    function grid(list) {
-      return '<div class="palette-grid">' + list.map(function (q) {
-        const cls = statusClass(statusOf(q.qid));
-        const current = q.qid === PROGRESS.currentQid ? " current" : "";
-        return '<button class="pcell ' + cls + current + '" data-qid="' + q.qid + '" title="Question ' + q.display_number + '">' + q.display_number + '</button>';
-      }).join("") + "</div>";
-    }
+      function grid(list) {
+          return '<div class="palette-grid">' +
+              list.map(function (q) {
+                  const cls = statusClass(statusOf(q.qid));
+                  const current = q.qid === PROGRESS.currentQid ? " current" : "";
 
-    let html = "";
-    if (sectionA.length) html += '<div class="palette-subject-label">Section A · MCQ</div>' + grid(sectionA);
-    if (sectionB.length) html += '<div class="palette-subject-label">Section B · Numerical</div>' + grid(sectionB);
-    paletteGroups.innerHTML = html;
+                  return (
+                      '<button class="pcell ' +
+                      cls +
+                      current +
+                      '" data-qid="' +
+                      q.qid +
+                      '" title="Question ' +
+                      q.display_number +
+                      '">' +
+                      q.display_number +
+                      '</button>'
+                  );
+              }).join("") +
+              "</div>";
+      }
 
-    paletteGroups.querySelectorAll(".pcell").forEach(function (cell) {
-      cell.addEventListener("click", function () {
-        goToQuestion(cell.getAttribute("data-qid"));
+      paletteGroups.innerHTML = grid(qs);
+
+      paletteGroups.querySelectorAll(".pcell").forEach(function (cell) {
+          cell.addEventListener("click", function () {
+              const qid = cell.getAttribute("data-qid");
+
+              console.log("[KCET] Palette clicked:", qid);
+
+              goToQuestion(qid);
+          });
       });
-    });
   }
 
   // -------------------------------------------------------------------
@@ -189,8 +233,17 @@
   }
 
   function goToQuestion(qid) {
-    PROGRESS.currentQid = qid;
-    renderQuestion(qid);
+      const q = currentQuestionData(qid);
+
+      if (!q) {
+          console.error("[KCET] Question not found:", qid);
+          return;
+      }
+
+      PROGRESS.currentQid = qid;
+      activeSubject = q.subject;
+
+      renderQuestion(qid);
   }
 
   function renderQuestion(qid) {
@@ -201,13 +254,6 @@
     // matches the NTA convention shown in the palette legend.
     if (PROGRESS.answers[qid].status === "not_visited") {
       PROGRESS.answers[qid].status = "not_answered";
-    }
-
-    if (q.subject !== activeSubject) {
-      activeSubject = q.subject;
-      subjectBar.querySelectorAll(".subject-tab").forEach(function (btn) {
-        btn.classList.toggle("active", btn.getAttribute("data-subject") === activeSubject);
-      });
     }
 
     qNumberBadge.textContent = "Q" + q.display_number;
@@ -258,7 +304,6 @@
       });
     }
 
-    renderSectionBar();
     renderPalette();
     typeset();
     questionScroll.scrollTop = 0;
@@ -396,6 +441,28 @@
     openModal("modal-submit");
   }
 
+  document.getElementById("btn-prev").addEventListener("click", function () {
+      const qid = PROGRESS.currentQid;
+      const idx = SESSION.questions.findIndex(function (q) {
+          return q.qid === qid;
+      });
+
+      if (idx > 0) {
+          goToQuestion(SESSION.questions[idx - 1].qid);
+      }
+  });
+
+  document.getElementById("btn-next").addEventListener("click", function () {
+      const qid = PROGRESS.currentQid;
+      const idx = SESSION.questions.findIndex(function (q) {
+          return q.qid === qid;
+      });
+
+      if (idx < SESSION.questions.length - 1) {
+          goToQuestion(SESSION.questions[idx + 1].qid);
+      }
+  });
+
   // -------------------------------------------------------------------
   // Timer
   // -------------------------------------------------------------------
@@ -446,7 +513,7 @@
       ? "Time's up — submitting your test…"
       : "Submitting your test…";
 
-    fetch("/api/submit", {
+    fetch("/api/submit_kcet", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ session_token: SESSION.session_token, answers: answersPayload }),

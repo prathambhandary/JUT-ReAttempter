@@ -498,6 +498,7 @@ def api_submit():
     return jsonify(scorecard)
 
 
+
 # ---------------------------------------------------------------------------
 # API routes -- KCET generate / submit (new)
 #
@@ -514,33 +515,86 @@ def api_submit():
 
 @app.route("/api/generate_kcet", methods=["POST"])
 def api_generate_kcet():
+    print("\n========== KCET MOCK GENERATION START ==========")
+
     payload = request.get_json(force=True, silent=True) or {}
+    print(f"[KCET] Received payload: {payload}")
+
     subject = (payload.get("subject") or "").strip()
     candidate_name = (payload.get("candidate_name") or "Candidate").strip()[:60]
-    roll_number = (payload.get("roll_number") or "").strip()[:30]
+    # roll_number = (payload.get("roll_number") or "").strip()[:30]
+    roll_number = "25000"
 
+    print(f"[KCET] Subject: {subject}")
+    print(f"[KCET] Candidate name: {candidate_name}")
+    print(f"[KCET] Roll number: {roll_number}")
+
+    # Validate subject
     if subject not in KCET_SUBJECTS:
-        return jsonify({"error": "Select a valid subject (Physics, Chemistry or Mathematics) to start a mock test."}), 400
+        print(f"[KCET] ERROR: Invalid subject: {subject}")
+        print(f"[KCET] Allowed subjects: {KCET_SUBJECTS}")
+        return jsonify({
+            "error": "Select a valid subject (Physics, Chemistry or Mathematics) to start a mock test."
+        }), 400
 
-    pool = [q for q in QUESTION_BANK if q["exam"] == "KCET" and q["subject"] == subject]
+    print(f"[KCET] Subject validation passed: {subject}")
+
+    # Find questions
+    print("[KCET] Searching question bank...")
+
+    pool = [
+        q for q in QUESTION_BANK
+        if q["exam"] == "KCET" and q["subject"] == subject
+    ]
+
+    print(f"[KCET] Found {len(pool)} questions for subject {subject} in KCET question bank.")
+
     if not pool:
-        return jsonify({"error": f"No {subject} questions found in the KCET question bank."}), 400
+        print(f"[KCET] ERROR: No questions available for {subject}")
+        return jsonify({
+            "error": f"No {subject} questions found in the KCET question bank."
+        }), 400
 
+    # Shuffle and select
+    print(f"[KCET] Shuffling {len(pool)} available questions...")
     random.shuffle(pool)
+
     selected_questions = pool[:KCET_QUESTIONS_PER_TEST]
 
+    print(
+        f"[KCET] Selected {len(selected_questions)} questions "
+        f"(requested: {KCET_QUESTIONS_PER_TEST})"
+    )
+
     warnings = []
+
     if len(selected_questions) < KCET_QUESTIONS_PER_TEST:
-        warnings.append(
-            f"Only {len(selected_questions)}/{KCET_QUESTIONS_PER_TEST} {subject} questions are available right "
-            "now, so this paper will be shorter than the usual 60."
+        warning = (
+            f"Only {len(selected_questions)}/{KCET_QUESTIONS_PER_TEST} "
+            f"{subject} questions are available right now, so this paper "
+            "will be shorter than the usual 60."
         )
 
+        warnings.append(warning)
+        print(f"[KCET] WARNING: {warning}")
+
+    # Create session
     session_id = uuid.uuid4().hex
+
+    print(f"[KCET] Generated session ID: {session_id}")
+
     answer_key = {}
     public_questions = []
 
+    print("[KCET] Building question data...")
+
     for i, q in enumerate(selected_questions, start=1):
+        print(
+            f"[KCET] Processing question {i}/{len(selected_questions)} "
+            f"| qid={q.get('qid')} "
+            f"| type={'Numerical' if q.get('is_numeric') else 'MCQ'}"
+        )
+
         answer_key[q["qid"]] = {
             "correct_answer": q["correct_answer"],
             "is_numeric": q["is_numeric"],
@@ -549,6 +603,7 @@ def api_generate_kcet():
             "question_html": q["question_html"],
             "options": q["options"],
         }
+
         public_questions.append({
             "qid": q["qid"],
             "display_number": i,
@@ -558,7 +613,16 @@ def api_generate_kcet():
             "options": q["options"],
         })
 
+    print(f"[KCET] Answer key created: {len(answer_key)} questions")
+    print(f"[KCET] Public question list created: {len(public_questions)} questions")
+
+    # Create token
     now = time.time()
+
+    print(f"[KCET] Creating session token...")
+    print(f"[KCET] Session creation timestamp: {now}")
+    print(f"[KCET] Duration: {KCET_DURATION_SECONDS} seconds")
+
     token_payload = {
         "mode": "kcet",
         "session_id": session_id,
@@ -569,9 +633,13 @@ def api_generate_kcet():
         "subject": subject,
         "answer_key": answer_key,
     }
+
     session_token = serializer.dumps(token_payload)
 
-    return jsonify({
+    print("[KCET] Session token generated successfully")
+    print(f"[KCET] Token length: {len(session_token)} characters")
+
+    response_data = {
         "session_id": session_id,
         "session_token": session_token,
         "duration_seconds": KCET_DURATION_SECONDS,
@@ -581,7 +649,19 @@ def api_generate_kcet():
         "subject": subject,
         "questions": public_questions,
         "warnings": warnings,
-    })
+    }
+
+    print(
+        f"[KCET] Returning response | "
+        f"session_id={session_id} | "
+        f"questions={len(public_questions)} | "
+        f"warnings={len(warnings)}"
+    )
+
+    print("========== KCET MOCK GENERATION END ==========\n")
+
+    return jsonify(response_data)
+
 
 
 @app.route("/api/submit_kcet", methods=["POST"])
@@ -666,6 +746,27 @@ def api_submit_kcet():
         "submitted_at": time.time(),
     }
     return jsonify(scorecard)
+
+
+
+@app.route("/debug/receive", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])
+def debug_receive():
+    print("\n========== DEBUG REQUEST ==========")
+    print("Method:", request.method)
+    print("URL:", request.url)
+    print("Headers:", dict(request.headers))
+    print("Args:", request.args.to_dict())
+    print("Form:", request.form.to_dict())
+    print("JSON:", request.get_json(silent=True))
+    print("Raw body:", request.get_data(as_text=True))
+    print("========== END DEBUG ==========\n")
+
+    return jsonify({
+        "success": True,
+        "message": "Request received"
+    })
+
+
 
 
 if __name__ == "__main__":
