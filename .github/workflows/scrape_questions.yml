@@ -37,6 +37,7 @@ jobs:
             echo "No JEE changes."
           else
             git commit -m "Updated JEE question bank"
+            git pull
             git push
           fi
 
@@ -71,5 +72,6 @@ jobs:
             echo "No KCET changes."
           else
             git commit -m "Updated KCET question bank"
+            git pull
             git push
           fi
