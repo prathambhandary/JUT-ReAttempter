@@ -5,13 +5,15 @@ import time
 import os
 import sys
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
 ID = os.getenv("JEE_USERNAME")
 PASSWORD = os.getenv("JEE_PASSWORD")
-
 
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
 

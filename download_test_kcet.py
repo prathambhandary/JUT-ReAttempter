@@ -5,6 +5,9 @@ import time
 import sys
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
