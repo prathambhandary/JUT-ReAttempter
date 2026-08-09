@@ -20,7 +20,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python download_test_jee.py
+      - run: python download_test.py
 
       - name: Commit changes
         run: |
