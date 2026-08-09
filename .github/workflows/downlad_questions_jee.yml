@@ -1,4 +1,4 @@
-name: Download Questions
+name: JEE Auto Scrape Questions from Jnanasudha.com
 
 permissions:
   contents: write
