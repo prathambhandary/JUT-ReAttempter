@@ -27,7 +27,7 @@ jobs:
       - name: Commit JEE changes
         run: |
           git config user.name "pushkitty"
-          git config user.email "PUSHKITTY_EMAIL"
+          git config user.email "pushkitty@firewave.in"
 
           git add data/question_bank.json
 
@@ -61,7 +61,7 @@ jobs:
       - name: Commit KCET changes
         run: |
           git config user.name "pushkitty"
-          git config user.email "PUSHKITTY_EMAIL"
+          git config user.email "pushkitty@firewave.in"
 
           git add data/question_bank.json
 
