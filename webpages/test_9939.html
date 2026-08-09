@@ -1,0 +1,4855 @@
+25-MJS KCET-01select count(*) counts from student_feedback_params where quiz_id ='9939' and batch_name ='25-MJS KCET-01' and status='Enable' <!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>JNANASUDHA</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- favicon
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/img/faviconnew.gif" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://jnanasudha.com/assets/charts/Chart.min.js"></script>
+<script src="https://jnanasudha.com/assets/charts/samples/utils.js"></script>
+<!-- Google Fonts
+		============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- owl.carousel CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.carousel.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.theme.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.transitions.css" rel="stylesheet"/>
+<!-- meanmenu CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/meanmenu/meanmenu.min.css" rel="stylesheet"/>
+<!-- animate CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/animate.css" rel="stylesheet"/>
+<!-- normalize CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/normalize.css" rel="stylesheet"/>
+<!-- mCustomScrollbar CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<!-- jvectormap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+<!-- notika icon CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/notika-custom-icon.css" rel="stylesheet"/>
+<!-- wave CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/wave/waves.min.css" rel="stylesheet"/>
+<!-- main CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/main.css" rel="stylesheet"/>
+<!-- style CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/style.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/dashboard.css" rel="stylesheet" type="text/css"/>
+<!-- responsive CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- modernizr JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript">
+function removeCSSFallback()
+{
+  var ua = navigator.userAgent;
+  var isGecko = ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1 && ua.indexOf('Trident') === -1;
+  var isWebKit = ua.indexOf('AppleWebKit') > -1 && ua.indexOf('Chrome') === -1;
+  if (isGecko || isWebKit) {
+  //  document.head.removeChild(document.querySelector("style"));
+  } else {
+   /* <link rel="stylesheet" href="https://jnanasudha.com/assets/css/mathml.css">
+		<link rel="stylesheet" href="http://fred-wang.github.io/mathml.css/mathml.css">*/
+		  var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = 'https://jnanasudha.com/assets/mathml.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+  }
+}
+
+window.addEventListener("DOMContentLoaded", removeCSSFallback, false);
+
+</script>
+<script type="text/javascript">
+document.onkeydown = function(ev) {	
+var key;
+ev = ev || event;
+key = ev.keyCode;
+if (key == 116) {
+return false;  // disable F5 key
+}
+}
+</script>
+<script>
+    //paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('#content', true);
+  setVisible('#loading', false);
+});
+ </script>
+<style>
+
+.btn-group-justified>.btn-group .btn {
+    width: 99%;
+}
+.button-clicked {
+  /*background-color: #00dcff;*/
+}
+input[type=button] {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 249, 249, 0.5);
+  background-image: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<script type="text/javascript">
+  function fun2(a) {
+		  // var b = 'idans'+a;
+		  // alert (b);
+		  // $('html, body').animate({ scrollTop: $("#"+b).offset().top }, 'slow');
+            // return false;
+		  // $("[class^='classans']" ).show();
+		  // $("."+b ).show();
+			var b = 'classans' + a;
+            //  alert (b);
+
+            $("[class^='classans']").hide();
+
+            $("." + b).show();
+    }
+	
+	
+	</script>
+<script>
+// $(document).ready(function(){
+    // $('.btn').click(function() {
+       // var target;
+       // $("div").each(function(i, element) {
+         // target = $(element).offset().top;
+         // if (target - 10 > $(document).scrollTop()) {
+           // return false; // break
+         // }
+       // });
+       // $("html, body").animate({
+         // scrollTop: target
+    // }, 700);
+    // });
+// });
+</script>
+</head>
+<body>
+<div id="loading"></div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139705418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139705418-1');
+</script>
+<!--Header Top Area -->
+<div class="header-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="header">
+<a class="logo" href="#">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height:70px;width:90%;float: left;"/>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+<div>
+<span class="name pull-left">
+<p>JNANASUDHA ENTRANCE ACADEMY LLP<br/>
+<span style="font-size: 25px;color: #0977ce;">JNANASUDHA ONLINE TEST SERIES</span></p>
+</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+<span class="mail" style="float:right">
+<ul class="nav navbar-nav pull-right exam-paper" style="margin-top:3px">
+<li class="user-profile">
+<table>
+<tr>
+<td class="profile hidden-xs hidden-sm" style="border: 2px solid #666;margin: 2px 0;">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/uploads/9448104004.jpg" style="height:60px; width:60px;"/>
+</td>
+<td>
+<table>
+<tr>
+<td style="padding: 3px 3px;">Welcome</td>
+<td> : <span style="color: #f7931e; font-weight: bold">AYUSH SHETTY </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</span>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-sm" style="padding-top:65px; background: #0c2273cf;color: white;">
+<!--<p style="text-align:center;line-height:14px;"> <span style="font-size: 12px;"><b>JNANASUDHA ENTRANCE ACADEMY LLP</b></span></p>-->
+<span style="font-size:16px">Welcome: <font style="color: #f7931e; font-weight: bold">AYUSH SHETTY </font></span>
+<span><span style="float:right;padding-bottom: 2px;margin-top: -6px;"><a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout" style="padding:8px 20px;font-size: 15px;">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+		   </a>
+</span></span>
+</div>
+</div>
+</div></div>
+<!-- End Header Top Area -->
+<style>
+   .navbar-default {
+   padding-right: 8px;
+   }
+   .navbar .navbar-toggle {
+   /*border: none;*/
+   }
+   .navbar-header .navbar-toggle .icon-bar {
+   background: #444;
+   }
+   .navbar-header .navbar-toggle .icon-bar:hover {
+   background: #444;
+   }
+   .side-collapse-container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+  /*  ::-webkit-scrollbar {
+   width: 12px;
+   } */
+   ::-webkit-scrollbar-track {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   }
+   ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: #ddd;
+   -webkit-box-shadow: inset 0 0 6px #ddd;
+   }
+   ::-webkit-scrollbar-thumb:window-inactive {
+   background: #ddd;
+   }
+   @media screen and (max-width: 768px) {
+   .side-collapse {
+   top: 58px;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   position: fixed;
+   overflow: auto;
+   transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+   }
+   .side-collapse.in {
+   width: 0;
+   }
+   .navbar-nav li.dropdown {
+   padding-right: 0;
+   }
+   .navbar-nav li
+   {
+   text-align:left;
+   border-bottom:2px solid #ddd;
+   font-size:18px;
+   }
+   .navbar-default {
+   padding-right: 0;
+   }
+   .navbar .navbar-default {
+   border-right: 1px solid #ddd;
+   }
+   }
+  /* Icon 1 */
+
+ .animated-icon2{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #0385e4f2;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 8px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 16px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+</style>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<nav class="navbar navbar-fixed-top navbar-default">
+<div class="navbar-header" style="background: #fff;">
+<button aria-controls="side-collapse" aria-expanded="false" class="navbar-toggle second-button" data-target=".side-collapse" data-toggle="collapse-side" type="button"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div><span class="sr-only">
+</span></button>
+<div class="header">
+<a class="logo" href="#" style="float:left">
+<img alt="" class="hidden-mobile" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height: 57px;"/>
+</a>
+</div>
+<span style="color: #0977ce;text-align:center;float:left;margin-top: 6px;"><b>JNANASUDHA<br/> ONLINE TEST SERIES</b></span>
+</div>
+<div class="navbar-default side-collapse in">
+<nav class="navbar-collapse" role="navigation">
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button" style="padding:10px 30px;font-size: 20px;">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information" style="padding:10px 30px;font-size: 20px;">Account</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/user_payments" role="button" style="padding:10px 30px;font-size: 20px;">Receipts</a>
+</form>
+<ul class="nav navbar-nav">
+<li><a href="https://jnanasudha.com/quiz/quiz_userscreen"><i class="notika-icon notika-house"></i> HOME</a>
+</li><!--
+												<li><a data-toggle="collapse" data-target="#demoevent" href="https://jnanasudha.com/quiz/quiz_inform">JUT 1-JUT 75</a>
+						</li>
+												<li><a data-toggle="collapse" data-target="#democrou" href="#">PART TEST</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#demolibra" href="#">FULL LENGTH</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#democrou" href="https://jnanasudha.com/quiz/quiz2019neet">2019 NEET</a>
+						</li>-->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+</ul>
+</nav>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+<!--<li><a data-toggle="tab" href="#PART TEST"><i class="notika-icon notika-edit"></i> PART TEST</a>
+				</li>
+				<li><a data-toggle="tab" href="#FULL LENGTH"><i class="notika-icon notika-bar-chart"></i> FULL LENGTH</a>
+				</li>
+				 <li><a href="https://jnanasudha.com/quiz/quiz2019neet"><i class="notika-icon notika-form"></i> 2019 NEET</a>
+				</li> -->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/general_feedback" role="button">Feedback</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information">Account</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/user_payments">Receipts</a>
+<a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="notika-email-post-area" id="content" style="margin-bottom:50px">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-8">
+<div class="heading"><span>75 JUT – Which conquer each point of NCERT</span></div>
+<div>
+<div class="btn-group-justified" style="margin-top: 10px;">
+<div class="btn-group">
+<button class="btn btn-primary" id="sp1">Result</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp2">Solution</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp3">Physics Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp4">Chemistry Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp5">Biology Analysis</button>
+</div>
+</div></div>
+<!--<div class="hidden-lg" style="margin-top:5px;">
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary"  id="sp1">Result</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary btn-group" id="sp2">Solution</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Physics Analysis</button>
+					</div>
+                    <div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Chemistry Analysis</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Biology Analysis</button>
+					</div>
+				</div>-->
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="recent-items-ch notika-shadow sm-res-mg-t-30">
+<div style="float:right">
+<div>
+<img src="https://jnanasudha.com/images/imagesmall.jpg" style="/* margin: 0px 100px; */height:80px;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="table-responsive text-nowrap" id="t1" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9939 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 26 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<table class="table table-striped" style="text-align: center;">
+<tr style="border: 1px solid #3a3030;">
+<td style="background: #0b1c75e0;border-bottom: 1px solid #e0d0d0;"></td>
+<td style="background: #1d83ce91;color: white;">25-CHEM KCET JUT-17</td>
+<td style="background: #1d83ce91;color: white;">TOTAL </td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Total Questions</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Attempted</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Correct Answer</td>
+<td>25</td>
+<td>25</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Wrong Answer</td>
+<td>35</td>
+<td>35</td>
+</tr>
+<tr style="border-bottom: 1px solid #3c3636;">
+<td style="background: #0b1c75e0;color: white;">Marks </td>
+<td>26.00</td>
+<td>26.00</td>
+</tr>
+</table>
+</div>
+<div class="row exam-paper" id="t2" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9939 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 26.00 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-lg-8 col-md-8 col-sm-12" id="quest">
+<div>
+<div class="classans1" id="idans1">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:1</h3>
+<hr/>
+<h4> Which of the following statement is correct ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Rf value remains constant for a compound irrespective of solvent used.</td>
+<td>  2 ) In adsorption chromatography, stronger adsorption leads to higher Rf value.</td>
+</tr>
+<tr>
+<td>  3 ) Paper chromatography is an example of partition chromatography.</td>
+<td>  4 ) Two compounds with identical Rf values under identical conditions must be the same compound.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: - Stronger adsorption → lower Rf<br/>- Two compounds with identical Rf values under identical conditions need not be the same compound. While identical Rf values suggest similar polarity &amp; behavior in that specific solvent system<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('2')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans2" id="idans2">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:2</h3>
+<hr/>
+<h4> What happens to a compound with high solubility in water during differential extraction ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) it stays in the organic layer               </td>
+<td>  2 ) it moves to the organic layer</td>
+</tr>
+<tr>
+<td>  3 ) it stays in the aqueous layer              </td>
+<td>  4 ) it gets destroted</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: It stays in the aqueous layer<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('3')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans3" id="idans3">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:3</h3>
+<hr/>
+<h4> Glycerol can be separated from spent lye soap industry by which of the following method?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Steam distillation</td>
+<td>  2 ) Fractional distillation</td>
+</tr>
+<tr>
+<td>  3 ) Distillation under reduced pressure</td>
+<td>  4 ) Differential extraction</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Distillation under reduced pressure<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('4')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans4" id="idans4">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:4</h3>
+<hr/>
+<h4> In Dumas’ method for estimation of nitrogen, 0.3g of an organic compound gave 50mL of nitrogen collected at 300K temperature and 715 mm pressure. The percentage composition of nitrogen in the compound is
+<br/>
+(given: aqueous tension at 300K=15mm)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  41.9%</td>
+<td>  2 ) 20%</td>
+</tr>
+<tr>
+<td>  3 ) 17.5%</td>
+<td>  4 ) 13.5%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Volume of nitrogen collected at 300K and 715 mm pressure is 50 mL<br/>Aqueous tension at 300K =15 mm<br/>Actual pressure =715-15=700 mm<br/>Volume of nitrogen at STP<math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>273</mn>
+<mo>×</mo>
+<mn>700</mn>
+<mo>×</mo>
+<mn>50</mn>
+</mrow>
+<mrow>
+<mn>300</mn>
+<mo>×</mo>
+<mn>760</mn>
+</mrow>
+</mfrac>
+<mo>=</mo>
+<mn>41.9</mn>
+<mi>m</mi>
+<mi>L</mi>
+</math><br/><math>
+<mn>22,400</mn>
+<mi> </mi>
+<mi>m</mi>
+<mi>L</mi>
+<mi> </mi>
+<mi>o</mi>
+<mi>f</mi>
+<mi> </mi>
+<msub>
+<mrow>
+<mi>N</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+<mi> </mi>
+<mi>a</mi>
+<mi>t</mi>
+<mi> </mi>
+<mi>S</mi>
+<mi>T</mi>
+<mi>P</mi>
+<mi> </mi>
+<mi>w</mi>
+<mi>e</mi>
+<mi>i</mi>
+<mi>g</mi>
+<mi>h</mi>
+<mi>t</mi>
+<mo>=</mo>
+<mn>28</mn>
+<mi>g</mi>
+</math><br/>41.9mL  of nitrogen weight <math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>28</mn>
+<mo>×</mo>
+<mn>41.9</mn>
+</mrow>
+<mrow>
+<mn>22400</mn>
+</mrow>
+</mfrac>
+<mi>g</mi>
+</math><br/>Percentage of nitrogen <math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>28</mn>
+<mo>×</mo>
+<mn>41.9</mn>
+<mo>×</mo>
+<mn>100</mn>
+</mrow>
+<mrow>
+<mn>22400</mn>
+<mo>×</mo>
+<mn>0.3</mn>
+</mrow>
+</mfrac>
+<mo>=</mo>
+<mn>17.46</mn>
+<mi>%</mi>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('5')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans5" id="idans5">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:5</h3>
+<hr/>
+<h4> A compound sublimes under reduced pressure because:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Boiling point increases</td>
+<td>  2 ) Vapor pressure decreases</td>
+</tr>
+<tr>
+<td>  3 ) Vapor pressure becomes equal to external pressure easily</td>
+<td>  4 ) Intermolecular forces increase</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Vapor pressure becomes equal to external pressure easily<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('6')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans6" id="idans6">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:6</h3>
+<hr/>
+<h4> The compound formed in the positive test for nitrogen with Lassaigne’s solution of an organic compound is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+</msub>
+<mi>N</mi>
+<mi>O</mi>
+<mi>S</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</math></td>
+<td>  2 ) <math>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+<mo>[</mo>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+<mo>]</mo>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math></td>
+<td>  4 ) <math>
+<mi>F</mi>
+<msub>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math>
+<mi>N</mi>
+<mi>a</mi>
+<mi>C</mi>
+<mi>N</mi>
+<mover accent="false">
+<mo>→</mo>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+<mi>S</mi>
+<msub>
+<mrow>
+<mi>O</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+</mrow>
+</mover>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+<mo>[</mo>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+<mo>]</mo>
+<mover accent="false">
+<mo>→</mo>
+<mrow>
+<msubsup>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+<mrow>
+<mo>⊕</mo>
+</mrow>
+</msubsup>
+</mrow>
+</mover>
+<munder>
+<mrow>
+<mi>F</mi>
+<msub>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mi>P</mi>
+<mi>r</mi>
+<mi>u</mi>
+<mi>s</mi>
+<mi>s</mi>
+<mi>i</mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi> </mi>
+<mi>b</mi>
+<mi>l</mi>
+<mi>u</mi>
+<mi>e</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mo>(</mo>
+<mi>F</mi>
+<mi>e</mi>
+<mi>r</mi>
+<mi>r</mi>
+<mi>i</mi>
+<mo>-</mo>
+<mi>f</mi>
+<mi>e</mi>
+<mi>r</mi>
+<mi>r</mi>
+<mi>o</mi>
+<mi>c</mi>
+<mi>y</mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>i</mi>
+<mi>d</mi>
+<mi>e</mi>
+<mo>)</mo>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</munder>
+</math> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('7')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans7" id="idans7">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:7</h3>
+<hr/>
+<h4> Which of the following statement is correct?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Lassaigne’s test for the detection of nitrogen fails in phenylhydrazine</td>
+<td>  2 ) Kjeldalh’s method cannot be used for the estimation of nitrogen in azo compounds</td>
+</tr>
+<tr>
+<td>  3 ) In duma’s and Kjeldahl’s method, nitrogen present is estimated as ammonia and dinitrogen respectively</td>
+<td>  4 ) When sodium nitroprusside reacts with alkali metal sulphide a black colour precipitate is formed</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: a. Lassaigne’s test for the detection of nitrogen in phenylhydrazine<br/>b. Kjeldalh’s method cannot be used for the estimation of nitrogen in azo compounds<br/>c. In duma’s and Kjeldahl’s method, nitrogen present is estimated as dinitrogen and ammonia<br/>d. When sodium nitroprusside reacts with alkali metal sulphide a violet colour precipitate is formed<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('8')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans8" id="idans8">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:8</h3>
+<hr/>
+<h4> In estimation of percentage of oxygen. The mixture of gaseous products containing oxygen is passed over red hot coke. All oxygen is converted to  A . This mixture is passed through B when A is converted to C . What is A, B and C in above statement.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A = <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> , B = <math> <mi mathvariant="normal">K</mi> <mi mathvariant="normal">O</mi> <mi mathvariant="normal">H</mi> <mi mathvariant="normal"> </mi> </math>, C = pure <math> <msub> <mrow> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math></td>
+<td>  2 ) A = <math> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </math> , B = <math> <msub> <mrow> <mi mathvariant="normal">I</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>5</mn> </mrow> </msub> </math>, C = <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math></td>
+</tr>
+<tr>
+<td>  3 ) A = <math> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </math> , B = <math> <msub> <mrow> <mi mathvariant="normal">I</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> , C =<math> <msub> <mrow> <mi mathvariant="normal"> </mi> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math></td>
+<td>  4 ) A = <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> , B = <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">a</mi> <mo>(</mo> <mi mathvariant="normal">O</mi> <mi mathvariant="normal">H</mi> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> , C = <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>c</mi> <mi>o</mi> <mi>m</mi> <mi>p</mi> <mi>o</mi> <mi>u</mi> <mi>n</mi> <mover accent="false"> <mo>→</mo> <mrow> <mi>h</mi> <mi>e</mi> <mi>a</mi> <mi>t</mi> <mi> </mi> </mrow> </mover> <mi> </mi> <mi> </mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>+</mo> <mi>o</mi> <mi>t</mi> <mi>h</mi> <mi>e</mi> <mi>r</mi> <mi> </mi> <mi>g</mi> <mi>a</mi> <mi>s</mi> <mi>e</mi> <mi>o</mi> <mi>u</mi> <mi>s</mi> <mi> </mi> <mi>p</mi> <mi>r</mi> <mi>o</mi> <mi>d</mi> <mi>u</mi> <mi>c</mi> <mi>t</mi> </math><br/><math> <mn>2</mn> <mi>C</mi> <mo>+</mo> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mover accent="false"> <mo>→</mo> <mrow> <mn>1373</mn> <mi>K</mi> </mrow> </mover> <mn>2</mn> <mi>C</mi> <mi>O</mi> <mfenced separators="|"> <mrow> <mi>A</mi> </mrow> </mfenced> </math><br/><math> <msub> <mrow> <mi>I</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>5</mn> <mi> </mi> </mrow> </msub> <mo>(</mo> <mi>B</mi> <mo>)</mo> <mo>+</mo> <mn>5</mn> <mi>C</mi> <mi>O</mi> <mo>(</mo> <mi>A</mi> <mo>)</mo> <mo>→</mo> <msub> <mrow> <mi>I</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>+</mo> <msub> <mrow> <mn>5</mn> <mi>C</mi> <mi>O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math>(C)<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('9')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans9" id="idans9">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:9</h3>
+<hr/>
+<h4> A compound which does not give a positive test in Lassaigne’s test for nitrogen is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Glycine</td>
+<td>  2 ) Sodamide</td>
+</tr>
+<tr>
+<td>  3 ) Urea</td>
+<td>  4 ) Phenyl hydrazine</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Positive Lassaigne’s test is given by containing both C and N.<br/>(1) <math> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>C</mi> <mi>O</mi> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> (Contains both C and N)<br/>(2) <math> <mi>N</mi> <mi>a</mi> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math>(Does not contain C). So, the test is not given by (2).<br/>(3) Glycine <math> <mo>(</mo> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>-</mo> <mi>C</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>-</mo> <mi>C</mi> <mi>O</mi> <mi>O</mi> <mi>H</mi> <mo>)</mo> </math>. (Contains both C and N)<br/>(4) <math> <mi>P</mi> <mi>h</mi> <mo>-</mo> <mi>N</mi> <mi>H</mi> <mo>-</mo> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> (Contains both C and N)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('10')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans10" id="idans10">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:10</h3>
+<hr/>
+<h4> Duma’s method involves the determination of content of nitrogen in the organic compound in the form of:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  Gaseous <math>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math></td>
+<td>  2 ) Gaseous <math>
+<msub>
+<mrow>
+<mi>N</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi>N</mi>
+<mi>a</mi>
+<mi>C</mi>
+<mi>N</mi>
+</math></td>
+<td>  4 ) <math>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+<mi>S</mi>
+<msub>
+<mrow>
+<mi>O</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Duma's method involves the determination of nitrogen content in the organic compound in the form of N<sub>2</sub>​<br/><math> <msub> <mrow> <mi>N</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>O</mi> <mo>+</mo> <mi>C</mi> <mi>u</mi> <mo>→</mo> <msub> <mrow> <mi>N</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>+</mo> <mi>C</mi> <mi>u</mi> <mi>O</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('11')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans11" id="idans11">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:11</h3>
+<hr/>
+<h4> 10mL of a hydrocarbon on complete combustion  gave 30mL of <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> and 20mL of <math> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal">O</mi> </math>. Molecular formula of the hydrocarbon is    </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>6</mn> </mrow> </msub> </math></td>
+<td>  2 ) <math> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math></td>
+<td>  4 ) <math> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mi mathvariant="normal">X</mi> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mi mathvariant="normal">Y</mi> </mrow> </msub> <mo>+</mo> <mo>(</mo> <mi mathvariant="normal">x</mi> <mo>+</mo> <mfrac> <mrow> <mi mathvariant="normal">y</mi> </mrow> <mrow> <mn>4</mn> </mrow> </mfrac> <msub> <mrow> <mo>)</mo> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>→</mo> <msub> <mrow> <mi mathvariant="normal">x</mi> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>+</mo> <mfrac> <mrow> <mi mathvariant="normal">y</mi> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal">O</mi> </math><br/> <math> <mn>10</mn> <mi mathvariant="normal">m</mi> <mi mathvariant="normal">L</mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mn>10</mn> <mo>(</mo> <mi mathvariant="normal">x</mi> <mo>+</mo> <mfrac> <mrow> <mi mathvariant="normal">y</mi> </mrow> <mrow> <mn>4</mn> </mrow> </mfrac> <mo>)</mo> <mi mathvariant="normal">m</mi> <mi mathvariant="normal">L</mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mn>10</mn> <mi mathvariant="normal">x</mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mfrac> <mrow> <mn>10</mn> <mi mathvariant="normal">y</mi> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> </math>  <br/>  <math> <mn>10</mn> <mi mathvariant="normal">x</mi> <mi mathvariant="normal"> </mi> <mo>=</mo> <mi mathvariant="normal"> </mi> <mn>30</mn> <mi mathvariant="normal">m</mi> <mi mathvariant="normal">L</mi> <mi mathvariant="normal"> </mi> <mo>,</mo> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal">x</mi> <mi mathvariant="normal"> </mi> <mo>=</mo> <mi mathvariant="normal"> </mi> <mn>3</mn> <mo>;</mo> <mi mathvariant="normal"> </mi> </math><br/><math> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> <mfrac> <mrow> <mn>10</mn> <mi mathvariant="normal">y</mi> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <mo>=</mo> <mi mathvariant="normal"> </mi> <mn>20</mn> <mi mathvariant="normal">m</mi> <mi mathvariant="normal">L</mi> <mi mathvariant="normal"> </mi> <mo>,</mo> <mi mathvariant="normal"> </mi> </math><br/><math> <mi mathvariant="normal">y</mi> <mi mathvariant="normal"> </mi> <mo>=</mo> <mi mathvariant="normal"> </mi> <mn>4</mn> <mo>.</mo> <mo>;</mo> <mi mathvariant="normal"> </mi> <msub> <mrow> <mi mathvariant="normal">C</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi mathvariant="normal">H</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> <mi mathvariant="normal"> </mi> <mi mathvariant="normal"> </mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('12')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans12" id="idans12">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:12</h3>
+<hr/>
+<h4> Which statement is incorrect regarding Kjeldahl method?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Converts nitrogen into <math> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math></td>
+<td>  2 ) Applicable to azo compounds</td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math> is absorbed in acid</td>
+<td>  4 ) Catalyst speeds up digestion</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: azo compounds not estimated<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('13')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans13" id="idans13">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:13</h3>
+<hr/>
+<h4> During Lassaigne’s test, the elements present in an organic compound are converted from:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Covalent form to covalent form</td>
+<td>  2 ) Ionic form to ionic form</td>
+</tr>
+<tr>
+<td>  3 ) Covalent form to ionic form</td>
+<td>  4 ) Ionic form to covalent form</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Covalent form to ionic form<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('14')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans14" id="idans14">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:14</h3>
+<hr/>
+<h4> The solvent for crystallization is usually selected by trial and error using small samples. The commonest solvents are water, alcohol or methylated spirits, glacial acetic acid, ete. Which of the following solvents are least desirable?<br/>(i) Ether (ii) Acetone (iii) Benzene (iv) Petrol</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) (ii), (iii)</td>
+<td>  2 ) (i), (iv)</td>
+</tr>
+<tr>
+<td>  3 ) (i), (iii)</td>
+<td>  4 ) (iii), (iv)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The high inflammability of ether and petrol makes them least desirable. Sometimes a mixture of two solvents is chosen<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('15')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans15" id="idans15">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:15</h3>
+<hr/>
+<h4> A compound which does NOT give a positive test for nitrogen in Lassaigne’s test is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<mi>C</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math></td>
+<td>  2 ) <math>
+<msub>
+<mrow>
+<mi>C</mi>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>5</mn>
+</mrow>
+</msub>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>O</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mi>C</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+<mi>C</mi>
+<mi>O</mi>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math></td>
+<td>  4 ) <math>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+<mi>C</mi>
+<mi>O</mi>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Nitro group → N not converted to Cyanide<br/>in<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('16')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans16" id="idans16">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:16</h3>
+<hr/>
+<h4> Kjeldahl’s method can’t be used for<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  i &amp; ii only</td>
+<td>  2 ) i,ii &amp; iv only</td>
+</tr>
+<tr>
+<td>  3 ) i, iii &amp; iv only</td>
+<td>  4 ) all of the above</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Kjeldahl’s method can’t be used for nitrogen determination of compounds having nitro group or azo-group or nitrogen present in rings as the nitrogen of these compounds cannot be converted to ammonium sulphate <math>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<msub>
+<mrow>
+<mi>N</mi>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+<msub>
+<mrow>
+<mi>S</mi>
+<mi>O</mi>
+</mrow>
+<mrow>
+<mn>4</mn>
+</mrow>
+</msub>
+</math> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('17')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans17" id="idans17">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:17</h3>
+<hr/>
+<h4> In TLC, the stationary phase is usually:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Silica gel</td>
+<td>  2 ) Water</td>
+</tr>
+<tr>
+<td>  3 ) Alcohol</td>
+<td>  4 ) Benzene</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Silica gel<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('18')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans18" id="idans18">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:18</h3>
+<hr/>
+<h4> Rf value in chromatography depends on:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Only compound nature</td>
+<td>  2 ) Only solvent</td>
+</tr>
+<tr>
+<td>  3 ) Both compound and solvent</td>
+<td>  4 ) Temperature only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Both compound and solvent<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('19')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans19" id="idans19">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:19</h3>
+<hr/>
+<h4> If 0.2g of an organic compound containing carbon, hydrogen and oxygen on combustion, yielded 0.147g carbon dioxide and 0.12g water. What will be the content of oxygen in the substance?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  73.34%</td>
+<td>  2 ) 78.45%</td>
+</tr>
+<tr>
+<td>  3 ) 83.23%</td>
+<td>  4 ) 89.50%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Percentage of C<br/><math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>12</mn>
+</mrow>
+<mrow>
+<mn>44</mn>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>w</mi>
+<mi>e</mi>
+<mi>i</mi>
+<mi>g</mi>
+<mi>h</mi>
+<mi>t</mi>
+<mi> </mi>
+<mi>o</mi>
+<mi>f</mi>
+<mi> </mi>
+<mi>C</mi>
+<msub>
+<mrow>
+<mi>O</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mi>w</mi>
+<mi>e</mi>
+<mi>i</mi>
+<mi>g</mi>
+<mi>h</mi>
+<mi>t</mi>
+<mi> </mi>
+<mi>o</mi>
+<mi>f</mi>
+<mi> </mi>
+<mi>c</mi>
+<mi>o</mi>
+<mi>m</mi>
+<mi>p</mi>
+<mi>o</mi>
+<mi>u</mi>
+<mi>n</mi>
+<mi>d</mi>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mn>100</mn>
+</math><br/><math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>12</mn>
+</mrow>
+<mrow>
+<mn>44</mn>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>0.147</mn>
+</mrow>
+<mrow>
+<mn>0.2</mn>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mn>100</mn>
+<mo>=</mo>
+<mn>20</mn>
+<mi>%</mi>
+</math><br/>Percentage of H<br/><math>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>2</mn>
+</mrow>
+<mrow>
+<mn>18</mn>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>0.12</mn>
+</mrow>
+<mrow>
+<mn>0.2</mn>
+</mrow>
+</mfrac>
+<mo>×</mo>
+<mn>100</mn>
+</math> = 6.66%<br/>Percentage of O<br/><math>
+<mn>100</mn>
+<mo>-</mo>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mn>20</mn>
+<mo>+</mo>
+<mn>6.66</mn>
+</mrow>
+<mo>)</mo>
+</mfenced>
+<mo>=</mo>
+<mn>73.34</mn>
+<mi>%</mi>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('20')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans20" id="idans20">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:20</h3>
+<hr/>
+<h4> Statement I: In ‘Lassaigne’s Test’, when both nitrogen and sulphur are present in an organic compound, sodium thiocyanate is formed.<br/>Statement II: If both nitrogen and sulphur are present in an organic compound, then the excess of sodium used in sodium fusion will decompose the sodium thiocyanate formed to give NaCN and <math> <msub> <mrow> <mi>N</mi> <mi>a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>S</mi> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both Statement I and Statement II are correct.</td>
+<td>  2 ) Both Statement I and Statement II are incorrect.</td>
+</tr>
+<tr>
+<td>  3 ) Statement I is correct but Statement II is incorrect.</td>
+<td>  4 ) Statement I is incorrect but Statement II is correct</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>N</mi> <mi>a</mi> <mi>S</mi> <mi>C</mi> <mi>N</mi> <mo>+</mo> <mn>2</mn> <mi>N</mi> <mi>a</mi> <mo>→</mo> <mi>N</mi> <mi>a</mi> <mi>C</mi> <mi>N</mi> <mo>+</mo> <mi> </mi> <mi>N</mi> <msub> <mrow> <mi>a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>S</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('21')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans21" id="idans21">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:21</h3>
+<hr/>
+<h4> During estimation of nitrogen in an organic compound by Kjeldahl's method, the ammonia  evolved by 1g of the compound neutralised 20 ml of 1 M <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>S</mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math>. The percentage of nitrogen in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 56                            </td>
+<td>  2 ) 5.6                                    </td>
+</tr>
+<tr>
+<td>  3 ) 53.2                  </td>
+<td>  4 ) 14.6</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>%</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mi>M</mi> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mi>V</mi> <mo>-</mo> <mfrac> <mrow> <msub> <mrow> <mi>V</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <mo>)</mo> </mrow> <mrow> <mi>m</mi> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mn>1</mn> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mn>20</mn> <mo>)</mo> </mrow> <mrow> <mn>1</mn> </mrow> </mfrac> <mo>=</mo> <mn>56</mn> <mi>%</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('22')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans22" id="idans22">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:22</h3>
+<hr/>
+<h4> Statement I: Glycerol is purified by distillation under reduced pressure.<br/>Statement II: Method of distillation under reduced pressure is used to purify liquids having very high boiling points and those, which decompose at or below their boiling point.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both statement I &amp; II are false</td>
+<td>  2 ) Both statement I &amp; II are true</td>
+</tr>
+<tr>
+<td>  3 ) statement I is true but statement is false</td>
+<td>  4 ) statement I is false but II is true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Distillation under reduced pressure → It is used to purify liquids having very high boiling points and those, which decompose at or below their boiling point.<br/>Glycerol, at normal pressure, the b.p. of glycerol is 563K but it decomposes on this temperature. Therefore, under reduced pressure of 12mmHg, glycerol can be distilled at 453K without decomposition.<br/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('23')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans23" id="idans23">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:23</h3>
+<hr/>
+<h4> For the estimation of nitrogen, 1.4 g of organic compound was digested by Kjeldahl method and the evolved ammonia was absorbed in 60 mL of <math> <mfrac> <mrow> <mi>M</mi> </mrow> <mrow> <mn>10</mn> </mrow> </mfrac> </math> sulphuric acid. The unreacted acid required 20 mL of <math> <mfrac> <mrow> <mi>M</mi> </mrow> <mrow> <mn>10</mn> </mrow> </mfrac> </math> sodium hydroxide for complete neutralization. The percentage of nitrogen in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 10</td>
+<td>  2 ) 5</td>
+</tr>
+<tr>
+<td>  3 ) 1</td>
+<td>  4 ) 0.14</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>%</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mn>0.1</mn> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mn>60</mn> <mo>-</mo> <mfrac> <mrow> <mn>20</mn> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <mo>)</mo> </mrow> <mrow> <mn>1.4</mn> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mn>10</mn> <mi>%</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('24')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans24" id="idans24">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:24</h3>
+<hr/>
+<h4> 0.765 g of an acid gives 0.535 g of <math> <mi>C</mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> and 0.138 g of <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>O</mi> </math>. Then the ratio of the percentage of carbon and hydrogen is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 19:2</td>
+<td>  2 ) 18:11</td>
+</tr>
+<tr>
+<td>  3 ) 70:17</td>
+<td>  4 ) 1:7</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>%</mi> <mi> </mi> <mi>C</mi> <mo>=</mo> <mfrac> <mrow> <mn>12</mn> </mrow> <mrow> <mn>44</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>0.535</mn> </mrow> <mrow> <mn>0.765</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> <mo>=</mo> <mn>19.07</mn> <mi>%</mi> </math><br/><math> <mi>%</mi> <mi> </mi> <mi>H</mi> <mo>=</mo> <mfrac> <mrow> <mn>18</mn> </mrow> <mrow> <mn>18</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>0.138</mn> </mrow> <mrow> <mn>0.768</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> <mo>=</mo> <mn>2.004</mn> <mi>%</mi> </math><br/><math> <mo>∴</mo> <mi>C</mi> <mo>:</mo> <mi>H</mi> <mo>=</mo> <mn>19</mn> <mo>:</mo> <mn>2</mn> <mi> </mi> <mi>a</mi> <mi>p</mi> <mi>p</mi> <mi>r</mi> <mi>o</mi> <mi>x</mi> </math>.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('25')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans25" id="idans25">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:25</h3>
+<hr/>
+<h4> Match the following<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A<math> <mo>→</mo> </math> (iii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iv), D<math> <mo>→</mo> </math> (ii)</td>
+<td>  2 ) A<math> <mo>→</mo> </math> (iii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (ii), D<math> <mo>→</mo> </math> (iv)</td>
+</tr>
+<tr>
+<td>  3 ) A<math> <mo>→</mo> </math> (ii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iv), D<math> <mo>→</mo> </math> (iii)</td>
+<td>  4 ) A<math> <mo>→</mo> </math> (iv), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iii), D<math> <mo>→</mo> </math> (ii)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A<math> <mo>→</mo> </math> (iii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iv), D<math> <mo>→</mo> </math> (ii)<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('26')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans26" id="idans26">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:26</h3>
+<hr/>
+<h4> 0.40 of an organic chloro compound gave 0.60 g of silver chloride in Carius estimation. The percentage of chloride present in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mn>17.5</mn> <mi>%</mi> </math></td>
+<td>  2 ) <math> <mn>37.10</mn> <mi>%</mi> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mn>40.5</mn> <mi>%</mi> </math></td>
+<td>  4 ) <math> <mn>33.5</mn> <mi>%</mi> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Mass of organic compound = 0.3780 g<br/>Mass of silver chloride <math> <mn>0.5740</mn> <mi>g</mi> </math><br/>1 mol of AgCl=<math> <mn>143.5</mn> <mi> </mi> <mi>g</mi> </math><br/>143.5 g of AgCl contains 35.5 g of Cl<br/><math> <mo>∴</mo> <mn>0.5740</mn> <mi> </mi> <mi>g</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>A</mi> <mi>g</mi> <mi>C</mi> <mi>l</mi> <mi> </mi> <mi>c</mi> <mi>o</mi> <mi>n</mi> <mi>t</mi> <mi>a</mi> <mi>i</mi> <mi>n</mi> <mi>s</mi> <mi> </mi> <mfrac> <mrow> <mn>35.5</mn> <mo>×</mo> <mn>0.60</mn> </mrow> <mrow> <mn>143.5</mn> </mrow> </mfrac> <mo>=</mo> <mn>0.148</mn> <mi> </mi> <mi>g</mi> </math><br/>0.142 g of Cl is present in 0.3780g of the compound<br/><math> <mo>⇒</mo> <mi>%</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>C</mi> <mi>l</mi> <mi> </mi> <mi>i</mi> <mi>n</mi> <mi> </mi> <mi>c</mi> <mi>o</mi> <mi>m</mi> <mi>p</mi> <mi>o</mi> <mi>u</mi> <mi>n</mi> <mi>d</mi> <mo>=</mo> <mfrac> <mrow> <mn>0.148</mn> </mrow> <mrow> <mn>0.60</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> <mo>=</mo> <mn>37.10</mn> <mi>%</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('27')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans27" id="idans27">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:27</h3>
+<hr/>
+<h4> During estimation of nitrogen in an organic compound by Kjeldahl's method, the ammonia  evolved by 1g of the compound neutralised 20 ml of 1 M <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>S</mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math>. The percentage of nitrogen in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 56                            </td>
+<td>  2 ) 5.6                                    </td>
+</tr>
+<tr>
+<td>  3 ) 53.2                  </td>
+<td>  4 ) 14.6</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>%</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>N</mi> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mi>M</mi> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mi>V</mi> <mo>-</mo> <mfrac> <mrow> <msub> <mrow> <mi>V</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <mo>)</mo> </mrow> <mrow> <mi>m</mi> </mrow> </mfrac> <mo>=</mo> <mi> </mi> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mn>1</mn> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mn>20</mn> <mo>)</mo> </mrow> <mrow> <mn>1</mn> </mrow> </mfrac> <mo>=</mo> <mn>56</mn> <mi>%</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('28')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans28" id="idans28">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:28</h3>
+<hr/>
+<h4> For the detection of phosphorus, the organic compound after fusion with <math> <mi>N</mi> <msub> <mrow> <mi>a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> is extracted with water, boiled with <math> <mi>H</mi> <mi>N</mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math> and then ammonium molybdate is added to it. A yellow ppt. is obtained which is due to the formation of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Ammonium phosphate</td>
+<td>  2 ) Ammonium phosphomolybdate</td>
+</tr>
+<tr>
+<td>  3 ) Ferric phosphate</td>
+<td>  4 ) Disodium ammonium phosphate</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Ammonium phosphomolybdate.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('29')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans29" id="idans29">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:29</h3>
+<hr/>
+<h4> If on adding <math>
+<mi>F</mi>
+<mi>e</mi>
+<mi>C</mi>
+<msub>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math> solution to acidified Lassaigne’s solution, a blood red colouration is produced, it indicates the presence of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  S</td>
+<td>  2 ) N</td>
+</tr>
+<tr>
+<td>  3 ) N and S</td>
+<td>  4 ) S and Cl</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math>
+<mn>3</mn>
+<mi>N</mi>
+<mi>a</mi>
+<mi>C</mi>
+<mi>N</mi>
+<mi>S</mi>
+<mo>+</mo>
+<mi>F</mi>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+<mo>+</mo>
+</mrow>
+</msup>
+<mo>→</mo>
+<munder>
+<mrow>
+<mi>F</mi>
+<mi>e</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>C</mi>
+<mi>N</mi>
+<mi>S</mi>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>B</mi>
+<mi>l</mi>
+<mi>o</mi>
+<mi>o</mi>
+<mi>d</mi>
+<mi> </mi>
+<mi>r</mi>
+<mi>e</mi>
+<mi>d</mi>
+<mo>)</mo>
+</mrow>
+</munder>
+<mo>+</mo>
+<mn>3</mn>
+<mi>N</mi>
+<msup>
+<mrow>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mo>+</mo>
+</mrow>
+</msup>
+</math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('30')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans30" id="idans30">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:30</h3>
+<hr/>
+<h4> Match the following<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A<math> <mo>→</mo> </math> (iii), B<math> <mo>→</mo> </math> (ii), C<math> <mo>→</mo> </math> (i), D<math> <mo>→</mo> </math> (iv)</td>
+<td>  2 ) A<math> <mo>→</mo> </math> (ii), B<math> <mo>→</mo> </math> (iii), C<math> <mo>→</mo> </math> (i), D<math> <mo>→</mo> </math> (iv)</td>
+</tr>
+<tr>
+<td>  3 ) A<math> <mo>→</mo> </math> (ii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iv), D<math> <mo>→</mo> </math> (iii)</td>
+<td>  4 ) A<math> <mo>→</mo> </math> (iv), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iii), D<math> <mo>→</mo> </math> (ii)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A<math> <mo>→</mo> </math> (iv), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iii), D<math> <mo>→</mo> </math> (ii)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('31')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans31" id="idans31">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:31</h3>
+<hr/>
+<h4> 2.79 g of an organic compound when heated in Carius tube with conc.<math> <msub> <mrow> <mi>H</mi> <mi>N</mi> <mi>O</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> </math>and <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <msub> <mrow> <mi>P</mi> <mi>O</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math>formed converted into<math> <mi> </mi> <mi> </mi> <msub> <mrow> <mi>M</mi> <mi>g</mi> <mi>N</mi> <mi>H</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> <mo>.</mo> <msub> <mrow> <mi>P</mi> <mi>O</mi> <mi> </mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math> ppt. The ppt. on heating gave 1.332 g of <math> <msub> <mrow> <mi>M</mi> <mi>g</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>P</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>7</mn> </mrow> </msub> <mi> </mi> <mo>.</mo> </math> The percentage of P in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 23.33%</td>
+<td>  2 ) 13.33%</td>
+</tr>
+<tr>
+<td>  3 ) 33.33%</td>
+<td>  4 ) 26.66%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Percentage  of P=<math> <mfrac> <mrow> <mn>62</mn> </mrow> <mrow> <mn>222</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mi>w</mi> <mi>t</mi> <mo>.</mo> <mi>o</mi> <mi>f</mi> <mi> </mi> <msub> <mrow> <mi>M</mi> <mi>g</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>P</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>7</mn> </mrow> </msub> </mrow> <mrow> <mi>w</mi> <mi>t</mi> <mo>.</mo> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>t</mi> <mi>h</mi> <mi>e</mi> <mi> </mi> <mi>c</mi> <mi>o</mi> <mi>m</mi> <mi>p</mi> <mi>o</mi> <mi>u</mi> <mi>n</mi> <mi>d</mi> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> </math><br/>= <math> <mfrac> <mrow> <mn>62</mn> </mrow> <mrow> <mn>222</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>1.332</mn> </mrow> <mrow> <mn>2.79</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> <mo>=</mo> <mn>13.33</mn> <mi>%</mi> </math><br/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('32')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans32" id="idans32">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:32</h3>
+<hr/>
+<h4> The sodium extract of an organic compound on acidification with acidification and and addition of <math> <mi>P</mi> <mi>b</mi> <mo>(</mo> <mi>C</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <mi>C</mi> <mi>O</mi> <mi>O</mi> <msub> <mrow> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>.</mo> </math> The organic compound contains</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) N</td>
+<td>  2 ) Cl</td>
+</tr>
+<tr>
+<td>  3 ) S</td>
+<td>  4 ) Br</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The organic compounds containing sulphur when react with sodium metal give <math> <msub> <mrow> <mi mathvariant="normal">N</mi> <mi mathvariant="normal">a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal">S</mi> </math>. The <math> <msub> <mrow> <mi mathvariant="normal">N</mi> <mi mathvariant="normal">a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal">S</mi> </math> when react with lead acetate forms black ppt. of <math> <mi>P</mi> <mi>b</mi> <mi>S</mi> </math>.<br/><math> <msub> <mrow> <mi mathvariant="normal">N</mi> <mi mathvariant="normal">a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal">S</mi> </math> + <math> <mi>P</mi> <mi>b</mi> <mo>(</mo> <mi>C</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <mi>C</mi> <mi>O</mi> <mi>O</mi> <msub> <mrow> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mo>→</mo> </math> <math> <mi>P</mi> <mi>b</mi> <mi>S</mi> <mo>+</mo> <mi> </mi> <mn>2</mn> <mi> </mi> <mi>C</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>3</mn> </mrow> </msub> <mi>C</mi> <mi>O</mi> <mi>O</mi> <mi>N</mi> <mi>a</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('33')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans33" id="idans33">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:33</h3>
+<hr/>
+<h4> In Carius method, fuming nitric acid is used because it:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Acts as catalyst</td>
+<td>  2 ) Converts elements into ionic form</td>
+</tr>
+<tr>
+<td>  3 ) Oxidizes organic compound completely</td>
+<td>  4 ) Precipitates halogens</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Oxidizes organic compound completely<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('34')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans34" id="idans34">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:34</h3>
+<hr/>
+<h4> Select the correct statements from the following<br/>A. Steam distillation is suitable for substances immiscible with water<br/>B. Azeotropes cannot be separated by fractional distillation<br/>C. Vacuum distillation is used for compounds with high boiling points<br/>D. Fractional distillation is useful only when boiling point difference <math> <mo>&gt;</mo> <mn>25</mn> <mi> </mi> <mi>℃</mi> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A Only</td>
+<td>  2 ) A, B &amp; C</td>
+</tr>
+<tr>
+<td>  3 ) A &amp; C</td>
+<td>  4 ) B, C &amp; D</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Fractional distillation is especially useful when boiling point difference is small (<math> <mo>&lt;</mo> <mn>25</mn> <mi> </mi> <mi>℃</mi> </math> )<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('35')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans35" id="idans35">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:35</h3>
+<hr/>
+<h4> Which of the following organic compounds contains about <math> <mn>52</mn> <mi>%</mi> </math> carbon?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Ethanal</td>
+<td>  2 ) Dimethyl ether</td>
+</tr>
+<tr>
+<td>  3 ) Acetic acid</td>
+<td>  4 ) Phenol</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <munder> <mrow> <msub> <mrow> <mi>C</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>6</mn> </mrow> </msub> <mi>O</mi> </mrow> <mrow> <mn>46</mn> <mi> </mi> <mi>g</mi> </mrow> </munder> <mo>≡</mo> <munder> <mrow> <mn>2</mn> <mi>C</mi> </mrow> <mrow> <mn>24</mn> <mi> </mi> <mi>g</mi> </mrow> </munder> <mi> </mi> </math><br/>46 g of compound has C =24 g<br/>100 g of compound has <math> <mo>=</mo> <mfrac> <mrow> <mn>24</mn> </mrow> <mrow> <mn>46</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> <mo>=</mo> <mn>52.3</mn> <mi>%</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('36')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans36" id="idans36">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:36</h3>
+<hr/>
+<h4> A liquid organic compound boils at <math> <mtext>180℃</mtext> </math> but decomposes at <math> <mtext>160℃</mtext> </math>. The best purification method is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Simple distillation</td>
+<td>  2 ) Fractional distillation</td>
+</tr>
+<tr>
+<td>  3 ) Steam distillation</td>
+<td>  4 ) Distillation under reduced pressue</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Distillation under reduced pressure lowers boiling point below decomposition temp.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('37')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans37" id="idans37">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:37</h3>
+<hr/>
+<h4> Given below is a column of adsorbent in which the mixture of compounds A+B+C is placed. When the solvent is poured through the column, the components are separated depending upon the degree of adsorption. Which of the given statements is correct?<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A is the most weakly adsorbed component hence remains near the top</td>
+<td>  2 ) A is the most strongly adsorbed component hence remains near the top</td>
+</tr>
+<tr>
+<td>  3 ) C is the most strongly adsorbed component hence is found near the bottom</td>
+<td>  4 ) B is the most strongly adsorbed component hence is found in the centre of the column.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The most strongly adsorbed component is present in the band near the top while the weakly adsorbed constituent is found near the bottom.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('38')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans38" id="idans38">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:38</h3>
+<hr/>
+<h4> 0.2 g of an organic compound on complete combustion produces 0.18 g of water, then the percentage of hydrogen in it is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 5</td>
+<td>  2 ) 10</td>
+</tr>
+<tr>
+<td>  3 ) 15</td>
+<td>  4 ) 20</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi>%</mi> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>H</mi> <mo>=</mo> <mfrac> <mrow> <mn>2</mn> </mrow> <mrow> <mn>18</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mi>W</mi> <mi>t</mi> <mo>.</mo> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>O</mi> </mrow> <mrow> <mi>W</mi> <mi>t</mi> <mo>.</mo> <mi> </mi> <mi>o</mi> <mi>f</mi> <mi> </mi> <mi>c</mi> <mi>o</mi> <mi>m</mi> <mi>p</mi> <mi>o</mi> <mi>u</mi> <mi>n</mi> <mi>d</mi> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> </math><br/><math> <mo>=</mo> <mfrac> <mrow> <mn>2</mn> </mrow> <mrow> <mn>18</mn> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>0.18</mn> </mrow> <mrow> <mn>0.2</mn> </mrow> </mfrac> <mo>×</mo> <mn>100</mn> </math><br/><math> <mo>=</mo> <mn>10</mn> <mi>%</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('39')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans39" id="idans39">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:39</h3>
+<hr/>
+<h4> On complete combustion, 0.246 g of an organic compound gave 0.198 g of carbon dioxide and 0.1014 g of water. The percentage composition of carbon is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 19%</td>
+<td>  2 ) 25%</td>
+</tr>
+<tr>
+<td>  3 ) 22%</td>
+<td>  4 ) 35%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Percentage of carbon <math> <mo>=</mo> <mfrac> <mrow> <mn>12</mn> <mo>×</mo> <mn>0</mn> <mo>.</mo> <mo>×</mo> <mn>100</mn> </mrow> <mrow> <mn>44</mn> <mo>×</mo> <mn>0.246</mn> </mrow> </mfrac> <mo>=</mo> <mn>21.95</mn> <mi>%</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('40')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans40" id="idans40">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:40</h3>
+<hr/>
+<h4> In Lassaigne’s test sodium metal is used because</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It is very reactive</td>
+<td>  2 ) Its melting point is low</td>
+</tr>
+<tr>
+<td>  3 ) Its compounds are soluble in water</td>
+<td>  4 ) All the above</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Sodium metal fulfils all the requirements.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('41')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans41" id="idans41">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:41</h3>
+<hr/>
+<h4> In Carius method Sulphur is estimated as</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Barium chloride    </td>
+<td>  2 ) Barium sulphate     </td>
+</tr>
+<tr>
+<td>  3 ) Sulphuric acid     </td>
+<td>  4 ) Sodium peroxide</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Barium sulphate     <br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('42')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans42" id="idans42">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:42</h3>
+<hr/>
+<h4> If solvent front moves 10 cm and solute moves 5 cm, Rf is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.5</td>
+<td>  2 ) 2</td>
+</tr>
+<tr>
+<td>  3 ) 5</td>
+<td>  4 ) 10</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: 0.5<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('43')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans43" id="idans43">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:43</h3>
+<hr/>
+<h4> What is the principle behind differential extraction ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) boiling point differences          </td>
+<td>  2 ) solubility differences</td>
+</tr>
+<tr>
+<td>  3 ) density differences                   </td>
+<td>  4 ) colour differences</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Solubility differences<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('44')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans44" id="idans44">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:44</h3>
+<hr/>
+<h4> Statement I: Dumas method is used for estimation of “Nitrogen” in an organic compound.<br/>Statement II: Dumas method involves the formation of ammonium sulphate by heating the organic compound with conc. <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>S</mi> <msub> <mrow> <mi>O</mi> </mrow> <mrow> <mn>4</mn> </mrow> </msub> </math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both Statement I and Statement II are true</td>
+<td>  2 ) Statement I is false but Statement II is true</td>
+</tr>
+<tr>
+<td>  3 ) Both Statement I and Statement II are false</td>
+<td>  4 ) Statement I is true but Statement II is false</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In Dumas method nitrogen present in organic compound is converted into nitrogen gas whose volumetric analysis gives the percentage of nitrogen atom in the organic compound.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('45')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans45" id="idans45">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:45</h3>
+<hr/>
+<h4> Which of the following is used for detection of carbon and hydrogen ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <msub> <mrow> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">a</mi> <mo>(</mo> <mi mathvariant="normal">O</mi> <mi mathvariant="normal">H</mi> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi mathvariant="normal"> </mi> </math></td>
+<td>  2 ) <math> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">u</mi> <mi mathvariant="normal">O</mi> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">C</mi> <msub> <mrow> <mi mathvariant="normal">l</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math></td>
+<td>  4 ) <math> <mi mathvariant="normal">K</mi> <mi mathvariant="normal">O</mi> <mi mathvariant="normal">H</mi> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Carbon and hydrogen are detected by heating the<br/>compound with copper (II) oxide. Carbon present in the compound is oxidised to <math> <mi mathvariant="normal">C</mi> <msub> <mrow> <mi mathvariant="normal">O</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math><br/>and hydrogen to <math> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>O</mi> </math>.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('46')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans46" id="idans46">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:46</h3>
+<hr/>
+<h4> Select the incorrect statement/s from the following<br/>I. In Lassaigne’s test the elements present in the compound are converted from covalent form into ionic form by fusing the compound with sodium metal<br/>II. In Lassaigne’s test iron(II) hexacyanidoferrate(II) is formed by the reaction of iron(II) ions with sodium hexacyanidoferrate(II)<br/>III. Ferriferrocyanide complex is blood red in colour<br/>IV. Anhydrous copper sulphate is blue in colour</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) II &amp; III</td>
+<td>  2 ) I, II &amp; III</td>
+</tr>
+<tr>
+<td>  3 ) III &amp; IV</td>
+<td>  4 ) II, III &amp; IV</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: - In Lassaigne’s test iron(III) hexacyanidoferrate(II) is formed by the reaction of iron(III) ions with sodium hexacyanidoferrate(II)<br/>- Ferriferrocyanide complex is Prussian blue in colour<br/>- Anhydrous copper sulphate is white in colour<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('47')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans47" id="idans47">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:47</h3>
+<hr/>
+<h4> The main difference between simple and fractional distillation is the use of</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) a  liebig condenser                </td>
+<td>  2 ) fractionating column</td>
+</tr>
+<tr>
+<td>  3 ) a round bottom flask             </td>
+<td>  4 ) a bunsen burner</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Fractionating column<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('48')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans48" id="idans48">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:48</h3>
+<hr/>
+<h4> Which of the following statement is incorrect?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) In Duma’s method, the <math> <msub> <mrow> <mi>N</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math>is collected in Nitrometer</td>
+<td>  2 ) If sodium fusion is carried out with excess of sodium, the thiocyanate decomposes to yield cyanide and sulphide</td>
+</tr>
+<tr>
+<td>  3 ) If N &amp; S both are present in an organic compound blood red colour is formed</td>
+<td>  4 ) Carbon and hydrogen are detected by heating the compound cuprous oxide</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Carbon and hydrogen are detected by heating the compound cupric oxide<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('49')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans49" id="idans49">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:49</h3>
+<hr/>
+<h4> Which will move fastest in column chromatography?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Strongly adsorbed compound</td>
+<td>  2 ) Weakly adsorbed compound</td>
+</tr>
+<tr>
+<td>  3 ) Most polar compound</td>
+<td>  4 ) Largest molecule</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Weakly adsorbed compound<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('50')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans50" id="idans50">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:50</h3>
+<hr/>
+<h4> In carius method 0.2425g of an organic compound gave 0.5253g silver chloride.the percentage of chlorine in the organic compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 34.79%</td>
+<td>  2 ) 37.57%</td>
+</tr>
+<tr>
+<td>  3 ) 87.65%</td>
+<td>  4 ) 53.58%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Percentage of bromine <math> <mtext>=</mtext> <mfrac> <mrow> <mtext>35.5×0.5253×100</mtext> </mrow> <mrow> <mtext>143.5×0.2425</mtext> </mrow> </mfrac> <mtext>=53.58%</mtext> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('51')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans51" id="idans51">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:51</h3>
+<hr/>
+<h4> In Kjeldahl’s method, ammonia evolved from the treatment of 0.30 g of an organic compound for the estimation of nitrogen was passed in 100 mL of 0.1M sulphuric acid. The excess of acid required 20 mL of 0.5 M NaOH solution for complete neutralisation. The percentage of N in the organic compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 40</td>
+<td>  2 ) 56</td>
+</tr>
+<tr>
+<td>  3 ) 46.6</td>
+<td>  4 ) 25.5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <msub> <mrow> <msub> <mrow> <mi>a</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mi>m</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <msub> <mrow> <mi>v</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mo>=</mo> <msub> <mrow> <msub> <mrow> <mi>a</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>m</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <msub> <mrow> <mi>v</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math><br/><math> <mn>2</mn> <mo>×</mo> <mn>0.1</mn> <mo>×</mo> <msub> <mrow> <mi>v</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mo>=</mo> <mn>1</mn> <mo>×</mo> <mn>0.5</mn> <mo>×</mo> <mn>20</mn> </math><br/><math> <mo>∴</mo> <msub> <mrow> <mi>v</mi> </mrow> <mrow> <mn>1</mn> </mrow> </msub> <mo>=</mo> <mn>50</mn> <mi>m</mi> <mi>L</mi> </math><br/><math> <mo>∴</mo> </math> Percentage of N <math> <mo>=</mo> <mfrac> <mrow> <mn>1.4</mn> <mo>×</mo> <mn>0.1</mn> <mo>×</mo> <mn>2</mn> <mo>(</mo> <mn>100</mn> <mo>-</mo> <mn>50</mn> <mo>)</mo> </mrow> <mrow> <mn>0.3</mn> </mrow> </mfrac> <mo>=</mo> <mn>46.6</mn> <mi>%</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('52')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans52" id="idans52">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:52</h3>
+<hr/>
+<h4> Statement I: Hydrazine which shows positive test towards Lassaigne’s test for nitrogen.<br/>Statement II: Hydrazine do not contain any carbon atom</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both Statement I and Statement II are true</td>
+<td>  2 ) Statement I is false but Statement II is true</td>
+</tr>
+<tr>
+<td>  3 ) Both Statement I and Statement II are false</td>
+<td>  4 ) Statement I is true but Statement II is false</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Hydrazine, <math> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> <mi>N</mi> <msub> <mrow> <mi>H</mi> </mrow> <mrow> <mn>2</mn> </mrow> </msub> </math> does not contain any carbon, thus NaCN is not formed and finally does not respond to Lassaigne’s test for nitrogen.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('53')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans53" id="idans53">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:53</h3>
+<hr/>
+<h4> Match the following<br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAXIAAABqBAMAAABT+Md4AAAAHlBMVEX///+FhYX39/fp6emzs7PX19dlZWVKSkouLi4NDQ06A6RUAAAOd0lEQVR4nO2cy1fqShaHK1Up7CHIexZE8QwjoHBnARFxFhUQZ+ADZHa5KoHZRUF0yGoQ+W97VwVIQD0g6Dl9u93LFfKq5KOyq7J/tQsRWtRIYm/hsv/vhmO2f545GDlp/J6bewtLFC5JQE7//D3PekVeonBSQr+RXF2i8P8E+U7RfgQf60Vp+pxiYYk7/MQ4OXYVtpnXJC+njtJi0VEsKu8VNsjFx8T+PfscTHvf1mD6op9knDzXSVyxz9Pu1FGS6u95O+8+FoP8oIVERk5fkZMn5RNxTcbI6UBBOYYX6b063EGnr3aObUyOn6wIx4lNoYOwY8shOg7th3FYxuHwV5JbnuExy2EHivYOnbH4odN2ZJNhCdUX6aCDOcjZd0fo5KFBB77BSV8cFPvujjgodb6YPAo3QOTKcxbtnXa997l+uVE+S/XrZ3OTi5y8rNS3BxsD8Zk87Q3SsEw/fzF5jpGLHUs32tvs/XG/0ol2T+9XuqfXH6tzXFfre5ycPoVf+PJZ+lryH4zc0hU6kd6P3un9Zjf6b7Y8vZ+bHJfzCB0BeWaw8fQLyYUXuEGAk2/q5L0R+eZ85Oyx+RTv7uPGwP+09evISf0c2dafA1DjK92DhciJR7uRfO1bYbBa1l4OB8WX0ktsUHpR0P6g8XXkKNzW7CilKaln8aXcTfW9z/UOtNAuorWXwhPcfiY5IhnoiUISCcn+UAj+QvpSQrD8QnIUysC9j+EuKBQKju8bRJivvhuU/U/ELb/evsl/vS2vLH6XmvMso+aK/2zyN7xFeucZvbd/IfsCHYpdD29eFCc1FX1e5/4FLZTYc8qrU312hJ0/rMixxO0mjb/9d8c1QXbHR6ixato7YSZyujo81VWQUXayzpPFCxRgMcSO+snktLWjgGAsFi+kHUPPnbTGq7nWGyUnyYVhwciFV6VOqmkVdmyHf4WDC48iwlnEgbXH6jLuOU2Oj8RbkO2PifKqzyDfMnB9s8kjz/qulOyTt9RgJnPMtnIcM6f+yyo4d9G6Km/bjiV+HpE+g3zIUERCTzTIqYErziZPePQLeWRENJcyPEEnT8lRq8WmySW3FdlGl1z9DHJw4xOFkW/eA/mhExGbitYdgBtOq7DJV39OTi7/sOqst4jEbCOP0MlL5EqNnueUGFw2MzyCXct6DSOPdNEm3PeqWFPErli4UrKuBna5WojWPU6bFmSrM8jFy5O/+C76qIwPW7S6pkkI17RLlFKNDge7NU17sn4COTi3JQ9Vk/Cci71Nq+W+iDzpa6GFSPk48lBPsNUZ5IF2bShAItfjwySTYu5OG+Dbbill9L/bmUzGvUx3PCIXm5y8CCpa7EUVsVVBuWSeObdXjh6HLPnZfp6VyAPbsyEJ96YTuLfw0gXEB37HRu1Lgk+S02cgt4qtKpD/ycasgNyKsn/OJCcFNmZxKKOINXI2TR6AC+EHuMkE+dKdIyfnfo41lO2K3UDLcuZV3OGuryMBeaBfSvPVn5Jb+qr41AR/2GlXzEgnbOMAmKlLU5ZFfYP8pC+fwE1ftLYS6fuvKrKvfYk9hRuJPllJubMGq28XNuo8JOFQkEDdbk/UJWYL0IgIrx1/Mjgnd/j3XOwGmSC7CzmCJiQhEoReASSoX+arPyf/HcbIDzO2xUaKfzu5aLMt1kX9dnKUWTBq/tahC9m3DjUbXvghfqTkF+jQ9dLtgtf7UMkv0KHrR5XJbZtRO6Jxu/RUMWKLT5f8qenxuUmJojTDeU95TpqRbSkWCzreehHC+8m3w2lBThaLXElg6H63inaxKG9dZHVtkb3ELitcIE7c99MlZ5LT1kiJrhLXaooh7EznF39OTssON4/KcCnWRVvKjqadsy0OAoH56U3yjq0KZ4hWkz36pAR6RM/wRjrIq+BSooEgyhyXnJMcHw2V6CCOvavbDEfXo7OmzhjekpIpS9mwiNZJnMSfgUgCLtwckq8o1IrCcdAXKHpG7dibF6zohHuO0JaSEggAjyzcGyXBgnOQjyngwgmJb3E9Si4+QK4rWLYMNEb5cnwzJM/Ju+AQDQikmVBF1HZvUZCFq6JDj2pDOSvyqMJdoGLKtMfmIGd+jiIKQlE2khOWRBvjOLQHnpV5yQ+qdR6Xk5oCLdI5TX5QuoaPIqpAoA57BGcT7itw/ZeMWi/Y14E6vzNKgu3M0Ni6Dg3oSlS4p3Zal5PuW9CjNu3wA+QOt64cIh3jsFt70W45eSlpRaVwkzQRZY9GUKpZGenqKWa5vUQagj+TmgJv12ozmpquQ4dKlDZECMg3mqBgepsP9b3mz8tOeAt5ZBsIe8xys5k5YuS4gSTyWFFpU5d2O6rHJrF6SsSxQ2zYcQVBMzGRg7dnsjNaqq7mhnoOlbZU5F2H5rLei+wGxQ+Qq6jM+qRjdKoYx0feQpkqaqJjwsm3UVbOwR7hzlK9JLe4tgrklns0oWDhYUgfIU8VQMGtd5Gb6VESnp/8QF1/9jsRrq6VTC/lEbnQY+GNaAc/pw1aQW4+zCj8JShIvINOEV3JHmWafJaI0nWorkRhC3zLG2qHKqBH+6Xd5ozSY3LhqV2zQ61ij2Z+l4zIc0zH7ldU5JLQfu2WPqpMnm9ahfZqpMumeexoF2iafJbxFvqc5UoUvsM1ok/5rLYKerTckbSjOclJaBu+5Bo46HDYcGhrOjlTolwlAiQ5BskqYfZVVJy+8QdZmIXZS2QBcn/IH5JcfJNrTxxiehQEqH9G4fmUhWk0XTC1OvCaMDLHKQuQMxMXUaJzkleN7iZpWlXQiflNT6+u0UdsRH64SMw4H/lGwmi0pgGiDGyZjiCS+BjCiHwhJfqtQxeybx06bYtr0Xnti+blitoNwrMi7OXsi2YsiIr7E4bIf2qj+PytnOjMXxOYyJOFDNvAruFkWFAlE+SgPkFbXGCXIhaXzVYY5EyHvpETFZ+luckDjcQV9zuv44BLndStUGvzsCXGTiLVWA95HA/Ie0f7QbemLU8/0qFv5ETpw6zCBrlXGWUQJUFFaZXG3f70JQ97XOwkETQmhHUJtN/FFxC4f0JW1OTn0zlRXJ2bnLD5sZzCRVXkK7XESnHkLTwDyuLcaJ5tPVDTS36ZrKjh51yJ6jlRHNtFYSeu0hmj08Z4y0jD4dqVFbmDTXYFokeaNn7So4oO4Pr4whPOGxdYJis60qEBc05UqDRI4SpeFRofJaeNJCigQ6NaT7RHjQWEIIK46j8/jQ0ToctmRUc61JwT7VqUki+/Eq8mZtSIMVI0IgfFIIn9glHOn3HxKQBYk0rs+NmPcWp9yazoSM2Zc6JdEmsHrBjX3kkmvibHNUkPA9lIhHBHzDzMz/ER1Dh4vipYhUdTdSzT5b8iZzlR34UbFO2RVpXmJEenlzgWcuqtUGxtKaaTWN9CGqSKPOq+ElFo33TRZbKiIx06kRONKqX0S3G1ejJj4MAgp1fVXabwvU02k/3CBMdbKK5pduRrP0jec/SB4dqZ5KBDh0p0mBPdaXji3ufwY6yvzEnOBSiozhCLVfwTNbmmH4bFdhCFZH37k8iZDtWV6DAnikNEIkESWgtJ85L/ejPeRAso0f8S8gWU6H8J+QJK9FuHLmTfOvSVSUs8y7nsq34fuv/BObjih3OoXzVzPrGSN4+A45gpj2KoRBrXD9rRzqwY6ZUN5yvC4q2vkB7fmyqgmKZPmciH6gdBD+rvhawyQd520tE5PiefvZu04+Kei+3ByS52LFTnfDYosXH9W5jwntR4K3WHsHc6mDbnQ5P6z4YC3RiXVMKD7H7kalNQGFwFkcfhPFJQEycXZfm0i8uqT8+LNQVnJaFpHwppdB3K1qCS0EnXMzGgynOj3CJ3CB28Sw5fEXsVTvwncqKNXbQXyG/HuNrkyUMghzh0S8IJWWwh8iBtySsPyIUIF9m0adH68eFcXjRz8Nsg143pQ+FvsfP2eZY7nnR8l1xFP3iW2WLNIFLUJLfbOsxojsjJjSij7FUegmk+Un7okR1DfQ1RJjXd1zdX29P9POYQnZglPP6mnfV0bHcrTp3y+q4clsIOKZ2G+N/Sckg5p4M6YM/b5BY+STT60ESBs5wM5dD2BDntX6mkIv69YkU/8rArdqrcDv0RyIlpYvp8/YyuQ1NdONvFyHe63mK1G+llbavJZKYeLHr26rYHuH/TY80569uPftuV8jY57x1SiUuU2jN+xy1qtbamMHKh6ZKE1r41quj5u4uVy78McuN8sP48XbWuQ+k9VZFbgnZVix/Y003xfn87bhOPy6HblfOyCkcsd0IravXKbl+7Pp4FOkG+wr3FDa+gcjU+vj7OZJ0ZiZFb8hittC94Spo96EuhYeXkGclEjkGchm/GX3wGudjEBVHi5PdB8GbQdq3Is5pqyl457cmnVLcM5KTJyQN2I2ifID/Is11sjKY48Q4aecsP+PyXlcpQ5ymVqPScthU+YcAm08n0Je+N5iRH+wmd/G/WDinU+bbnerts9YYK2bxHr3Oq13kABOpr8gM13JYPZb2huTfMof6InA23rOSTMvh5znpiFc5QWWXkSRlNkW/MAz6alxuBRuHSe5CclXR9ndh6y2HJe8O9yLlH9UCdt6DdWVPH5cRLaSzYzflQ9jtNFQVe4HpZk7fAMZ2c1K+ZF1+yflPU2mquxX28iDSXSmeljN8jj/Rl4S8EfQv29FVcvsUex02sFI9VM0/ntdjNk+NpFZFSZc3b2mm6lYP+uNMy50ODvB8mzJXwRAKYpT6BHPMfa27L/L0HZ/uDTJHSG1zJni1M7ueZVRHqhP0UFUQwkeEDYdCjsn8tqP9CFGRxKIiDa4gYA/rzKwtsej0mTT3Hziq+Ea/JouS6sXfoB+0D5DVjlo9oBF8Ugo39kuKea+7VlI3Jza+Cee0Dai5tSiMYzsTCPLqH0jOy9G/amBwvEKh/69CFbPn/9vPP/Q9L3/ar7T/uAVrEItQT/gAAAABJRU5ErkJggg=="/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A<math> <mo>→</mo> </math> (iii), B<math> <mo>→</mo> </math> (ii), C<math> <mo>→</mo> </math> (i), D<math> <mo>→</mo> </math> (iv)</td>
+<td>  2 ) A<math> <mo>→</mo> </math> (ii), B<math> <mo>→</mo> </math> (iii), C<math> <mo>→</mo> </math> (i), D<math> <mo>→</mo> </math> (iv)</td>
+</tr>
+<tr>
+<td>  3 ) A<math> <mo>→</mo> </math> (ii), B<math> <mo>→</mo> </math> (i), C<math> <mo>→</mo> </math> (iv), D<math> <mo>→</mo> </math> (iii)</td>
+<td>  4 ) A<math> <mo>→</mo> </math> (i), B<math> <mo>→</mo> </math> (iii), C<math> <mo>→</mo> </math> (ii), D<math> <mo>→</mo> </math> (iv)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('54')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans54" id="idans54">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:54</h3>
+<hr/>
+<h4> In sodium fusion test of organic compounds, the nitrogen of the organic compound is converted into</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Sodamide</td>
+<td>  2 ) Sodium cyanide</td>
+</tr>
+<tr>
+<td>  3 ) Sodium nitrite</td>
+<td>  4 ) Sodium nitrate</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mi mathvariant="normal">N</mi> <mi mathvariant="normal">a</mi> <mo>+</mo> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">N</mi> <mo>→</mo> <mi mathvariant="normal">N</mi> <mi mathvariant="normal">a</mi> <mi mathvariant="normal">C</mi> <mi mathvariant="normal">N</mi> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('55')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans55" id="idans55">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:55</h3>
+<hr/>
+<h4> Match the following<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  (a)-(iii),  (b)-(i),  (c)-(iv),  (d)-(ii)</td>
+<td>  2 ) (a)-(i),  (b)-(iv),  (c)-(iii),  (d)-(ii)</td>
+</tr>
+<tr>
+<td>  3 ) (a)-(iii),  (b)-(i),  (c)-(ii),  (d)-(iv)</td>
+<td>  4 ) (a)-(i),  (b)-(ii),  (c)-(iv),  (d)-(iii)</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Lassaigne’s test is used in qualitative detection of N, S, P and halogens.<br/>(a) <math>
+<mo>→</mo>
+</math> (iii)<br/> Cu(II) oxide is used for the estimation of carbon.<br/>(b) <math>
+<mo>→</mo>
+</math> (i)<br/>Silver nitrate is used for detecting halogens in organic compounds (Carius Method)<br/> (c) <math>
+<mo>→</mo>
+</math> (iv)<br/>Sodium fusion extract when treated with acetic acid and lead acetate gives black precipitate if sulphur is present.<br/><math>
+<msup>
+<mrow>
+<mi>S</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+<mo>-</mo>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mrow>
+<mi>P</mi>
+<mi>b</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+<mo>+</mo>
+</mrow>
+</msup>
+<mo>→</mo>
+<mi>P</mi>
+<mi>b</mi>
+<mi>S</mi>
+<mi> </mi>
+<mo>(</mo>
+<mi>b</mi>
+<mi>l</mi>
+<mi>a</mi>
+<mi>c</mi>
+<mi>k</mi>
+<mi> </mi>
+<mi>p</mi>
+<mi>p</mi>
+<mi>t</mi>
+<mo>)</mo>
+</math> (<br/>d) <math>
+<mo>→</mo>
+</math> (ii)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('56')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans56" id="idans56">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:56</h3>
+<hr/>
+<h4> Which of the following acts as the stationary phase in paper chromatography ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Water</td>
+<td>  2 ) Alumina</td>
+</tr>
+<tr>
+<td>  3 ) Silica gel</td>
+<td>  4 ) None of these   </td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Chromatography paper contains water trapped in it,which acts as the stationary phase.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('57')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans57" id="idans57">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:57</h3>
+<hr/>
+<h4> Lassaigne’s test is used to detect</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Nitrogen and halogens</td>
+<td>  2 ) Halogens and sulphur</td>
+</tr>
+<tr>
+<td>  3 ) Nitrogen and sulphur</td>
+<td>  4 ) All of the above</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Lassaigne's test is a general test for the detection of halogens, nitrogen, and sulphur in an organic compound. This is done by fusing the organic compound with sodium metal. The ionic compounds formed during the fusion are extracted in aqueous solution and can be detected by simple chemical tests.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('58')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans58" id="idans58">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:58</h3>
+<hr/>
+<h4> In Carius method of estimation of halogen, 0.15 g of of an organic compound gave 0.12 g of AgBr. The percentage of bromine in the compound is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 20%</td>
+<td>  2 ) 34%</td>
+</tr>
+<tr>
+<td>  3 ) 43%</td>
+<td>  4 ) 13%</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Molar mass of AgBr <math> <mo>=</mo> <mn>108</mn> <mo>+</mo> <mn>80</mn> <mo>=</mo> <mn>188</mn> <mi> </mi> <mi>g</mi> <mi> </mi> <mi>m</mi> <mi>o</mi> <msup> <mrow> <mi>l</mi> </mrow> <mrow> <mo>-</mo> <mn>1</mn> </mrow> </msup> </math><br/>188 g AgBr contains 80 g bromine<br/>0.12 g AgBr contains <math> <mfrac> <mrow> <mn>80</mn> <mo>×</mo> <mn>0.12</mn> </mrow> <mrow> <mn>188</mn> </mrow> </mfrac> <mi>g</mi> </math> bromine<br/>Percentage of bromine <math> <mo>=</mo> <mfrac> <mrow> <mn>80</mn> <mo>×</mo> <mn>0.12</mn> <mo>×</mo> <mn>100</mn> </mrow> <mrow> <mn>188</mn> <mo>×</mo> <mn>0.15</mn> </mrow> </mfrac> <mo>=</mo> <mn>34.04</mn> <mi>%</mi> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('59')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans59" id="idans59">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:59</h3>
+<hr/>
+<h4> In fractional distillation, the component  with the lower boiling point</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) rains down in the fractionating column    </td>
+<td>  2 ) gets solidified</td>
+</tr>
+<tr>
+<td>  3 ) distills out first                                          </td>
+<td>  4 ) remains in the distillation flask</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Distills out first<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('60')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans60" id="idans60">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:60</h3>
+<hr/>
+<h4> Statement I: in fractional distillation, vapours of the liquid with lower boiling point condense before the vapours of the liquid with higher boiling point<br/>Statement II: in fractional distillation, vapours of a liquid mixture are passed through a fractionating column before condensation</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both statement I &amp; II are false</td>
+<td>  2 ) Both statement I &amp; II are true</td>
+</tr>
+<tr>
+<td>  3 ) statement I is true but statement is false</td>
+<td>  4 ) statement I is false but II is true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Statement I: in fractional distillation, vapours of the liquid with higher boiling point condense before the vapours of the liquid with lower boiling point<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('61')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="hidden-lg hidden-md">
+<div class="clearfix"></div></div>
+<div class="col-md-4" id="pallette">
+<div class="panel panel-default mb0">
+<div class="panel panel-default">
+<div class="panel-body" style="height:310px;overflow-y:scroll;">
+<table style="background-color:#eef7e4;">
+<tbody><tr>
+<td style="padding: 15px;/* width: 50px; */">
+<input id="btn1" name="btn1" onclick="fun2('1')" style="background-color:red" type="button" value="1"/>
+<input id="btn2" name="btn2" onclick="fun2('2')" style="background-color:red" type="button" value="2"/>
+<input id="btn3" name="btn3" onclick="fun2('3')" style="background-color:red" type="button" value="3"/>
+<input id="btn4" name="btn4" onclick="fun2('4')" style="background-color:green" type="button" value="4"/>
+<input id="btn5" name="btn5" onclick="fun2('5')" style="background-color:red" type="button" value="5"/>
+<input id="btn6" name="btn6" onclick="fun2('6')" style="background-color:green" type="button" value="6"/>
+<input id="btn7" name="btn7" onclick="fun2('7')" style="background-color:green" type="button" value="7"/>
+<input id="btn8" name="btn8" onclick="fun2('8')" style="background-color:red" type="button" value="8"/>
+<input id="btn9" name="btn9" onclick="fun2('9')" style="background-color:red" type="button" value="9"/>
+<input id="btn10" name="btn10" onclick="fun2('10')" style="background-color:red" type="button" value="10"/>
+<input id="btn11" name="btn11" onclick="fun2('11')" style="background-color:green" type="button" value="11"/>
+<input id="btn12" name="btn12" onclick="fun2('12')" style="background-color:red" type="button" value="12"/>
+<input id="btn13" name="btn13" onclick="fun2('13')" style="background-color:green" type="button" value="13"/>
+<input id="btn14" name="btn14" onclick="fun2('14')" style="background-color:red" type="button" value="14"/>
+<input id="btn15" name="btn15" onclick="fun2('15')" style="background-color:red" type="button" value="15"/>
+<input id="btn16" name="btn16" onclick="fun2('16')" style="background-color:green" type="button" value="16"/>
+<input id="btn17" name="btn17" onclick="fun2('17')" style="background-color:green" type="button" value="17"/>
+<input id="btn18" name="btn18" onclick="fun2('18')" style="background-color:green" type="button" value="18"/>
+<input id="btn19" name="btn19" onclick="fun2('19')" style="background-color:red" type="button" value="19"/>
+<input id="btn20" name="btn20" onclick="fun2('20')" style="background-color:green" type="button" value="20"/>
+<input id="btn21" name="btn21" onclick="fun2('21')" style="background-color:red" type="button" value="21"/>
+<input id="btn22" name="btn22" onclick="fun2('22')" style="background-color:green" type="button" value="22"/>
+<input id="btn23" name="btn23" onclick="fun2('23')" style="background-color:red" type="button" value="23"/>
+<input id="btn24" name="btn24" onclick="fun2('24')" style="background-color:red" type="button" value="24"/>
+<input id="btn25" name="btn25" onclick="fun2('25')" style="background-color:red" type="button" value="25"/>
+<input id="btn26" name="btn26" onclick="fun2('26')" style="background-color:green" type="button" value="26"/>
+<input id="btn27" name="btn27" onclick="fun2('27')" style="background-color:red" type="button" value="27"/>
+<input id="btn28" name="btn28" onclick="fun2('28')" style="background-color:red" type="button" value="28"/>
+<input id="btn29" name="btn29" onclick="fun2('29')" style="background-color:green" type="button" value="29"/>
+<input id="btn30" name="btn30" onclick="fun2('30')" style="background-color:green" type="button" value="30"/>
+<input id="btn31" name="btn31" onclick="fun2('31')" style="background-color:red" type="button" value="31"/>
+<input id="btn32" name="btn32" onclick="fun2('32')" style="background-color:green" type="button" value="32"/>
+<input id="btn33" name="btn33" onclick="fun2('33')" style="background-color:red" type="button" value="33"/>
+<input id="btn34" name="btn34" onclick="fun2('34')" style="background-color:red" type="button" value="34"/>
+<input id="btn35" name="btn35" onclick="fun2('35')" style="background-color:red" type="button" value="35"/>
+<input id="btn36" name="btn36" onclick="fun2('36')" style="background-color:red" type="button" value="36"/>
+<input id="btn37" name="btn37" onclick="fun2('37')" style="background-color:green" type="button" value="37"/>
+<input id="btn38" name="btn38" onclick="fun2('38')" style="background-color:red" type="button" value="38"/>
+<input id="btn39" name="btn39" onclick="fun2('39')" style="background-color:red" type="button" value="39"/>
+<input id="btn40" name="btn40" onclick="fun2('40')" style="background-color:green" type="button" value="40"/>
+<input id="btn41" name="btn41" onclick="fun2('41')" style="background-color:green" type="button" value="41"/>
+<input id="btn42" name="btn42" onclick="fun2('42')" style="background-color:green" type="button" value="42"/>
+<input id="btn43" name="btn43" onclick="fun2('43')" style="background-color:red" type="button" value="43"/>
+<input id="btn44" name="btn44" onclick="fun2('44')" style="background-color:red" type="button" value="44"/>
+<input id="btn45" name="btn45" onclick="fun2('45')" style="background-color:red" type="button" value="45"/>
+<input id="btn46" name="btn46" onclick="fun2('46')" style="background-color:red" type="button" value="46"/>
+<input id="btn47" name="btn47" onclick="fun2('47')" style="background-color:green" type="button" value="47"/>
+<input id="btn48" name="btn48" onclick="fun2('48')" style="background-color:red" type="button" value="48"/>
+<input id="btn49" name="btn49" onclick="fun2('49')" style="background-color:red" type="button" value="49"/>
+<input id="btn50" name="btn50" onclick="fun2('50')" style="background-color:red" type="button" value="50"/>
+<input id="btn51" name="btn51" onclick="fun2('51')" style="background-color:green" type="button" value="51"/>
+<input id="btn52" name="btn52" onclick="fun2('52')" style="background-color:red" type="button" value="52"/>
+<input id="btn53" name="btn53" onclick="fun2('53')" style="background-color:red" type="button" value="53"/>
+<input id="btn54" name="btn54" onclick="fun2('54')" style="background-color:green" type="button" value="54"/>
+<input id="btn55" name="btn55" onclick="fun2('55')" style="background-color:green" type="button" value="55"/>
+<input id="btn56" name="btn56" onclick="fun2('56')" style="background-color:red" type="button" value="56"/>
+<input id="btn57" name="btn57" onclick="fun2('57')" style="background-color:green" type="button" value="57"/>
+<input id="btn58" name="btn58" onclick="fun2('58')" style="background-color:green" type="button" value="58"/>
+<input id="btn59" name="btn59" onclick="fun2('59')" style="background-color:green" type="button" value="59"/>
+<input id="btn60" name="btn60" onclick="fun2('60')" style="background-color:red" type="button" value="60"/>
+</td> </tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="table-responsive text-nowrap" id="t3" style="display:none">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 9939 </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 26.00  </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Your 25-CHEM KCET JUT-17 Score:26.00   </h4>
+</div>
+<table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+<tr style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+<td><b>Questions Attempted</b></td>
+<td>60</td>
+</tr>
+<tr>
+<td><b>Correct Answers</b></td>
+<td>25</td>
+</tr>
+<tr style="background:#a0d3d691;">
+<td><b>Wrong Answers</b></td>
+<td>35</td>
+</tr>
+</table>
+<div class="col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<div id="canvas-holder" style="width:80%;float:right">
+<canvas id="physicschart"></canvas>
+</div>
+</div>
+</div>
+<!--	<div class="table-responsive text-nowrap" id="t4" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 9939 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 26  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Chemistry Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="chemistrychart"></canvas>
+	</div>
+
+	
+			  
+			</div></div>
+			
+			<div class="table-responsive text-nowrap" id="t5" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 9939 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 26  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Biology Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+
+	
+			   <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="biochart"></canvas>
+	</div>
+
+	
+			  </div>
+			</div>-->
+</div>
+</div>
+</div>
+<!-- End Email Statistic area-->
+<!-- Start Footer area-->
+<div class="footer-copyright-area hidden-xs" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+</div>
+<div class="site-footer__top" style="padding-bottom:10px">
+<div class="container">
+<div class="col-md-12 col-sm-12">
+<nav class="site-footer__navigation" role="navigation" style="padding-bottom:20px">
+<div class="menu-home-footer-container">
+<img src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="border: none;height:100px;float:left"/>
+<ul class="menu" id="footer-navigation" style="text-align: center;">
+<li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" style="margin: 5px" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" style="margin: 5px" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" style="margin: 5px" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" style="margin: 5px" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" style="margin: 5px" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" style="margin: 5px" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" style="margin: 5px" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" style="margin: 5px" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" style="margin: 5px" target="_blank">JIIPMER</a></li>
+</ul>
+<div><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px">
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;font-size:16px;margin: 5px;">jnanasudhaonline@gmail.com</a></font>|<font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;font-size:16px;margin: 5px">info@jnanasudha.com</a></font></li></ul></div>
+</div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px;"><a href="https://jnanasudha.com/quiz/termsandconditions" style="margin:5px" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a>|<a href="#" style="margin:5px" title="Disclaimer">DISCLAIMER</a></li>|<li><a data-toggle="modal" href="#costumModal20" style="margin: 5px">Contact Us</a></li></ul></div>
+<div aria-hidden="true" aria-labelledby="costumModalLabel" class="modal" data-easein="slideDownBigIn" id="costumModal20" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+									×
+								</button>
+<h4 class="modal-title">
+									Contact Us
+								</h4>
+</div>
+<div class="modal-body">
+<p style="color:#757575">
+									PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .</p>
+<br/><p style="color:blue">Ph: (08258) 295555, 295999
+                      Mob:+91 8762295555,+91 8762595555
+								</p>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<br>
+<div class="site-footer__bottom">
+<div>
+<p style="font-size:15px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .site-footer__bottom -->
+</br></div><!-- .container -->
+</div></div></footer><!-- .site-footer -->
+</div>
+</div>
+<!-- Footer Links -->
+</div>
+
+<div class="footer-copyright-area hidden-lg hidden-sm hidden-md" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="site-footer__quicklinks">
+<div class="container">
+<div class="quick-links">
+<div class="grid-container">
+<input id="quick-links_toggle-checkbox" type="checkbox" value="1"/>
+<div class="quick-links__title">
+<label class="quick-links__toggle" for="quick-links_toggle-checkbox">
+<i class="quick-links__toggle-icon"></i>
+<span class="quick-links__toggle-text">Contact Us</span>
+</label>
+</div>
+<div class="quick-links__content">
+<ul class="quick-links__list">
+<li class="quick-links__list-title"><font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;">info@jnanasudha.com</a></font><br/>
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;">jnanasudhaonline@gmail.com</a></font></li>
+<li style="font-size:16px;">PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .
+                      <br/>Ph: <a href="tel:08258295555" style="color: #009eff;">(08258) 295555</a>,<a href="tel:08258295999" style="color: #009eff;"> 295999</a>
+                      Mob:<a href="tel:+918762295555" style="color: #009eff;">+91 8762295555</a>,<a href="tel:+918762595555" style="color: #009eff;">+91 8762595555</a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="site-footer__top">
+<div class="container">
+<nav class="site-footer__navigation" role="navigation">
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" target="_blank">JIIPMER</a></li>
+</ul></div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li style="font-size:17px"><a href="https://jnanasudha.com/quiz/termsandconditions" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a> | <a href="#" title="Disclaimer">DISCLAIMER</a></li></ul></div>
+</nav><!-- .site-footer__navigation -->
+</div><!-- .container -->
+</div><!-- .site-footer__top -->
+<div class="site-footer__bottom">
+<div class="container">
+<br/>
+<div class="site-footer__copy">
+<p style="font-size:13px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .container -->
+</div><!-- .site-footer__bottom -->
+<!-- .site-footer__quicklinks -->
+</footer><!-- .site-footer -->
+</div>
+</div>
+</div>
+<style>a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  color:black;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+   color:black;
+}
+.modal-title {
+  font-size: 20px;
+   color:black;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  font-size: 15px;
+   color:black;
+}
+
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+
+</style>
+<!-- End Footer area-->
+<script>
+                                $(document).ready(function () {
+                                $('[data-toggle=collapse-side]').click(function (e) {
+                                $('.side-collapse').toggleClass('in');
+                                });
+                                });
+                                $(document).ready(function () {
+                                $('.second-button').on('click', function () {
+                                $('.animated-icon2').toggleClass('open');
+                                });
+                                });
+                                </script>
+<script type="text/javascript">
+
+                        $(window).on('load resize scroll', function() {
+    var f = $('#footer');
+    f.css({position:'static'});
+    if (f.offset().top + f.height() < $(window).height()) {
+        f.css({position:'absolute', bottom:'0', width:'100%'});
+    }
+});
+                    </script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+		
+		var configphysics = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						25,
+						35,
+						-15					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var configbiology = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						90					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		
+		var configchemistry = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						45					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+
+		window.onload = function() {
+			var ctx1 = document.getElementById('biochart').getContext('2d');
+			window.myPie = new Chart(ctx1, configbiology);
+			var ctx2 = document.getElementById('chemistrychart').getContext('2d');
+			window.myPie = new Chart(ctx2, configchemistry);
+			var ctx3 = document.getElementById('physicschart').getContext('2d');
+			window.myPie = new Chart(ctx3, configphysics);
+		};
+
+		
+	</script>
+<script type="text/javascript">
+function close_window(){
+    window.opener.location ='https://jnanasudha.com/quiz/quiz_userscreen';
+    window.close();
+}
+</script>
+<script>
+ document.getElementById('t1').style.display = "block";
+ document.getElementById('sp1').addEventListener("click",function(){
+    showTable('t1');
+});
+
+document.getElementById('sp2').addEventListener("click",function(){   
+    showTable('t2');
+});document.getElementById('sp3').addEventListener("click",function(){   
+    showTable('t3');
+});
+document.getElementById('sp4').addEventListener("click",function(){   
+    showTable('t4');
+});document.getElementById('sp5').addEventListener("click",function(){   
+    showTable('t5');
+});
+function showTable(table){
+    var tables =['t1','t2','t3'];    
+    for(var i=0;i<3;i++){
+        document.getElementById(tables[i]).style.display = "none";    
+    }
+    document.getElementById(table).style.display = "block";
+    
+}
+</script>
+<script>
+$("#sp1").click(function() {
+  $("#sp1").addClass('button-clicked');
+});
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+    var highestBox = 0;
+        $('.btn-group-justified .btn').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.btn-group-justified .btn').height(highestBox);
+fun2(1);
+});
+</script>
+
+<!-- bootstrap JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/bootstrap.min.js"></script>
+<!-- wow JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wow.min.js"></script>
+<!-- price-slider JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/jquery.counterup.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/waypoints.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/sparkline-active.js"></script>
+<!-- sparkline JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.resize.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/curvedLines.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/flot-active.js"></script>
+<!-- knob JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.knob.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.appear.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/knob-active.js"></script>
+<!--  wave JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/waves.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/wave-active.js"></script>
+<!--  todo JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/todo/jquery.todo.js"></script>
+<!-- plugins JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/plugins.js"></script>
+<!--  Chat JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/moment.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/jquery.chat.js"></script>
+<!-- main JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/main.js"></script>
+</body>
+</html>

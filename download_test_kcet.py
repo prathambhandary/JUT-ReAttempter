@@ -4,6 +4,7 @@ import csv
 import time
 import sys
 import json
+import os
 
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
@@ -24,6 +25,10 @@ headers = {
 resp = session.post(LOGIN_URL, data=login_data, headers=headers)
 
 def fetch_test(test_id):
+
+    if os.path.exists(f"webpages/test_{test_id}.html"):
+        return
+    
     resp = session.get(RESULT_URL_FMT.format(test_id), headers=headers)
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -102,6 +107,13 @@ def main(subject, exam_id, jut_no, exam_type="JUT"):
         })
     existing_data=[]
 
+    print("======PRINTING FETCHED DATA======")
+    print(len(question_bank))
+    print("======END FETCHED DATA======")
+
+    if not len(question_bank):
+        return 0
+
     try:
         with open("data/question_bank.json","r",encoding="utf-8") as f:
             existing_data=json.load(f)
@@ -139,7 +151,7 @@ if __name__ == "__main__":
 
         test_data = json.load(f)
 
-        for i in test_data:
+        for i in test_data[::-1]:
             exam_id = i["exam_id"]
             subject = i["subject"]
 
