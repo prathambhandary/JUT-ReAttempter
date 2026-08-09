@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PUSHKITTY_TOKEN }}
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -24,6 +25,9 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Download JEE questions
+        env:
+          JEE_USERNAME: ${{ secrets.JEE_USERNAME }}
+          JEE_PASSWORD: ${{ secrets.JEE_PASSWORD }}
         run: python download_test_jee.py
 
       - name: Commit JEE changes
@@ -31,16 +35,15 @@ jobs:
           git config user.name "pushkitty"
           git config user.email "pushkitty@firewave.in"
 
-          git add data/question_bank.json
           git add .
 
           if git diff --staged --quiet; then
             echo "No JEE changes."
           else
             git commit -m "Updated JEE question bank"
-            git pull
-            git push
+            git push origin main
           fi
+
 
   kcet:
     name: Scrape KCET Questions
@@ -52,6 +55,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PUSHKITTY_TOKEN }}
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -60,6 +64,9 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Download KCET questions
+        env:
+          KCET_USERNAME: ${{ secrets.KCET_USERNAME }}
+          KCET_PASSWORD: ${{ secrets.KCET_PASSWORD }}
         run: python download_test_kcet.py
 
       - name: Commit KCET changes
@@ -67,13 +74,11 @@ jobs:
           git config user.name "pushkitty"
           git config user.email "pushkitty@firewave.in"
 
-          git add data/question_bank.json
           git add .
 
           if git diff --staged --quiet; then
             echo "No KCET changes."
           else
             git commit -m "Updated KCET question bank"
-            git pull
-            git push
+            git push origin main
           fi
