@@ -80,5 +80,7 @@ jobs:
             echo "No KCET changes."
           else
             git commit -m "Updated KCET question bank"
+
+            git pull --rebase origin main
             git push origin main
           fi
