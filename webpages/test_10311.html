@@ -1,0 +1,4917 @@
+25-MJS KCET-01select count(*) counts from student_feedback_params where quiz_id ='10311' and batch_name ='25-MJS KCET-01' and status='Enable' <!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>JNANASUDHA</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- favicon
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/img/faviconnew.gif" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://jnanasudha.com/assets/charts/Chart.min.js"></script>
+<script src="https://jnanasudha.com/assets/charts/samples/utils.js"></script>
+<!-- Google Fonts
+		============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- owl.carousel CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.carousel.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.theme.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.transitions.css" rel="stylesheet"/>
+<!-- meanmenu CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/meanmenu/meanmenu.min.css" rel="stylesheet"/>
+<!-- animate CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/animate.css" rel="stylesheet"/>
+<!-- normalize CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/normalize.css" rel="stylesheet"/>
+<!-- mCustomScrollbar CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<!-- jvectormap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+<!-- notika icon CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/notika-custom-icon.css" rel="stylesheet"/>
+<!-- wave CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/wave/waves.min.css" rel="stylesheet"/>
+<!-- main CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/main.css" rel="stylesheet"/>
+<!-- style CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/style.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/dashboard.css" rel="stylesheet" type="text/css"/>
+<!-- responsive CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- modernizr JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript">
+function removeCSSFallback()
+{
+  var ua = navigator.userAgent;
+  var isGecko = ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1 && ua.indexOf('Trident') === -1;
+  var isWebKit = ua.indexOf('AppleWebKit') > -1 && ua.indexOf('Chrome') === -1;
+  if (isGecko || isWebKit) {
+  //  document.head.removeChild(document.querySelector("style"));
+  } else {
+   /* <link rel="stylesheet" href="https://jnanasudha.com/assets/css/mathml.css">
+		<link rel="stylesheet" href="http://fred-wang.github.io/mathml.css/mathml.css">*/
+		  var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = 'https://jnanasudha.com/assets/mathml.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+  }
+}
+
+window.addEventListener("DOMContentLoaded", removeCSSFallback, false);
+
+</script>
+<script type="text/javascript">
+document.onkeydown = function(ev) {	
+var key;
+ev = ev || event;
+key = ev.keyCode;
+if (key == 116) {
+return false;  // disable F5 key
+}
+}
+</script>
+<script>
+    //paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('#content', true);
+  setVisible('#loading', false);
+});
+ </script>
+<style>
+
+.btn-group-justified>.btn-group .btn {
+    width: 99%;
+}
+.button-clicked {
+  /*background-color: #00dcff;*/
+}
+input[type=button] {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 249, 249, 0.5);
+  background-image: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<script type="text/javascript">
+  function fun2(a) {
+		  // var b = 'idans'+a;
+		  // alert (b);
+		  // $('html, body').animate({ scrollTop: $("#"+b).offset().top }, 'slow');
+            // return false;
+		  // $("[class^='classans']" ).show();
+		  // $("."+b ).show();
+			var b = 'classans' + a;
+            //  alert (b);
+
+            $("[class^='classans']").hide();
+
+            $("." + b).show();
+    }
+	
+	
+	</script>
+<script>
+// $(document).ready(function(){
+    // $('.btn').click(function() {
+       // var target;
+       // $("div").each(function(i, element) {
+         // target = $(element).offset().top;
+         // if (target - 10 > $(document).scrollTop()) {
+           // return false; // break
+         // }
+       // });
+       // $("html, body").animate({
+         // scrollTop: target
+    // }, 700);
+    // });
+// });
+</script>
+</head>
+<body>
+<div id="loading"></div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139705418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139705418-1');
+</script>
+<!--Header Top Area -->
+<div class="header-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="header">
+<a class="logo" href="#">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height:70px;width:90%;float: left;"/>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+<div>
+<span class="name pull-left">
+<p>JNANASUDHA ENTRANCE ACADEMY LLP<br/>
+<span style="font-size: 25px;color: #0977ce;">JNANASUDHA ONLINE TEST SERIES</span></p>
+</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+<span class="mail" style="float:right">
+<ul class="nav navbar-nav pull-right exam-paper" style="margin-top:3px">
+<li class="user-profile">
+<table>
+<tr>
+<td class="profile hidden-xs hidden-sm" style="border: 2px solid #666;margin: 2px 0;">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/uploads/9448104004.jpg" style="height:60px; width:60px;"/>
+</td>
+<td>
+<table>
+<tr>
+<td style="padding: 3px 3px;">Welcome</td>
+<td> : <span style="color: #f7931e; font-weight: bold">AYUSH SHETTY </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</span>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-sm" style="padding-top:65px; background: #0c2273cf;color: white;">
+<!--<p style="text-align:center;line-height:14px;"> <span style="font-size: 12px;"><b>JNANASUDHA ENTRANCE ACADEMY LLP</b></span></p>-->
+<span style="font-size:16px">Welcome: <font style="color: #f7931e; font-weight: bold">AYUSH SHETTY </font></span>
+<span><span style="float:right;padding-bottom: 2px;margin-top: -6px;"><a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout" style="padding:8px 20px;font-size: 15px;">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+		   </a>
+</span></span>
+</div>
+</div>
+</div></div>
+<!-- End Header Top Area -->
+<style>
+   .navbar-default {
+   padding-right: 8px;
+   }
+   .navbar .navbar-toggle {
+   /*border: none;*/
+   }
+   .navbar-header .navbar-toggle .icon-bar {
+   background: #444;
+   }
+   .navbar-header .navbar-toggle .icon-bar:hover {
+   background: #444;
+   }
+   .side-collapse-container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+  /*  ::-webkit-scrollbar {
+   width: 12px;
+   } */
+   ::-webkit-scrollbar-track {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   }
+   ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: #ddd;
+   -webkit-box-shadow: inset 0 0 6px #ddd;
+   }
+   ::-webkit-scrollbar-thumb:window-inactive {
+   background: #ddd;
+   }
+   @media screen and (max-width: 768px) {
+   .side-collapse {
+   top: 58px;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   position: fixed;
+   overflow: auto;
+   transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+   }
+   .side-collapse.in {
+   width: 0;
+   }
+   .navbar-nav li.dropdown {
+   padding-right: 0;
+   }
+   .navbar-nav li
+   {
+   text-align:left;
+   border-bottom:2px solid #ddd;
+   font-size:18px;
+   }
+   .navbar-default {
+   padding-right: 0;
+   }
+   .navbar .navbar-default {
+   border-right: 1px solid #ddd;
+   }
+   }
+  /* Icon 1 */
+
+ .animated-icon2{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #0385e4f2;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 8px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 16px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+</style>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<nav class="navbar navbar-fixed-top navbar-default">
+<div class="navbar-header" style="background: #fff;">
+<button aria-controls="side-collapse" aria-expanded="false" class="navbar-toggle second-button" data-target=".side-collapse" data-toggle="collapse-side" type="button"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div><span class="sr-only">
+</span></button>
+<div class="header">
+<a class="logo" href="#" style="float:left">
+<img alt="" class="hidden-mobile" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height: 57px;"/>
+</a>
+</div>
+<span style="color: #0977ce;text-align:center;float:left;margin-top: 6px;"><b>JNANASUDHA<br/> ONLINE TEST SERIES</b></span>
+</div>
+<div class="navbar-default side-collapse in">
+<nav class="navbar-collapse" role="navigation">
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button" style="padding:10px 30px;font-size: 20px;">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information" style="padding:10px 30px;font-size: 20px;">Account</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/user_payments" role="button" style="padding:10px 30px;font-size: 20px;">Receipts</a>
+</form>
+<ul class="nav navbar-nav">
+<li><a href="https://jnanasudha.com/quiz/quiz_userscreen"><i class="notika-icon notika-house"></i> HOME</a>
+</li><!--
+												<li><a data-toggle="collapse" data-target="#demoevent" href="https://jnanasudha.com/quiz/quiz_inform">JUT 1-JUT 75</a>
+						</li>
+												<li><a data-toggle="collapse" data-target="#democrou" href="#">PART TEST</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#demolibra" href="#">FULL LENGTH</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#democrou" href="https://jnanasudha.com/quiz/quiz2019neet">2019 NEET</a>
+						</li>-->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+</ul>
+</nav>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+<!--<li><a data-toggle="tab" href="#PART TEST"><i class="notika-icon notika-edit"></i> PART TEST</a>
+				</li>
+				<li><a data-toggle="tab" href="#FULL LENGTH"><i class="notika-icon notika-bar-chart"></i> FULL LENGTH</a>
+				</li>
+				 <li><a href="https://jnanasudha.com/quiz/quiz2019neet"><i class="notika-icon notika-form"></i> 2019 NEET</a>
+				</li> -->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/general_feedback" role="button">Feedback</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information">Account</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/user_payments">Receipts</a>
+<a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="notika-email-post-area" id="content" style="margin-bottom:50px">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-8">
+<div class="heading"><span>75 JUT – Which conquer each point of NCERT</span></div>
+<div>
+<div class="btn-group-justified" style="margin-top: 10px;">
+<div class="btn-group">
+<button class="btn btn-primary" id="sp1">Result</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp2">Solution</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp3">Physics Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp4">Chemistry Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp5">Biology Analysis</button>
+</div>
+</div></div>
+<!--<div class="hidden-lg" style="margin-top:5px;">
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary"  id="sp1">Result</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary btn-group" id="sp2">Solution</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Physics Analysis</button>
+					</div>
+                    <div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Chemistry Analysis</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Biology Analysis</button>
+					</div>
+				</div>-->
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="recent-items-ch notika-shadow sm-res-mg-t-30">
+<div style="float:right">
+<div>
+<img src="https://jnanasudha.com/images/imagesmall.jpg" style="/* margin: 0px 100px; */height:80px;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="table-responsive text-nowrap" id="t1" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10311 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 38 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<table class="table table-striped" style="text-align: center;">
+<tr style="border: 1px solid #3a3030;">
+<td style="background: #0b1c75e0;border-bottom: 1px solid #e0d0d0;"></td>
+<td style="background: #1d83ce91;color: white;">25-CHEM KCET JUT-29</td>
+<td style="background: #1d83ce91;color: white;">TOTAL </td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Total Questions</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Attempted</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Correct Answer</td>
+<td>38</td>
+<td>38</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Wrong Answer</td>
+<td>22</td>
+<td>22</td>
+</tr>
+<tr style="border-bottom: 1px solid #3c3636;">
+<td style="background: #0b1c75e0;color: white;">Marks </td>
+<td>38.00</td>
+<td>38.00</td>
+</tr>
+</table>
+</div>
+<div class="row exam-paper" id="t2" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10311 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 38.00 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-lg-8 col-md-8 col-sm-12" id="quest">
+<div>
+<div class="classans1" id="idans1">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:1</h3>
+<hr/>
+<h4> According to the Arrhenius equation, a straight line is obtained by plotting which of the following variables against each other?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  log k vs t     </td>
+<td>  2 ) ln k vs 1/T</td>
+</tr>
+<tr>
+<td>  3 ) k vs T     </td>
+<td>  4 ) log k vs T</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The Arrhenius equation is expressed as k = <math>
+<mi>A</mi>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>E</mi>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mi>R</mi>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+</msup>
+</math>.
+<br/>
+Taking natural logarithms on both sides gives: ln k = <math>
+<mi>l</mi>
+<mi>n</mi>
+<mi> </mi>
+<mi>A</mi>
+<mi> </mi>
+<mo>-</mo>
+<mi> </mi>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>E</mi>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mi>R</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</math>. 
+<br/>
+This matches the linear slope-intercept equation y = mx + c, where y = ln k, x = 1/T, and slope m = -Ea/R. 
+<br/>
+Therefore, plotting ln k vs 1/T yields a straight line.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('2')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans2" id="idans2">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:2</h3>
+<hr/>
+<h4> In a zero-order reaction, the initial concentration of the reactant is 0.2 <math> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mi> </mi> <msup> <mrow> <mi>L</mi> </mrow> <mrow> <mo>-</mo> <mn>1</mn> </mrow> </msup> <mo>.</mo> </math> If the rate constant is 0.04 <math> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mi> </mi> <msup> <mrow> <mi>L</mi> </mrow> <mrow> <mo>-</mo> <mn>1</mn> </mrow> </msup> </math> <math> <msup> <mrow> <mi>s</mi> </mrow> <mrow> <mo>-</mo> <mn>1</mn> </mrow> </msup> <mo>,</mo> </math> what will be the half-life period (<math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> </mrow> </msub> </math>) of this reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 5.0 s    </td>
+<td>  2 ) 2.5 s</td>
+</tr>
+<tr>
+<td>  3 ) 1.25 s</td>
+<td>  4 ) 10.0 s</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, the half-life is given by the expression t1/2 = [A]0 / 2k. Substituting the given parameters: t1/2 = 0.2 / (2 × 0.04) = 0.2 / 0.08 = 2.5 seconds.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('3')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans3" id="idans3">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:3</h3>
+<hr/>
+<h4> What type of plot will show a straight line for a zero-order reaction to determine its rate constant values directly from the graph slope?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) ln[A] versus time</td>
+<td>  2 ) [A] versus time</td>
+</tr>
+<tr>
+<td>  3 ) 1/[A] versus time  </td>
+<td>  4 ) log[A] versus 1/time</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: From the zero-order integrated expression, [A] = -kt + [A]₀. This explicitly matches y = mx + c. Therefore, plotting [A] on the vertical axis against time on the horizontal axis yields a direct straight line where the slope is -k<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('4')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans4" id="idans4">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:4</h3>
+<hr/>
+<h4>The time taken for the 90% completion of a first order reaction to complete is approximately:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAADQAAAAkBAMAAAA0gARDAAAAHlBMVEX///8EAQZirvX5smH96qiv8v9HEGYdUpdrIAChYSeinrg3AAAAl0lEQVR4nM3QKw7DMBAE0FVsYjgGKe0VQsJbkLjMUnsFc5McoLlBSnrdOj9QOYOaShnJWvA0u5JFDhTdz9OdMxnsNG/IqL1PpLtqpPeXqbklI2lL6Ql4QirQlokitd8kF6VotumSHqHKU6pzSjeW1svgtIoBSp9oAIK4/Ld+DoDdd+4bg45R8+hpTQdKLRUVr4wcLKM/5QPuYxch+PHKIQAAAABJRU5ErkJggg==
+"/>
+</td>
+<td>  2 ) <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAADUAAAArBAMAAAAqFN2oAAAAHlBMVEX///8KAAD87KWDLwdYmNut9f8AR5nhmUcABUliEGYUH70kAAAAwElEQVR4nO2SMQoDIRBFBw1IygGRbRfTWC4s1h5BcgKbHGAhhKRPjpD7ZlxFjMFuAynym9F5zv8iAvzVE5sGF6vG+wdbHJdUhITJtewCTEUWYAwAtnXNDR2AyZapVGluwsG/MfFI9erLsmhMd4h+nCJv1SSbc5xbI3emYvFslM0WNbPVEYqsGcXvfWo/W0YxxutAqSyyM0dV2IK00UEgYgCd3nZrkfc3bDcXx1OXmePcH6Rn7erQR8L1ocb2H/62XtQBGuBIunqUAAAAAElFTkSuQmCC
+"/>
+</td>
+</tr>
+<tr>
+<td>  3 ) <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAADIAAAAoBAMAAABOXLR/AAAAHlBMVEX///8AAAj856pXBx5kod6m7v+cUQjUj0IATqEEJGPUGYSLAAAAx0lEQVR4nN2SMQrDMAxFVQ32WoEzeDakc6CBjqYn8BVMl3QMdGi2HCK5b+U4NHEbb4FCtQjr+X9JxgD/F4ZUSFiRTYFU4EOptUJ9kB5Mz/kJeAEQfeoXj4GY1LF1UV2AICpW4DRGSccXOrcCgoYpe81ODUvHN0IfzUs1tbrWWxPgmdOKiFl/dzzEQsS8TxM0ocdCFK/PRW/5NWQhrad5W7zRGK6XlXY8zAC7xoHouK/jjuG12wZYlzYnMhkNYFbyyKHvv/qjeAF/WxyBLga78AAAAABJRU5ErkJggg==
+"/>
+</td>
+<td>  4 ) <img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAADUAAAAoBAMAAACsgK8GAAAAHlBMVEX///8AAAT54ZtEk9xDAAAHPoKp8f/noEyVRwhVDWaabbPGAAAAvUlEQVR4nN2SsQrCMBCGz1ua0aO0DyAdzBb6BqW4FxTnvoJIHyCIuzjkec1xSFrbZLIg/stBvvxfEgjA3wRbmZWZM5XLtAtskF528kx1U+VTmGbnh1fVwm5+XRGVE6XcJeu4M/QTpROme2Z3v8kFpcFWsxKq+oEHgF1gFyIq/G4/qGMFurE1vD0rE+w8Z3yO9JSxNHp/RYYZNjmgPcIK2RBt1/B+PbboYwjdfuFPvaOjPcBE7RqH2FCi+HN5ATPsG1olJZ6ZAAAAAElFTkSuQmCC
+"/>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAADIAAAAoBAMAAABOXLR/AAAAHlBMVEX///8AAAj856pXBx5kod6m7v+cUQjUj0IATqEEJGPUGYSLAAAAx0lEQVR4nN2SMQrDMAxFVQ32WoEzeDakc6CBjqYn8BVMl3QMdGi2HCK5b+U4NHEbb4FCtQjr+X9JxgD/F4ZUSFiRTYFU4EOptUJ9kB5Mz/kJeAEQfeoXj4GY1LF1UV2AICpW4DRGSccXOrcCgoYpe81ODUvHN0IfzUs1tbrWWxPgmdOKiFl/dzzEQsS8TxM0ocdCFK/PRW/5NWQhrad5W7zRGK6XlXY8zAC7xoHouK/jjuG12wZYlzYnMhkNYFbyyKHvv/qjeAF/WxyBLga78AAAAABJRU5ErkJggg==
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('5')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans5" id="idans5">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:5</h3>
+<hr/>
+<h4> Which of the following statements is incorrect regarding the temperature coefficient of a reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It is defined as the ratio of rate constants at temperatures separated by 10 K.</td>
+<td>  2 ) For most chemical reactions, its value lies between 2 and 3.</td>
+</tr>
+<tr>
+<td>  3 ) It signifies that the rate of reaction increases exponentially with temperature.</td>
+<td>  4 ) Its value is exactly 1.0 for all elementary first-order reactions.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The temperature coefficient is between 2 and 3 for the vast majority of reactions, including elementary first-order ones. It is not 1.0.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('6')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans6" id="idans6">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:6</h3>
+<hr/>
+<h4> The temperature coefficient of a typical chemical reaction is generally defined as the ratio of rate constants at two temperatures separated by:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1°C     </td>
+<td>  2 ) 10°C</td>
+</tr>
+<tr>
+<td>  3 ) 100°C</td>
+<td>  4 ) 5°C</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The temperature coefficient is defined as the ratio of the rate constant of a reaction at a temperature (T + 10) K to that at temperature T K. For most chemical reactions, this ratio lies between 2 and 3.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('7')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans7" id="idans7">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:7</h3>
+<hr/>
+<h4>In a first order reaction for every 10° rise of temperature, the rate is doubled. If the temperature is increased from 10℃ to 100℃, the rate of the reaction becomes</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  256 times</td>
+<td>  2 ) 512 times</td>
+</tr>
+<tr>
+<td>  3 ) 64 times</td>
+<td>  4 ) 128 times</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAXEAAAA6BAMAAAC0QXSMAAAAHlBMVEX///8AAABdp+z+76dVBA2lVw+k6P7goFkPU6EFCVThHlU1AAAEEUlEQVR4nO1YTWsjORDVIoSuK5/cN4EJM+dBAefYZjDZo/uwtG8CE3J2yIb2TUwgP8A79PzdrVdqO+62u4k3k9iGfgS5qlQqvZZKXxGiR48ePXr0+CRoY8qmdBlQ98E2pQuBsvvSZUD5fekyMBYyLcXSJH4shLOnpnMECqFDVklC29OSOQbyLy+k3UiXxBx4+LaRLoy5TAdbaXhSJmcDOf2w0IUXf5g6/ow12nSM/usOJCed4d9JT6dBiMeDRDoGpWt/fK1zg3YvId97mSho2enwUPVXZ7Tyba3esrNL3xxzuRsPZ/JNawfs3vltHBw8HAdxr6EoavuB/xbmzjaZ11qhq7wzgApdtRrfdXBsKapubeqsG8yCUObf9KpUJtCfWCYeP2I2Sq+G2ImSxYR9AslX5WxIFnjMaL0E7tQZNqiBG6gh2lkR1VK45KtMTTmzumSdI4trU/IGB21mYKUAAyFnyR0l5izGQFRdbniqxDeYy3Q0EbmcuNJnVC4mMmhI8at4FqNPtJWLKdlt1BhYoBnNuZw+5Xb1srq/+6HLqI6m8pb8lNV3VgfWJ1h0ZA3ExbLGM5Jz1rgwRmkdYgSKul2i2o4bw49MiNHAj3YaUm4FS4hgK+bwqWzRHrUNc+5fldT/3Bck0vhGFbQy5JMinlEnO5PNIUPjVM54NeRVOfeo42/cMi8OMseckDSNx9VyEP0bzCsbpYaNvlW2FJyNzqzRTUb9OprjSkXbEh43PraBnaPwVLCGdYIqHTCNVKYJdeJpokJ9zG37mCMbFlTMF5MDzCub5GzZWbOU5zSG6J+ShNJBYNSjClpUl+PzVj7qHMWD0sqztqpcFX9aLMl4g5aiynNaFAfyHJzm/htxpHKFPHeepB3mo0XlAxuNp3Wj6CEqGso+IW2RJpTec6qMKvz/ebaZ9rkudNQVj8X1Alnpqhzi9FFfRhP5N0qeOfK3T+17C52hLnk0FnvLkFZ46ZL0mRKGJCRO+gt3HbXxgY02lp9Dxb5VDOpcJ1ana6zEQFfRPH0RUaUOkvuhWK7FY+lK1lNki6anwiPlBLTtdq7Ii3aYNddk1IKifuwDTjfOmSOvMey+c/zU0X6G/g407i3th8dBbDbFg/jAyxyg6+HV+pjGeOjQKdFSS3fFHj1+L+Jl6BJRiOzUFP4n9pg/nIbHccBpdp3sPiC0MYP44MGZdr7IxNKK2pjz0ahTHMC66xl6ejhbP/2Y+QO/27qf/icC7tjxiUC3xlv8KhOv3fE6cr7MX9G8OsjvSG9m3v0CPjUO3JOQ3sz8vf8K+hBss2XLbpMtgqcBzI+8/H0y6EkQ9owV80KMP53P2zHe+8903Azx1g1nfSRR1ti6RfMT3CT0ijPnvZ/36NGjR48en47/AF64+/AxImU5AAAAAElFTkSuQmCC
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('8')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans8" id="idans8">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:8</h3>
+<hr/>
+<h4> For a zero-order reaction, if the initial concentration is halved while maintaining the same rate constant, what happens to the total time required for 100% completion of the reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It becomes doubled     </td>
+<td>  2 ) It becomes reduced to exactly half</td>
+</tr>
+<tr>
+<td>  3 ) It remains completely unchanged     </td>
+<td>  4 ) It increases four times</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, 100% completion means [A] = 0. From [A] = [A]₀ - kt, setting [A] = 0 gives <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>100</mn> <mi>%</mi> </mrow> </msub> </math> = [A]₀ / k. This reveals that the total completion time is directly proportional to [A]₀. Halving the initial concentration will therefore cut the total completion time to half.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('9')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans9" id="idans9">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:9</h3>
+<hr/>
+<h4> How does the half-life period (t₁/₂) of a zero-order reaction change if the initial concentration of the reactant is exactly doubled?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  It remains completely unchanged</td>
+<td>  2 ) It becomes exactly doubled</td>
+</tr>
+<tr>
+<td>  3 ) It is reduced to half its value</td>
+<td>  4 ) It increases by a factor of 4</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, the half-life expression is t₁/₂ = [A]₀ / 2k. 
+<br/>
+Since t₁/₂ is directly proportional to the initial concentration [A]₀, doubling the value of [A]₀ will double the value of t₁/₂.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('10')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans10" id="idans10">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:10</h3>
+<hr/>
+<h4> The term <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mo>-</mo> <mfrac> <mrow> <mi>E</mi> <mi>a</mi> </mrow> <mrow> <mi>R</mi> <mi>T</mi> </mrow> </mfrac> </mrow> </msup> </math> in the Arrhenius equation physically represents which of the following parameters?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) The total number of collisions per second</td>
+<td>  2 ) The fraction of molecules having energy equal to or greater than the activation energy</td>
+</tr>
+<tr>
+<td>  3 ) The steric layout probability of the collision complex   </td>
+<td>  4 ) The average kinetic energy of the system</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In the Arrhenius and collision models, the exponential factor <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mo>-</mo> <mfrac> <mrow> <mi>E</mi> <mi>a</mi> </mrow> <mrow> <mi>R</mi> <mi>T</mi> </mrow> </mfrac> </mrow> </msup> </math> corresponds mathematically to the fraction of molecules that possess sufficient kinetic energy to overcome the activation energy barrier (Ea) at a given temperature T.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('11')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans11" id="idans11">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:11</h3>
+<hr/>
+<h4> In the presence of a positive catalyst, the activation energy of a certain reaction decreases by 20 kJ mol⁻¹ at 300 K. By what factor will the rate of the reaction increase, assuming the pre-exponential factor remains constant? (Take <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mn>8.02</mn> </mrow> </msup> </math> ≈ 3041)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 8.02 times</td>
+<td>  2 ) 3041 times</td>
+</tr>
+<tr>
+<td>  3 ) 100 times</td>
+<td>  4 ) 20 times</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: ΔEa = 20 kJ mol⁻¹ = 20,000 J mol⁻¹<br/>T = 300 K<br/>R = 8.314 J mol⁻¹ K⁻¹<br/><br/>k₂ / k₁ = <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mfrac> <mrow> <mi>Δ</mi> <mi>E</mi> <mi>a</mi> </mrow> <mrow> <mi>R</mi> <mi>T</mi> </mrow> </mfrac> </mrow> </msup> </math><br/>k₂ / k₁ = <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mfrac> <mrow> <mn>20000</mn> </mrow> <mrow> <mn>8.314</mn> <mi> </mi> <mo>×</mo> <mi> </mi> <mn>300</mn> </mrow> </mfrac> </mrow> </msup> </math><br/>k₂ / k₁ = <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mfrac> <mrow> <mn>20000</mn> </mrow> <mrow> <mn>2494.2</mn> </mrow> </mfrac> </mrow> </msup> </math><br/>k₂ / k₁ = <math> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mn>8.02</mn> </mrow> </msup> </math><br/>k₂ / k₁ ≈ 3041<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('12')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans12" id="idans12">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:12</h3>
+<hr/>
+<h4>For the chemical reaction, A→B, it is observed that the rate of the reaction doubles when the concentration of A is increased 4 times. The order od the reaction in A is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2</td>
+<td>  2 ) 1</td>
+</tr>
+<tr>
+<td>  3 ) 0.5</td>
+<td>  4 ) 0</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAARsAAABgBAMAAADfkcukAAAAHlBMVEX////U6PT15tSQiIukucxtk7rVvq1Ia5FpXWM4SGQ/RJw7AAAE9klEQVR4nO2a3Y6iSBTHsdhUvEQn6fsOTi99acAgd+VoNnuJM/0CEzHCnax2fIBt4/alGY3xbfecKkC+RCYzA2bCP+kSsIAfdT7qULYkNWrUqFGjetXqdh6VOgEeg0/CW3dtju36YCRiBBt0iq1qD+SqcMg8e0xl0MywGeBumxnqqCKc2S7rFgihWojDR0Xr+n9OK8KRzAwO9bH1EIe8QdMjjLL6cDQW4UhmVRihsjgLfkTgCLQKlcEhW/4hcORl3Th0H8Ohh7pxggEROMFQlZfjdL87KTjOp0mEk/5Ss2M4Oa6VJyJ6kQ61/josgp2i/p3YJpzzFpwjPb2nHyYYFm8qPPomzhM8mYZ5iSp0S0zqL8Txa1FAob/6AvmD34ZRs7t48EOcmW6kulv8G/XLIBZgRaJHSeKp/dmGT5hPxIlxHHcd7w+JV1UCs2hL2B7Q8JwcJc2j3ZytCHj7HM+xAIe8yWzHUjj0mxW/Crgj4NATbnuIY8jMZFK+yC6xq92MdIxExKHvODpKi9cDi1fAoTtGzCl6lrykph/DBxwV70P+82FbaSm9qw+bjCXNz/SgXSe+Ky97CuKofy+laD7WLVtj1oZpKz4nykv521Qik8kI8SkDHAONJY/33HDXlcJpZ3FmO5xeWx0QXkn7PFwijtGO4Uiyr7EtWp5b22M4Gcvn8xG/Ge9VhdqIM5ev4DyGVyfHxHF5n+E1ti7gqDoIA8p7+WADDrGBPMKxzoDjvoCfYBqDZHqpmLT1g68qqgLGIv0kzh8TFH9kvDqLcPhxJR/nYd+K73tH7jvyanjBoccx4BDrs8CB8EQcqmMYa0eMrEEXrEhXw0M+zuVut3BgtLHtYQ/MWaZrI868o+4jHHBdwAE34cbCMoXjbDYQ8d4Y3VfXz1NJHX045BurF97/prGkth3HIVv5HzAW6WPXaHROQ1/zdWjQlelRNy7GgkTZRwQwloFJK8CRExWeg1dnpXCeWXyPHOQVmxPXl9yjEvmOu2HUd18VHuh0t1lHBRzZ0leMrKfdaAZDc2IBjpo/WUeRJV4nciLrY2J0yYg4kP7A5M6E5RTeGX2VHHBkGN2Rw88JcMT7Ak2n5xAn+MzJOzmaBxcpg4OK+0uI08d2MEsNUpiVZWG021k5jvEDOBSdC1zpPTU8wZzlBjil3rAWoiwgg5I42qWMIPF6BExipXDEPiQ7vnd7RkepIizoS0kc2r/gJCuK1JQZVaWfApyK384zkSzM87ErcMpVgz9PC5Y6wGtlYojI+u5a+QdFfZJ6fv4mQf7VT7zgrPhNAufW5JFgQCiPLLlU2vlpIu+bU/qYcJenIy9mWLU4eqZ0DxBmOp+uK6XJFb0YiK9g1K1Lbq1s1atIF4eZV5x1cpVaG6xd0crpPQzO76Xq1hHLqGfdQzRGIu5d4ZSsHytTg1OkBqdIDU6B5OGK1c2QUOt2l99cd1Z6iHUWaqhG7/qCeXXiv95KM2vq+TySnHAtr045puIxjhMtbXbCBeEaBC+sABS/eQvXg/X+1TN+Lc5BAqAOf3sE1W0suicHcsBfKNI2qtS/sRzGP1zN5ku1GaVX+H6p2ntJevZ59lEySbiHJJVm5nB08qTqx7p9KC5P8e5pSodEVO0SVbFa+BPtPSm9UF2vKv8/iWJV/k8thSJ9ck++o61r/Te6tLzzmdXN0KhRo0aNGjUq1v8eIv4l9b1pnwAAAABJRU5ErkJggg==
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('13')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans13" id="idans13">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:13</h3>
+<hr/>
+<h4> The rate constant of a reaction is given by <math>
+<mi>k</mi>
+<mi> </mi>
+<mo>=</mo>
+<mi> </mi>
+<mn>4.5</mn>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<mn>10</mn>
+<mo>¹</mo>
+<mo>¹</mo>
+<mi> </mi>
+<mi>s</mi>
+<mo>⁻</mo>
+<mo>¹</mo>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>24000</mn>
+<mfrac>
+<mrow>
+<mi>K</mi>
+</mrow>
+<mrow>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</math>
+<br/>
+What is the activation energy (Ea) of this reaction in kJ mol⁻¹? (R = 8.314 J K⁻¹ mol⁻¹)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  24.0 kJ mol⁻¹     </td>
+<td>  2 ) 199.5 kJ mol⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 2.88 kJ mol⁻¹    </td>
+<td>  4 ) 99.7 kJ mol⁻¹</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Comparing the given equation with the Arrhenius form: k = <math>
+<mi>A</mi>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>E</mi>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mi>R</mi>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+</msup>
+<mo>.</mo>
+</math><br/>The exponent term gives: Ea / RT = 24000 K / T  ⇒  Ea / R = 24000 K.<br/>Ea = 24000 K × 8.314 J K⁻¹ mol⁻¹ = 199536 J mol⁻¹ ≈ 199.5 kJ mol⁻¹.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('14')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans14" id="idans14">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:14</h3>
+<hr/>
+<h4> What structural or energetic change occurs to a chemical system when a positive catalyst is added to the reaction mixture?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It increases the internal threshold energy level</td>
+<td>  2 ) It decreases the activation energy of the forward path</td>
+</tr>
+<tr>
+<td>  3 ) It increases the enthalpy change (ΔH) of the system    </td>
+<td>  4 ) It shifts the equilibrium position toward products</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A catalyst increases the rate of reaction by providing an alternative reaction pathway with a lower activation energy barrier. It does not alter the enthalpy change (ΔH) of the reaction, nor does it shift the equilibrium constant<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('15')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans15" id="idans15">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:15</h3>
+<hr/>
+<h4> A substance undergoes first-order radioactive decay. If its initial activity drops to 1/16th of its original value in exactly 80 minutes, what is the half-life of this substance?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 20 min</td>
+<td>  2 ) 10 min</td>
+</tr>
+<tr>
+<td>  3 ) 40 min</td>
+<td>  4 ) 5 min</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The remaining fraction of reactant for a first-order process after 'n' half-lives is given by (1/2)^n. Here, 1/16 = (1/2)⁴, which means exactly n = 4 half-lives have elapsed.<br/>Total time = n × t₁/₂  ⇒  80 min = 4 × t₁/₂  ⇒  t₁/₂ = 20 minutes.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('16')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans16" id="idans16">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:16</h3>
+<hr/>
+<h4> The activation energy of a chemical reaction is exactly zero. 
+<br/>
+What will be the value of the rate constant k at 300 K if the pre-exponential factor A is 1.6 × 10⁶ s⁻¹?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  Zero     </td>
+<td>  2 ) 1.6 × 10⁶ s⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 3.2 × 10⁶ s⁻¹</td>
+<td>  4 ) Infinite</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: From the Arrhenius relation, k = <math>
+<mi>A</mi>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>E</mi>
+<mi>a</mi>
+</mrow>
+<mrow>
+<mi>R</mi>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+</msup>
+</math>. 
+
+<br/>
+Given Ea = 0, the term <math>
+<msup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mn>0</mn>
+</mrow>
+<mrow>
+<mi>R</mi>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+</msup>
+</math> = e⁰ = 1. 
+<br/>
+Therefore, k = A × 1 = A = 1.6 × 10⁶ s⁻¹.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('17')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans17" id="idans17">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:17</h3>
+<hr/>
+<h4> The rate constants of a reaction at 300 K and 310 K are k₁ and k₂ respectively. If the activation energy (Ea) is 54.5 kJ mol⁻¹, calculate the ratio k₂/k₁. (Take R = 8.314 J K⁻¹ mol⁻¹, antilog(0.316) = 2.07)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1.50</td>
+<td>  2 ) 2.07</td>
+</tr>
+<tr>
+<td>  3 ) 3.12</td>
+<td>  4 ) 0.48</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Using Arrhenius log form: log(k₂ / k₁) = (Ea / 2.303R) <math> <mo>×</mo> </math> [(T₂ - T₁) / (T₁T₂)]<br/>Ea = 54500 J mol⁻¹, T₁ = 300 K, T₂ = 310 K.<br/>log(k₂ / k₁) = (54500 / (2.303 × 8.314)) <math> <mo>×</mo> </math> (10 / (300 × 310))<br/>log(k₂ / k₁) = (54500 / 19.147) <math> <mo>×</mo> </math> (10 / 93000) = 2846.4 <math> <mo>×</mo> </math>0.000111 = 0.316<br/>k₂ / k₁ = antilog(0.316) = 2.07<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('18')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans18" id="idans18">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:18</h3>
+<hr/>
+<h4> For a zero-order reaction, the time required for 75% completion (<math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math>) is related to its half-life (<math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math>) by which mathematical ratio?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math> = 1.5 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math>     </td>
+<td>  2 ) <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math> = 2.0 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math>= 1.33 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math></td>
+<td>  4 ) <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math>= 3.0 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math> = 1.5 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math>     <br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('19')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans19" id="idans19">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:19</h3>
+<hr/>
+<h4>Below given are two statements regarding the radioactive decay.
+<br/>Statement I: The half-life period (t1/2) is independent of the initial concentration of the reactants.<br/>Statement II: The time required to complete 99.9% of the reaction is roughly 10 times its half-life.<br/>In the light of the above statements choose the correct answer.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  Both Statement I and Statement II are true.</td>
+<td>  2 ) Both Statement I and Statement II are false.</td>
+</tr>
+<tr>
+<td>  3 ) Only Statement I is true but Statement II is false.</td>
+<td>  4 ) Only Statement I is false but Statement II is true.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a first-order reaction, t1/2 = 0.693/k (independent of concentration) and t_99.9% = 6.909/k ≈ 10 × t1/2.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('20')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans20" id="idans20">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:20</h3>
+<hr/>
+<h4> An experimental study of a first-order reaction shows that the reaction achieves 99.9% completion in a certain time interval. This time interval is approximately how many times the half-life (t₁/₂) of the reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 3 times     </td>
+<td>  2 ) 5 times</td>
+</tr>
+<tr>
+<td>  3 ) 10 times  </td>
+<td>  4 ) 2 times</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For 99.9% completion, [A] = [A]₀ - 0.999[A]₀ = 0.001[A]₀ = [A]₀ / 10³.<br/><math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>99.9</mn> <mi>%</mi> </mrow> </msub> </math> = (2.303 / k) <math> <mo>×</mo> </math> log([A]₀ / ([A]₀ / 10³)) = (2.303 / k) <math> <mo>×</mo> </math>log(10³) = (2.303 × 3) / k = 6.909 / k.<br/>We know that t₁/₂ = 0.693 / k.<br/>Comparing the two values: <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>99.9</mn> <mi>%</mi> </mrow> </msub> </math>/ t₁/₂ = (6.909 / k) / (0.693 / k) ≈ 10. Thus, <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>99.9</mn> <mi>%</mi> </mrow> </msub> </math> = 10 × t₁/₂.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('21')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans21" id="idans21">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:21</h3>
+<hr/>
+<h4> Match the List I with in List II and choose the most appropriate option.<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>d</mi> <mo>)</mo> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>b</mi> <mo>)</mo> </math></td>
+<td>  2 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>b</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>a</mi> <mo>)</mo> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>b</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> </math></td>
+<td>  4 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>b</mi> <mo>)</mo> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>b</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>a</mi> <mo>)</mo> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('22')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans22" id="idans22">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:22</h3>
+<hr/>
+<h4> If a first-order chemical reaction has a rate constant of 2.303 × 10⁻³ s⁻¹, find the total time required for 90% of the reactant to complete its reaction.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 100 s     </td>
+<td>  2 ) 500 s</td>
+</tr>
+<tr>
+<td>  3 ) 2303 s</td>
+<td>  4 ) 1000 s</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For 90% completion, remaining concentration [A] = [A]₀ - 0.90[A]₀ = 0.10[A]₀ = [A]₀ / 10.<br/>Using first-order equation: t = (2.303 / k) <math> <mo>×</mo> </math> log([A]₀ / [A])<br/>t = (2.303 / (2.303 × 10⁻³)) <math> <mo>×</mo> </math> log([A]₀ / (0.10[A]₀))<br/>t = 10³ <math> <mo>×</mo> </math> log(10) = 1000 × 1 = 1000 seconds.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('23')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans23" id="idans23">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:23</h3>
+<hr/>
+<h4> The role of an inhibitor or negative catalyst in a chemical system is to decrease the rate of the reaction. It accomplishes this primarily by:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Increasing the activation energy barrier for the reaction   </td>
+<td>  2 ) Decreasing the total collision frequency of the molecules</td>
+</tr>
+<tr>
+<td>  3 ) Reducing the net enthalpy change ΔH to make it highly endothermic     </td>
+<td>  4 ) Binding to products and changing their state</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A negative catalyst or inhibitor decreases the chemical reaction velocity by establishing or routing through an alternate mechanism that possesses a substantially higher activation energy barrier than the original pathway.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('24')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans24" id="idans24">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:24</h3>
+<hr/>
+<h4>The rate of hydrogenation of ethene reaction is 0.69×10<sup>-2</sup> M min<sup>-1</sup>.
+<br/>
+The initial concentration of ethene is 0.2 M. The half life period is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1205 s</td>
+<td>  2 ) 330 s</td>
+</tr>
+<tr>
+<td>  3 ) 600 s</td>
+<td>  4 ) 20.08 s</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAO4AAABMBAMAAACYFJb0AAAAHlBMVEX///8AAQb95qAWN4jhn1VOBQ6l7P2YThJFg8lqtfpZF+iuAAAEqklEQVR4nO2ZwWvjOBTGteKB9rgiTEjORqRzMwtr5rjGGzY9mtJhchOl0LMxFPcmyizs0YT5g+c9SXbs2GnijN1hIN9hxpZEfpL8pPdJZeyqq366IJoYwNNlpyybsX+m5KoFcj/3VCSMj8kFKVuDI6blruWc3uMFT+cTcFnOYt3kRo4rIrA4EbK4nIDLt0yVjXcIHTfXbraxMtETcHFUNF4hUYhkwqg5ErE7TgjN3QPLpBmRG/IvzXdVBjTSes3EUi48d1QJOWtOM1OPhuZZhP69qKJ7ZK4yNqzqeY5lSSRlXDXON4RTcGNdIZxyHCmNlwrXM5pvGnoxOjffTymJf4HIEDdiBQ9ViZXYLxidCzKERZP7md/ZFZRJjCyh4xltG5vN6OPtU71P3vp3s/n7PbngIx0o5N6D6/PRbQVmG8pH7yWeyoqb6XejXlUL0rC3PNHTcoM6W7UEQ7hqcbzu9mjNc39/BnAPvJRIbT8oHRwYoBea3yVTEv0PNFKYcw22eBC3bSIK52rEssrAG9qu8P/1khDeEjUnQu1hQ7hwGCK2/8W24lJiwBJ43VIOUbY1lP1fYAiXfA2jNCCl3ZH4C3MUz+WFCyL6t/C5S9kvkO0yk4ViYR/sT8k3YuVQ5Gsar0BpiAUPW8bvnZ1a/WU8Fw1RI2fC0//w6THiW3roX1dvch9Nu4C2xGe+xZkEG1f8jvVy8Rm9bsjJGIjh3NjtwfU82zQvXSxbI6n+MxX3rsVVWhgR4lDxoWRDlR/21doe902J2/y+ubM/XolWGg2JwYdAD8VaX9N4L5zhQoowdp7xd22EEzcum0eLnMiPT99KfPh9MJd8TeN9hXGFXCVLcFnQr1+eYbBC2lzsBVoBNcd4Lth66hPqVVf9WuKpoc2CZYs3rKs1C6caDZPAlIALE0KxCxupta1n2kpONRqmQBdkY/AnDbs50oZHtF+eaDSUSxcZ9+ku+2COWi9O2eBUo6FcvXG/izlGHUkzPAJzstFAqfIF/sS8yhIeHktvfCvKk406gjcbQmogXM80Oqns6BSuMUecbOQt6IKu4Eq6n2lxx72Ea/du6fwpWqF55yxxgUU5U9aCko8QITqVAy6eNb1frS50DrV3QGdqb00dlyxJXnHX1d0bhsVqnIjsqDJLirjKHkQgqqwnbjetQJMt7ct/k2epw4XQcZk9iOwPdIkP8KnmGX0SRj1xbSTVjig/tbAuF3HBcIwrunfzEZz7ygJ26URXJsQNkAxLXEfuwLepr4XiH95fldT9WLKgOOmG4Q6DgUyueC3H2y6SC04LRyTm3TKb4PFkIn1dotEi4IkmYh9dwcpYz3C2cIX8cVDU8wcVbhP8vwY0Zd4busywFgFrdkZobig7PfTee5wvbrLu3GGCh6+WGzwYSpjWItD3NTy6YUIzX3C54PWlU0YJ/ga+ClzkPNeWu7+zXOHp5n4Z/OglpsAA7IIpmc3szb/nokXYcxHaKLhM6un1sIgSPDo5EyA3eIiIixahqoyoF8m+4Bz5v4c1FUB3VWOCTzDQV7geKa6EXEAdvjau0ggGxTOEQ3o5ovhE+/MpfRzJAg8UT0eywFdd9VP1HfcGAOK65XzTAAAAAElFTkSuQmCC
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('25')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans25" id="idans25">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:25</h3>
+<hr/>
+<h4> Below given are two statements.<br/>Statement I: A positive catalyst increases the rate of a reaction by lowering the activation energy barrier.<br/>Statement II: A catalyst alters the overall enthalpy change (ΔH) of a chemical reaction.<br/>In the light of the above statements choose the correct answer.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both Statement I and Statement II are true.</td>
+<td>  2 ) Both Statement I and Statement II are false.</td>
+</tr>
+<tr>
+<td>  3 ) Only Statement I is true but Statement II is false.</td>
+<td>  4 ) Only Statement I is false but Statement II is true.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A catalyst provides an alternative path with lower Ea.<br/>Statement II is incorrect because a catalyst does not alter the energy levels of the initial reactants or final products; thus, ΔH remains unchanged.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('26')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans26" id="idans26">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:26</h3>
+<hr/>
+<h4> For a chemical reaction, the rate constant (k) varies with absolute temperature (T) according to the relationship: <math>
+<mi>l</mi>
+<mi>n</mi>
+<mi> </mi>
+<mi>k</mi>
+<mi> </mi>
+<mo>=</mo>
+<mi> </mi>
+<mn>15.0</mn>
+<mi> </mi>
+<mo>-</mo>
+<mi> </mi>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>6000</mn>
+</mrow>
+<mrow>
+<mi>T</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+<mo>.</mo>
+</math>
+<br/>
+Evaluate the absolute activation energy (Ea) of this process in kJ/mol. (R = 8.314 J/K. mol)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  49.88 kJ/mol</td>
+<td>  2 ) 72.15 kJ/mol</td>
+</tr>
+<tr>
+<td>  3 ) 60.00 kJ/mol</td>
+<td>  4 ) 24.94 kJ/mol</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Comparing the given equation ln k = 15.0 - (6000 / T) with the standard Arrhenius equation in natural log form: ln k = ln A - (Ea / RT). 
+<br/>
+By direct comparison of the temperature coefficients: Ea / R = 6000 -&gt; Ea = 6000 × 8.314 J/mol= 49884 J/mol = 49.88 kJ/mol.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('27')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans27" id="idans27">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:27</h3>
+<hr/>
+<h4> A first-order chemical reaction takes exactly 40 minutes to achieve 30% decomposition. Calculate its half-life period (t₁/₂). (Given: log 10 = 1, log 7 = 0.8451)</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 77.7 min</td>
+<td>  2 ) 52.3 min</td>
+</tr>
+<tr>
+<td>  3 ) 91.2 min</td>
+<td>  4 ) 27.1 min</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For 30% decomposition, remaining reactant [A] = 70% of [A]₀ = 0.7 [A]₀.<br/>Using first-order rate constant formula:<br/>k = (2.303 / t) <math> <mo>×</mo> </math> log([A]₀ / [A]) = (2.303 / 40) <math> <mo>×</mo> </math>  log(1 / 0.7) = (2.303 / 40) <math> <mo>×</mo> </math>  log(10 / 7)<br/>k = (2.303 / 40) <math> <mo>×</mo> </math>  (1 - 0.8451) = (2.303 / 40) <math> <mo>×</mo> </math>  0.1549 = 0.008918 min⁻¹<br/>Now, t₁/₂ = 0.693 / k = 0.693 / 0.008918 ≈ 77.7 minutes<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('28')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans28" id="idans28">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:28</h3>
+<hr/>
+<h4>The decomposition of PH<sub>3</sub> on W at low pressure is a first order reaction. It is because:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) rate is proportional to the surface coverage</td>
+<td>  2 ) rate is inversely proportional to the surface coverage</td>
+</tr>
+<tr>
+<td>  3 ) rate is independent of the surface coverage</td>
+<td>  4 ) rate of decomposition is very slow</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:At low pressure, rate is proportional to the surface coverage and is of first order while at high pressure, it follows zero order kinetics due to complete coverage of surface area. </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('29')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans29" id="idans29">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:29</h3>
+<hr/>
+<h4>For the reaction A→B, the rate of reaction is increased by a factor of 1.837 when the concentration of A is increased by 1.5 times. The order of reaction with respect to A is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1</td>
+<td>  2 ) 1.5</td>
+</tr>
+<tr>
+<td>  3 ) 2</td>
+<td>  4 ) 2.5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ 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
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('30')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans30" id="idans30">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:30</h3>
+<hr/>
+<h4> If the rate of a first-order chemical reaction is 1.5 × 10⁻² mol L⁻¹ min⁻¹ when the reactant concentration is 0.3 mol L⁻¹, what is the value of its rate constant?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.05 min⁻¹   </td>
+<td>  2 ) 0.50 min⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 0.005 min⁻¹</td>
+<td>  4 ) 2.00 min⁻¹</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a first-order reaction: Rate = k[A].<br/>Given: Rate = 1.5 × 10⁻² mol L⁻¹ min⁻¹ and [A] = 0.3 mol L⁻¹.<br/>k = Rate / [A] = (1.5 × 10⁻²) / 0.3 = 0.15 / 3 = 0.05 min⁻¹.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('31')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans31" id="idans31">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:31</h3>
+<hr/>
+<h4> For a first-order reaction, the ratio of the time required for 75% completion (t75%) to the time required for 50% completion (t50%) is exactly equal to:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  2.0  </td>
+<td>  2 ) 1.5</td>
+</tr>
+<tr>
+<td>  3 ) 3.0</td>
+<td>  4 ) 4.0</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For first-order kinetics, t50% = (2.303/k)<math>
+<mo>×</mo>
+</math>log(100/50) = (2.303/k) <math>
+<mo>×</mo>
+</math>log(2). 
+<br/>
+For 75% completion, remaining amount is 25%, so t75% = (2.303/k) <math>
+<mo>×</mo>
+</math>log(100/25) = (2.303/k) <math>
+<mo>×</mo>
+</math>log(4) = 2 <math>
+<mo>×</mo>
+</math> (2.303/k) <math>
+<mo>×</mo>
+</math>log(2). 
+<br/>Thus, t75% / t50% = 2.0.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('32')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans32" id="idans32">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:32</h3>
+<hr/>
+<h4> Consider a reaction path containing a catalyst. The activation energy of the forward reaction is 40 kJ mol⁻¹ and the enthalpy change ΔH of the reaction is -20 kJ mol⁻¹ (exothermic). What is the activation energy of the reverse reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 20 kJ mol⁻¹     </td>
+<td>  2 ) 60 kJ mol⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 40 kJ mol⁻¹</td>
+<td>  4 ) -20 kJ mol⁻¹</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The relationship between enthalpy change and activation energies is given by ΔH = Ea(forward) - Ea(reverse).<br/>Given: ΔH = -20 kJ mol⁻¹ and Ea(forward) = 40 kJ mol⁻¹.<br/>-20 = 40 - Ea(reverse)  ⇒  Ea(reverse) = 40 + 20 = 60 kJ mol⁻¹.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('33')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans33" id="idans33">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:33</h3>
+<hr/>
+<h4> What is the unit of the rate constant (k) for a pseudo-first-order reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mi> </mi> <mi>L</mi> <mo>⁻</mo> <mo>¹</mo> <mi> </mi> <mi>s</mi> <mo>⁻</mo> <mo>¹</mo> <mi> </mi> </math></td>
+<td>  2 ) <math> <mi>L</mi> <mi> </mi> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mo>⁻</mo> <mo>¹</mo> <mi> </mi> <mi>s</mi> <mo>⁻</mo> <mo>¹</mo> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mi>s</mi> <mo>⁻</mo> <mo>¹</mo> </math></td>
+<td>  4 ) <math> <mi>L</mi> <mo>²</mo> <mi> </mi> <mi>m</mi> <mi>o</mi> <mi>l</mi> <mo>⁻</mo> <mo>²</mo> <mi> </mi> <mi>s</mi> <mo>⁻</mo> <mo>¹</mo> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Regardless of whether a reaction is fundamentally first-order or pseudo-first-order (where one reactant is in large excess, making its concentration effectively constant), the overall effective rate law depends on a single concentration term raised to power 1.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('34')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans34" id="idans34">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:34</h3>
+<hr/>
+<h4> The minimum extra amount of energy required by a reactant molecule to get converted into product molecules is formally defined as:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Threshold energy</td>
+<td>  2 ) Activation energy</td>
+</tr>
+<tr>
+<td>  3 ) Potential energy</td>
+<td>  4 ) Kinetic energy</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Activation energy (Ea) is defined as the minimum extra energy required by reactant molecules to reach the activated complex state (threshold energy level) so that effective collisions can occur to yield products. Activation Energy = Threshold Energy - Average Kinetic Energy of Reactants.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('35')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans35" id="idans35">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:35</h3>
+<hr/>
+<h4> A first-order reaction has a specific rate constant (k) of <math>
+<mn>2.303</mn>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>3</mn>
+</mrow>
+</msup>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>s</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>1</mn>
+</mrow>
+</msup>
+</math>. 
+<br/>
+Calculate the time required for the initial reactant concentration to be reduced to exactly 10% of its initial value.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  100 s</td>
+<td>  2 ) 230.3 s</td>
+</tr>
+<tr>
+<td>  3 ) 1000 s</td>
+<td>  4 ) 460.6 s</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a first-order reaction, t = (2.303 / k) <math>
+<mo>×</mo>
+</math> log([A]0 / [A]). Here, [A] = 10% of [A]0 = 0.1[A]0. 
+<br/>Thus, [A]0/[A] = 10. log(10) = 1. 
+<br/>Therefore, t = (2.303 / (2.303 × <math>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>3</mn>
+</mrow>
+</msup>
+</math>)) <math>
+<mo>×</mo>
+</math> 1 = 1000 seconds.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('36')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans36" id="idans36">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:36</h3>
+<hr/>
+<h4>A first order reaction has a specific reaction rate of 10<sup>-2</sup> s<sup>-1</sup>. <br/>
+How much time will it take for 20 g of the reactant to reduce to 5 g?
+	
+	
+	
+
+</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 138.6 s</td>
+<td>  2 ) 346.5 s</td>
+</tr>
+<tr>
+<td>  3 ) 693.0 s</td>
+<td>  4 ) 238.6 s</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ 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
+"/>
+</p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('37')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans37" id="idans37">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:37</h3>
+<hr/>
+<h4> Select the incorrect statements regarding the activation energy (Ea) of a reaction among the following.<br/>A. Lower activation energy corresponds to a faster reaction rate at a given temperature.<br/>B. Activation energy can be computed by plotting ln k vs 1/T.<br/>C. Activation energy changes drastically with every 10°C rise in temperature.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) C only</td>
+<td>  2 ) B and C only</td>
+</tr>
+<tr>
+<td>  3 ) A, B and C</td>
+<td>  4 ) None</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Activation energy is a characteristic parameter of a reaction path and remains practically constant over normal temperature intervals. The rate doubles with a 10°C rise because the fraction of active molecules increases, not because Ea changes.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('38')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans38" id="idans38">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:38</h3>
+<hr/>
+<h4> A zero-order reaction has an initial reactant concentration of 0.20 mol L⁻¹. If the rate constant is 0.004 mol L⁻¹ s⁻¹, what will be the concentration of the reactant remaining after exactly 30 seconds?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0.12 mol L⁻¹    </td>
+<td>  2 ) 0.08 mol L⁻¹</td>
+</tr>
+<tr>
+<td>  3 ) 0.05 mol L⁻¹</td>
+<td>  4 ) 0.16 mol L⁻¹</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction: [A] = [A]₀ - kt.<br/>Given: [A]₀ = 0.20 mol L⁻¹, k = 0.004 mol L⁻¹ s⁻¹, t = 30 s.<br/>Substituting values:<br/>[A] = 0.20 - (0.004 × 30) = 0.20 - 0.12 = 0.08 mol L⁻¹.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('39')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans39" id="idans39">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:39</h3>
+<hr/>
+<h4> Select the correct statements among the following.<br/>A. As temperature increases, the peak of the Maxwell-Boltzmann curve shifts to the right and shifts upward.<br/>B. The area under the Maxwell-Boltzmann curve beyond the activation energy barrier nearly doubles with a 10 K rise in temperature.<br/>C. The collision frequency (Z) increases significantly (by about 100%) with a 10 K rise in temperature.<br/>D. The steric factor (P) values can sometimes be much lower than 1 for structurally complex molecules.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A and D only</td>
+<td>  2 ) A, B and D only</td>
+</tr>
+<tr>
+<td>  3 ) B and D only</td>
+<td>  4 ) C only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: When the temperature rises, the peak shifts to the right and downward (flattens out) to maintain constant total area.<br/>Collision frequency Z increases by only 1-2% for a 10 K rise<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('40')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans40" id="idans40">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:40</h3>
+<hr/>
+<h4> The half-life period (t₁/₂) of a first-order chemical reaction is related to its rate constant (k) by which of the following exact expressions?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  <math>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>0.693</mn>
+</mrow>
+<mrow>
+<mi>k</mi>
+</mrow>
+</mfrac>
+</math>     </td>
+<td>  2 ) <math>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mi>k</mi>
+</mrow>
+<mrow>
+<mn>0.693</mn>
+</mrow>
+</mfrac>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+<mi> </mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mn>2</mn>
+<mi>k</mi>
+</mrow>
+</mfrac>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+<mi> </mi>
+</math></td>
+<td>  4 ) <math>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+<mo>=</mo>
+<mi> </mi>
+<mn>0.693</mn>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<mi>k</mi>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a first-order reaction, the integrated rate formula is k = (2.303 / t) <math>
+<mo>×</mo>
+</math> log([A]₀ / [A]). At half-life, t = t₁/₂ and [A] = [A]₀ / 2. 
+<br/>
+Substituting these gives k = (2.303 / t₁/₂) <math>
+<mo>×</mo>
+</math> log(2). 
+<br/>
+Since log(2) ≈ 0.3010, we get k = 0.693 / t₁/₂, or t₁/₂ = 0.693 / k.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('41')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans41" id="idans41">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:41</h3>
+<hr/>
+<h4> Which of the following statements is correct for a first-order reaction A → Products?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) The time required for 75% completion is exactly double the half-life period.</td>
+<td>  2 ) The rate constant units depend on the initial concentration of the reactant.</td>
+</tr>
+<tr>
+<td>  3 ) The reaction goes to 100% completion in a finite time equal to 2 × t1/2.</td>
+<td>  4 ) The concentration of the reactant decreases linearly with time.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a first-order reaction, <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>75</mn> <mi>%</mi> </mrow> </msub> </math> = 2 × <math> <msub> <mrow> <mi>t</mi> </mrow> <mrow> <mn>50</mn> <mi>%</mi> </mrow> </msub> </math> (half-life) because the concentration drops from [A]0 → [A]0/2 in one half-life, and then from [A]0/2 → [A]0/4 in the second half-life. Total time = 2 × t1/2.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('42')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans42" id="idans42">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:42</h3>
+<hr/>
+<h4> The half-life period (<math>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+</math>) of a first-order chemical reaction is found to be 69.3 minutes. 
+<br/>Determine the absolute value of its rate constant (k) in <math>
+<msup>
+<mrow>
+<mi>s</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>1</mn>
+</mrow>
+</msup>
+</math></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )   <math>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>4</mn>
+</mrow>
+</msup>
+</math></td>
+<td>  2 ) <math>
+<mn>1.66</mn>
+<mo>×</mo>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>4</mn>
+</mrow>
+</msup>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) <math>
+<mn>0</mn>
+<mo>.</mo>
+</math>01</td>
+<td>  4 ) <math>
+<mn>1.66</mn>
+<mo>×</mo>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>3</mn>
+</mrow>
+</msup>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: First-order k = <math>
+<mfrac>
+<mrow>
+<mn>0.693</mn>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+</msub>
+</mrow>
+</mfrac>
+<mi> </mi>
+</math>. 
+<br/>Given t1/2 = 69.3 minutes = 69.3 × 60 seconds = 4158 seconds.
+<br/>Therefore, k = 0.693 / 4158 = <math>
+<mn>1.66</mn>
+<mo>×</mo>
+<msup>
+<mrow>
+<mn>10</mn>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>4</mn>
+</mrow>
+</msup>
+</math> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('43')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans43" id="idans43">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:43</h3>
+<hr/>
+<h4> In the collision theory of chemical reactions, the rate of a reaction is proportional to the number of effective collisions per second. What factor specifies the orientation requirement of these collisions?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Activation factor     </td>
+<td>  2 ) Probability or steric factor (P)</td>
+</tr>
+<tr>
+<td>  3 ) Frequency factor (Z)     </td>
+<td>  4 ) Boltzmann factor</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: To account for the criteria that colliding molecules must be properly oriented at the moment of impact, a factor P, called the probability or steric factor, is introduced. This modifies the collision theory rate equation to <math> <mi>R</mi> <mi>a</mi> <mi>t</mi> <mi>e</mi> <mi> </mi> <mo>=</mo> <mi> </mi> <mi>P</mi> <mi> </mi> <mo>×</mo> <mi> </mi> <msub> <mrow> <mi>Z</mi> </mrow> <mrow> <mi>A</mi> <mi>B</mi> </mrow> </msub> <mi> </mi> <mo>×</mo> <mi> </mi> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mo>-</mo> <mfrac> <mrow> <mi>E</mi> <mi>a</mi> </mrow> <mrow> <mi>R</mi> <mi>T</mi> </mrow> </mfrac> </mrow> </msup> <mo>.</mo> </math><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('44')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans44" id="idans44">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:44</h3>
+<hr/>
+<h4> In a collision theory context, the pre-exponential factor A in the Arrhenius equation k = <math> <mi>A</mi> <mi> </mi> <mo>×</mo> <mi> </mi> <msup> <mrow> <mi>e</mi> </mrow> <mrow> <mo>-</mo> <mfrac> <mrow> <mi>E</mi> <mi>a</mi> </mrow> <mrow> <mi>R</mi> <mi>T</mi> </mrow> </mfrac> </mrow> </msup> </math>is directly related to:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Total energy of the molecules</td>
+<td>  2 ) Frequency of collisions of reacting species</td>
+</tr>
+<tr>
+<td>  3 ) Enthalpy of activation</td>
+<td>  4 ) Equilibrium constant</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In Arrhenius theory, the factor A is called the frequency factor or pre-exponential factor. In collision theory, it corresponds closely to the collision frequency (Z), representing the number of collisions taking place per second per unit volume of the reacting mixture.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('45')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans45" id="idans45">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:45</h3>
+<hr/>
+<h4> When the temperature of a reacting chemical system is raised from 293 K to 303 K, the rate of reaction typically doubles. This sharp increase is primarily because:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) The collision frequency increases by 100%</td>
+<td>  2 ) The activation energy decreases significantly</td>
+</tr>
+<tr>
+<td>  3 ) The fraction of effective collisions increases tremendously</td>
+<td>  4 ) The threshold energy level shifts downward</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: With a 10 K rise in temperature (from 293 K to 303 K), the collision frequency increases by only about 1-2%. However, the area under the Maxwell-Boltzmann distribution curve showing molecules with energy ≥ Ea nearly doubles. Thus, the fraction of molecules undergoing effective collisions increases vastly.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('46')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans46" id="idans46">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:46</h3>
+<hr/>
+<h4> A first-order reaction is 50% completed in 20 minutes at 27°C. When the same reaction is carried out at 37°C, it reaches 50% completion in just 5 minutes. Find the temperature coefficient of the reaction.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2.0     </td>
+<td>  2 ) 4.0</td>
+</tr>
+<tr>
+<td>  3 ) 3.0</td>
+<td>  4 ) 1.5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The half-life t₁/₂ is inversely proportional to the rate constant k (since k = 0.693 / t₁/₂).<br/>At 27°C (300 K), k₁ = 0.693 / 20.<br/>At 37°C (310 K), k₂ = 0.693 / 5.<br/>The temperature coefficient is the ratio of rate constants for a 10°C interval: Temperature Coefficient = k_310 / k_300 = (0.693 / 5) / (0.693 / 20) = 20 / 5 = 4.0.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('47')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans47" id="idans47">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:47</h3>
+<hr/>
+<h4> Which of the following statements is correct regarding the behavior of a catalyst?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A catalyst does not change the equilibrium constant (Keq) of a reversible reaction.</td>
+<td>  2 ) A catalyst helps in attaining the equilibrium state faster by accelerating both forward and backward rates equally.</td>
+</tr>
+<tr>
+<td>  3 ) A catalyst provides an alternative mechanism involving a different activated complex.</td>
+<td>  4 ) All a, b and c</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: All statements are correct.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('48')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans48" id="idans48">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:48</h3>
+<hr/>
+<h4> Which statement regarding the role of a catalyst in a reversible reaction is completely true?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It accelerates the forward reaction more than the backward reaction.</td>
+<td>  2 ) It lowers the activation energy of both forward and backward reactions by the same value.</td>
+</tr>
+<tr>
+<td>  3 ) It increases the net equilibrium constant <math> <msub> <mrow> <mi>K</mi> </mrow> <mrow> <mi>e</mi> <mi>q</mi> </mrow> </msub> </math>     </td>
+<td>  4 ) It provides energy to the reacting molecules</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A catalyst lowers the activation energy of both the forward and backward reactions by exactly the same amount because it alters the energy level of the transition state or activated complex equally for both pathways. It does not alter <math> <msub> <mrow> <mi>K</mi> </mrow> <mrow> <mi>e</mi> <mi>q</mi> </mrow> </msub> </math>.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('49')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans49" id="idans49">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:49</h3>
+<hr/>
+<h4> The rate of a gaseous reaction becomes half when the volume of the reaction vessel is doubled. 
+<br/>
+The order of the reaction with respect to the reactant is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  0    </td>
+<td>  2 ) -1</td>
+</tr>
+<tr>
+<td>  3 ) 2</td>
+<td>  4 ) 1</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: When the volume of the vessel is doubled, the concentration of the gaseous reactant becomes half ([A]’ = [A]/2). 
+<br/>
+Rate’ = <math>
+<mi>k</mi>
+<msup>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</msup>
+</math> = <math>
+<msup>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</msup>
+<mi> </mi>
+<mo>×</mo>
+<mi>R</mi>
+<mi>a</mi>
+<mi>t</mi>
+<mi>e</mi>
+</math>. 
+<br/>
+Since the rate becomes half, <math>
+<msup>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>1</mn>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>n</mi>
+</mrow>
+</msup>
+<mi> </mi>
+</math>= 1/2, which implies n = 1.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('50')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans50" id="idans50">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:50</h3>
+<hr/>
+<h4>For the reaction A→C, it is found that the rate of the reaction quadruples when the concentration of A doubles. The rate of the reaction is Rate=[A]<sup>n</sup> where the value of n is:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 1</td>
+<td>  2 ) 2</td>
+</tr>
+<tr>
+<td>  3 ) 0</td>
+<td>  4 ) 3</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/>
+<img alt="Red dot" src="data:image/png;base64,
+ iVBORw0KGgoAAAANSUhEUgAAAF4AAABTBAMAAADkYq2DAAAAHlBMVEX+//8AAAB8w/n85KDenE8NRpdEgcMgAkOhUQtSBQPw9grkAAACAElEQVR4nO2XwWrjMBCGByQWXRVIcx22l96XxOiYQGJ6E6UPIFjYc/Eh540huduQPu+ORBxLiixvaHuq/0ss+5M8MvNrJgCTPiDWzNzvYf6ffHW52IJ6PV+uuZRVlj9a/le17O4eoUR3USR5frY817vuZgsKLxNTfFFaXmCNl3gqWp81e6PkAoTUdn9SynnH145XWHa8Zu+gjDJQA3tnVbQ+M47vJeQcKRSB9FRo8RbxAgsMeGUonJY2yzUouYconrVchHyJytADeoOGAuP9sjf7NXzegqzlx5UwG4UCQ16YiOdS8wdYv6wNXxje7KP1D5o1L8H6GXn58DX8nfk5Ka3erClRcnqyKeGZNSEx80cnWGNv1pRObThWpjdrQvy35QVZxHmXeOzNmtCSRevfHBOhatZugvfpLE7Hm5z58eS26hR9T8PMPfySZuR5JdEb0Vkywk/6dPEmnzSxbnJ0VH+jMTs/D7zSneEc/VvPC8OKxwHeGhYCBwjDZ7AdTjtlOAYTqE5CLX4O8qisZTzPsJYq1FCXkDCsyH3ehGGz9eRq2Gs8WYclDLuD1TB/a1imc4fErWEprodMQJO+k6KWbFTOzneJOt2cDo+NBboeFbrue0D86U9kyJH6Sz1zwI/UX+qBXU97jWes/pbh/4rR+nuE7Q9vOFp/TxCcxFP99fQPEqxlxu3tzLwAAAAASUVORK5CYII=
+"/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('51')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans51" id="idans51">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:51</h3>
+<hr/>
+<h4> Select the incorrect statements regarding a zero-order reaction among the following.<br/>A. The rate of the reaction is equal to the rate constant at all concentrations.<br/>B. The half-life period is completely independent of the initial concentration of the reactant.<br/>C. A plot of reactant concentration versus time yields a straight line with a negative slope.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  A and C only</td>
+<td>  2 ) B and C only</td>
+</tr>
+<tr>
+<td>  3 ) A, B and C</td>
+<td>  4 ) B only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, the half-life is given by t1/2 = [A]0 / 2k. 
+<br/>
+Therefore, the half-life is directly proportional to the initial concentration.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('52')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans52" id="idans52">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:52</h3>
+<hr/>
+<h4> A study of a chemical reaction shows that if the initial concentration of the reactant is tripled, the half-life period drops to exactly one-third of its value. What is the fundamental order of this reaction?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Zero-order     </td>
+<td>  2 ) First-order</td>
+</tr>
+<tr>
+<td>  3 ) Second-order</td>
+<td>  4 ) Third-order</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The half-life of a general chemical reaction of order 'n' depends on initial concentration via the relation: t₁/₂ ∝ 1 / [A]₀^(n-1).<br/>Here, tripling the concentration ([A]₀' = 3[A]₀) causes half-life to drop to 1/3rd (t₁/₂' = 1/3 t₁/₂).<br/>This implies an inverse linear relationship: t₁/₂ ∝ 1 / [A]₀, meaning n - 1 = 1, so n = 2 (Second-order).<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('53')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans53" id="idans53">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:53</h3>
+<hr/>
+<h4> For a zero-order reaction A → B, which of the following expressions correctly represents the integrated rate equation where <math>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>o</mi>
+</mrow>
+</msub>
+</math> is the initial concentration and <math>
+<mo>[</mo>
+<mi>A</mi>
+<mo>]</mo>
+</math> is the concentration at time t?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )   k = <math>
+<mfrac>
+<mrow>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+<mo>-</mo>
+<mi> </mi>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mfrac>
+</math></td>
+<td>  2 ) k = <math>
+<mfrac>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+<mo>-</mo>
+<mi> </mi>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mfrac>
+</math></td>
+</tr>
+<tr>
+<td>  3 ) k = <math>
+<mfrac>
+<mrow>
+<mn>2.303</mn>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mfrac>
+<mi> </mi>
+<mo>×</mo>
+<mi> </mi>
+<mi>l</mi>
+<mi>o</mi>
+<mi>g</mi>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</math></td>
+<td>  4 ) k = <math>
+<mfrac>
+<mrow>
+<mi>l</mi>
+<mi>n</mi>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+<mrow>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+</mrow>
+<mo>]</mo>
+</mfenced>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</mfrac>
+</math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, the rate of reaction is independent of the concentration of reactants: -d[A]/dt = k. Integrating both sides from t = 0 to t gives [A] = -kt + [A]₀. Rearranging for the rate constant k yields: k = ([A]₀ - [A]) / t.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('54')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans54" id="idans54">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:54</h3>
+<hr/>
+<h4> A reaction is found to have a rate constant k = 2.5 × 10⁻⁴ mol L⁻¹ s⁻¹. 
+<br/>
+Identify the order of this chemical reaction.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  First-order     </td>
+<td>  2 ) Second-order</td>
+</tr>
+<tr>
+<td>  3 ) Zero-order</td>
+<td>  4 ) Fractional-order</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The units of the rate constant k for an nth order reaction are given by <math>
+<msup>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>m</mi>
+<mi>o</mi>
+<mi>l</mi>
+<mi> </mi>
+<msup>
+<mrow>
+<mi>L</mi>
+</mrow>
+<mrow>
+<mo>-</mo>
+<mn>1</mn>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>1</mn>
+<mo>-</mo>
+<mi>n</mi>
+</mrow>
+</msup>
+<mi> </mi>
+<mi>s</mi>
+<mo>⁻</mo>
+<mo>¹</mo>
+<mo>.</mo>
+</math>
+<br/>
+Given the unit is mol L⁻¹ s⁻¹, setting 1-n = 1 gives n = 0. 
+<br/>
+Thus, it is a zero-order reaction.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('55')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans55" id="idans55">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:55</h3>
+<hr/>
+<h4> Below given are two statements.<br/>Statement I: For a zero-order reaction, a plot of log[A] vs time gives a straight line.<br/>Statement II: For a first-order reaction, a plot of ln[A] vs time gives a straight line with a slope equal to -k.<br/>In the light of the above statements choose the correct answer.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both Statement I and Statement II are true.</td>
+<td>  2 ) Both Statement I and Statement II are false.</td>
+</tr>
+<tr>
+<td>  3 ) Only Statement I is true but Statement II is false.</td>
+<td>  4 ) Only Statement I is false but Statement II is true.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Statement I is incorrect because for a zero-order reaction, a plot of [A] vs time (not log[A]) gives a straight line.<br/>Statement II is correct as ln[A] = -kt + ln[A]0 is the linear form for first-order kinetics.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('56')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans56" id="idans56">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:56</h3>
+<hr/>
+<h4> For a zero-order reaction A → products, a plot of the rate of reaction against time (t) yields a horizontal straight line. If the line has an intercept on the rate axis equal to 4.0 × 10⁻² M s⁻¹, how long will it take for the concentration of A to fall from 0.50 M to 0.10 M?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  5 seconds     </td>
+<td>  2 ) 10 seconds</td>
+</tr>
+<tr>
+<td>  3 ) 15 seconds</td>
+<td>  4 ) 20 seconds</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: For a zero-order reaction, Rate = k.
+<br/>
+Since the rate remains constant over time, the intercept on the rate axis represents the value of the rate constant k. Thus, k = 4.0 × 10⁻² M s⁻¹.<br/>Using the zero-order integrated rate equation: t = ([A]₀ - [A]) / k.<br/>[A]₀ = 0.50 M, [A] = 0.10 M.<br/>t = (0.50 - 0.10) / (4.0 × 10⁻²) = 0.40 / 0.04 = 10 seconds<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('57')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans57" id="idans57">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:57</h3>
+<hr/>
+<h4> Which of the following elements is strictly required for a collision between two reactant molecules to be chemically effective under collision theory?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Only possession of threshold energy     </td>
+<td>  2 ) Only a proper spatial orientation at the moment of collision</td>
+</tr>
+<tr>
+<td>  3 ) Both the threshold energy criteria and proper spatial orientation</td>
+<td>  4 ) Collisions must happen strictly in a vacuum environment</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Collision theory explicitly states that for a collision to be fruitful and cause bond-breaking/bond-making, two criteria must be satisfied simultaneously: (1) Energy factor: colliding molecules must possess kinetic energy ≥ threshold energy level; (2) Orientation factor: molecules must collide in a proper spatial orientation.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('58')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans58" id="idans58">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:58</h3>
+<hr/>
+<h4> Select the correct statements regarding collision theory among the following.<br/>A. Every collision between reactant molecules leads directly to product formation.<br/>B. The rate of reaction depends only on the collision frequency and is independent of orientation.<br/>C. The steric factor (P) accounts for the proper spatial orientation of colliding molecules.<br/>D. Reacting molecules are considered as flexible clouds of electron density.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A and D only</td>
+<td>  2 ) A, B and D only</td>
+</tr>
+<tr>
+<td>  3 ) B and C only</td>
+<td>  4 ) C only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: According to collision theory, molecules are treated as hard spheres, and only effective collisions (having both proper orientation and sufficient energy) lead to products. The steric factor P accounts for the orientation constraint.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('59')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans59" id="idans59">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:59</h3>
+<hr/>
+<h4> Match the List I with in List II and choose the most appropriate option.<br/><img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>b</mi> <mo>)</mo> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>d</mi> <mo>)</mo> </math></td>
+<td>  2 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>b</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>c</mi> <mo>)</mo> </math></td>
+</tr>
+<tr>
+<td>  3 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>b</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> </math></td>
+<td>  4 ) <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>d</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>b</mi> <mo>)</mo> </math></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math> <mfenced separators="|"> <mrow> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>c</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mfenced separators="|"> <mrow> <mi>a</mi> </mrow> </mfenced> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>i</mi> <mi>i</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>b</mi> <mo>)</mo> <mo>,</mo> <mi> </mi> <mfenced separators="|"> <mrow> <mi>i</mi> <mi>v</mi> </mrow> </mfenced> <mo>→</mo> <mo>(</mo> <mi>d</mi> <mo>)</mo> </math><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('60')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans60" id="idans60">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:60</h3>
+<hr/>
+<h4> According to the Maxwell-Boltzmann energy distribution law, when the temperature increases, what happens to the shape of the distribution curve?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) The peak shifts upward and to the left    </td>
+<td>  2 ) The peak shifts downward and to the right</td>
+</tr>
+<tr>
+<td>  3 ) The peak remains at the exact same position but broadens</td>
+<td>  4 ) The entire curve shifts upward uniformly</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: As temperature increases, the average kinetic energy of molecules increases, shifting the peak of the curve to the right (higher energy side). Since the total number of molecules (area under the curve) must remain constant, the peak must move downward to flatten out.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('61')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="hidden-lg hidden-md">
+<div class="clearfix"></div></div>
+<div class="col-md-4" id="pallette">
+<div class="panel panel-default mb0">
+<div class="panel panel-default">
+<div class="panel-body" style="height:310px;overflow-y:scroll;">
+<table style="background-color:#eef7e4;">
+<tbody><tr>
+<td style="padding: 15px;/* width: 50px; */">
+<input id="btn1" name="btn1" onclick="fun2('1')" style="background-color:red" type="button" value="1"/>
+<input id="btn2" name="btn2" onclick="fun2('2')" style="background-color:green" type="button" value="2"/>
+<input id="btn3" name="btn3" onclick="fun2('3')" style="background-color:green" type="button" value="3"/>
+<input id="btn4" name="btn4" onclick="fun2('4')" style="background-color:green" type="button" value="4"/>
+<input id="btn5" name="btn5" onclick="fun2('5')" style="background-color:red" type="button" value="5"/>
+<input id="btn6" name="btn6" onclick="fun2('6')" style="background-color:green" type="button" value="6"/>
+<input id="btn7" name="btn7" onclick="fun2('7')" style="background-color:green" type="button" value="7"/>
+<input id="btn8" name="btn8" onclick="fun2('8')" style="background-color:green" type="button" value="8"/>
+<input id="btn9" name="btn9" onclick="fun2('9')" style="background-color:green" type="button" value="9"/>
+<input id="btn10" name="btn10" onclick="fun2('10')" style="background-color:green" type="button" value="10"/>
+<input id="btn11" name="btn11" onclick="fun2('11')" style="background-color:green" type="button" value="11"/>
+<input id="btn12" name="btn12" onclick="fun2('12')" style="background-color:red" type="button" value="12"/>
+<input id="btn13" name="btn13" onclick="fun2('13')" style="background-color:red" type="button" value="13"/>
+<input id="btn14" name="btn14" onclick="fun2('14')" style="background-color:red" type="button" value="14"/>
+<input id="btn15" name="btn15" onclick="fun2('15')" style="background-color:green" type="button" value="15"/>
+<input id="btn16" name="btn16" onclick="fun2('16')" style="background-color:green" type="button" value="16"/>
+<input id="btn17" name="btn17" onclick="fun2('17')" style="background-color:green" type="button" value="17"/>
+<input id="btn18" name="btn18" onclick="fun2('18')" style="background-color:red" type="button" value="18"/>
+<input id="btn19" name="btn19" onclick="fun2('19')" style="background-color:red" type="button" value="19"/>
+<input id="btn20" name="btn20" onclick="fun2('20')" style="background-color:green" type="button" value="20"/>
+<input id="btn21" name="btn21" onclick="fun2('21')" style="background-color:green" type="button" value="21"/>
+<input id="btn22" name="btn22" onclick="fun2('22')" style="background-color:red" type="button" value="22"/>
+<input id="btn23" name="btn23" onclick="fun2('23')" style="background-color:red" type="button" value="23"/>
+<input id="btn24" name="btn24" onclick="fun2('24')" style="background-color:red" type="button" value="24"/>
+<input id="btn25" name="btn25" onclick="fun2('25')" style="background-color:red" type="button" value="25"/>
+<input id="btn26" name="btn26" onclick="fun2('26')" style="background-color:red" type="button" value="26"/>
+<input id="btn27" name="btn27" onclick="fun2('27')" style="background-color:green" type="button" value="27"/>
+<input id="btn28" name="btn28" onclick="fun2('28')" style="background-color:green" type="button" value="28"/>
+<input id="btn29" name="btn29" onclick="fun2('29')" style="background-color:green" type="button" value="29"/>
+<input id="btn30" name="btn30" onclick="fun2('30')" style="background-color:green" type="button" value="30"/>
+<input id="btn31" name="btn31" onclick="fun2('31')" style="background-color:green" type="button" value="31"/>
+<input id="btn32" name="btn32" onclick="fun2('32')" style="background-color:red" type="button" value="32"/>
+<input id="btn33" name="btn33" onclick="fun2('33')" style="background-color:green" type="button" value="33"/>
+<input id="btn34" name="btn34" onclick="fun2('34')" style="background-color:green" type="button" value="34"/>
+<input id="btn35" name="btn35" onclick="fun2('35')" style="background-color:red" type="button" value="35"/>
+<input id="btn36" name="btn36" onclick="fun2('36')" style="background-color:red" type="button" value="36"/>
+<input id="btn37" name="btn37" onclick="fun2('37')" style="background-color:green" type="button" value="37"/>
+<input id="btn38" name="btn38" onclick="fun2('38')" style="background-color:green" type="button" value="38"/>
+<input id="btn39" name="btn39" onclick="fun2('39')" style="background-color:red" type="button" value="39"/>
+<input id="btn40" name="btn40" onclick="fun2('40')" style="background-color:green" type="button" value="40"/>
+<input id="btn41" name="btn41" onclick="fun2('41')" style="background-color:green" type="button" value="41"/>
+<input id="btn42" name="btn42" onclick="fun2('42')" style="background-color:red" type="button" value="42"/>
+<input id="btn43" name="btn43" onclick="fun2('43')" style="background-color:green" type="button" value="43"/>
+<input id="btn44" name="btn44" onclick="fun2('44')" style="background-color:green" type="button" value="44"/>
+<input id="btn45" name="btn45" onclick="fun2('45')" style="background-color:green" type="button" value="45"/>
+<input id="btn46" name="btn46" onclick="fun2('46')" style="background-color:red" type="button" value="46"/>
+<input id="btn47" name="btn47" onclick="fun2('47')" style="background-color:green" type="button" value="47"/>
+<input id="btn48" name="btn48" onclick="fun2('48')" style="background-color:green" type="button" value="48"/>
+<input id="btn49" name="btn49" onclick="fun2('49')" style="background-color:green" type="button" value="49"/>
+<input id="btn50" name="btn50" onclick="fun2('50')" style="background-color:green" type="button" value="50"/>
+<input id="btn51" name="btn51" onclick="fun2('51')" style="background-color:red" type="button" value="51"/>
+<input id="btn52" name="btn52" onclick="fun2('52')" style="background-color:green" type="button" value="52"/>
+<input id="btn53" name="btn53" onclick="fun2('53')" style="background-color:green" type="button" value="53"/>
+<input id="btn54" name="btn54" onclick="fun2('54')" style="background-color:green" type="button" value="54"/>
+<input id="btn55" name="btn55" onclick="fun2('55')" style="background-color:red" type="button" value="55"/>
+<input id="btn56" name="btn56" onclick="fun2('56')" style="background-color:green" type="button" value="56"/>
+<input id="btn57" name="btn57" onclick="fun2('57')" style="background-color:green" type="button" value="57"/>
+<input id="btn58" name="btn58" onclick="fun2('58')" style="background-color:red" type="button" value="58"/>
+<input id="btn59" name="btn59" onclick="fun2('59')" style="background-color:green" type="button" value="59"/>
+<input id="btn60" name="btn60" onclick="fun2('60')" style="background-color:red" type="button" value="60"/>
+</td> </tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="table-responsive text-nowrap" id="t3" style="display:none">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10311 </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 38.00  </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Your 25-CHEM KCET JUT-29 Score:38.00   </h4>
+</div>
+<table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+<tr style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+<td><b>Questions Attempted</b></td>
+<td>60</td>
+</tr>
+<tr>
+<td><b>Correct Answers</b></td>
+<td>38</td>
+</tr>
+<tr style="background:#a0d3d691;">
+<td><b>Wrong Answers</b></td>
+<td>22</td>
+</tr>
+</table>
+<div class="col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<div id="canvas-holder" style="width:80%;float:right">
+<canvas id="physicschart"></canvas>
+</div>
+</div>
+</div>
+<!--	<div class="table-responsive text-nowrap" id="t4" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10311 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 38  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Chemistry Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="chemistrychart"></canvas>
+	</div>
+
+	
+			  
+			</div></div>
+			
+			<div class="table-responsive text-nowrap" id="t5" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10311 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 38  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Biology Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+
+	
+			   <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="biochart"></canvas>
+	</div>
+
+	
+			  </div>
+			</div>-->
+</div>
+</div>
+</div>
+<!-- End Email Statistic area-->
+<!-- Start Footer area-->
+<div class="footer-copyright-area hidden-xs" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+</div>
+<div class="site-footer__top" style="padding-bottom:10px">
+<div class="container">
+<div class="col-md-12 col-sm-12">
+<nav class="site-footer__navigation" role="navigation" style="padding-bottom:20px">
+<div class="menu-home-footer-container">
+<img src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="border: none;height:100px;float:left"/>
+<ul class="menu" id="footer-navigation" style="text-align: center;">
+<li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" style="margin: 5px" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" style="margin: 5px" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" style="margin: 5px" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" style="margin: 5px" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" style="margin: 5px" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" style="margin: 5px" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" style="margin: 5px" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" style="margin: 5px" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" style="margin: 5px" target="_blank">JIIPMER</a></li>
+</ul>
+<div><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px">
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;font-size:16px;margin: 5px;">jnanasudhaonline@gmail.com</a></font>|<font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;font-size:16px;margin: 5px">info@jnanasudha.com</a></font></li></ul></div>
+</div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px;"><a href="https://jnanasudha.com/quiz/termsandconditions" style="margin:5px" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a>|<a href="#" style="margin:5px" title="Disclaimer">DISCLAIMER</a></li>|<li><a data-toggle="modal" href="#costumModal20" style="margin: 5px">Contact Us</a></li></ul></div>
+<div aria-hidden="true" aria-labelledby="costumModalLabel" class="modal" data-easein="slideDownBigIn" id="costumModal20" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+									×
+								</button>
+<h4 class="modal-title">
+									Contact Us
+								</h4>
+</div>
+<div class="modal-body">
+<p style="color:#757575">
+									PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .</p>
+<br/><p style="color:blue">Ph: (08258) 295555, 295999
+                      Mob:+91 8762295555,+91 8762595555
+								</p>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<br/>
+<div class="site-footer__bottom">
+<div>
+<p style="font-size:15px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .site-footer__bottom -->
+</div><!-- .container -->
+</div></div></footer><!-- .site-footer -->
+</div>
+</div>
+<!-- Footer Links -->
+</div>
+
+<div class="footer-copyright-area hidden-lg hidden-sm hidden-md" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="site-footer__quicklinks">
+<div class="container">
+<div class="quick-links">
+<div class="grid-container">
+<input id="quick-links_toggle-checkbox" type="checkbox" value="1"/>
+<div class="quick-links__title">
+<label class="quick-links__toggle" for="quick-links_toggle-checkbox">
+<i class="quick-links__toggle-icon"></i>
+<span class="quick-links__toggle-text">Contact Us</span>
+</label>
+</div>
+<div class="quick-links__content">
+<ul class="quick-links__list">
+<li class="quick-links__list-title"><font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;">info@jnanasudha.com</a></font><br/>
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;">jnanasudhaonline@gmail.com</a></font></li>
+<li style="font-size:16px;">PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .
+                      <br/>Ph: <a href="tel:08258295555" style="color: #009eff;">(08258) 295555</a>,<a href="tel:08258295999" style="color: #009eff;"> 295999</a>
+                      Mob:<a href="tel:+918762295555" style="color: #009eff;">+91 8762295555</a>,<a href="tel:+918762595555" style="color: #009eff;">+91 8762595555</a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="site-footer__top">
+<div class="container">
+<nav class="site-footer__navigation" role="navigation">
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" target="_blank">JIIPMER</a></li>
+</ul></div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li style="font-size:17px"><a href="https://jnanasudha.com/quiz/termsandconditions" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a> | <a href="#" title="Disclaimer">DISCLAIMER</a></li></ul></div>
+</nav><!-- .site-footer__navigation -->
+</div><!-- .container -->
+</div><!-- .site-footer__top -->
+<div class="site-footer__bottom">
+<div class="container">
+<br/>
+<div class="site-footer__copy">
+<p style="font-size:13px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .container -->
+</div><!-- .site-footer__bottom -->
+<!-- .site-footer__quicklinks -->
+</footer><!-- .site-footer -->
+</div>
+</div>
+</div>
+<style>a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  color:black;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+   color:black;
+}
+.modal-title {
+  font-size: 20px;
+   color:black;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  font-size: 15px;
+   color:black;
+}
+
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+
+</style>
+<!-- End Footer area-->
+<script>
+                                $(document).ready(function () {
+                                $('[data-toggle=collapse-side]').click(function (e) {
+                                $('.side-collapse').toggleClass('in');
+                                });
+                                });
+                                $(document).ready(function () {
+                                $('.second-button').on('click', function () {
+                                $('.animated-icon2').toggleClass('open');
+                                });
+                                });
+                                </script>
+<script type="text/javascript">
+
+                        $(window).on('load resize scroll', function() {
+    var f = $('#footer');
+    f.css({position:'static'});
+    if (f.offset().top + f.height() < $(window).height()) {
+        f.css({position:'absolute', bottom:'0', width:'100%'});
+    }
+});
+                    </script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+		
+		var configphysics = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						38,
+						22,
+						-15					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var configbiology = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						90					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		
+		var configchemistry = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						45					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+
+		window.onload = function() {
+			var ctx1 = document.getElementById('biochart').getContext('2d');
+			window.myPie = new Chart(ctx1, configbiology);
+			var ctx2 = document.getElementById('chemistrychart').getContext('2d');
+			window.myPie = new Chart(ctx2, configchemistry);
+			var ctx3 = document.getElementById('physicschart').getContext('2d');
+			window.myPie = new Chart(ctx3, configphysics);
+		};
+
+		
+	</script>
+<script type="text/javascript">
+function close_window(){
+    window.opener.location ='https://jnanasudha.com/quiz/quiz_userscreen';
+    window.close();
+}
+</script>
+<script>
+ document.getElementById('t1').style.display = "block";
+ document.getElementById('sp1').addEventListener("click",function(){
+    showTable('t1');
+});
+
+document.getElementById('sp2').addEventListener("click",function(){   
+    showTable('t2');
+});document.getElementById('sp3').addEventListener("click",function(){   
+    showTable('t3');
+});
+document.getElementById('sp4').addEventListener("click",function(){   
+    showTable('t4');
+});document.getElementById('sp5').addEventListener("click",function(){   
+    showTable('t5');
+});
+function showTable(table){
+    var tables =['t1','t2','t3'];    
+    for(var i=0;i<3;i++){
+        document.getElementById(tables[i]).style.display = "none";    
+    }
+    document.getElementById(table).style.display = "block";
+    
+}
+</script>
+<script>
+$("#sp1").click(function() {
+  $("#sp1").addClass('button-clicked');
+});
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+    var highestBox = 0;
+        $('.btn-group-justified .btn').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.btn-group-justified .btn').height(highestBox);
+fun2(1);
+});
+</script>
+
+<!-- bootstrap JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/bootstrap.min.js"></script>
+<!-- wow JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wow.min.js"></script>
+<!-- price-slider JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/jquery.counterup.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/waypoints.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/sparkline-active.js"></script>
+<!-- sparkline JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.resize.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/curvedLines.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/flot-active.js"></script>
+<!-- knob JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.knob.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.appear.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/knob-active.js"></script>
+<!--  wave JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/waves.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/wave-active.js"></script>
+<!--  todo JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/todo/jquery.todo.js"></script>
+<!-- plugins JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/plugins.js"></script>
+<!--  Chat JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/moment.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/jquery.chat.js"></script>
+<!-- main JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/main.js"></script>
+</body>
+</html>
