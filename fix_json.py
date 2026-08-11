@@ -1,10 +1,8 @@
 
-# add 10 to all jut numbers in test_download_data.json file
- 
 import json
 
 FILE = "data/question_bank.json"
-EXAM_NUMBER = "29"
+EXAM_NUMBER = "28"
 
 with open(FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
