@@ -1,3 +1,6 @@
+# JUT ReAttempter — Project Structure
+
+```
 jut-reattempter/
 ├── .github/
 │   └── workflows/
@@ -52,3 +55,4 @@ jut-reattempter/
 │   └── test_kcet.html
 └── webpages/
     ├── ...
+```
