@@ -120,7 +120,6 @@ When reporting a bug, please include:
 ## Feature Requests
 
 Feature requests are always welcome.
-
 When suggesting one, explain:
 
 - The problem you're trying to solve
