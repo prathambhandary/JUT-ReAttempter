@@ -770,6 +770,9 @@ def debug_receive():
     })
 
 
+@app.route("/testing")
+def testroute():
+  return "This route has been deployed..."
 
 
 if __name__ == "__main__":
