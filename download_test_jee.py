@@ -180,5 +180,3 @@ if __name__ == "__main__":
                     main(sequence, exam_id, f"CT {exam_number}")
             
             time.sleep(1)
-
-      
