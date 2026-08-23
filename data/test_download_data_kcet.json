@@ -103,5 +103,8 @@
     { "exam_id": 10393, "exam_type": "JUT", "subject": "Mathematics", "exam_number": 31 },
     { "exam_id": 10415, "exam_type": "JUT", "subject": "Physics", "exam_number": 32 },
     { "exam_id": 10416, "exam_type": "JUT", "subject": "Chemistry", "exam_number": 32 },
-    { "exam_id": 10417, "exam_type": "JUT", "subject": "Mathematics", "exam_number": 32 }
+    { "exam_id": 10417, "exam_type": "JUT", "subject": "Mathematics", "exam_number": 32 },
+    { "exam_id": 10432, "exam_type": "JUT", "subject": "Physics", "exam_number": 33 },
+    { "exam_id": 10433, "exam_type": "JUT", "subject": "Chemistry", "exam_number": 33 },
+    { "exam_id": 10434, "exam_type": "JUT", "subject": "Mathematics", "exam_number": 33 }
 ]
