@@ -4,3 +4,5 @@ __pycache__/
 jut-reattempter-clone/
 .env
 trash/
+.vscode/
+test.py
