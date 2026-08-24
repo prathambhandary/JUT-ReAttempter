@@ -2,14 +2,15 @@
 import json
 
 FILE = "data/question_bank.json"
-EXAM_NUMBER = "32"
+EXAM_NUMBER = "33"
+EXAM = "JEE"
 
 with open(FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 data = [
     item for item in data
-    if item.get("exam_number") != EXAM_NUMBER
+    if item.get("exam_number") != EXAM_NUMBER or item.get("exam") != EXAM
 ]
 
 with open(FILE, "w", encoding="utf-8") as f:
