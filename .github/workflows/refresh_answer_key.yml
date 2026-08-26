@@ -1,0 +1,32 @@
+name: Refresh Answer Key and Solution from Jnanasudha.com (JEE & KCET)
+
+on:
+  push:
+    paths:
+      - "fix_json.py"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run fix_json.py
+        run: python fix_json.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "prathambhandary"
+          git config user.email "pratham@firewave.in"
+          git add -A
+          git diff --cached --quiet || git commit -m "Refreshing JUT Answer Key"
+          git push  
