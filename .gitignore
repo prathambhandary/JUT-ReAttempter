@@ -6,3 +6,4 @@ jut-reattempter-clone/
 trash/
 .vscode/
 test.py
+fix_json.py
