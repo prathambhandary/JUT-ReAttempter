@@ -28,7 +28,7 @@ jobs:
       - name: Commit changes
         run: |
           git config user.name "prathambhandary"
-          git config user.email "pratham@firewave.in"
+          git config user.email "prathamb1501@gmail.com"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes."
