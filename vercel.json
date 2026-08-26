@@ -1,0 +1,3 @@
+{
+  "ignoreCommand": "git diff --name-only HEAD^ HEAD | grep -q '^fix_json\\.py$' && test $(git diff --name-only HEAD^ HEAD | wc -l) -eq 1"
+}
