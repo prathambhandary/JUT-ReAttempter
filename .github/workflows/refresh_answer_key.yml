@@ -28,5 +28,14 @@ jobs:
           git config user.name "prathambhandary"
           git config user.email "pratham@firewave.in"
           git add -A
-          git diff --cached --quiet || git commit -m "Refreshing JUT Answer Key"
-          git push  
+          if git diff --staged --quiet; then
+            echo "No changes."
+          lse
+            git commit -m "Deleting old JEE & KCET JUT Answer Key"
+            git push origin main
+          fi  
+
+      - name: Trigger scraper
+        env:
+          GH_TOKEN: ${{ secrets.PUSHKITTY_TOKEN }}
+        run: gh workflow run "Auto Scrape Questions from Jnanasudha.com (JEE & KCET)" --ref main
