@@ -15,8 +15,8 @@ RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 # ID = os.getenv("KCET_USERNAME")
 # PASSWORD = os.getenv("KCET_PASSWORD")
 
-ID = "9448104004"
-PASSWORD = "9448104004"
+ID = "9480347208"
+PASSWORD = "9480347208"
 
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
 
