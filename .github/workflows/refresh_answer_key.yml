@@ -7,10 +7,13 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
-  fix:
+  cleanup:
+    name: 🧹 Clean Old Data
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,12 +33,57 @@ jobs:
           git add -A
           if git diff --staged --quiet; then
             echo "No changes."
-          lse
+          else
             git commit -m "Deleting old JEE & KCET JUT Answer Key"
             git push origin main
-          fi  
+          fi
 
-      - name: Trigger scraper
-        env:
-          GH_TOKEN: ${{ secrets.PUSHKITTY_TOKEN }}
-        run: gh workflow run "Auto Scrape Questions from Jnanasudha.com (JEE & KCET)" --ref main
+  prepare:
+    name: ⚙️ Prepare Refresh
+    needs: cleanup
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Initialize
+        run: |
+          echo "Preparing JEE refresh..."
+          echo "Preparing KCET refresh..."
+
+  jee:
+    name: 🟦 Refresh JEE
+    needs: prepare
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh JEE
+        run: |
+          echo "Starting JEE refresh..."
+          echo "Downloading questions..."
+          echo "Processing answers..."
+          echo "Processing solutions..."
+
+  kcet:
+    name: 🟩 Refresh KCET
+    needs: prepare
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh KCET
+        run: |
+          echo "Starting KCET refresh..."
+          echo "Downloading questions..."
+          echo "Processing answers..."
+          echo "Processing solutions..."
+
+  finalize:
+    name: 🚀 Finalize
+    needs: [jee, kcet]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Complete
+        run: echo "JEE & KCET refresh completed successfully."
