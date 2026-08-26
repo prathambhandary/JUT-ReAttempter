@@ -6,12 +6,18 @@ on:
       - "data/question_bank.json"
       - "fix_json.py"
   workflow_dispatch:
-  
 
 jobs:
+  check:
+    name: Check Trigger
+    if: github.event_name == 'workflow_dispatch' || github.actor != 'pushkitty'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Starting scraper workflow..."
 
   jee:
     name: Scrape JEE Questions
+    needs: check
     runs-on: ubuntu-latest
 
     steps:
@@ -36,9 +42,7 @@ jobs:
         run: |
           git config user.name "pushkitty"
           git config user.email "pushkitty@firewave.in"
-
           git add .
-
           if git diff --staged --quiet; then
             echo "No JEE changes."
           else
@@ -46,12 +50,10 @@ jobs:
             git push origin main
           fi
 
-
   kcet:
     name: Scrape KCET Questions
-    runs-on: ubuntu-latest
-
     needs: jee
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -75,14 +77,11 @@ jobs:
         run: |
           git config user.name "pushkitty"
           git config user.email "pushkitty@firewave.in"
-
           git add .
-
           if git diff --staged --quiet; then
             echo "No KCET changes."
           else
             git commit -m "Updated KCET question bank"
-
             git pull --rebase origin main
             git push origin main
           fi
