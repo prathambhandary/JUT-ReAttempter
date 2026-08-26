@@ -7,7 +7,7 @@ DATA_FILE_KCET="data/test_download_data_kcet.json"
 EXAM_NUMBER="31"
 EXAM="JEE"
 EXAM_TYPE="JUT"
-
+ 
 DATA_FILE=DATA_FILE_JEE if EXAM=="JEE" else DATA_FILE_KCET
 
 print("="*60)
