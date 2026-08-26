@@ -11,9 +11,8 @@ permissions:
 
 jobs:
   cleanup:
-    name: 🧹 Clean Old Data
+    name: Delete Old Data
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,51 +38,37 @@ jobs:
           fi
 
   prepare:
-    name: ⚙️ Prepare Refresh
+    name: Prepare Refresh
     needs: cleanup
     runs-on: ubuntu-latest
-
     steps:
-      - name: Initialize
+      - name: Prepare
         run: |
           echo "Preparing JEE refresh..."
           echo "Preparing KCET refresh..."
 
-  jee:
-    name: 🟦 Refresh JEE
+  trigger:
+    name: Trigger Scraper
     needs: prepare
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Trigger JEE & KCET Scraper
+        env:
+          GH_TOKEN: ${{ secrets.PUSHKITTY_TOKEN }}
+        run: gh workflow run "Auto Scrape Questions from Jnanasudha.com (JEE & KCET)" --ref main
 
-      - name: Refresh JEE
-        run: |
-          echo "Starting JEE refresh..."
-          echo "Downloading questions..."
-          echo "Processing answers..."
-          echo "Processing solutions..."
-
-  kcet:
-    name: 🟩 Refresh KCET
-    needs: prepare
+  verify:
+    name: Verify Trigger
+    needs: trigger
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Verify
+        run: echo "Scraper workflow triggered successfully."
 
-      - name: Refresh KCET
-        run: |
-          echo "Starting KCET refresh..."
-          echo "Downloading questions..."
-          echo "Processing answers..."
-          echo "Processing solutions..."
-
-  finalize:
-    name: 🚀 Finalize
-    needs: [jee, kcet]
+  finish:
+    name: Refresh Started
+    needs: [trigger, verify]
     runs-on: ubuntu-latest
-
     steps:
       - name: Complete
-        run: echo "JEE & KCET refresh completed successfully."
+        run: echo "JEE & KCET refresh pipeline started."
