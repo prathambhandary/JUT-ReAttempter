@@ -2,8 +2,8 @@
 import json
 
 FILE = "data/question_bank.json"
-EXAM_NUMBER = "34"
-EXAM = "JEE"
+EXAM_NUMBER = "32"
+EXAM = "KCET"
 
 with open(FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
