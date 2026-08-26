@@ -1,0 +1,4141 @@
+25-MJS KCET-01select count(*) counts from student_feedback_params where quiz_id ='10457' and batch_name ='25-MJS KCET-01' and status='Enable' <!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>JNANASUDHA</title>
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- favicon
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/img/faviconnew.gif" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://jnanasudha.com/assets/charts/Chart.min.js"></script>
+<script src="https://jnanasudha.com/assets/charts/samples/utils.js"></script>
+<!-- Google Fonts
+		============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/font-awesome.min.css" rel="stylesheet"/>
+<!-- owl.carousel CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.carousel.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.theme.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/css/owl.transitions.css" rel="stylesheet"/>
+<!-- meanmenu CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/meanmenu/meanmenu.min.css" rel="stylesheet"/>
+<!-- animate CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/animate.css" rel="stylesheet"/>
+<!-- normalize CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/normalize.css" rel="stylesheet"/>
+<!-- mCustomScrollbar CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<!-- jvectormap CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+<!-- notika icon CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/notika-custom-icon.css" rel="stylesheet"/>
+<!-- wave CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/wave/waves.min.css" rel="stylesheet"/>
+<!-- main CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/main.css" rel="stylesheet"/>
+<!-- style CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/style.css" rel="stylesheet"/>
+<link href="https://jnanasudha.com/assets/studentdashboard/dashboard.css" rel="stylesheet" type="text/css"/>
+<!-- responsive CSS
+		============================================ -->
+<link href="https://jnanasudha.com/assets/studentdashboard/css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- modernizr JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript">
+function removeCSSFallback()
+{
+  var ua = navigator.userAgent;
+  var isGecko = ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1 && ua.indexOf('Trident') === -1;
+  var isWebKit = ua.indexOf('AppleWebKit') > -1 && ua.indexOf('Chrome') === -1;
+  if (isGecko || isWebKit) {
+  //  document.head.removeChild(document.querySelector("style"));
+  } else {
+   /* <link rel="stylesheet" href="https://jnanasudha.com/assets/css/mathml.css">
+		<link rel="stylesheet" href="http://fred-wang.github.io/mathml.css/mathml.css">*/
+		  var head = document.getElementsByTagName('HEAD')[0];  
+  
+        // Create new link Element 
+        var link = document.createElement('link'); 
+  
+        // set the attributes for link element  
+        link.rel = 'stylesheet';  
+      
+        link.type = 'text/css'; 
+      
+        link.href = 'https://jnanasudha.com/assets/mathml.css';  
+  
+        // Append link element to HTML head 
+        head.appendChild(link); 
+  }
+}
+
+window.addEventListener("DOMContentLoaded", removeCSSFallback, false);
+
+</script>
+<script type="text/javascript">
+document.onkeydown = function(ev) {	
+var key;
+ev = ev || event;
+key = ev.keyCode;
+if (key == 116) {
+return false;  // disable F5 key
+}
+}
+</script>
+<script>
+    //paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('#content', true);
+  setVisible('#loading', false);
+});
+ </script>
+<style>
+
+.btn-group-justified>.btn-group .btn {
+    width: 99%;
+}
+.button-clicked {
+  /*background-color: #00dcff;*/
+}
+input[type=button] {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 249, 249, 0.5);
+  background-image: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<script type="text/javascript">
+  function fun2(a) {
+		  // var b = 'idans'+a;
+		  // alert (b);
+		  // $('html, body').animate({ scrollTop: $("#"+b).offset().top }, 'slow');
+            // return false;
+		  // $("[class^='classans']" ).show();
+		  // $("."+b ).show();
+			var b = 'classans' + a;
+            //  alert (b);
+
+            $("[class^='classans']").hide();
+
+            $("." + b).show();
+    }
+	
+	
+	</script>
+<script>
+// $(document).ready(function(){
+    // $('.btn').click(function() {
+       // var target;
+       // $("div").each(function(i, element) {
+         // target = $(element).offset().top;
+         // if (target - 10 > $(document).scrollTop()) {
+           // return false; // break
+         // }
+       // });
+       // $("html, body").animate({
+         // scrollTop: target
+    // }, 700);
+    // });
+// });
+</script>
+</head>
+<body>
+<div id="loading"></div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-139705418-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139705418-1');
+</script>
+<!--Header Top Area -->
+<div class="header-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="header">
+<a class="logo" href="#">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height:70px;width:90%;float: left;"/>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+<div>
+<span class="name pull-left">
+<p>JNANASUDHA ENTRANCE ACADEMY LLP<br/>
+<span style="font-size: 25px;color: #0977ce;">JNANASUDHA ONLINE TEST SERIES</span></p>
+</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+<span class="mail" style="float:right">
+<ul class="nav navbar-nav pull-right exam-paper" style="margin-top:3px">
+<li class="user-profile">
+<table>
+<tr>
+<td class="profile hidden-xs hidden-sm" style="border: 2px solid #666;margin: 2px 0;">
+<img alt="" class="hidden-desktop" src="https://jnanasudha.com/uploads/9480347208.jpg" style="height:60px; width:60px;"/>
+</td>
+<td>
+<table>
+<tr>
+<td style="padding: 3px 3px;">Welcome</td>
+<td> : <span style="color: #f7931e; font-weight: bold">BHOWMIK SHETTY </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</span>
+</div>
+<div class="col-xs-12 hidden-md hidden-lg hidden-sm" style="padding-top:65px; background: #0c2273cf;color: white;">
+<!--<p style="text-align:center;line-height:14px;"> <span style="font-size: 12px;"><b>JNANASUDHA ENTRANCE ACADEMY LLP</b></span></p>-->
+<span style="font-size:16px">Welcome: <font style="color: #f7931e; font-weight: bold">BHOWMIK SHETTY </font></span>
+<span><span style="float:right;padding-bottom: 2px;margin-top: -6px;"><a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout" style="padding:8px 20px;font-size: 15px;">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+		   </a>
+</span></span>
+</div>
+</div>
+</div></div>
+<!-- End Header Top Area -->
+<style>
+   .navbar-default {
+   padding-right: 8px;
+   }
+   .navbar .navbar-toggle {
+   /*border: none;*/
+   }
+   .navbar-header .navbar-toggle .icon-bar {
+   background: #444;
+   }
+   .navbar-header .navbar-toggle .icon-bar:hover {
+   background: #444;
+   }
+   .side-collapse-container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+  /*  ::-webkit-scrollbar {
+   width: 12px;
+   } */
+   ::-webkit-scrollbar-track {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   }
+   ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: #ddd;
+   -webkit-box-shadow: inset 0 0 6px #ddd;
+   }
+   ::-webkit-scrollbar-thumb:window-inactive {
+   background: #ddd;
+   }
+   @media screen and (max-width: 768px) {
+   .side-collapse {
+   top: 58px;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   position: fixed;
+   overflow: auto;
+   transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+   }
+   .side-collapse.in {
+   width: 0;
+   }
+   .navbar-nav li.dropdown {
+   padding-right: 0;
+   }
+   .navbar-nav li
+   {
+   text-align:left;
+   border-bottom:2px solid #ddd;
+   font-size:18px;
+   }
+   .navbar-default {
+   padding-right: 0;
+   }
+   .navbar .navbar-default {
+   border-right: 1px solid #ddd;
+   }
+   }
+  /* Icon 1 */
+
+ .animated-icon2{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #0385e4f2;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 8px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 16px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+</style>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<nav class="navbar navbar-fixed-top navbar-default">
+<div class="navbar-header" style="background: #fff;">
+<button aria-controls="side-collapse" aria-expanded="false" class="navbar-toggle second-button" data-target=".side-collapse" data-toggle="collapse-side" type="button"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div><span class="sr-only">
+</span></button>
+<div class="header">
+<a class="logo" href="#" style="float:left">
+<img alt="" class="hidden-mobile" src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="height: 57px;"/>
+</a>
+</div>
+<span style="color: #0977ce;text-align:center;float:left;margin-top: 6px;"><b>JNANASUDHA<br/> ONLINE TEST SERIES</b></span>
+</div>
+<div class="navbar-default side-collapse in">
+<nav class="navbar-collapse" role="navigation">
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button" style="padding:10px 30px;font-size: 20px;">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information" style="padding:10px 30px;font-size: 20px;">Account</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/user_payments" role="button" style="padding:10px 30px;font-size: 20px;">Receipts</a>
+</form>
+<ul class="nav navbar-nav">
+<li><a href="https://jnanasudha.com/quiz/quiz_userscreen"><i class="notika-icon notika-house"></i> HOME</a>
+</li><!--
+												<li><a data-toggle="collapse" data-target="#demoevent" href="https://jnanasudha.com/quiz/quiz_inform">JUT 1-JUT 75</a>
+						</li>
+												<li><a data-toggle="collapse" data-target="#democrou" href="#">PART TEST</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#demolibra" href="#">FULL LENGTH</a>
+						</li>
+						<li><a data-toggle="collapse" data-target="#democrou" href="https://jnanasudha.com/quiz/quiz2019neet">2019 NEET</a>
+						</li>-->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+</ul>
+</nav>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Menu area start-->
+<div class="main-menu-area mg-tb-40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+<!--<li><a data-toggle="tab" href="#PART TEST"><i class="notika-icon notika-edit"></i> PART TEST</a>
+				</li>
+				<li><a data-toggle="tab" href="#FULL LENGTH"><i class="notika-icon notika-bar-chart"></i> FULL LENGTH</a>
+				</li>
+				 <li><a href="https://jnanasudha.com/quiz/quiz2019neet"><i class="notika-icon notika-form"></i> 2019 NEET</a>
+				</li> -->
+<li><a href="https://jnanasudha.com/quiz/quizpastneet"><i class="notika-icon notika-form"></i> Past NEET Papers</a>
+</li>
+<form class="navbar-form navbar-right" novalidate="novalidate" role="form">
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/general_feedback" role="button">Feedback</a>
+<a class="btn btn-primary" href="https://jnanasudha.com/quiz/quiz_userscreen" role="button">Dashboard</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/studentinfo/student_information">Account</a>
+<a class="btn btn-success" href="https://jnanasudha.com/quiz/user_payments">Receipts</a>
+<a class="btn btn-info btn-md" href="https://jnanasudha.com/index/logout">
+<span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="notika-email-post-area" id="content" style="margin-bottom:50px">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-8">
+<div class="heading"><span>75 JUT – Which conquer each point of NCERT</span></div>
+<div>
+<div class="btn-group-justified" style="margin-top: 10px;">
+<div class="btn-group">
+<button class="btn btn-primary" id="sp1">Result</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp2">Solution</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp3">Physics Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp4">Chemistry Analysis</button>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="sp5">Biology Analysis</button>
+</div>
+</div></div>
+<!--<div class="hidden-lg" style="margin-top:5px;">
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary"  id="sp1">Result</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="button" class="btn btn-primary btn-group" id="sp2">Solution</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Physics Analysis</button>
+					</div>
+                    <div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Chemistry Analysis</button>
+					</div>
+					<div class="col-sm-12">
+						<button style="width:100%" type="submit" class="btn btn-primary btn-group">Biology Analysis</button>
+					</div>
+				</div>-->
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="recent-items-ch notika-shadow sm-res-mg-t-30">
+<div style="float:right">
+<div>
+<img src="https://jnanasudha.com/images/imagesmall.jpg" style="/* margin: 0px 100px; */height:80px;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="table-responsive text-nowrap" id="t1" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10457 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 44 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<table class="table table-striped" style="text-align: center;">
+<tr style="border: 1px solid #3a3030;">
+<td style="background: #0b1c75e0;border-bottom: 1px solid #e0d0d0;"></td>
+<td style="background: #1d83ce91;color: white;">25-CHEM KCET JUT-34</td>
+<td style="background: #1d83ce91;color: white;">TOTAL </td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Total Questions</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Attempted</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Correct Answer</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td style="background: #0b1c75e0;color: white;">Wrong Answer</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr style="border-bottom: 1px solid #3c3636;">
+<td style="background: #0b1c75e0;color: white;">Marks </td>
+<td>44.00</td>
+<td>44.00</td>
+</tr>
+</table>
+</div>
+<div class="row exam-paper" id="t2" style="display:none">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10457 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 44.00 </h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-lg-8 col-md-8 col-sm-12" id="quest">
+<div>
+<div class="classans1" id="idans1">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:1</h3>
+<hr/>
+<h4> Which of the following will show least paramagnetic behavior?<br/>Atomic number Cr=24   Mn=25   Fe=26   Ni=28</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) [Cr(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+<td>  2 ) [Mn(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+</tr>
+<tr>
+<td>  3 ) [Fe(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+<td>  4 ) [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Cr(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup>: Cr<sup>2+</sup> has electron configuration [Ar]3d<sup>4</sup>4s<sup>0</sup><br/>[Mn(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup>: Mn<sup>2+</sup> has electron configuration [Ar]3d<sup>5</sup>4s<sup>0</sup><br/>[Fe(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup>: Fe<sup>2+</sup> has electron configuration [Ar] 3d<sup>6</sup>4s<sup>0</sup><br/>[Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup>: Ni<sup>2+</sup> has electron configuration [Ar] 3d<sup>8</sup>4s<sup>0</sup><br/>Ni<sup>2+</sup> (d<sup>8</sup> high spin): 2 unpaired electrons<br/>Therefore, the least paramagnetic behavior will be shown by the complex with the fewest unpaired electrons: [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup>with 2 unpaired electrons.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('2')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans2" id="idans2">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:2</h3>
+<hr/>
+<h4> According to VBT, which hybridization is possible for square planar complexes?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) sp³ only</td>
+<td>  2 ) dsp² only</td>
+</tr>
+<tr>
+<td>  3 ) sp³d² only</td>
+<td>  4 ) Both dsp² and d²sp³</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: dsp² only<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('3')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans3" id="idans3">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:3</h3>
+<hr/>
+<h4> The hybridization of Ni in [Ni(CO)<sub>4</sub>]</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) sp<sup>3</sup></td>
+<td>  2 ) dsp<sup>2</sup></td>
+</tr>
+<tr>
+<td>  3 ) sp<sup>2</sup></td>
+<td>  4 ) sp<sup>3</sup>d</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The hybridization of Ni in the complex [Ni(CO)4] is sp³.<br/>The electron configuration of Ni in the ground state is 3d<sup>8 </sup>4s<sup>2</sup><br/>CO is a strong field ligand that causes pairing of electrons in the 3d orbitals, resulting in the configuration 3d<sup>10 </sup>4s<sup>0</sup><br/>After pairing, one 4s and three 4p orbitals hybridize to form four sp³ hybrid orbitals.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('4')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans4" id="idans4">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:4</h3>
+<hr/>
+<h4> <img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A-III  B-II  C-I  D-IV</td>
+<td>  2 ) A-II  B-III  C-IV  D-I</td>
+</tr>
+<tr>
+<td>  3 ) A-IV  B-I  C-III  D-II</td>
+<td>  4 ) A-III  B-I  C-II  D-IV</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A-III  B-II  C-I  D-IV<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('5')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans5" id="idans5">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:5</h3>
+<hr/>
+<h4> Statement I:- [Ni(CN)<sub>4</sub>]<sup>2-</sup> is square planar and diamagnetic complex with dsp<sup>2</sup> hybridization for Ni but [Ni(CO)<sub>4</sub>] is tetrahedral , paramagnetic and with sp<sup>3</sup> hybridization for Ni.<br/>Statement II:- [NiCl<sub>4</sub>]<sup>2-</sup> and [Ni(CO)<sub>4</sub>] both have same d-electron configuration , have same geometry and are paramagnetic.<br/>In the light of above statements, choose the correct answer from the options given below ;</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both statement I and statement II are true</td>
+<td>  2 ) Both statement I and statement II are false</td>
+</tr>
+<tr>
+<td>  3 ) Statement I is true and statement II is false</td>
+<td>  4 ) Statement I is false and statement II is true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Both Statement I and Statement II are false is correct.<br/>[Ni(CN)<sub>4</sub>]<sup>2-</sup> is square planar, diamagnetic, dsp<sup>2</sup> hybridization.<br/>[Ni(CO)<sub>4</sub>] is tetrahedral, diamagnetic, sp<sup>3</sup> hybridization (not paramagnetic).<br/>[NiCl<sub>4</sub>]<sup>2-</sup> is tetrahedral, paramagnetic, sp<sup>3</sup> (not same as [Ni(CO)<sub>4</sub>]: magnetic property and electron configuration differ)<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('6')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans6" id="idans6">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:6</h3>
+<hr/>
+<h4> In CFT, the metal-ligand bond is considered to be a _______ bond.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Covalent</td>
+<td>  2 ) Ionic</td>
+</tr>
+<tr>
+<td>  3 ) Polar</td>
+<td>  4 ) Hydrogen</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In Crystal Field Theory (CFT), the metal-ligand bond is considered to be an ionic bond.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('7')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans7" id="idans7">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:7</h3>
+<hr/>
+<h4> The calculated spin only magnetic moments of [Cr(NH<sub>3</sub>)<sub>6</sub>]<sup>3</sup><sup>+ </sup> and [CuF<sub>6</sub>]<sup>3-</sup> in B.M. respectively are</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 3.87 and 2.84</td>
+<td>  2 ) 2.84 and 3.87</td>
+</tr>
+<tr>
+<td>  3 ) 3.87 and 1.73</td>
+<td>  4 ) 4.90 and 2.84</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Cr<sup>3+</sup> has d3 configuration. Number of unpaired electrons, n=3<br/>Spin-only magnetic moment, μ= <math> <msqrt> <mi>n</mi> <mo>(</mo> <mi>n</mi> <mo>+</mo> <mn>2</mn> <mo>)</mo> </msqrt> <msqrt> <mn>3</mn> <mo>(</mo> <mn>3</mn> <mo>+</mo> <mn>2</mn> <mo>)</mo> </msqrt> </math> =3.87<br/>Cu<sup>3+</sup> has d8 configuration. Number of unpaired electrons, n=2<br/>Spin-only magnetic moment, μ= <math> <msqrt> <mi>n</mi> <mo>(</mo> <mi>n</mi> <mo>+</mo> <mn>2</mn> <mo>)</mo> </msqrt> <msqrt> <mn>2</mn> <mo>(</mo> <mn>2</mn> <mo>+</mo> <mn>2</mn> <mo>)</mo> </msqrt> </math> =2.84<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('8')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans8" id="idans8">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:8</h3>
+<hr/>
+<h4> Which complex is likely to show the greatest magnetic moment?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) d3 chromium(III) complex</td>
+<td>  2 ) d8 nickel(II) square planar complex</td>
+</tr>
+<tr>
+<td>  3 ) d6 low spin iron(II) complex</td>
+<td>  4 ) d10 zinc(II) complex</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: a. d³ chromium(III) complex: Typically high-spin with 3 unpaired electrons → high magnetic momentb. d⁸ nickel(II) square planar complex: Usually low-spin with all paired electrons → low or zero magnetic momentc. d⁶ low spin iron(II) complex: Low-spin means paired electrons, usually 0 or 2 unpaired electrons → low magnetic momentd. d¹⁰ zinc(II) complex: All electrons paired → diamagnetic (no unpaired electrons)<br/>The greatest magnetic moment will be shown by the complex with the maximum number of unpaired electrons, which is the d³ chromium(III) complex.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('9')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans9" id="idans9">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:9</h3>
+<hr/>
+<h4> The observed magnetic moment of the complex [Mn(NCS)<sub>6</sub>]<sup>x-</sup> is 6.06 B.M. The numerical value of x is _____</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  4</td>
+<td>  2 ) 3</td>
+</tr>
+<tr>
+<td>  3 ) 2</td>
+<td>  4 ) 5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: On the basis of give magnetic moment , number of unpaired 
+<br/>
+electrons =5        Mn : [Ar] 3d<sup>5</sup>4s<sup>2</sup>        Mn<sup>2</sup><sup>+</sup> : [Ar] 3d<sup>5</sup>4s<sup>0</sup><br/>In [Mn(NCS)<sub>6</sub>]<sup>x</sup><sup>-</sup> , [(+2) + (-1) x 6] = -x<br/>So x = 4<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('10')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans10" id="idans10">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:10</h3>
+<hr/>
+<h4> In which of the following metal carbonyls, CO forms a bridge between metal atoms?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  [Ru<sub>3</sub>(CO)<sub>12</sub>]</td>
+<td>  2 ) [Mn<sub>2</sub>(CO)<sub>10</sub>]</td>
+</tr>
+<tr>
+<td>  3 ) [Co<sub>2</sub>(CO)<sub>8</sub>]</td>
+<td>  4 ) [Os<sub>3</sub>(CO)<sub>12</sub>]</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAJYAAAB+BAMAAAA0OPU+AAAAHlBMVEX////i7vBGQVbgzbas0emAkqd0zfKHbF4pu/HCnnrbVvyrAAAFAklEQVR4nO1ZzY/qNhC3ZQTyzRGvfNyKBNwLG0XcTJEq3g20G632llWrJ65Fa+VcabXaM1rEv9sZ58t2Ao9sU7VqmUMU7PHPY2fmN2NDyE1u8g8L9R8awwrC07YhKKYEm4hmsPiYkINsBqszImS2+fdhNblGNiFUNbT3JHgIXhqCIuwYNmUWIV2vMSji+zesOvLDvDEoenxozCeAv36vNbcn8FHVhfxV4fdauXJEEEPInVSVg2Ns35WhUJnFcZlxQX+2gUcVHyDnVLSi8kGyctQDP/HxLCK8xFM0xaJOO8zKV5MqNoIWNoEHLc2yFrhGQgbOmD0oD6dVLKmx9qjugLXekL9gv9p/OFgi2clZacMyuwh9szsGEXQ+LGDAzp4FJ+aVdmX7xZa7yGzX0Ez7qmMYzr5SVfvFxx5+Ry+QbcuwQYFsWUy/9VH5sO1WsHcQwhynEJL9+tloNhdm4JLBK0Vlph6rMrqXPVrvxXhrXYZhFHW0338nUNcFgL3fhWFr56OeFZob1nq1OvKf7bereWOQzbqWdkf22/7W3zFMVpmVb9/Abb8kvUTZ/HCpQcKY6krZobYbAmgYol+98ekYDbMstVOJEVqTsHfRMCxDpV31oEj7VYWxtNuGIYZlr7xyQ07Isydl18o/b0kgicnmTK0OUbqVxVgYxmKVtfFxdy8hrA/WNsAwJv3QiDagV74lc2vlHRgrDlvkxGSUJP0N0E3fmhDpiSqkwUyAlugyCC3zYWyARL1PxwJB8jGykWWXprqxZs/CUkKUsDgGutkQyTXSP6nG0mPa75m8aorDvORlTRFigZ0Huc7Vfs2JeuNitb5l8oy9bDUlysuaJOp3p4DVy9WWDhZa0BmVUhCbrI7y9NXI15AQ2VYR6xPhsK6R2IItvPZH6AKG9J7gG7LQaKP7MJTBk1UNQBLy5b5IuCx+fCFsH1pK9L0cKOy4JHT+izkli+G7coOo2Z1IH4Wcj1+bB/Ww7k/nlFEuxe+uDnuRy/FLd8/nO8uS5sgK27Tr1OFCmsQv/a3U04rw2avBYBmfu6kjb1lf5B1r8swf3NImZ226u5amC39wSpsimbTeI3KNGMWJY5iRTNqX9p8hvcNDmP7gZCK7OEm0F2aYpaOQ3mkcAguYrmhnSGvJS63N1ZNysYCA+yNgj/7Gqkstw5wVa20gm4M1H9HEyKfIWU45ZbqF8yVQGwmsVLIn9ao7Q1pSJOcht7pIeFYgr12HpQ1LzkOu557FwrJ3WnWhAZuUnIdarq+jNq1aI/BqZwSt7n7hLiXnoVLRo7VhPSULMClLFt8fnYUQ8kUkE39xO7Q2nyzKhfQQU/QwrLo0qz5bpdp+2VcvCXc39y9Ich5qSJLzUDPCGjy7E3a7z/lPYFH3QuHz0uR9YXAfNBWSTd6v3u626wlt8H+FJv/vIHTRGEXf5Cb/G+kawWyc6j2n6xqhcCCPw/TsGyTvi/hFH/CDmoFOFTksh2nGOAp8Z8qbbTqA06mNhRnjQ18Fpe9QHvMxB47ltbGQTT2ujgKKdf2OZfsE3+pj6Yp3FvXhpDLV73iLtWefxzrIzo8m1uRzWHpdiOVla9zo1VJRHwuOJ/RjFgX3X1fJO57x4Fh4d1cfi/Qnj0uuVHf4nLyTU6gEHx0/6mMJ7Q+eIL6E5Kh9Yy5IsPFVv25Syg9GTEku82ZffPh1/b4QNpfW78uXSje5yd8lfwIZIDb/TxY1UAAAAABJRU5ErkJggg=="/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('11')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans11" id="idans11">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:11</h3>
+<hr/>
+<h4> Statement I: A solution of [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> is green in color
+<br/>
+Statement II: A solution of [Ni(CN)<sub>4</sub>]<sup>2- </sup>is colorless</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  Both statement I and statement II are incorrect</td>
+<td>  2 ) Both statement I and statement II are correct</td>
+</tr>
+<tr>
+<td>  3 ) Statement I is incorrect and statement II is correct</td>
+<td>  4 ) Statement I is correct and statement II is incorrect</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> high spin octahedral complex with weak field H2O ligands. It typically shows a green color due to d-d transitions. So, Statement I is correct.<br/>[Ni(CN)<sub>4</sub>]<sup>2-</sup> is a square planar complex with strong field CN⁻ ligands causing pairing of electrons and no unpaired electrons, leading to a colorless or very pale complex since d-d transitions are often forbidden or weak. So, Statement II is correct.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('12')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans12" id="idans12">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:12</h3>
+<hr/>
+<h4> <img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A-III  B-I  C-IV  D-II</td>
+<td>  2 ) A-IV  B-I  C-III  D-II</td>
+</tr>
+<tr>
+<td>  3 ) A-III  B-II  C-IV  D-I</td>
+<td>  4 ) A-I  B-II  C-IV  D-III</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A-III  B-I  C-IV  D-II<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('13')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans13" id="idans13">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:13</h3>
+<hr/>
+<h4> Hexachlorocobaltate(III) ion is found to be high spin complex. 
+<br/>
+The hybridization of cobalt is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  d<sup>2</sup>sp<sup>3</sup></td>
+<td>  2 ) sp<sup>3</sup>d<sup>2</sup></td>
+</tr>
+<tr>
+<td>  3 ) sp<sup>3</sup>d</td>
+<td>  4 ) sp<sup>3</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: sp<sup>3</sup>d<sup>2</sup><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('14')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans14" id="idans14">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:14</h3>
+<hr/>
+<h4> Why does Valence Bond Theory fail to explain the color of coordination compounds?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) It ignores ligand field splitting and electronic transitions</td>
+<td>  2 ) It assumes all ligands are strong field ligands</td>
+</tr>
+<tr>
+<td>  3 ) It only considers ionic bonding</td>
+<td>  4 ) It restricts bonding to s and p orbitals only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: VBT does not consider the splitting of d-orbitals caused by the ligand field, which is crucial for explaining electronic transitions responsible for the color of complexes.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('15')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans15" id="idans15">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:15</h3>
+<hr/>
+<h4> When Ethane-1,2-dimmine is added progressively to an aqueous solution of Nickel (II) chloride , the sequence of color change observed will be ;</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Pale blue → Blue → Green → Violet</td>
+<td>  2 ) Pale blue → Blue → Violet → Green</td>
+</tr>
+<tr>
+<td>  3 ) Green → Pale Blue → Blue → Violet</td>
+<td>  4 ) Violet → Blue → Pale Blue → Green</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Ligands determine the magnitude of d-orbital splitting (Δo).<br/>Larger Δo (strong field ligands) → absorb higher-energy light → colors like yellow, orange, red.<br/>Smaller Δo (weak field ligands) → absorb lower-energy light → colors like blue, green, indigo.<br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('16')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans16" id="idans16">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:16</h3>
+<hr/>
+<h4> Number of bridging CO ligands in [Mn<sub>2</sub>(CO)<sub>10</sub>] is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  0</td>
+<td>  2 ) 2</td>
+</tr>
+<tr>
+<td>  3 ) 3</td>
+<td>  4 ) 1</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer:<br/><img alt="Red dot" src="data:image/png;base64, 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"/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('17')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans17" id="idans17">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:17</h3>
+<hr/>
+<h4>Carbon donor ligands are strong ligands and usually form low spin complexes. 
+<br/>
+Among the following complexes given below , select the high spin complex;</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  [Fe(CN)<sub>6</sub>]<sup>3-</sup></td>
+<td>  2 ) [Fe(CN)<sub>6</sub>]<sup>4-</sup></td>
+</tr>
+<tr>
+<td>  3 ) [Fe(C<sub>2</sub>O<sub>4</sub>)<sub>6</sub>]<sup>3-</sup></td>
+<td>  4 ) None of these</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Fe(CN)<sub>6</sub>]<sup>3-</sup>: Fe(III), d5, low spin due to strong field CN⁻ ligand.<br/>[Fe(CN)<sub>6</sub>]<sup>4</sup><sup>- </sup>:Fe(II), d6, low spin due to strong field CN⁻ ligand.<br/>[Fe(C<sub>2</sub>O<sub>4</sub>)<sub>6</sub>]<sup>3- </sup>: Fe(III), d5, low spin due to strong field oxalate ligand.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('18')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans18" id="idans18">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:18</h3>
+<hr/>
+<h4> Assertion: [Ni(CO)₄] is a diamagnetic complex.<br/>Reason: Nickel in [Ni(CO)₄] has all paired electrons due to sp³ hybridization.</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both assertion and reason is correct and reason is the correct explanation for assertion</td>
+<td>  2 ) Both assertion and reason is correct but reason is not the correct explanation for assertion</td>
+</tr>
+<tr>
+<td>  3 ) Assertion is correct and reason is incorrect</td>
+<td>  4 ) Assertion is incorrect and reason is correct</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: CO is a strong field ligand, causes pairing of electrons, and VBT predicts sp³ hybridization for tetrahedral complexes, explaining diamagnetic nature.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('19')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans19" id="idans19">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:19</h3>
+<hr/>
+<h4> The energy gap between t<sub>2g</sub> and e<sub>g</sub> orbitals in an octahedral crystal field is called:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Pairing energy</td>
+<td>  2 ) Crystal field splitting energy (Δo)</td>
+</tr>
+<tr>
+<td>  3 ) Spin pairing energy</td>
+<td>  4 ) Ionization energy</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Crystal field splitting energy (Δo)<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('20')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans20" id="idans20">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:20</h3>
+<hr/>
+<h4> According to crystal field splitting theory , the energy of two e<sub>g</sub> orbitals will increase by ___  Δ<sub>0 </sub> and the energy of three t<sub>2</sub><sub>g </sub> orbitals will decrease by ___ Δ<sub>0</sub> respectively</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 2/5 and 3/5</td>
+<td>  2 ) 3/5 and 2/5</td>
+</tr>
+<tr>
+<td>  3 ) 1/5 and 4/5</td>
+<td>  4 ) 4/5 and 1/5</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: 3/5 and 2/5<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('21')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans21" id="idans21">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:21</h3>
+<hr/>
+<h4> Which of the following is outer orbital complex and exhibits paramagnetic behavior ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  [Cr(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup></td>
+<td>  2 ) [Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup></td>
+</tr>
+<tr>
+<td>  3 ) [Ni(NH<sub>3</sub>)<sub>6</sub>]<sup>2+</sup></td>
+<td>  4 ) [Zn(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Cr(NH<sub>3</sub>)<sub>6</sub>]<sup>3</sup><sup>+</sup> : Cr<sup>3+</sup>is d<sup>3</sup>, forms inner orbital complex (uses (n-1)d orbitals) with paramagnetic behavior (3 unpaired electrons).<br/>[Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup> Co<sup>3+</sup> is d<sup>6</sup>, forms inner orbital low spin complex (uses (n-1)d orbitals), usually diamagnetic.<br/>[Ni(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup>: Ni<sup>2+</sup> is d<sup>8</sup>, tends to form outer orbital complex (uses ns and np orbitals), paramagnetic.<br/>[Zn(NH<sub>3</sub>)<sub>6</sub>]<sup>3</sup><sup>+</sup>  : Zn<sup>3+</sup> is d<sup>9</sup> Zn usually has +2 oxidation state. Zn3+ is rare; [Zn(NH3)6]3+ is unlikely or unstable.<br/>Considering oxidation states and typical behavior, [Ni(NH<sub>3</sub>)<sub>6</sub>]<sup>2+</sup> forms an outer orbital complex and exhibits paramagnetic behavior due to unpaired electrons.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('22')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans22" id="idans22">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:22</h3>
+<hr/>
+<h4> Why is Valence Bond Theory largely abandoned for explaining coordination chemistry?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  It is too complex and mathematically involved</td>
+<td>  2 ) It cannot explain absorption spectra and subtle electronic details</td>
+</tr>
+<tr>
+<td>  3 ) It ignores metal orbitals completely</td>
+<td>  4 ) It treats ligands as neutral molecules only</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: VBT fails to explain important features like electronic transitions responsible for color, magnetic properties, and the detailed nature of bonding in coordination compounds.<br/>Correct answer: </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('23')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans23" id="idans23">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:23</h3>
+<hr/>
+<h4> The CFSE of [CoF<sub>3</sub>(H<sub>2</sub>O)<sub>3</sub>] (Δ<sub>0</sub> &lt; P) is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  -0.8 Δ<sub>0</sub></td>
+<td>  2 ) -0.4 Δ<sub>0</sub></td>
+</tr>
+<tr>
+<td>  3 ) -0.4 Δ<sub>0 </sub> + P</td>
+<td>  4 ) -0.8 Δ<sub>0</sub> + 2P</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In [CoF<sub>3</sub>(H<sub>2</sub>O)<sub>3</sub>] =&gt; Co<sup>3+</sup>: [Ar] 3d<sup>6</sup> 4s<sup>0</sup><br/>As H<sub>2</sub>O and F both are weak ligands So electronic configuration will be t<sub>2g</sub><sup>4</sup>e<sub>g</sub><sup>2</sup><br/>CFSE = [-0.4n t<sub>2g</sub> + 0.6 n e<sub>g</sub>] Δ<sub>0</sub><br/>CFSE = -0.4 Δ<sub>0</sub><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('24')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans24" id="idans24">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:24</h3>
+<hr/>
+<h4> Which orbitals of the metal ion are involved in hybridization for square planar complexes in VBT?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) s, p, and d orbitals of outermost shell</td>
+<td>  2 ) (n-1)d, ns, np orbitals</td>
+</tr>
+<tr>
+<td>  3 ) Only s and p orbitals</td>
+<td>  4 ) Only d orbitals</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In Valence Bond Theory for square planar complexes, the hybridization involves the (n-1)d, ns, and np orbitals of the metal ion.<br/>Correct answer:b. (n-1)d, ns, np orbitals<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('25')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans25" id="idans25">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:25</h3>
+<hr/>
+<h4> [Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup> and [CoF<sub>6</sub>]<sup>3+</sup> are respectively known as</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) inner orbital complex , spin paired complex</td>
+<td>  2 ) spin paired complex , spin free complex</td>
+</tr>
+<tr>
+<td>  3 ) spin free complex , spin paired complex</td>
+<td>  4 ) outer orbital complex , inner orbital  complex</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3</sup><sup>+</sup> :Complex is low spin, spin paired, and forms an inner orbital complex.<br/>[CoF<sub>6</sub>]<sup>3</sup><sup>+</sup> : Complex is high spin, spin free, and forms an outer orbital complex.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('26')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans26" id="idans26">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:26</h3>
+<hr/>
+<h4> The coordination complex [Co(H₂O)₆]<sup>3</sup>⁺ has one unpaired electron. Which statements are true?<br/>(i) The complex is octahedral<br/>(ii) The complex is an inner orbital complex<br/>(iii) The complex is diamagnetic</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) (i) and (ii) only</td>
+<td>  2 ) (i) and (iii) only</td>
+</tr>
+<tr>
+<td>  3 ) (ii) and (iii) only</td>
+<td>  4 ) All are true</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The complex is octahedral:Hexa-aqua complexes are generally octahedral.<br/>The complex is an inner orbital complex: Since it has only one unpaired electron, it is likely low-spin, which corresponds to an inner orbital complex (d²sp³ hybridization). So this is True.<br/>The complex is diamagnetic: Diamagnetic means all electrons are paired, but here there is one unpaired electron, so this is False.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('27')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans27" id="idans27">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:27</h3>
+<hr/>
+<h4> Number of Co-C bonds in [Co<sub>2</sub>(CO)<sub>8</sub>] is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 8</td>
+<td>  2 ) 10</td>
+</tr>
+<tr>
+<td>  3 ) 6</td>
+<td>  4 ) 12</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAJoAAAB0BAMAAACPnzbWAAAAHlBMVEX////n7eqfeVxKP07dw6Sx1+54xuwru/GgoaVmeJNAut2vAAAFGUlEQVR4nO1ZS2/iSBDuRg2bo22cwB1lFB/nAArH4M3KczMrZnwl0mbYaw6BKzCJ5NzwaizZ/3ar2g+67SbETGsVaVNSLKcfn6u6qr+qbgj578UOfX1gzAkdQxuaFRE30obm+qQ11IY28AkbvWM0fZa6O3SELmHj3x2NAdcPN/rACL3RF7xg6s/1B9oJQjc60frhVB8Y8lvD6DVNfCjjqhuRiQINB1P1DOakG9JPU1XQA7+xOlo/TTZkkiYqOHfOxkAWSq4YqMykjt8aAlGpWBmgyGAGJBbWuowcraIDMt5ld6dkPmxzt6CYWe1pP2Ro9FFuR2433TnXoyrY5/6DZtJKTzBHfmNrspDtbX0mfEXpuL5wpW6kN5c66BKX4enFJ52H2vfJAd3KdTu/WEodHNzj/LaQlMDvnx9YN+Le2eDTqX1JFqJyVMD+Tezo3MHgmI1MZaZljrMmZylY1BaVE80TkenKt1LYIJMkUYBBv1E8AgFBsk5Y0uAx3zi1GKhKe1VCyCu/11oYclR6JUYgR0X5r7S2RwQWJVehErHF/x3Z78eUe1SqVixj+bVGytGaCtk69h6r7a9Lh4+vbAuU76SZCzLhy9yuzzqHv+CuIRisMw2f1So0c0Emi22yjeUm+oLJhh6JDoZsDA/JUe2xwT5le6OQSeyNiiUt5AynTVLhu87UGsKGtyQSR2q4ZY6wC+nAII5hfhU/QGFuxK6RNffz6BgflyIapy9rtx+WURBzXkQTcFoMtLQvsi0g0cGfw8xfMprrtyJxJhb7LZGBcC6n85LkIFsCGvIyWawK8Qu0z728ZclnQGobtstRS17AYllcErAV5boR8u17IT7237rzVnSRt9xjC+Vo5aj7Ohpq4di1dOUmXtxKfgirBLM8ayedQ8rEVTZC0mEj6hiyF+jfYWhQ71lcpOswZonsBZgbAyRktUImCVCylUrDlDvbg91h396LTRNAp054JYSNPS0epbyys1fSNsVp9PYIDQQPB7s6zdiNHNnZvWVDRsp2drWIKJqCZmyZu+CiblLAIRdNGK7g/WqSKVvaq/nb0UoXLKoLFOQoF2/3xD46KmWRkHaCNxOwQK4V5YS0s3jdE15oYLSbUnRUspbQ0wZbcTSkDwWYhWkAHkMp9coZVTK8bcDoEfkS/ljXwKDCho0/gIdc30rKVezG0UB6inKQV6p/AUt58gwxSOT8wjnNA4Kj9XscXkX/VBSdvBTJzlmVqoTrxIm7Fi0H0VC57JxVjeUMbadCyyxVFcSwWNk5q4hcCY2ngZqlaPxgCu1etQscyc9ZtYIJ86tnK70AJDqJ4eHF1Q46zc8yNXv46MHTVlGU0zD0s0ddlKe2fApTRu9rcgDtRMnOWbokO2dpE0/rPdKB8/6Jwp7WOtHe8c2PZrQnnWjE0OlTrfeW7Frnnare+169d9Hv+dZd7+8L4IKuxlt3rb/L6P3N6EM+5P8s9Eb4Z39/gFdBUtfbxIJKMw2zvc4u+Tt1Up/F/GqgMdquNTTzMrAV8Xc3sscEyaQ5oVhzdw4Phpdw/DrJugMQ1wfmPAkNFKP+C9bILn+38RCw+wU0SAd0nKPx1ND9JTRIB44eNHdOqAVo1HD5u8m1dH3zJDSIkf4MLPWeu/wdHAAnHnc2809Bo4MkIV+20c0f1o6/sxRc4tjJKWgRvx6icNZ+hpDlV0X2lNArtt2cgFYeuCYh3R9+2OZs9nTVFEwQTz5I0a86K8MP0S//Ak/2Q0Wf6kVgAAAAAElFTkSuQmCC"/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('28')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans28" id="idans28">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:28</h3>
+<hr/>
+<h4> How many unpaired electrons are present in a strong field Fe(II) octahedral complex?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 0</td>
+<td>  2 ) 2</td>
+</tr>
+<tr>
+<td>  3 ) 4</td>
+<td>  4 ) 6</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Fe(II) has a d⁶ configuration. Strong field ligands cause pairing of electrons (low-spin complex). All six electrons will pair up in the lower-energy t2g orbitals. Therefore, there are 0 unpaired electrons.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('29')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans29" id="idans29">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:29</h3>
+<hr/>
+<h4> The correct order of intensity of colors of the compounds is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> &gt; [NiCl<sub>4</sub>]<sup>2-</sup>&gt; [Ni(CN)<sub>4</sub>]<sup>2-</sup></td>
+<td>  2 ) [NiCl<sub>4</sub>]<sup>2-</sup>&gt; [Ni(CN)<sub>4</sub>]<sup>2-</sup>&gt; [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+</tr>
+<tr>
+<td>  3 ) [NiCl<sub>4</sub>]<sup>2-</sup>&gt; [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> &gt; [Ni(CN)<sub>4</sub>]<sup>2-</sup></td>
+<td>  4 ) [Ni(CN)<sub>4</sub>]<sup>2-</sup>&gt; [NiCl<sub>4</sub>]<sup>2-</sup>&gt;[Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: As all complexes have Ni<sup>2</sup><sup>+</sup> , so stronger is the ligand greater is the splitting and lighter is the color. Order of strength of ligand : Cl<sup>- </sup>&lt; H<sub>2</sub>O &lt; CN<sup>-</sup><br/>So the order of intensity of color : [NiCl<sub>4</sub>]<sup>2-</sup>&gt; [Ni(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> &gt; [Ni(CN)<sub>4</sub>]<sup>2-</sup><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('30')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans30" id="idans30">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:30</h3>
+<hr/>
+<h4> In the formation of octahedral complex , ligands approach towards ___ and ___ orbital of central metal atom</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) d<sub>xy</sub><sub> </sub>, d<sub>x</sub><sup>2</sup><sub>-y</sub><sup>2</sup></td>
+<td>  2 ) d<sub>x</sub><sup>2</sup><sub>-y</sub><sup>2</sup> , d<sub>z</sub><sup>2</sup></td>
+</tr>
+<tr>
+<td>  3 ) d<sub>xy</sub> , d<sub>yz</sub></td>
+<td>  4 ) d<sub>z</sub><sup>2</sup> , d<sub>xz</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In the formation of an octahedral complex, the ligands approach along the axes (x, y, and z) toward the metal's orbitals that have lobes directed along these axes, which are the d<sub>x</sub><sup>2</sup><sub>-y</sub><sup>2</sup> , d<sub>z</sub><sup>2</sup> orbitals.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('31')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans31" id="idans31">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:31</h3>
+<hr/>
+<h4> Which of the following statements is true about high spin complexes?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) They have maximum number of unpaired electrons</td>
+<td>  2 ) They have minimum number of unpaired electrons</td>
+</tr>
+<tr>
+<td>  3 ) They are always diamagnetic</td>
+<td>  4 ) They always show square planar geometry</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: High spin complexes occur with weak field ligands causing minimal pairing of electrons, resulting in the maximum number of unpaired electrons.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('32')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans32" id="idans32">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:32</h3>
+<hr/>
+<h4> The hybridization and magnetic nature of [Mn(CN)<sub>6</sub>]<sup>4-</sup> respectively are</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  d<sup>2</sup>sp<sup>3</sup>  and diamagnetic</td>
+<td>  2 ) d<sup>2</sup>sp<sup>3</sup>  and paramagnetic</td>
+</tr>
+<tr>
+<td>  3 ) sp<sup>3</sup>d<sup>2</sup>  and diamagnetic</td>
+<td>  4 ) sp<sup>3</sup>d<sup>2</sup>  and paramagnetic</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: d<sup>2</sup>sp<sup>3</sup>  and paramagnetic<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('33')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans33" id="idans33">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:33</h3>
+<hr/>
+<h4> According to crystal field splitting theory , five d-orbitals of an octahedral complex split to give</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Two orbitals with lower energy and three orbitals with higher energy</td>
+<td>  2 ) Three orbitals with lower energy and two orbitals with higher energy</td>
+</tr>
+<tr>
+<td>  3 ) One orbitals with lower energy and four orbitals with higher energy</td>
+<td>  4 ) Four orbitals with lower energy and one orbitals with higher energy</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Three orbitals form the lower energy set called t<sub>2g</sub>.<br/>Two orbitals form the higher energy set called e<sub>g</sub>.<br/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('34')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans34" id="idans34">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:34</h3>
+<hr/>
+<h4> The geometry of [Ni(CO)<sub>4</sub>] and K<sub>2</sub>[NiCl<sub>4</sub>] are respectively</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  Both are square planar</td>
+<td>  2 ) both are tetrahedral</td>
+</tr>
+<tr>
+<td>  3 ) tetrahedral and square planar</td>
+<td>  4 ) square planar and tetrahedral</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [Ni(CO)<sub>4</sub>] ;Nickel is in zero oxidation state. CO is a strong field ligand causing pairing of electrons and forming tetrahedral geometry with sp³ hybridization.<br/>K<sub>2</sub>[NiCl<sub>4</sub>] This is a complex with Ni in +2 oxidation state, and weak Cl- ligands. It typically forms tetrahedral geometry with sp<sup>3</sup>hybridization<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('35')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans35" id="idans35">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:35</h3>
+<hr/>
+<h4> VBT predicts the magnetic behavior of [Co(H<sub>2</sub>O)]<sup>2+</sup> complex as:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Diamagnetic</td>
+<td>  2 ) Paramagnetic with 3 unpaired electrons</td>
+</tr>
+<tr>
+<td>  3 ) Paramagnetic with 1 unpaired electron</td>
+<td>  4 ) Paramagnetic with 4 unpaired electrons</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Co²⁺ has electronic configuration 3d⁷. H<sub>2</sub>O is a weak field ligand, so it does not cause pairing of electrons.The complex is high-spin with 3 unpaired electrons in the d-orbitals.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('36')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans36" id="idans36">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:36</h3>
+<hr/>
+<h4> [NiCl<sub>4</sub>]<sup>2-</sup> and [Ni(CN)<sub>4</sub>]<sup>2-</sup> resemble in</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Geometry</td>
+<td>  2 ) Magnetic nature</td>
+</tr>
+<tr>
+<td>  3 ) Hybridization</td>
+<td>  4 ) Oxidation state</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [NiCl<sub>4</sub>]<sup>2-</sup> : Ni is in +2 oxidation state. Chloride (Cl-) is a weak field ligand. It forms a tetrahedral complex.<br/>[Ni(CN)<sub>4</sub>]<sup>2-</sup> : Ni is also in +2 oxidation state. Cyanide (CN-) is a strong field ligand. It forms a square planar complex.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('37')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans37" id="idans37">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:37</h3>
+<hr/>
+<h4> Assertion : [CoCl(NH<sub>3</sub>)<sub>5</sub>]<sup>2+</sup> absorbs at lower wavelength of light with respect to [Co(NH<sub>3</sub>)<sub>5</sub>(H<sub>2</sub>O)]<sup>2+</sup><br/>Reason: It is because the wavelength of the light absorbed depends on the oxidation state of the metal ion</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both assertion and reason is correct and reason is the correct explanation for assertion</td>
+<td>  2 ) Both assertion and reason is correct but reason is not the correct explanation for assertion</td>
+</tr>
+<tr>
+<td>  3 ) Assertion is correct and reason is incorrect</td>
+<td>  4 ) Assertion is incorrect and reason is correct</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Co in +3 oxidation state will absorb greater energy at lower wavelength as compared to Co in +2 oxidation state<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('38')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans38" id="idans38">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:38</h3>
+<hr/>
+<h4> The correct order of ligands arranged in increasing field strength</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Cl<sup>-</sup>&lt; OH<sup>-</sup>&lt; Br<sup>-</sup>&lt; CN<sup>-</sup></td>
+<td>  2 ) H<sub>2</sub>O &lt; OH<sup>-</sup>&lt; CN<sup>- </sup>&lt; NH<sub>3</sub></td>
+</tr>
+<tr>
+<td>  3 ) F<sup>-</sup>&lt; Br<sup>-</sup>&lt; I<sup>-</sup> &lt; NH<sub>3</sub></td>
+<td>  4 ) Br<sup>-</sup>&lt; F<sup>-</sup>&lt; H<sub>2</sub>O &lt; NH<sub>3</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <img alt="Red dot" src="data:image/png;base64, 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"/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('39')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans39" id="idans39">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:39</h3>
+<hr/>
+<h4> The color of coordination compounds primarily arises due to:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) d-d electronic transitions</td>
+<td>  2 ) σ-σ* transitions</td>
+</tr>
+<tr>
+<td>  3 ) n-π* transitions</td>
+<td>  4 ) Covalent bonding</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: The absorption of light causes electrons to jump between split d-orbitals (d-d transitions), which leads to the characteristic colors of coordination compounds.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('40')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans40" id="idans40">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:40</h3>
+<hr/>
+<h4> Incorrect statement among the following is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )    All the octahedral complexes of Zn<sup>2+</sup> must be outer orbital complexes</td>
+<td>  2 ) Tetrahedral complexes [MA<sub>4</sub>] cannot show geometrical isomerism</td>
+</tr>
+<tr>
+<td>  3 ) Metal carbonyls are organometallic compounds</td>
+<td>  4 ) NH<sup>4+</sup> ions can form stable complexes</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: NH<sup>4+</sup> (ammonium ion) is a cation and generally does not act as a ligand to form stable coordination complexes because it lacks lone pairs to donate electrons to the metal center. </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('41')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans41" id="idans41">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:41</h3>
+<hr/>
+<h4> Assertion: [Fe(H<sub>2</sub>O)<sub>5</sub>NO]SO<sub>4</sub> is paramagnetic<br/>Reason: The Fe in [Fe(H<sub>2</sub>O)<sub>5</sub>NO]SO<sub>4</sub> has 3 unpaired electrons</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both assertion and reason is correct and reason is the correct explanation for assertion</td>
+<td>  2 ) Both assertion and reason is correct but reason is not the correct explanation for assertion</td>
+</tr>
+<tr>
+<td>  3 ) Assertion is correct and reason is incorrect</td>
+<td>  4 ) Assertion is incorrect and reason is correct</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Both assertion and reason is correct and reason is the correct explanation for assertion<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('42')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans42" id="idans42">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:42</h3>
+<hr/>
+<h4> Which factor does NOT affect the magnitude of crystal field splitting (Δo)?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Oxidation state of metal</td>
+<td>  2 ) Nature of ligands</td>
+</tr>
+<tr>
+<td>  3 ) Metal-ligand bond distance</td>
+<td>  4 ) Atomic number of ligand atoms</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: Crystal field splitting depends on the metal’s oxidation state, the nature of ligands, and the metal-ligand bond distance, but not directly on the atomic number of the ligand atoms.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('43')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans43" id="idans43">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:43</h3>
+<hr/>
+<h4> [Cr(H<sub>2</sub>O)<sub>6</sub>]Cl<sub>3 </sub>(atomic number of Cr = 24 ) has a magnetic moment of 3.83 B.M. The correct distribution of 3d-electrons in the chromium present in the complex is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 3d<sup>1</sup><sub>xy</sub> , 3d<sup>1</sup><sub>yz </sub>, 3d<sup>1</sup><sub>zx</sub></td>
+<td>  2 ) 3d<sup>1</sup><sub>xy</sub> , 3d<sup>1</sup><sub>yz</sub> , 3d<sup>1</sup><sub>z</sub><sup>2</sup></td>
+</tr>
+<tr>
+<td>  3 ) 3d<sup>1</sup><sub>(x</sub><sup>2</sup><sub>-y</sub><sup>2</sup><sub>)</sub> , 3d<sup>1</sup><sub>z</sub><sup>2</sup> , 3d<sup>1</sup><sub>zx</sub></td>
+<td>  4 ) 3d<sup>1</sup><sub>xy </sub>, 3d<sup>1</sup><sub>(x</sub><sup>2</sup><sub>-y</sub><sup>2</sup><sub>)</sub> , 3d<sup>1</sup><sub>xz</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: In an octahedral field, for d3 configuration (high spin), the three electrons occupy the lower energy t2g orbitals, which are: 3d<sup>1</sup><sub>xy</sub> , 3d<sup>1</sup><sub>yz </sub>, 3d<sup>1</sup><sub>zx</sub><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('44')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans44" id="idans44">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:44</h3>
+<hr/>
+<h4> Assertion : In the complex Ni(CO)<sub>4</sub> and Fe(CO)<sub>5</sub> , the metals have zero oxidation state<br/>Reason : Low oxidation states are found when a complex has ligands capable of π-donor character in addition to the σ-bonding<br/>In the light of above students choose the most appropriate answer</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Both assertion and reason is correct and reason is the correct explanation for assertion</td>
+<td>  2 ) Both assertion and reason is correct but reason is not the correct explanation for assertion</td>
+</tr>
+<tr>
+<td>  3 ) Assertion is correct and reason is incorrect</td>
+<td>  4 ) Assertion is incorrect and reason is correct</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Low oxidation state of metal can be stabilized by synergic effect so ,ligand has to be π-acceptor.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('45')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans45" id="idans45">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:45</h3>
+<hr/>
+<h4> If the effective atomic number of <math>
+<mfenced close="]" open="[" separators="|">
+<mo>[</mo>
+<mrow>
+<mi>A</mi>
+<msub>
+<mrow>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mi>N</mi>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>)</mo>
+</mfenced>
+</mrow>
+<mrow>
+<mn>6</mn>
+</mrow>
+</msub>
+</mrow>
+<mo>]</mo>
+</mfenced>
+<mi>C</mi>
+<msub>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mn>3</mn>
+</mrow>
+</msub>
+</math> is 33, is the atomic number of the element (A) will be</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  23.</td>
+<td>  2 ) 27.</td>
+</tr>
+<tr>
+<td>  3 ) 24.</td>
+<td>  4 ) 29.</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <math>
+<mi>Z</mi>
+<mo>-</mo>
+<mn>3</mn>
+<mo>+</mo>
+<mn>2</mn>
+<mfenced separators="|">
+<mo>(</mo>
+<mrow>
+<mn>6</mn>
+</mrow>
+<mo>)</mo>
+</mfenced>
+<mo>=</mo>
+<mn>35</mn>
+</math><br/>Z=24<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('46')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans46" id="idans46">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:46</h3>
+<hr/>
+<h4> Wilkinson catalyst is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) [NiCl<sub>4</sub>]</td>
+<td>  2 ) [(Ph<sub>3</sub>P)<sub>3</sub>RhCl]</td>
+</tr>
+<tr>
+<td>  3 ) AlCl<sub>3</sub> + TiCl<sub>4</sub></td>
+<td>  4 ) [Fe(CO)<sub>5</sub>]</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [(Ph<sub>3</sub>P)<sub>3</sub>RhCl]<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('47')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans47" id="idans47">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:47</h3>
+<hr/>
+<h4> Which ligand in the spectrochemical series causes the largest crystal field splitting?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) I<sup>-</sup></td>
+<td>  2 ) H<sub>2</sub>O</td>
+</tr>
+<tr>
+<td>  3 ) CN<sup>-</sup></td>
+<td>  4 ) Cl<sup>-</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, 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"/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('48')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans48" id="idans48">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:48</h3>
+<hr/>
+<h4> <img alt="Red dot" src="data:image/png;base64, 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"/></h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) A-I  B-II  C-III  D-IV</td>
+<td>  2 ) A-II  B-I  C-III  D-IV</td>
+</tr>
+<tr>
+<td>  3 ) A-I  B-II  C-IV  D-III</td>
+<td>  4 ) A-II  B-I  C-IV  D-III</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: A-I  B-II  C-IV  D-III<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('49')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans49" id="idans49">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:49</h3>
+<hr/>
+<h4> Which of the following statements is incorrect ?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  If Δ<sub>0</sub> &lt; P , high spin state is more stable</td>
+<td>  2 ) NO<sub>2</sub> is a strong ligand</td>
+</tr>
+<tr>
+<td>  3 ) Color of a complex depends upon nature of metal ion only</td>
+<td>  4 ) Δ<sub>0</sub> &gt; Δ<sub>t</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The color of a coordination complex depends on several factors including the nature of the metal ion, the oxidation state, the nature of ligands (which affects the crystal field splitting energy Δ), and the geometry of the complex. It is not solely dependent on the metal ion.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('50')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans50" id="idans50">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:50</h3>
+<hr/>
+<h4> Which of the following cannot be explained by CFT</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Magnetic properties of transition metal complex</td>
+<td>  2 ) The order of spectrochemical series</td>
+</tr>
+<tr>
+<td>  3 ) Color of metal complexes</td>
+<td>  4 ) Stability of metal complexes</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 4</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 4 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: CFT successfully explains:<br/>Magnetic properties (a)<br/>Order of spectrochemical series (b)<br/>Color of metal complexes (c)<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('51')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans51" id="idans51">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:51</h3>
+<hr/>
+<h4> In which situation does Valence Bond Theory fail to distinguish the geometry of a complex?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Tetrahedral vs square planar for coordination number 4</td>
+<td>  2 ) Octahedral vs trigonal bipyramidal for coordination number 6</td>
+</tr>
+<tr>
+<td>  3 ) Linear vs bent molecule shape</td>
+<td>  4 ) Square planar vs tetrahedral for coordination number 6</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: VBT often cannot clearly explain why some d⁸ complexes form square planar geometry instead of the expected tetrahedral geometry because it does not account well for differences in ligand field effects that determine this.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('52')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans52" id="idans52">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:52</h3>
+<hr/>
+<h4> Which of the following complexes shows zero crystal field stabilization energy (CFSE)?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 )  [Co(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup></td>
+<td>  2 ) [Fe(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup></td>
+</tr>
+<tr>
+<td>  3 ) [Co(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></td>
+<td>  4 ) [Mn(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: a. [Co(H<sub>2</sub>O)6]³⁺ → Co³⁺ is d⁶; generally shows CFSE in octahedral field.
+<br/>
+b. [Fe(H<sub>2</sub>O)6]³⁺ → Fe³⁺ is d⁵; in high-spin octahedral complexes, CFSE is zero because of equal distribution of electrons in t2g and eg orbitals.
+<br/>
+c. [Co(H<sub>2</sub>O)6]²⁺ → Co²⁺ is d⁷; shows non-zero CFSE.
+<br/>
+d. [Mn(H<sub>2</sub>O)6]³⁺ → Mn³⁺ is d⁴; shows non-zero CFSE.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('53')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans53" id="idans53">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:53</h3>
+<hr/>
+<h4> The color of [Ti(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup> is due to :</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) transfer of an electron from one Ti to another</td>
+<td>  2 ) excitation of electrons from d -&gt; d</td>
+</tr>
+<tr>
+<td>  3 ) intramolecular vibration</td>
+<td>  4 ) None of the above</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The color of [Ti(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup> is due to the excitation of electrons from one d orbital to another d orbital within the Ti ion, which  corresponds to d-d electronic transitions.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('54')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans54" id="idans54">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:54</h3>
+<hr/>
+<h4> According to VBT, what bond angle is expected in sp<sup>3</sup>d<sup>2</sup> hybridized complexes?</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 109.5°</td>
+<td>  2 ) 90° and 180°</td>
+</tr>
+<tr>
+<td>  3 ) 120°</td>
+<td>  4 ) 90° and 120°</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: According to Valence Bond Theory (VBT), the sp³d² hybridization corresponds to an octahedral geometry, where the bond angles are:b. 90° and 180°<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('55')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans55" id="idans55">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:55</h3>
+<hr/>
+<h4> The octahedral diamagnetic low spin complex among the following is</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) [NiCl<sub>4</sub>]<sup>2-</sup></td>
+<td>  2 ) [CoF<sub>6</sub>]<sup>3-</sup></td>
+</tr>
+<tr>
+<td>  3 ) [Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3+</sup></td>
+<td>  4 ) [CoCl<sub>6</sub>]<sup>3-</sup></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: [NiCl<sub>4</sub>]<sup>-</sup><sup>2 </sup>:Nickel(II), d8, tetrahedral complex with weak field Cl- ligands. Expected to be paramagnetic (high spin), not low spin or diamagnetic.<br/>[CoF<sub>6</sub>]<sup>3</sup><sup>- </sup>:Cobalt(III), d6, with weak field F- ligands. High spin (paramagnetic), not diamagnetic low spin.<br/>[Co(NH<sub>3</sub>)<sub>6</sub>]<sup>3</sup><sup>+ </sup>:Cobalt(III), d6, with strong field NH3 ligands. Low spin, octahedral, diamagnetic (all electrons paired).<br/>[CoCl<sub>6</sub>]<sup>3- </sup>: Cobalt(III), d6, with weak field Cl- ligands. High spin (paramagnetic), not diamagnetic low spin.<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('56')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans56" id="idans56">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:56</h3>
+<hr/>
+<h4> The structure of iron pentacarbonyl is :</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) square planar</td>
+<td>  2 ) trigonal bipyramidal</td>
+</tr>
+<tr>
+<td>  3 ) triangular</td>
+<td>  4 ) tetrahedral</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 2</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAKQAAACBBAMAAAC8+gz3AAAAHlBMVEX////q8OvlzK1PQU200eSPaVGomIx5ueBbcpQ0vvKXCPkPAAAE9ElEQVR4nO2aT2+kNhjGX1sbejXe4P0AjOleoyDB0aB0qz1TZXxsFoZwZHLYKrdhxaJ8gFWjfNu+JjOZPyFRF9xK284TaWYywC/G4Od9bAJw1FFH/TAii64AWmllD+m1XLN8KSJ7yFyBTJGXKVtEohlQEQL4tTVkzABO7CK1daTpQ8Kjvk9tyW8gSLSisTUiUF22ILrF0h4S+AX2Jk8sEo1cyzzULRt9aPC1BZB3xSFhPJJGbl73L9aQ/gpvam8FzsoaEu9mGuEoIcoaMjPIoVEyvZUWkUhzQoO0d8XRcPyVE4L43RqSVOUlI3lXHY7nCbc6mTHzcvpwwJyA3Ojdg7KNPGTaQMLHPaYVJDJ3MHaQ8PF+y7GEJLdbpiWkYdpGIvObbSS8eVgziS3iminK8tpaKw1zCU6cPqsc05hYjIDXXO1/f5oYMxhX3N8hUihaVnvnLjqMILIbG41pnCuvwVK3o1zROaYk9NZxyChQflfu+p3JXIF39pgURyEJ85fw08NWf2I4JG+b0WkbLw94Dfn1j60+m7mAPx4pYmUS4e7B5q/gn0HkmBN/840+D4OmD2c4JxiVYx/H5LMw6Lf8muhENmOJcH/4Pa2wI3Ckfv95b7zoGRKIgY1wEySyF5AjtfVgW8idSmEJuVt7piCJu3nZq5ATkKTC/E+qO3TxvTo+AYlD2RgZydl+2piAxBj8tsEXcbuficYjzdA9CdEKyEFym4DE6bwTGls9GGgWWnmoaX3pmb6kyhrSa1284q373h6SVAtzX3bFwfeWRo8t5As6Iv9XSH7h3o+NksNydDl3ZVdZDMJ+TTTVzLG3ymrcKcD4MzZKDsiENGJCmr3FxqfcZxFp8h5maJvLy2jygkc2+xIkRkmoEtlaI5plGQXOmCj5ikZGyaOO+kFEXLePHURB/8HFeeNEpHNe9u4jFdWYkuTdJZMTqwV6j/FJ0MyvaYS+KRtnxDR0H0mUEgW+9csODboxHbmWsUV+qOlcLud9rTAr+PFkZJbXJ6H8Mu+Lo0FqPrmVFBPxRRrRDXJ6KzWwvgdNX56u+3La0ymKUxYa8USDv3SvaeTKhobB1RSkEyuARYdIqqslyO6SOU1wGONHiIGvHpcdcPTI2n1vowZR9fRxxmbXFoj7cv+Bh33/MbnDfUTxxuavXWLa3/mnA7t4nV4Y3zq0WIlR1SwtCzWAI0W/gzGDARuVSvPf8L1i/Y5PctaP2r0h6yVzbGU/6Iee4J2iz/KZ+FSAKAtaKn6FAy8omEF6X65ZkMyCghe8TFPcnNAiwB1oAUEZ4m4vPODXjGRfuxj9sZY3WsRlTFt0cYPEd3+Zt3lqtsa6SjU/v4k/xQItSoZO69cvIcFPXO2cnTRYGNIINK+9sx65opGHR3mN5ldO6P5MtKsZ/vAIN4WOeg2p0CFDPBL8G0SyYPHYyrpHKufMT2ssPrRcI90Ia1JIgvw1JGh6WbprpIjEHvKk8TqFyCrpgRuk13rDSKIV5DhnEm0CeVLxiGRe44XmX0C8RoT+yl/6tRODF+JpZwm2083S2GtFhBuaQaSTLWnWUP3h/LwRXStint3oUv8SYfYvtcpbv9MM7xgZMdktOp3qNPscJ7qMxF3Z5a/leJGW8SZEP2VpMzawV4BePf36HZIKhg0Rz03sLa3/bdGyHKxXZNGCGDlNecli2fOFuKP+Df0F7js7dokNcMIAAAAASUVORK5CYII="/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('57')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans57" id="idans57">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:57</h3>
+<hr/>
+<h4> [Mn<sub>2</sub>(CO)<sub>10</sub>] is organometallic compound due to the presence of  </h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) C-O bond</td>
+<td>  2 ) Mn-O bond</td>
+</tr>
+<tr>
+<td>  3 ) Mn-C bond</td>
+<td>  4 ) Mn-Mn bond</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 3</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: <br/><br/><img alt="Red dot" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAALUAAABwBAMAAACqWCydAAAAHlBMVEX////d7fHhyqxVP0Om1vCshmdpv+uOmagiuPFXaYd4O2c8AAAFyklEQVR4nO2aQU/rRhCAZ/fFtMe1aSquiTFWzqBYvjkRbbmHEu0toBZxfEmDrB6Rnp44Jk9UVv5tZ9Z2bFJ2nXWQKrUMyCHJ+PN4d2ZndgzAh/z3hbnl4f1FblLB5WZu0un38PL9kS3auQA/8edMCr1ON3ucwyCViSXb/wzOLYLxVStS8At+Ac7akj1BY7wI4JP+RD4EOD1eqVdrNjezcdjU/bHYMG4HsWcAtmyyZ2Qe79JuHtuh8UQ3QD/hBj+h2zrtru3HGwZ/LYHLP03+PZl7Sx6PTK6kkUtoiks+TRPopkv6O1wK4Kkx0mry0KjRuaUjo0OQPb6ATOWet1Bny4wGKEt22E+VgmA3FEYX1mznxZPCn3d3zqzYZRjt6+o1Njp7MI7IOg27dMddjT3YaA0no/2ZkT1rwVZ36pjYysX91d4hasMmjRA1uP1cTgQwb5gvMm+ywc/CJcjFH9Y+2PHXECa4WkevNWpsN00pdpb7oSs2e/A2j0vMMnIn7Cr20RNYyZZ98gV4D0fc6+1oVOyHpB2786yb+y37xy92aLgvXq9udRolm9maXbI7X7UaJfvE1uySbbCpYDPtoDWwTUNZsE8snaRks+ekia2f6wb2lcmmnK2fazO789Vkk2Ib5trMfpiZNBT7yqiiZzfEBLGP2piNbONEojBhH+0oLq6q7lVzTBxZhw3wyRqc+N40kSzERTV8bXaYunSoncZo7cVDvf73sbSPjH7L8PLd+JXZPEul6FKlUnEWwQv434J6WRfEMIh4GryAVujyQ5GXPsUnn2GAKaSWkCnXSYHvpzU7w0kyjfj5fCeL1SWM4NehU7cSlTmlPn+2vRN6d4cH7+G5kK8Q+neLCC/pJ5caEaH0FkMsNaVbCGxT9qpkq3cLGpCf7wv5DcLuZqTYo2eNzM7835E9BHlVfCJM7PoN89hFNu7VXI2Is+PNWLF/KO4k32u8MSYR1GcFpBfx2IvFRF8UnDkxH2JBUs0czuV3o1dzCeodXjOsPuLyqcezsRztpvZKmPSGTtyNvfNkOwJRfyqCrO5c6JHoqtmr4gLX+4btNktFz0vpZ8vGsJnn0VIJ1fz5oRRa7+/BKEcJ/bYQWu8b2BjtJ23YKiWY2bT8ft+GrdZ7I1uVJG3YeZoyslVub8POM5mJnZckLdjFem9i5yVJC3ax3hvYRSVlzy4TsIFdVFLW7G0C1rPLSsqava3u9OyykrJlV0Wpls3KYsuWXe1c9HaXSduO3e8xwfrCxOb0tde39m8n71RshJ7NJNYJPM/AVmyZ8CGmuOO1nu28UE9yBtRwtGFTdgupuTXUsxHLR3HeI7Nh592EpGicvc2u9/as2VTAqG7C+7J50QXJ9+3vzMaxCHEi866TZrxXwKnmQxPs/MSfe9c8cvOG39ts/DpM/BePilwrNpdYEARFMaHZbATZEtg0pctb5mKaxKK+utSosFIPOvYbSyXOhm5hY6i/i66na/9IQo6CNY7tZKZX4TJLgW82tu1YdEd+Tc8FDM0t9CiqI3c7TY1CzxBcCiND/xm/7o7/2SFrFLVcEdtgFEYve6Mj2SifSrbebl3XsFHoHBdPMox3azYuV3xJa/VKr1Nuy2zHG8MP/VummSE8/LUbisnIs/UTTJ0uPSszRR6Xj3PcC1s/8tpL8keFLQP/Qz7kX5Yd12U7fx3k2YMxxj0vt+f8GvfrPbVf56qD4BgTXoNId7KuWmLO2sn6UlB3i6klxP65ZZ0tBtTvYsIjvD/zZzBIyu7WwewwhunQiVS17c+qXte7sCfU74qUnX5S9aPeg33mP96VfaNX7OQd2E6c97sEQ7b6f4DtmIjD2Txn9+c4lytw8r6lFKd84R3E9uLxhRMHsXc+Xlz7Mx6nU6G6W1LchKo2ac92+0LwntvDVz7Hcshb5I0tNoXTkN8dwq43B8M5xmUpGJc34S8/7fmw8k2pLRiMunPVO4BTvvzIlB/yf5a/AUg0aPXPYmZyAAAAAElFTkSuQmCC"/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('58')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans58" id="idans58">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:58</h3>
+<hr/>
+<h4> The difference between inner orbital and outer orbital complexes in VBT lies in:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) Type of ligands present</td>
+<td>  2 ) Use of inner or outer d orbitals for bonding</td>
+</tr>
+<tr>
+<td>  3 ) Geometry only</td>
+<td>  4 ) Oxidation state of the metal</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 2 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: The difference between inner orbital and outer orbital complexes in Valence Bond Theory (VBT) lies in:<br/>b. Use of inner or outer d orbitals for bonding<br/>Inner orbital complexes use (n-1)d orbitals (low-spin), while outer orbital complexes use ns and np orbitals along with the outermost d orbitals (high-spin).<br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('59')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans59" id="idans59">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:59</h3>
+<hr/>
+<h4> Which of the following depicts the correct relation</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) 9Δ<sub>0 </sub>= 4Δ<sub>t</sub></td>
+<td>  2 ) Δ<sub>0</sub> = Δ<sub>t</sub></td>
+</tr>
+<tr>
+<td>  3 ) 4Δ<sub>0</sub> = 9Δ<sub>t</sub></td>
+<td>  4 ) 4Δ<sub>0</sub> = Δ<sub>t</sub></td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 3 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 0.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: 4Δ<sub>0</sub> = 9Δ<sub>t</sub><br/><br/><br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('60')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="classans60" id="idans60">
+<table style="width: 100%">
+<tr>
+<td>
+<div class="panel panel-default">
+<div class="panel-body mb0">
+<div class="row">
+<div class="col-lg-12">
+<h3>Question No:60</h3>
+<hr/>
+<h4> The magnetic moment of [Ni(CN)<sub>4</sub>]<sup>2-</sup> is zero because:</h4>
+<table class="table table-borderless mb0" style="font-size:16px">
+<tbody>
+<tr>
+<td>  1 ) All electrons are paired due to strong field ligands</td>
+<td>  2 ) Presence of unpaired electrons in outer d orbitals</td>
+</tr>
+<tr>
+<td>  3 ) Ligands cause tetrahedral geometry</td>
+<td>  4 ) Weak field ligands induce unpairing</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Your Option: 1</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Correct Option: 1 </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<p style="font-size:16px">Score:4/-1 1.00 </p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p style="font-size:18px">Detailed Answer: Explanation: CN⁻ is a strong field ligand, which causes pairing of electrons in the Ni²⁺ (d⁸) ion, resulting in a square planar low-spin complex with no unpaired electrons, making it diamagnetic.<br/> </p>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="btn" style="width:100%;float:center">
+<button class="btn btn-primary" id="next" onclick="fun2('61')" type="button">Next</button>
+</div>
+</div>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="hidden-lg hidden-md">
+<div class="clearfix"></div></div>
+<div class="col-md-4" id="pallette">
+<div class="panel panel-default mb0">
+<div class="panel panel-default">
+<div class="panel-body" style="height:310px;overflow-y:scroll;">
+<table style="background-color:#eef7e4;">
+<tbody><tr>
+<td style="padding: 15px;/* width: 50px; */">
+<input id="btn1" name="btn1" onclick="fun2('1')" style="background-color:green" type="button" value="1"/>
+<input id="btn2" name="btn2" onclick="fun2('2')" style="background-color:green" type="button" value="2"/>
+<input id="btn3" name="btn3" onclick="fun2('3')" style="background-color:green" type="button" value="3"/>
+<input id="btn4" name="btn4" onclick="fun2('4')" style="background-color:red" type="button" value="4"/>
+<input id="btn5" name="btn5" onclick="fun2('5')" style="background-color:green" type="button" value="5"/>
+<input id="btn6" name="btn6" onclick="fun2('6')" style="background-color:green" type="button" value="6"/>
+<input id="btn7" name="btn7" onclick="fun2('7')" style="background-color:green" type="button" value="7"/>
+<input id="btn8" name="btn8" onclick="fun2('8')" style="background-color:green" type="button" value="8"/>
+<input id="btn9" name="btn9" onclick="fun2('9')" style="background-color:green" type="button" value="9"/>
+<input id="btn10" name="btn10" onclick="fun2('10')" style="background-color:green" type="button" value="10"/>
+<input id="btn11" name="btn11" onclick="fun2('11')" style="background-color:green" type="button" value="11"/>
+<input id="btn12" name="btn12" onclick="fun2('12')" style="background-color:green" type="button" value="12"/>
+<input id="btn13" name="btn13" onclick="fun2('13')" style="background-color:green" type="button" value="13"/>
+<input id="btn14" name="btn14" onclick="fun2('14')" style="background-color:green" type="button" value="14"/>
+<input id="btn15" name="btn15" onclick="fun2('15')" style="background-color:red" type="button" value="15"/>
+<input id="btn16" name="btn16" onclick="fun2('16')" style="background-color:red" type="button" value="16"/>
+<input id="btn17" name="btn17" onclick="fun2('17')" style="background-color:red" type="button" value="17"/>
+<input id="btn18" name="btn18" onclick="fun2('18')" style="background-color:green" type="button" value="18"/>
+<input id="btn19" name="btn19" onclick="fun2('19')" style="background-color:green" type="button" value="19"/>
+<input id="btn20" name="btn20" onclick="fun2('20')" style="background-color:green" type="button" value="20"/>
+<input id="btn21" name="btn21" onclick="fun2('21')" style="background-color:red" type="button" value="21"/>
+<input id="btn22" name="btn22" onclick="fun2('22')" style="background-color:green" type="button" value="22"/>
+<input id="btn23" name="btn23" onclick="fun2('23')" style="background-color:green" type="button" value="23"/>
+<input id="btn24" name="btn24" onclick="fun2('24')" style="background-color:green" type="button" value="24"/>
+<input id="btn25" name="btn25" onclick="fun2('25')" style="background-color:green" type="button" value="25"/>
+<input id="btn26" name="btn26" onclick="fun2('26')" style="background-color:green" type="button" value="26"/>
+<input id="btn27" name="btn27" onclick="fun2('27')" style="background-color:red" type="button" value="27"/>
+<input id="btn28" name="btn28" onclick="fun2('28')" style="background-color:green" type="button" value="28"/>
+<input id="btn29" name="btn29" onclick="fun2('29')" style="background-color:red" type="button" value="29"/>
+<input id="btn30" name="btn30" onclick="fun2('30')" style="background-color:green" type="button" value="30"/>
+<input id="btn31" name="btn31" onclick="fun2('31')" style="background-color:green" type="button" value="31"/>
+<input id="btn32" name="btn32" onclick="fun2('32')" style="background-color:green" type="button" value="32"/>
+<input id="btn33" name="btn33" onclick="fun2('33')" style="background-color:green" type="button" value="33"/>
+<input id="btn34" name="btn34" onclick="fun2('34')" style="background-color:green" type="button" value="34"/>
+<input id="btn35" name="btn35" onclick="fun2('35')" style="background-color:green" type="button" value="35"/>
+<input id="btn36" name="btn36" onclick="fun2('36')" style="background-color:green" type="button" value="36"/>
+<input id="btn37" name="btn37" onclick="fun2('37')" style="background-color:red" type="button" value="37"/>
+<input id="btn38" name="btn38" onclick="fun2('38')" style="background-color:green" type="button" value="38"/>
+<input id="btn39" name="btn39" onclick="fun2('39')" style="background-color:green" type="button" value="39"/>
+<input id="btn40" name="btn40" onclick="fun2('40')" style="background-color:red" type="button" value="40"/>
+<input id="btn41" name="btn41" onclick="fun2('41')" style="background-color:red" type="button" value="41"/>
+<input id="btn42" name="btn42" onclick="fun2('42')" style="background-color:red" type="button" value="42"/>
+<input id="btn43" name="btn43" onclick="fun2('43')" style="background-color:green" type="button" value="43"/>
+<input id="btn44" name="btn44" onclick="fun2('44')" style="background-color:green" type="button" value="44"/>
+<input id="btn45" name="btn45" onclick="fun2('45')" style="background-color:red" type="button" value="45"/>
+<input id="btn46" name="btn46" onclick="fun2('46')" style="background-color:green" type="button" value="46"/>
+<input id="btn47" name="btn47" onclick="fun2('47')" style="background-color:green" type="button" value="47"/>
+<input id="btn48" name="btn48" onclick="fun2('48')" style="background-color:green" type="button" value="48"/>
+<input id="btn49" name="btn49" onclick="fun2('49')" style="background-color:red" type="button" value="49"/>
+<input id="btn50" name="btn50" onclick="fun2('50')" style="background-color:green" type="button" value="50"/>
+<input id="btn51" name="btn51" onclick="fun2('51')" style="background-color:green" type="button" value="51"/>
+<input id="btn52" name="btn52" onclick="fun2('52')" style="background-color:green" type="button" value="52"/>
+<input id="btn53" name="btn53" onclick="fun2('53')" style="background-color:green" type="button" value="53"/>
+<input id="btn54" name="btn54" onclick="fun2('54')" style="background-color:green" type="button" value="54"/>
+<input id="btn55" name="btn55" onclick="fun2('55')" style="background-color:red" type="button" value="55"/>
+<input id="btn56" name="btn56" onclick="fun2('56')" style="background-color:green" type="button" value="56"/>
+<input id="btn57" name="btn57" onclick="fun2('57')" style="background-color:green" type="button" value="57"/>
+<input id="btn58" name="btn58" onclick="fun2('58')" style="background-color:red" type="button" value="58"/>
+<input id="btn59" name="btn59" onclick="fun2('59')" style="background-color:red" type="button" value="59"/>
+<input id="btn60" name="btn60" onclick="fun2('60')" style="background-color:green" type="button" value="60"/>
+</td> </tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="table-responsive text-nowrap" id="t3" style="display:none">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Details of JUT: 10457 </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Total Score: 44.00  </h4>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>RANK: 1 </h4>
+</div>
+<br/>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h4>Your 25-CHEM KCET JUT-34 Score:44.00   </h4>
+</div>
+<table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+<tr style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+<td><b>Questions Attempted</b></td>
+<td>60</td>
+</tr>
+<tr>
+<td><b>Correct Answers</b></td>
+<td>44</td>
+</tr>
+<tr style="background:#a0d3d691;">
+<td><b>Wrong Answers</b></td>
+<td>16</td>
+</tr>
+</table>
+<div class="col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<div id="canvas-holder" style="width:80%;float:right">
+<canvas id="physicschart"></canvas>
+</div>
+</div>
+</div>
+<!--	<div class="table-responsive text-nowrap" id="t4" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10457 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 44  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Chemistry Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="chemistrychart"></canvas>
+	</div>
+
+	
+			  
+			</div></div>
+			
+			<div class="table-responsive text-nowrap" id="t5" style="display:none">
+				<div  class= "col-md-4 col-sm-12 col-xs-12">
+                    <h4>Details of JUT: 10457 </h4>
+				</div>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Total Score: 44  </h4>
+				</div>
+         
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>RANK: 1 </h4>
+				</div>
+				<br>
+				<div  class="col-md-4 col-sm-12 col-xs-12">
+                   <h4>Your Biology Score:0.00   </h4>
+				</div>
+			  <table class="table table-striped" style="text-align: center;border: 1px solid #3a3030;">
+				<tr  style="background:#a0d3d691;border-bottom: 1px solid #3a3030;">
+					<td><b>Questions Attempted</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 <tr>
+					<td><b>Correct Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				  <tr  style="background:#a0d3d691;">
+					<td><b>Wrong Answers</b></td>
+					<td>0</td>
+					
+				  </tr>
+				 
+				 
+			  </table>
+			  
+			  <div  class= "col-md-6 col-sm-12 col-xs-12">
+                </div> 
+
+	
+			   <div  class= "col-md-6 col-sm-12 col-xs-12">
+                   <div id="canvas-holder" style="width:80%;float:right;">
+		<canvas id="biochart"></canvas>
+	</div>
+
+	
+			  </div>
+			</div>-->
+</div>
+</div>
+</div>
+<!-- End Email Statistic area-->
+<!-- Start Footer area-->
+<div class="footer-copyright-area hidden-xs" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+</div>
+<div class="site-footer__top" style="padding-bottom:10px">
+<div class="container">
+<div class="col-md-12 col-sm-12">
+<nav class="site-footer__navigation" role="navigation" style="padding-bottom:20px">
+<div class="menu-home-footer-container">
+<img src="https://jnanasudha.com/assets/studentdashboard/img/logo/logo.gif" style="border: none;height:100px;float:left"/>
+<ul class="menu" id="footer-navigation" style="text-align: center;">
+<li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" style="margin: 5px" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" style="margin: 5px" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" style="margin: 5px" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" style="margin: 5px" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" style="margin: 5px" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" style="margin: 5px" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" style="margin: 5px" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" style="margin: 5px" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" style="margin: 5px" target="_blank">JIIPMER</a></li>
+</ul>
+<div><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px">
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;font-size:16px;margin: 5px;">jnanasudhaonline@gmail.com</a></font>|<font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;font-size:16px;margin: 5px">info@jnanasudha.com</a></font></li></ul></div>
+</div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation" style="text-align: center;"><li style="font-size:17px;"><a href="https://jnanasudha.com/quiz/termsandconditions" style="margin:5px" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a>|<a href="#" style="margin:5px" title="Disclaimer">DISCLAIMER</a></li>|<li><a data-toggle="modal" href="#costumModal20" style="margin: 5px">Contact Us</a></li></ul></div>
+<div aria-hidden="true" aria-labelledby="costumModalLabel" class="modal" data-easein="slideDownBigIn" id="costumModal20" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+									×
+								</button>
+<h4 class="modal-title">
+									Contact Us
+								</h4>
+</div>
+<div class="modal-body">
+<p style="color:#757575">
+									PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .</p>
+<br/><p style="color:blue">Ph: (08258) 295555, 295999
+                      Mob:+91 8762295555,+91 8762595555
+								</p>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<br/>
+<div class="site-footer__bottom">
+<div>
+<p style="font-size:15px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .site-footer__bottom -->
+</div><!-- .container -->
+</div></div></footer><!-- .site-footer -->
+</div>
+</div>
+<!-- Footer Links -->
+</div>
+
+<div class="footer-copyright-area hidden-lg hidden-sm hidden-md" id="footer">
+<div class="c-footer" role="contentinfo">
+<div class="o-grid o-grid--no-max-width">
+<footer class="site-footer" role="contentinfo">
+<div class="site-footer__quicklinks">
+<div class="container">
+<div class="quick-links">
+<div class="grid-container">
+<input id="quick-links_toggle-checkbox" type="checkbox" value="1"/>
+<div class="quick-links__title">
+<label class="quick-links__toggle" for="quick-links_toggle-checkbox">
+<i class="quick-links__toggle-icon"></i>
+<span class="quick-links__toggle-text">Contact Us</span>
+</label>
+</div>
+<div class="quick-links__content">
+<ul class="quick-links__list">
+<li class="quick-links__list-title"><font style="color:#009eff;font-size:17px;"><a href="mailto:info@company.com" style="color: #009eff;">info@jnanasudha.com</a></font><br/>
+<font style="color:#009eff;font-size:17px;"><a href="mailto:jnanasudhaonline@gmail.com" style="color: #009eff;">jnanasudhaonline@gmail.com</a></font></li>
+<li style="font-size:16px;">PADMAGOPAL<br/>
+                      Jodurasthe, Kukkundoor Post, Karkala Taluk, Udupi District,karnataka State - 576117 .
+                      <br/>Ph: <a href="tel:08258295555" style="color: #009eff;">(08258) 295555</a>,<a href="tel:08258295999" style="color: #009eff;"> 295999</a>
+                      Mob:<a href="tel:+918762295555" style="color: #009eff;">+91 8762295555</a>,<a href="tel:+918762595555" style="color: #009eff;">+91 8762595555</a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="site-footer__top">
+<div class="container">
+<nav class="site-footer__navigation" role="navigation">
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li><a href="https://jeemain.nic.in/webinfo/Public/Home.aspx" target="_blank">JEE-MAINS</a></li>
+<li><a href="https://jeeadv.ac.in/" target="_blank">JEE-ADVANCED</a></li>
+<li><a href="http://www.pue.kar.nic.in/" target="_blank">PUC BOARD</a></li>
+<li><a href="https://ntaneet.nic.in/Ntaneet/Welcome.aspx" target="_blank">NEET</a></li>
+<li><a href="http://kea.kar.nic.in/" target="_blank">KEA</a></li>
+<li><a href="https://nta.ac.in/" target="_blank">NTA</a></li>
+<li><a href="https://www.aiimsexams.org/" target="_blank">AIIMS</a></li>
+<li><a href="http://www.kvpy.iisc.ernet.in/main/index.htm" target="_blank">KVPY</a></li>
+<li><a href="http://www.jipmer.edu.in/" target="_blank">JIIPMER</a></li>
+</ul></div>
+<div class="menu-home-footer-container"><ul class="menu" id="footer-navigation"><li style="font-size:17px"><a href="https://jnanasudha.com/quiz/termsandconditions" title="Terms &amp; Conditions">TERMS &amp; CONDITIONS</a> | <a href="#" title="Disclaimer">DISCLAIMER</a></li></ul></div>
+</nav><!-- .site-footer__navigation -->
+</div><!-- .container -->
+</div><!-- .site-footer__top -->
+<div class="site-footer__bottom">
+<div class="container">
+<br/>
+<div class="site-footer__copy">
+<p style="font-size:13px">
+                          Copyright © 2019 . All rights reserved. <a href="http://jnanasudha.com" target="_blank">jnanasudha.com</a> supported by <a href="https://www.techverves.com/" target="_blank">TechVerves.com</a></p>
+</div><!-- .site-footer__copy -->
+</div><!-- .container -->
+</div><!-- .site-footer__bottom -->
+<!-- .site-footer__quicklinks -->
+</footer><!-- .site-footer -->
+</div>
+</div>
+</div>
+<style>a[data-toggle="modal"] {
+  margin: 5px;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.modal {
+  text-align: left;
+}
+.modal-content {
+  border: none;
+  color:black;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.modal-header{
+  border-bottom: 0;
+  padding-top: 15px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 0px;
+   color:black;
+}
+.modal-title {
+  font-size: 20px;
+   color:black;
+}
+.modal-body{
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  font-size: 15px;
+   color:black;
+}
+
+.modal-footer {
+  border-top:0;
+  padding-top: 0px;
+  padding-right:26px;
+  padding-bottom:26px;
+  padding-left:26px;
+}
+
+</style>
+<!-- End Footer area-->
+<script>
+                                $(document).ready(function () {
+                                $('[data-toggle=collapse-side]').click(function (e) {
+                                $('.side-collapse').toggleClass('in');
+                                });
+                                });
+                                $(document).ready(function () {
+                                $('.second-button').on('click', function () {
+                                $('.animated-icon2').toggleClass('open');
+                                });
+                                });
+                                </script>
+<script type="text/javascript">
+
+                        $(window).on('load resize scroll', function() {
+    var f = $('#footer');
+    f.css({position:'static'});
+    if (f.offset().top + f.height() < $(window).height()) {
+        f.css({position:'absolute', bottom:'0', width:'100%'});
+    }
+});
+                    </script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+		
+		var configphysics = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						44,
+						16,
+						-15					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		var configbiology = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						90					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+		
+		var configchemistry = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						0,
+						0,
+						45					],
+					backgroundColor: [
+						window.chartColors.green,
+						window.chartColors.red,
+						window.chartColors.yellow
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Correct',
+					'Incorrect',
+					'Not Answered'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+
+		window.onload = function() {
+			var ctx1 = document.getElementById('biochart').getContext('2d');
+			window.myPie = new Chart(ctx1, configbiology);
+			var ctx2 = document.getElementById('chemistrychart').getContext('2d');
+			window.myPie = new Chart(ctx2, configchemistry);
+			var ctx3 = document.getElementById('physicschart').getContext('2d');
+			window.myPie = new Chart(ctx3, configphysics);
+		};
+
+		
+	</script>
+<script type="text/javascript">
+function close_window(){
+    window.opener.location ='https://jnanasudha.com/quiz/quiz_userscreen';
+    window.close();
+}
+</script>
+<script>
+ document.getElementById('t1').style.display = "block";
+ document.getElementById('sp1').addEventListener("click",function(){
+    showTable('t1');
+});
+
+document.getElementById('sp2').addEventListener("click",function(){   
+    showTable('t2');
+});document.getElementById('sp3').addEventListener("click",function(){   
+    showTable('t3');
+});
+document.getElementById('sp4').addEventListener("click",function(){   
+    showTable('t4');
+});document.getElementById('sp5').addEventListener("click",function(){   
+    showTable('t5');
+});
+function showTable(table){
+    var tables =['t1','t2','t3'];    
+    for(var i=0;i<3;i++){
+        document.getElementById(tables[i]).style.display = "none";    
+    }
+    document.getElementById(table).style.display = "block";
+    
+}
+</script>
+<script>
+$("#sp1").click(function() {
+  $("#sp1").addClass('button-clicked');
+});
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+    var highestBox = 0;
+        $('.btn-group-justified .btn').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.btn-group-justified .btn').height(highestBox);
+fun2(1);
+});
+</script>
+
+<!-- bootstrap JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/bootstrap.min.js"></script>
+<!-- wow JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wow.min.js"></script>
+<!-- price-slider JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery-price-slider.js"></script>
+<!-- owl.carousel JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/owl.carousel.min.js"></script>
+<!-- scrollUp JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/jquery.scrollUp.min.js"></script>
+<!-- meanmenu JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/meanmenu/jquery.meanmenu.js"></script>
+<!-- counterup JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/jquery.counterup.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/waypoints.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/jquery.sparkline.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/sparkline/sparkline-active.js"></script>
+<!-- sparkline JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/jquery.flot.resize.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/curvedLines.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/flot/flot-active.js"></script>
+<!-- knob JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.knob.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/jquery.appear.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/knob/knob-active.js"></script>
+<!--  wave JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/waves.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/wave/wave-active.js"></script>
+<!--  todo JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/todo/jquery.todo.js"></script>
+<!-- plugins JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/plugins.js"></script>
+<!--  Chat JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/moment.min.js"></script>
+<script src="https://jnanasudha.com/assets/studentdashboard/js/chat/jquery.chat.js"></script>
+<!-- main JS
+		============================================ -->
+<script src="https://jnanasudha.com/assets/studentdashboard/js/main.js"></script>
+</body>
+</html>
