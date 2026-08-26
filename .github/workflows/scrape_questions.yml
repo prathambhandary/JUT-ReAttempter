@@ -4,6 +4,7 @@ on:
   push:
     paths-ignore:
       - "data/question_bank.json"
+      - "fix_json.py"
   workflow_dispatch:
   
 
