@@ -37,7 +37,7 @@ print("[2/4] Removing webpage files...")
 
 for obj in TEST_IDS:
     test_id=str(obj["exam_id"])
-    web_file_path=f"webpages/test_{test_id}"
+    web_file_path=f"webpages/test_{test_id}.html"
 
     if os.path.exists(web_file_path):
         try:
