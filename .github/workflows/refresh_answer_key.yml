@@ -55,7 +55,7 @@ jobs:
       - name: Trigger JEE & KCET Scraper
         env:
           GH_TOKEN: ${{ secrets.PUSHKITTY_TOKEN }}
-        run: gh workflow run "Auto Scrape Questions from Jnanasudha.com (JEE & KCET)" --ref main
+        run: gh workflow run "Auto Scrape Questions from Jnanasudha.com (JEE & KCET)" --repo prathambhandary/JUT-ReAttempter --ref main
 
   verify:
     name: Verify Trigger
