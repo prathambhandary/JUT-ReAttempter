@@ -39,5 +39,6 @@
     { "exam_id": 10471, "exam_type": "JUT", "sequence": "CMP", "exam_number": 35 }, 
     { "exam_id": 10485, "exam_type": "JUT", "sequence": "CPM", "exam_number": 36 }, 
     { "exam_id": 10505, "exam_type": "JUT", "sequence": "PCM", "exam_number": 37 }, 
-    { "exam_id": 10533, "exam_type": "JUT", "sequence": "PCM", "exam_number": 38 }
+    { "exam_id": 10533, "exam_type": "JUT", "sequence": "PCM", "exam_number": 38 }, 
+    { "exam_id": 10556, "exam_type": "JUT", "sequence": "PCM", "exam_number": 39 }
 ]
