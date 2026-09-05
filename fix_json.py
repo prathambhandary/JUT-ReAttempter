@@ -5,8 +5,8 @@ DATA_FILE_JEE="data/test_download_data.json"
 DATA_FILE_KCET="data/test_download_data_kcet.json"
 
 EXAM_NUMBER="39" 
-EXAM="JEE"
-# EXAM="KCET"
+# EXAM="JEE"
+EXAM="KCET"
 EXAM_TYPE="JUT"
  
 DATA_FILE=DATA_FILE_JEE if EXAM=="JEE" else DATA_FILE_KCET
