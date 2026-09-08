@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to JUT ReAttempter!
 
-Whether you're fixing a typo, improving the UI, optimizing the backend, or adding a new feature, every contribution helps make the project better for future students.
+Whether you're fixing a typo, improving the UI, optimizing the backend or adding a new feature, every contribution helps make the project better for future students.
 
 ---
 
