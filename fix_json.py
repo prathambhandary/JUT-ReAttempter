@@ -27,7 +27,7 @@ with open(DATA_FILE,"r",encoding="utf-8") as g:
 TEST_IDS=[
     obj for obj in indexes
     if obj.get("exam_number")==int(EXAM_NUMBER)
-    and obj.get("exam_type")==EXAM_TYPE
+    and (obj.get("exam_type")==EXAM_TYPE or obj.get("exam_type")==f"JUT {EXAM_TYPE}")
 ]
 
 print(f"      Found {len(TEST_IDS)} matching tests")
