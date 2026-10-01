@@ -249,14 +249,16 @@ def available_subjects(exam, subjects):
     QB_INDEX = KCET_QB_INDEX
     if exam == "JEE":
         QB_INDEX = JEE_QB_INDEX
+        increment = 75
     if exam == "KCET":
         QB_INDEX = KCET_QB_INDEX
+        increment = 60
         
     pool = [q for q in QB_INDEX if q["exam"] == exam]
     items = []
     for subject in subjects:
         # count = sum(1 for q in pool if q["subject"] == subject)
-        count = "ALL"
+        count = len(QB_INDEX) * increment
         items.append({"subject": subject, "count": count})
     return items
 
