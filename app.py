@@ -215,18 +215,22 @@ KCET_QB_INDEX = load_kcet_index()
 
 def available_tests(exam):
     seen = {}
+
+    increment = 1
     
     QB_INDEX = JEE_QB_INDEX
     if exam == "JEE":
         QB_INDEX = JEE_QB_INDEX
+        increment = 75
     if exam == "KCET":
         QB_INDEX = KCET_QB_INDEX
+        increment = 60
         
     for q in QB_INDEX:
           key = (q["exam_type"], q["exam_number"])
           if key not in seen:
               seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
-          seen[key]["count"] += 1
+          seen[key]["count"] += increment
     items = sorted(seen.values(), key=lambda x: (x["exam_type"], x["exam_number"]))
     for item in items:
         item["code"] = f"{item['exam_type']}{item['exam_number']}"
