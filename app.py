@@ -183,6 +183,7 @@ def load_jee_index():
     bank = []
     for q in raw:
         bank.append({
+            "exam": "JEE",
             "exam_type": q.get("exam_type", "JUT"),
             "exam_number": str(q.get("exam_number", "")).strip(),
             "exam_id": q.get("exam_id")
@@ -198,6 +199,7 @@ def load_kcet_index():
     bank = []
     for q in raw:
         bank.append({
+            "exam": "KCET",
             "exam_type": q.get("exam_type", "JUT"),
             "exam_number": str(q.get("exam_number", "")).strip(),
             "exam_id": q.get("exam_id"),
@@ -221,11 +223,10 @@ def available_tests(exam):
         QB_INDEX = KCET_QB_INDEX
         
     for q in QB_INDEX:
-        if q["exam"] == exam:
-            key = (q["exam_type"], q["exam_number"])
-            if key not in seen:
-                seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
-            seen[key]["count"] += 1
+          key = (q["exam_type"], q["exam_number"])
+          if key not in seen:
+              seen[key] = {"exam_type": q["exam_type"], "exam_number": q["exam_number"], "count": 0}
+          seen[key]["count"] += 1
     items = sorted(seen.values(), key=lambda x: (x["exam_type"], x["exam_number"]))
     for item in items:
         item["code"] = f"{item['exam_type']}{item['exam_number']}"
