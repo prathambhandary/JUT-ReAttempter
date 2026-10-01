@@ -212,11 +212,16 @@ def load_kcet_index():
     return bank
 
 
-QUESTION_BANK = load_bank()
+QUESTION_BANK = None
 JEE_QB_INDEX = load_jee_index()
 KCET_QB_INDEX = load_kcet_index()
 
-
+def get_qb():
+    global QUESTION_BANK
+    if QUESTION_BANK is None:
+        QUESTION_BANK = load_bank()    
+    return QUESTION_BANK
+    
 def available_tests(exam):
     seen = {}
 
@@ -367,6 +372,9 @@ def api_subjects_kcet():
 
 @app.route("/api/generate", methods=["POST"])
 def api_generate():
+
+    BANK = get_qb()
+    
     payload = request.get_json(force=True, silent=True) or {}
     chosen = [str(t).strip() for t in payload.get("tests", []) if str(t).strip()]
     candidate_name = (payload.get("candidate_name") or "Candidate").strip()[:60]
@@ -375,7 +383,7 @@ def api_generate():
     if not chosen:
         return jsonify({"error": "Select at least one JUT test to generate a paper."}), 400
 
-    pool = [q for q in QUESTION_BANK if q["exam"] == "JEE" and q["exam_number"] in chosen]
+    pool = [q for q in BANK if q["exam"] == "JEE" and q["exam_number"] in chosen]
     if not pool:
         return jsonify({"error": "No questions found for the selected tests."}), 400
 
@@ -577,6 +585,9 @@ def api_submit():
 
 @app.route("/api/generate_kcet", methods=["POST"])
 def api_generate_kcet():
+
+    BANK = get_qb()
+    
     print("\n========== KCET MOCK GENERATION START ==========")
 
     payload = request.get_json(force=True, silent=True) or {}
@@ -605,7 +616,7 @@ def api_generate_kcet():
     print("[KCET] Searching question bank...")
 
     pool = [
-        q for q in QUESTION_BANK
+        q for q in BANK
         if q["exam"] == "KCET" and q["subject"] == subject
     ]
 
