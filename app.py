@@ -182,10 +182,14 @@ def load_jee_index():
         raw = json.load(f)
     bank = []
     for q in raw:
+        if int(q.get("exam_number")) < 10:
+            exam_no = f"0{q.get("exam_number")}"
+        else:
+            exam_no = str(q.get("exam_number", ""))
         bank.append({
             "exam": "JEE",
             "exam_type": q.get("exam_type", "JUT"),
-            "exam_number": str(q.get("exam_number", "")).strip(),
+            "exam_number": exam_no,
             "exam_id": q.get("exam_id")
         })
     return bank
@@ -376,7 +380,7 @@ def api_generate():
     session_id = uuid.uuid4().hex
     selected_questions = []
     warnings = []
-
+  
     for subject in SUBJECT_ORDER:
         subj_pool = [q for q in pool if q["subject"] == subject]
         mcq_pool = [q for q in subj_pool if not q["is_numeric"]]
