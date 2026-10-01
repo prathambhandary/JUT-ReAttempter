@@ -44,4 +44,13 @@
     { "exam_id": 10574, "exam_type": "JUT", "sequence": "PCM", "exam_number": 40 },
     { "exam_id": 10613, "exam_type": "CT", "sequence": "MCP", "exam_number": 4 },
     { "exam_id": 10634, "exam_type": "JUT", "sequence": "CPM", "exam_number": 41 }
+    { "exam_id": 10650, "exam_type": "JUT", "sequence": "CPM", "exam_number": 42 },
+    { "exam_id": 10675, "exam_type": "JUT", "sequence": "PMC", "exam_number": 43 },
+    { "exam_id": 10703, "exam_type": "JUT", "sequence": "PMC", "exam_number": 44 },
+    { "exam_id": 10716, "exam_type": "JUT", "sequence": "PMC", "exam_number": 45 },
+    { "exam_id": 10745, "exam_type": "JUT", "sequence": "PCM", "exam_number": 46 },
+    { "exam_id": 10768, "exam_type": "JUT", "sequence": "CMP", "exam_number": 47 },
+    { "exam_id": 10796, "exam_type": "JUT", "sequence": "MCP", "exam_number": 48 },
+    { "exam_id": 10804, "exam_type": "JUT", "sequence": "PMC", "exam_number": 49 },
+    { "exam_id": 10825, "exam_type": "JUT", "sequence": "PMC", "exam_number": 50 }
 ]
