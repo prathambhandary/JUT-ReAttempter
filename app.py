@@ -174,13 +174,53 @@ def load_bank():
         })
     return bank
 
+JEE_DATA_INDEX_FILE = BASE_DIR / "data" / "test_download_data.json"
+
+def load_jee_index():
+    path = JEE_DATA_INDEX_FILE if JEE_DATA_INDEX_FILE.exists() else print("broke")
+    with open(path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+    bank = []
+    for q in raw:
+        bank.append({
+            "exam_type": q.get("exam_type", "JUT"),
+            "exam_number": str(q.get("exam_number", "")).strip(),
+            "exam_id": q.get("exam_id")
+        })
+    return bank
+
+KCET_DATA_INDEX_FILE = BASE_DIR / "data" / "test_download_data_kcet.json"
+
+def load_kcet_index():
+    path = KCET_DATA_INDEX_FILE if KCET_DATA_INDEX_FILE.exists() else print("broke")
+    with open(path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+    bank = []
+    for q in raw:
+        bank.append({
+            "exam_type": q.get("exam_type", "JUT"),
+            "exam_number": str(q.get("exam_number", "")).strip(),
+            "exam_id": q.get("exam_id"),
+            "subject": q.get("subject")
+        })
+    return bank
+
 
 QUESTION_BANK = load_bank()
+JEE_QB_INDEX = load_jee_index()
+KCET_QB_INDEX = load_kcet_index()
 
 
 def available_tests(exam):
     seen = {}
-    for q in QUESTION_BANK:
+    
+    QB_INDEX = JEE_QB_INDEX
+    if exam == "JEE":
+        QB_INDEX = JEE_QB_INDEX
+    if exam == "KCET":
+        QB_INDEX = KCET_QB_INDEX
+        
+    for q in QB_INDEX:
         if q["exam"] == exam:
             key = (q["exam_type"], q["exam_number"])
             if key not in seen:
@@ -196,10 +236,18 @@ def available_tests(exam):
 def available_subjects(exam, subjects):
     """Question counts per subject for a given exam -- powers the KCET
     subject-selection cards (no test-number picking in that flow)."""
-    pool = [q for q in QUESTION_BANK if q["exam"] == exam]
+
+    QB_INDEX = KCET_QB_INDEX
+    if exam == "JEE":
+        QB_INDEX = JEE_QB_INDEX
+    if exam == "KCET":
+        QB_INDEX = KCET_QB_INDEX
+        
+    pool = [q for q in QB_INDEX if q["exam"] == exam]
     items = []
     for subject in subjects:
-        count = sum(1 for q in pool if q["subject"] == subject)
+        # count = sum(1 for q in pool if q["subject"] == subject)
+        count = "ALL"
         items.append({"subject": subject, "count": count})
     return items
 
