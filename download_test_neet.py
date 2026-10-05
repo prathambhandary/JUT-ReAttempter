@@ -15,8 +15,8 @@ RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 # ID = os.getenv("JEE_USERNAME")
 # PASSWORD = os.getenv("JEE_PASSWORD")
 
-ID = "8618184853"
-PASSWORD = "mjs"
+ID = "9591317458"
+PASSWORD = "9591317458"
 
 print(ID, PASSWORD)
 
