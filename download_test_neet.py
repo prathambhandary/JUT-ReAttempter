@@ -101,7 +101,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
                 solution_text=text
                 break
         question_bank.append({
-            "exam": "JEE",
+            "exam": "KCET",
             "exam_type": exam_type,
             "exam_number": jut_no,
             "exam_id": exam_id,
@@ -119,7 +119,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
     existing_data=[]
 
     try:
-        with open("data/question_bank.json","r",encoding="utf-8") as f:
+        with open("data/question_bank_neet.json","r",encoding="utf-8") as f:
             existing_data=json.load(f)
     except (FileNotFoundError,json.JSONDecodeError):
         pass
@@ -135,7 +135,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
             existing_data.append(q)
             existing_keys.add(key)
 
-    with open("data/question_bank.json","w",encoding="utf-8") as f:
+    with open("data/question_bank_neet.json","w",encoding="utf-8") as f:
         json.dump(existing_data,f,ensure_ascii=False,indent=4)
 
     print(f"Database now contains {len(existing_data)} questions.")
@@ -144,7 +144,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
 if __name__ == "__main__":
     
     try:
-        f = open("data/question_bank.json", "r", encoding="utf-8")
+        f = open("data/question_bank_neet.json", "r", encoding="utf-8")
         question_bank_data = json.load(f)
         unique_exam_ids = set(q["exam_id"] for q in question_bank_data)
     except Exception as e:
