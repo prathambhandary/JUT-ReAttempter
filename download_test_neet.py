@@ -101,7 +101,7 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
                 solution_text=text
                 break
         question_bank.append({
-            "exam": "KCET",
+            "exam": "NEET",
             "exam_type": exam_type,
             "exam_number": jut_no,
             "exam_id": exam_id,
