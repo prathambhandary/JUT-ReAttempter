@@ -1,4 +1,4 @@
-name: Auto Scrape Questions from Jnanasudha.com (JEE & KCET)
+name: Auto Scrape Questions from Jnanasudha.com (JEE & KCET & NEET)
 
 on:
   push:
@@ -107,7 +107,7 @@ jobs:
         env:
           JEE_USERNAME: ${{ secrets.JEE_USERNAME }}
           JEE_PASSWORD: ${{ secrets.JEE_PASSWORD }}
-        run: python download_test_jee.py
+        run: python download_test_neet.py
 
       - name: Commit NEET changes
         run: |
