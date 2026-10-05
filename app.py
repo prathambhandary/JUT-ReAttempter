@@ -99,6 +99,16 @@ KCET_MARKS_CORRECT = 1
 KCET_MARKS_WRONG = 0                 # no negative marking
 
 # ---------------------------------------------------------------------------
+# NEET mode config (new)
+# ---------------------------------------------------------------------------
+NEET_SUBJECTS = ["Physics", "Chemistry", "Biology"]
+NEET_QUESTIONS_PER_TEST = 180
+NEET_DURATION_SECONDS = 3 * 60 * 60      # strict 180 minute timer, single subject
+NEET_SUBMIT_GRACE_SECONDS = 5 * 60   # tolerate slow/late network submits by this much
+NEET_MARKS_CORRECT = 4
+NEET_MARKS_WRONG = -1                 
+
+# ---------------------------------------------------------------------------
 # Secret key -- REQUIRED to be a fixed value in production (set the SECRET_KEY
 # env var on Vercel/wherever you deploy). If it changes between requests
 # (e.g. a random default regenerated per cold start) every token becomes
