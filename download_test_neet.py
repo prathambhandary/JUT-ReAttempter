@@ -56,12 +56,13 @@ def main(sequence, exam_id, jut_no, exam_type="JUT"):
             continue
         try:
             q_no=int(h3.get_text(strip=True).replace("Question No:",""))
-            if q_no<=25:
-                subject=sub[sequence[0]]
-            elif q_no<=50:
-                subject=sub[sequence[1]]
-            elif q_no<=75:
-                subject=sub[sequence[2]]
+            if sequence=="PCB" or sequence=="CPB":
+                if q_no<=45:
+                    subject=sub[sequence[0]]
+                elif q_no<=90:
+                    subject=sub[sequence[1]]
+                elif q_no<=180:
+                    subject=sub[sequence[2]]
         except:
             continue
         h4=div.find("h4")
