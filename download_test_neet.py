@@ -151,7 +151,7 @@ if __name__ == "__main__":
         print(f"Error occurred while reading question bank data: {e}")
         unique_exam_ids = set()
 
-    with open("data/test_download_data.json", "r") as f:
+    with open("data/test_download_data_neet.json", "r") as f:
 
         test_data = json.load(f)
 
