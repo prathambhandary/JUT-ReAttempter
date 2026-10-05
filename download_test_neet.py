@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import time
+import os
 import sys
 import json
-import os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,11 +12,13 @@ load_dotenv()
 LOGIN_URL      = "https://jnanasudha.com/index/userlogin"
 RESULT_URL_FMT = "https://jnanasudha.com/quiz/view_result?id={}"
 
-# ID = os.getenv("KCET_USERNAME")
-# PASSWORD = os.getenv("KCET_PASSWORD")
+# ID = os.getenv("JEE_USERNAME")
+# PASSWORD = os.getenv("JEE_PASSWORD")
 
-ID = "9591317458"
-PASSWORD = "9591317458"
+ID = "8618184853"
+PASSWORD = "mjs"
+
+print(ID, PASSWORD)
 
 sub = {'P': 'Physics', 'C': 'Chemistry', 'M': 'Mathematics', 'B': 'Biology'}
 
@@ -30,10 +32,6 @@ headers = {
 resp = session.post(LOGIN_URL, data=login_data, headers=headers)
 
 def fetch_test(test_id):
-
-    if os.path.exists(f"webpages/test_{test_id}.html"):
-        return
-    
     resp = session.get(RESULT_URL_FMT.format(test_id), headers=headers)
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -41,9 +39,10 @@ def fetch_test(test_id):
     with open(f"webpages/test_{test_id}.html", "w", encoding="utf-8") as f:
         f.write(str(soup))
 
-def main(subject, exam_id, jut_no, exam_type="JUT"):
+def main(sequence, exam_id, jut_no, exam_type="JUT"):
 
     fetch_test(exam_id)
+
 
     with open(f"webpages/test_{exam_id}.html",encoding="utf-8") as f:
         soup=BeautifulSoup(f,"html.parser")
@@ -57,6 +56,12 @@ def main(subject, exam_id, jut_no, exam_type="JUT"):
             continue
         try:
             q_no=int(h3.get_text(strip=True).replace("Question No:",""))
+            if q_no<=25:
+                subject=sub[sequence[0]]
+            elif q_no<=50:
+                subject=sub[sequence[1]]
+            elif q_no<=75:
+                subject=sub[sequence[2]]
         except:
             continue
         h4=div.find("h4")
@@ -95,7 +100,7 @@ def main(subject, exam_id, jut_no, exam_type="JUT"):
                 solution_text=text
                 break
         question_bank.append({
-            "exam": "KCET",
+            "exam": "JEE",
             "exam_type": exam_type,
             "exam_number": jut_no,
             "exam_id": exam_id,
@@ -111,13 +116,6 @@ def main(subject, exam_id, jut_no, exam_type="JUT"):
             "solution_text":solution_text
         })
     existing_data=[]
-
-    print("======PRINTING FETCHED DATA======")
-    print(len(question_bank))
-    print("======END FETCHED DATA======")
-
-    if not len(question_bank):
-        return 0
 
     try:
         with open("data/question_bank.json","r",encoding="utf-8") as f:
@@ -152,13 +150,13 @@ if __name__ == "__main__":
         print(f"Error occurred while reading question bank data: {e}")
         unique_exam_ids = set()
 
-    with open("data/test_download_data_kcet.json", "r") as f:
+    with open("data/test_download_data.json", "r") as f:
 
         test_data = json.load(f)
 
-        for i in test_data[::-1]:
+        for i in test_data:
             exam_id = i["exam_id"]
-            subject = i["subject"]
+            sequence = i["sequence"]
 
             exam_type = i["exam_type"]
             exam_number = i["exam_number"]
@@ -167,20 +165,18 @@ if __name__ == "__main__":
             if exam_id in unique_exam_ids:
                 continue
 
-            print(f"Fetching test {exam_number} with exam ID {exam_id} of {subject}...")
+            print(f"Fetching test {exam_number} with exam ID {exam_id} and sequence {sequence}...")
 
             if exam_type == "JUT":
                 if exam_number < 10:
-                    main(subject, exam_id, f"0{exam_number}")
+                    main(sequence, exam_id, f"0{exam_number}")
                 else:
-                    main(subject, exam_id, str(exam_number))
+                    main(sequence, exam_id, str(exam_number))
 
             if exam_type == "CT":
                 if exam_number<10:
-                    main(subject, exam_id, f"CT 0{exam_number}")
+                    main(sequence, exam_id, f"CT 0{exam_number}")
                 else:
-                    main(subject, exam_id, f"CT {exam_number}")
+                    main(sequence, exam_id, f"CT {exam_number}")
             
             time.sleep(1)
-
-      
