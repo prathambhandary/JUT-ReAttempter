@@ -4,6 +4,7 @@ on:
   push:
     paths-ignore:
       - "data/question_bank.json"
+      - "data/question_bank_neet.json"
       - "fix_json.py"
   workflow_dispatch:
 
@@ -83,5 +84,39 @@ jobs:
           else
             git commit -m "Updated KCET question bank"
             git pull --rebase origin main
+            git push origin main
+          fi
+  neet:
+    name: Scrape NEET Questions
+    needs: check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PUSHKITTY_TOKEN }}
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Download NEET questions
+        env:
+          JEE_USERNAME: ${{ secrets.JEE_USERNAME }}
+          JEE_PASSWORD: ${{ secrets.JEE_PASSWORD }}
+        run: python download_test_jee.py
+
+      - name: Commit NEET changes
+        run: |
+          git config user.name "pushkitty"
+          git config user.email "pushkitty@firewave.in"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No NEET changes."
+          else
+            git commit -m "Updated NEET question bank"
             git push origin main
           fi
